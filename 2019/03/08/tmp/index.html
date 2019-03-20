@@ -96,17 +96,17 @@
 
 
 
-  <meta name="description" content="void access(int x){    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);}void makeroot(int x){    access(x),splay(x),reverse(x);}int findroot(int x){    access(x),splay(x);    while (ch">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344void access(int x)&amp;#123;    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);&amp;#125;void makeroot(int x)&amp;#1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tmp">
 <meta property="og:url" content="http://yoursite.com/2019/03/08/tmp/index.html">
 <meta property="og:site_name" content="霉凉星的博客">
-<meta property="og:description" content="void access(int x){    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);}void makeroot(int x){    access(x),splay(x),reverse(x);}int findroot(int x){    access(x),splay(x);    while (ch">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344void access(int x)&amp;#123;    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);&amp;#125;void makeroot(int x)&amp;#1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-08T06:02:25.152Z">
+<meta property="og:updated_time" content="2019-03-20T05:09:21.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tmp">
-<meta name="twitter:description" content="void access(int x){    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);}void makeroot(int x){    access(x),splay(x),reverse(x);}int findroot(int x){    access(x),splay(x);    while (ch">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344void access(int x)&amp;#123;    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);&amp;#125;void makeroot(int x)&amp;#1">
 
 
 
@@ -335,12 +335,24 @@
                 
               
 
-              <time title="创建时间：2019-03-08 14:01:58 / 修改时间：14:02:25" itemprop="dateCreated datePublished" datetime="2019-03-08T14:01:58+08:00">2019-03-08</time>
+              <time title="创建时间：2019-03-08 14:01:58" itemprop="dateCreated datePublished" datetime="2019-03-08T14:01:58+08:00">2019-03-08</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-20 13:09:21" itemprop="dateModified" datetime="2019-03-20T13:09:21+08:00">2019-03-20</time>
               
             
           </span>
@@ -373,8 +385,7 @@
       
 
       
-        <p>void access(int x)<br>{<br>    for (int y=0;x;x=par[y=x])<br>        splay(x),ch[x][1]=y,update(x);<br>}<br>void makeroot(int x)<br>{<br>    access(x),splay(x),reverse(x);<br>}<br>int findroot(int x)<br>{<br>    access(x),splay(x);<br>    while (ch[x][0]) pushdown(x),x=ch[x][0];<br>    return x;<br>}<br>void split(int x,int y)<br>{<br>    makeroot(x),access(y),splay(y);<br>}<br>void link(int x,int y)<br>{<br>    makeroot(x);<br>    if (findroot(y)!=x) par[x]=y;<br>}<br>void cut(int x,int y)<br>{<br>    split(x,y);<br>    if (findroot(y)==x&amp;&amp;par[x]==y&amp;&amp;!ch[x][1]) par[x]=ch[y][0]=0;<br>}<br>int n,m,x,y,opt;<br>int main()<br>{<br>    scanf(“%d%d”,&amp;n,&amp;m);<br>    for (int i=1;i&lt;=n;i++) scanf(“%d”,&amp;val[i]);<br>    while (m–)<br>    {<br>        scanf(“%d%d%d”,&amp;opt,&amp;x,&amp;y);<br>        if (opt==0) split(x,y),printf(“%d\n”,sum[y]);<br>        if (opt==1) link(x,y);<br>        if (opt==2) cut(x,y);<br>        if (opt==3) splay(x),val[x]=y;<br>    }<br>    return 0;<br>}</p>
-
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">access</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> y=<span class="number">0</span>;x;x=par[y=x])</span><br><span class="line">        splay(x),ch[x][<span class="number">1</span>]=y,update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x),reverse(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x);</span><br><span class="line">    <span class="keyword">while</span> (ch[x][<span class="number">0</span>]) pushdown(x),x=ch[x][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">split</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x),access(y),splay(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">link</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)!=x) par[x]=y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">cut</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    split(x,y);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)==x&amp;&amp;par[x]==y&amp;&amp;!ch[x][<span class="number">1</span>]) par[x]=ch[y][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n,m,x,y,opt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;val[i]);</span><br><span class="line">    <span class="keyword">while</span> (m--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;opt,&amp;x,&amp;y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">0</span>) split(x,y),<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum[y]);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">1</span>) link(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">2</span>) cut(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">3</span>) splay(x),val[x]=y;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
