@@ -100,23 +100,25 @@
 
 
 
-  <meta name="description" content="MyBlog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LZCR的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="lct模板题。 对比模板 link-cut-tree，我们仅需改一下这些东西即可。 首先，这是原来的模板代码：（参考神仙FlashHu的博客） 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
+<meta name="keywords" content="link-cut-tree">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[SDOI2018]洞穴勘测">
+<meta property="og:url" content="http://yoursite.com/2019/03/25/SDOI2018-洞穴勘测/index.html">
 <meta property="og:site_name" content="LZCR的博客">
-<meta property="og:description" content="MyBlog">
+<meta property="og:description" content="lct模板题。 对比模板 link-cut-tree，我们仅需改一下这些东西即可。 首先，这是原来的模板代码：（参考神仙FlashHu的博客） 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-25T05:15:11.800Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LZCR的博客">
-<meta name="twitter:description" content="MyBlog">
+<meta name="twitter:title" content="[SDOI2018]洞穴勘测">
+<meta name="twitter:description" content="lct模板题。 对比模板 link-cut-tree，我们仅需改一下这些东西即可。 首先，这是原来的模板代码：（参考神仙FlashHu的博客） 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/25/SDOI2018-洞穴勘测/">
 
 
 
@@ -126,7 +128,7 @@
   };
 </script>
 
-  <title>LZCR的博客</title>
+  <title>[SDOI2018]洞穴勘测 | LZCR的博客</title>
   
 
 
@@ -174,8 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,7 +218,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -427,9 +428,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -461,10 +462,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/25/SDOI2018-洞穴勘测/" class="post-title-link" itemprop="url">[SDOI2018]洞穴勘测</a>
+          <h1 class="post-title" itemprop="name headline">[SDOI2018]洞穴勘测
+
               
             
           </h1>
@@ -508,6 +507,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -555,25 +561,20 @@
       
 
       
-        
-          
-            <p>
-              lct模板题。
-对比模板 link-cut-tree，我们仅需改一下这些东西即可。
-首先，这是原来的模板代码：（参考神仙FlashHu的博客）
-#include &lt;cstdio&gt;#include &lt;algorithm&gt;using namespace std;const int
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/25/SDOI2018-洞穴勘测/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p>lct模板题。</p>
+<p>对比<a href="https://www.luogu.org/problemnew/show/P3690" target="_blank" rel="noopener">模板 link-cut-tree</a>，我们仅需改一下这些东西即可。</p>
+<p>首先，这是原来的模板代码：（参考神仙<a href="https://www.cnblogs.com/flashhu/p/8324551.html" target="_blank" rel="noopener">FlashHu</a>的博客）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">500050</span>;</span><br><span class="line"><span class="keyword">int</span> ch[maxn][<span class="number">2</span>],par[maxn],rev[maxn],sum[maxn],val[maxn],sta[maxn];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">chk</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> ch[par[x]][<span class="number">0</span>]==x||ch[par[x]][<span class="number">1</span>]==x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    sum[x]=sum[ch[x][<span class="number">0</span>]]^sum[ch[x][<span class="number">1</span>]]^val[x];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    swap(ch[x][<span class="number">0</span>],ch[x][<span class="number">1</span>]);</span><br><span class="line">    rev[x]^=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pushdown</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (rev[x])</span><br><span class="line">    &#123;</span><br><span class="line">        rev[x]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (ch[x][<span class="number">0</span>]) reverse(ch[x][<span class="number">0</span>]);</span><br><span class="line">        <span class="keyword">if</span> (ch[x][<span class="number">1</span>]) reverse(ch[x][<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> y=par[x],z=par[y],k=(ch[y][<span class="number">1</span>])==x,w=ch[x][k^<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span> (chk(y)) ch[z][ch[z][<span class="number">1</span>]==y]=x;</span><br><span class="line">    ch[x][k^<span class="number">1</span>]=y,ch[y][k]=w;</span><br><span class="line">    <span class="keyword">if</span> (w) par[w]=y;</span><br><span class="line">    par[y]=x,par[x]=z;</span><br><span class="line">    update(x),update(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">splay</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> y=x,z=<span class="number">0</span>;</span><br><span class="line">    sta[++z]=y;</span><br><span class="line">    <span class="keyword">while</span> (chk(y)) sta[++z]=y=par[y];</span><br><span class="line">    <span class="keyword">while</span> (z) pushdown(sta[z--]);</span><br><span class="line">    <span class="keyword">while</span> (chk(x))</span><br><span class="line">    &#123;</span><br><span class="line">        y=par[x],z=par[y];</span><br><span class="line">        <span class="keyword">if</span> (chk(y)) rotate((ch[y][<span class="number">0</span>]==x)^(ch[z][<span class="number">0</span>]==y)?x:y);</span><br><span class="line">        rotate(x);</span><br><span class="line">    &#125;</span><br><span class="line">    update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">access</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> y=<span class="number">0</span>;x;x=par[y=x])</span><br><span class="line">        splay(x),ch[x][<span class="number">1</span>]=y,update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x),reverse(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x);</span><br><span class="line">    <span class="keyword">while</span> (ch[x][<span class="number">0</span>]) pushdown(x),x=ch[x][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">split</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x),access(y),splay(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">link</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)!=x) par[x]=y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">cut</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    split(x,y);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)==x&amp;&amp;par[x]==y&amp;&amp;!ch[x][<span class="number">1</span>]) par[x]=ch[y][<span class="number">0</span>]=<span class="number">0</span>,update(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n,m,x,y,opt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;val[i]);</span><br><span class="line">    <span class="keyword">while</span> (m--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;opt,&amp;x,&amp;y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">0</span>) split(x,y),<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum[y]);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">1</span>) link(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">2</span>) cut(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt==<span class="number">3</span>) splay(x),val[x]=y;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们仅需魔改下列这些东西即可。</p>
+<p>首先，将第84行</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;val[i]);</span><br></pre></td></tr></table></figure>
+<p>换成<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) val[i]=<span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p>其次，将<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;opt,&amp;x,&amp;y);</span><br></pre></td></tr></table></figure></p>
+<p>改为<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">"%s"</span>,opt);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x,&amp;y);</span><br></pre></td></tr></table></figure></p>
+<p>最后，将while里面的东西改一下即可。</p>
+<p>（完全就是一道水题，为什么会变成紫色的，<del>好像连并查集都能做</del>）</p>
+<p>代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn=<span class="number">500050</span>;</span><br><span class="line"><span class="keyword">int</span> ch[maxn][<span class="number">2</span>],par[maxn],rev[maxn],sum[maxn],val[maxn],sta[maxn];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">chk</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> ch[par[x]][<span class="number">0</span>]==x||ch[par[x]][<span class="number">1</span>]==x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    sum[x]=sum[ch[x][<span class="number">0</span>]]^sum[ch[x][<span class="number">1</span>]]^val[x];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    swap(ch[x][<span class="number">0</span>],ch[x][<span class="number">1</span>]);</span><br><span class="line">    rev[x]^=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pushdown</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (rev[x])</span><br><span class="line">    &#123;</span><br><span class="line">        rev[x]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (ch[x][<span class="number">0</span>]) reverse(ch[x][<span class="number">0</span>]);</span><br><span class="line">        <span class="keyword">if</span> (ch[x][<span class="number">1</span>]) reverse(ch[x][<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> y=par[x],z=par[y],k=(ch[y][<span class="number">1</span>])==x,w=ch[x][k^<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">if</span> (chk(y)) ch[z][ch[z][<span class="number">1</span>]==y]=x;</span><br><span class="line">    ch[x][k^<span class="number">1</span>]=y,ch[y][k]=w;</span><br><span class="line">    <span class="keyword">if</span> (w) par[w]=y;</span><br><span class="line">    par[y]=x,par[x]=z;</span><br><span class="line">    update(x),update(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">splay</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> y=x,z=<span class="number">0</span>;</span><br><span class="line">    sta[++z]=y;</span><br><span class="line">    <span class="keyword">while</span> (chk(y)) sta[++z]=y=par[y];</span><br><span class="line">    <span class="keyword">while</span> (z) pushdown(sta[z--]);</span><br><span class="line">    <span class="keyword">while</span> (chk(x))</span><br><span class="line">    &#123;</span><br><span class="line">        y=par[x],z=par[y];</span><br><span class="line">        <span class="keyword">if</span> (chk(y)) rotate((ch[y][<span class="number">0</span>]==x)^(ch[z][<span class="number">0</span>]==y)?x:y);</span><br><span class="line">        rotate(x);</span><br><span class="line">    &#125;</span><br><span class="line">    update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">access</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> y=<span class="number">0</span>;x;x=par[y=x])</span><br><span class="line">        splay(x),ch[x][<span class="number">1</span>]=y,update(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">makeroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x),reverse(x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findroot</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    access(x),splay(x);</span><br><span class="line">    <span class="keyword">while</span> (ch[x][<span class="number">0</span>]) pushdown(x),x=ch[x][<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">return</span> x;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">split</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x),access(y),splay(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">link</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    makeroot(x);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)!=x) par[x]=y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">cut</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    split(x,y);</span><br><span class="line">    <span class="keyword">if</span> (findroot(y)==x&amp;&amp;par[x]==y&amp;&amp;!ch[x][<span class="number">1</span>]) par[x]=ch[y][<span class="number">0</span>]=<span class="number">0</span>,update(y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">int</span> n,m,x,y,opt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) val[i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">char</span> opt[<span class="number">10</span>];</span><br><span class="line">    <span class="keyword">while</span> (m--)</span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">"%s"</span>,opt);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x,&amp;y);</span><br><span class="line">        <span class="keyword">if</span> (opt[<span class="number">0</span>]==<span class="string">'C'</span>) link(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt[<span class="number">0</span>]==<span class="string">'D'</span>) cut(x,y);</span><br><span class="line">        <span class="keyword">if</span> (opt[<span class="number">0</span>]==<span class="string">'Q'</span>)</span><br><span class="line">            <span class="keyword">if</span> (findroot(x)==findroot(y)) <span class="built_in">printf</span>(<span class="string">"Yes\n"</span>);</span><br><span class="line">        	<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"No\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -594,584 +595,56 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/22/贴几个常用模板/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LZCR">
-      <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LZCR的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/22/贴几个常用模板/" class="post-title-link" itemprop="url">贴几个常用模板</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-22 13:45:34 / 修改时间：13:49:24" itemprop="dateCreated datePublished" datetime="2019-03-22T13:45:34+08:00">2019-03-22</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/link-cut-tree/" rel="tag"># link-cut-tree</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">5.4k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">5 分钟</span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              
-$link-cut-tree$ 模板
-
-#include &lt;cstdio&gt;#include &lt;algorithm&gt;using namespace std;const int maxn=500050;int ch[maxn][2],par[maxn],rev[maxn],su
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/22/贴几个常用模板/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/08/tmp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LZCR">
-      <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LZCR的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/08/tmp/" class="post-title-link" itemprop="url">tmp</a>
-              
-            
-          </h1>
+        <div class="post-widgets">
         
 
-        <div class="post-meta">
-          <span class="post-time">
+        
 
+        
+          
+          <div class="social_share">
             
             
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-08 14:01:58" itemprop="dateCreated datePublished" datetime="2019-03-08T14:01:58+08:00">2019-03-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-20 13:09:21" itemprop="dateModified" datetime="2019-03-20T13:09:21+08:00">2019-03-20</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">1k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
+          </div>
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          
-            <p>
-              void access(int x)&#123;    for (int y=0;x;x=par[y=x])        splay(x),ch[x][1]=y,update(x);&#125;void makeroot(int x)&#123;    access(x),splay(x),rev
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/08/tmp/#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/22/贴几个常用模板/" rel="next" title="贴几个常用模板">
+                <i class="fa fa-chevron-left"></i> 贴几个常用模板
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/AHOI2008-上学路线/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LZCR">
-      <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LZCR的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/06/AHOI2008-上学路线/" class="post-title-link" itemprop="url">[AHOI2008]上学路线</a>
-              
             
-          </h1>
-        
+          </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
             
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-06 14:05:39" itemprop="dateCreated datePublished" datetime="2019-03-06T14:05:39+08:00">2019-03-06</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-19 14:06:43" itemprop="dateModified" datetime="2019-03-19T14:06:43+08:00">2019-03-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">5.8k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">5 分钟</span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>
-              题解：
-首先要spfa求出起点到各个点的最短距离。对于一条权值为$w$，起点为$i$，终点为$j$的边，设$dis[k]$为起点到$k$点的距离，若$dis[j]=dis[i]+w$，则将该边加入另一个图里，边的容量为删除这条边的代价，则从起点到终点的最大流即为答案。
-这是前面那片题解的作者所言。
-
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/06/AHOI2008-上学路线/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1181,194 +654,15 @@ $link-cut-tree$ 模板
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/06/Happy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="LZCR">
-      <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LZCR的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/06/Happy/" class="post-title-link" itemprop="url">Happy</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-06 13:50:59 / 修改时间：13:52:27" itemprop="dateCreated datePublished" datetime="2019-03-06T13:50:59+08:00">2019-03-06</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">10</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              这是我的第一篇博客！
-              
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/06/Happy/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -1684,6 +978,10 @@ $link-cut-tree$ 模板
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -2047,20 +1345,6 @@ $link-cut-tree$ 模板
 
   
   
-    
-      
-    
-      
-    
-      
-    
-      
-        
-      
-    
-      
-    
-  
 
   
     
@@ -2150,7 +1434,7 @@ $link-cut-tree$ 模板
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
