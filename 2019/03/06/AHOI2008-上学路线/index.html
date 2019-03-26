@@ -108,7 +108,7 @@
 <meta property="og:description" content="题解： 首先要spfa求出起点到各个点的最短距离。对于一条权值为$w$，起点为$i$，终点为$j$的边，设$dis[k]$为起点到$k$点的距离，若$dis[j]=dis[i]+w$，则将该边加入另一个图里，边的容量为删除这条边的代价，则从起点到终点的最大流即为答案。 这是前面那片题解的作者所言。 感谢这篇题解，让我从中获得了一些新的思路和注意到了其他方面的点，而这些可以优化时间复杂度的点是前面题">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/03/06/AHOI2008-上学路线/50510.png">
-<meta property="og:updated_time" content="2019-03-25T05:25:49.487Z">
+<meta property="og:updated_time" content="2019-03-25T05:26:33.512Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[AHOI2008]上学路线">
 <meta name="twitter:description" content="题解： 首先要spfa求出起点到各个点的最短距离。对于一条权值为$w$，起点为$i$，终点为$j$的边，设$dis[k]$为起点到$k$点的距离，若$dis[j]=dis[i]+w$，则将该边加入另一个图里，边的容量为删除这条边的代价，则从起点到终点的最大流即为答案。 这是前面那片题解的作者所言。 感谢这篇题解，让我从中获得了一些新的思路和注意到了其他方面的点，而这些可以优化时间复杂度的点是前面题">
@@ -506,7 +506,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-25 13:25:49" itemprop="dateModified" datetime="2019-03-25T13:25:49+08:00">2019-03-25</time>
+                <time title="修改时间：2019-03-25 13:26:33" itemprop="dateModified" datetime="2019-03-25T13:26:33+08:00">2019-03-25</time>
               
             
           </span>
@@ -634,7 +634,7 @@
 <p>首先证明$1 =&gt; $2：</p>
 <p>我们利用反证法，假设流$f$是图$G$的最大流，但是残留网络中还存在有增广路$p$，其流量为$fp$。则我们有流$f$′$=f+fp&gt;f$。这与$f$是最大流产生矛盾。</p>
 <p>接着证明$2 =&gt; $3：</p>
-<p>假设残留网络$Gf$不存在增广路，所以在残留网络$Gf$中不存在路径从$s$到达$t$。我们定义$S$集合为：当前残留网络中$s$能够到达的点。同时定义$T=V-S$。此时$(S,T)$构成一个割$(S,T)$。且对于任意的$u∈S$,$v∈T$，有$f(u,v)=c(u,v)$。若$f(u,v)&lt;c(u,v)$，则有$Gf(u,v)&gt;0$，$s$可以到达$v$，与$v$属于$T$矛盾。</p>
+<p>假设残留网络$Gf$不存在增广路，所以在残留网络$Gf$中不存在路径从$s$到达$t$。我们定义$S$集合为：当前残留网络中$s$能够到达的点。同时定义$T=V-S$。此时$(S,T)$构成一个割$(S,T)$。且对于任意的$u∈S$,$v∈T$，有$f(u,v)=c(u,v)$。若$f(u,v)<c(u,v)$，则有$gf(u,v)>0$，$s$可以到达$v$，与$v$属于$T$矛盾。</c(u,v)$，则有$gf(u,v)></p>
 <p>因此有$f(S,T)=Σf(u,v)=Σc(u,v)=C(S,T)$。</p>
 <p>最后证明$3 =&gt; 1$：</p>
 <p>由于$f$的上界为最小割，当$f$到达割的容量时，显然就已经到达最大值，因此f为最大流。</p>
@@ -932,7 +932,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">17k</span>
+    <span title="站点总字数">20k</span>
   
 
   
@@ -941,7 +941,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">18 分钟</span>
   
 </div>
 
