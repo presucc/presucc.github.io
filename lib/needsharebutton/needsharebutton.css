@@ -1,4 +1,4 @@
-/***********************************************
+<script src="\assets\js\APlayer.min.js"> </script>/***********************************************
   needShareButton
   - Version 1.0.0
   - Copyright 2015 Dzmitry Vasileuski
