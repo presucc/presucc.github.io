@@ -100,28 +100,24 @@
 
 
 
-  <meta name="description" content="考察知识点： 逆元 lucas定理（其实没掌握也有60分） 组合数学 思维  一个一个部分分来讲： 0分~100分做法1printf(&quot;%lld\n&quot;,rand()*rand()*rand()%20100403); 10分做法-1输出样例。 10分做法-2因为题目要满足每一个前缀$1$的个数都不少于$0$的个数，考虑深搜。 对于每种状态，只要没到界限，下一个位置可以填上的数可以是$0$或$1$。">
-<meta name="keywords" content="数学 组合数学 Lucas定理">
+  <meta name="description" content="目录：一、组合数学部分 加乘原理 排列组合 2.1 乘法逆元 $Lucas$定理  二、基础数论 扩欧 中国剩余定理 $BSGS$（高次同余方程） 类欧（真TM基础） 欧拉定理  三、综合 扩展$Lucas$ xjb练习  食用说明： 本文针对0基础，0芝士的同学食用，那种省选级别及以上的大佬请绕道而行。 给大佬食用的博客：莫比乌斯反演杜教筛生成函数初步生成函数进阶 一、组合数学请各位先做几道题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[SCOI2010]生成字符串">
-<meta property="og:url" content="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/index.html">
+<meta property="og:title" content="组合数学&amp;&amp;数论大礼包">
+<meta property="og:url" content="http://yoursite.com/2019/06/16/组合数学-数论大礼包/index.html">
 <meta property="og:site_name" content="LZCR的博客">
-<meta property="og:description" content="考察知识点： 逆元 lucas定理（其实没掌握也有60分） 组合数学 思维  一个一个部分分来讲： 0分~100分做法1printf(&quot;%lld\n&quot;,rand()*rand()*rand()%20100403); 10分做法-1输出样例。 10分做法-2因为题目要满足每一个前缀$1$的个数都不少于$0$的个数，考虑深搜。 对于每种状态，只要没到界限，下一个位置可以填上的数可以是$0$或$1$。">
+<meta property="og:description" content="目录：一、组合数学部分 加乘原理 排列组合 2.1 乘法逆元 $Lucas$定理  二、基础数论 扩欧 中国剩余定理 $BSGS$（高次同余方程） 类欧（真TM基础） 欧拉定理  三、综合 扩展$Lucas$ xjb练习  食用说明： 本文针对0基础，0芝士的同学食用，那种省选级别及以上的大佬请绕道而行。 给大佬食用的博客：莫比乌斯反演杜教筛生成函数初步生成函数进阶 一、组合数学请各位先做几道题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/1.png">
-<meta property="og:image" content="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/2.png">
-<meta property="og:updated_time" content="2019-05-31T15:00:29.099Z">
+<meta property="og:updated_time" content="2019-06-16T12:16:03.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[SCOI2010]生成字符串">
-<meta name="twitter:description" content="考察知识点： 逆元 lucas定理（其实没掌握也有60分） 组合数学 思维  一个一个部分分来讲： 0分~100分做法1printf(&quot;%lld\n&quot;,rand()*rand()*rand()%20100403); 10分做法-1输出样例。 10分做法-2因为题目要满足每一个前缀$1$的个数都不少于$0$的个数，考虑深搜。 对于每种状态，只要没到界限，下一个位置可以填上的数可以是$0$或$1$。">
-<meta name="twitter:image" content="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/1.png">
+<meta name="twitter:title" content="组合数学&amp;&amp;数论大礼包">
+<meta name="twitter:description" content="目录：一、组合数学部分 加乘原理 排列组合 2.1 乘法逆元 $Lucas$定理  二、基础数论 扩欧 中国剩余定理 $BSGS$（高次同余方程） 类欧（真TM基础） 欧拉定理  三、综合 扩展$Lucas$ xjb练习  食用说明： 本文针对0基础，0芝士的同学食用，那种省选级别及以上的大佬请绕道而行。 给大佬食用的博客：莫比乌斯反演杜教筛生成函数初步生成函数进阶 一、组合数学请各位先做几道题">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/16/组合数学-数论大礼包/">
 
 
 
@@ -131,7 +127,7 @@
   };
 </script>
 
-  <title>[SCOI2010]生成字符串 | LZCR的博客</title>
+  <title>组合数学&&数论大礼包 | LZCR的博客</title>
   
 
 
@@ -448,7 +444,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/31/SCOI2010-生成字符串/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/16/组合数学-数论大礼包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
@@ -465,7 +461,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">[SCOI2010]生成字符串
+          <h1 class="post-title" itemprop="name headline">组合数学&&数论大礼包
 
               
             
@@ -491,7 +487,7 @@
                 
               
 
-              <time title="创建时间：2019-05-31 21:52:23 / 修改时间：23:00:29" itemprop="dateCreated datePublished" datetime="2019-05-31T21:52:23+08:00">2019-05-31</time>
+              <time title="创建时间：2019-06-16 14:23:05 / 修改时间：20:16:03" itemprop="dateCreated datePublished" datetime="2019-06-16T14:23:05+08:00">2019-06-16</time>
             
 
             
@@ -530,7 +526,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.8k</span>
+                <span title="本文字数">436</span>
               
 
               
@@ -544,7 +540,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">3 分钟</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -564,63 +560,28 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h3 id="考察知识点："><a href="#考察知识点：" class="headerlink" title="考察知识点："></a>考察知识点：</h3><ol start="0">
-<li>逆元</li>
-<li>lucas定理（其实没掌握也有60分）</li>
-<li>组合数学</li>
-<li>思维</li>
+        <script src="\assets\js\APlayer.min.js"> </script><h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><h3 id="一、组合数学部分"><a href="#一、组合数学部分" class="headerlink" title="一、组合数学部分"></a>一、组合数学部分</h3><ol>
+<li>加乘原理</li>
+<li>排列组合<br> 2.1 乘法逆元</li>
+<li>$Lucas$定理</li>
 </ol>
-<p>一个一个部分分来讲：</p>
-<h2 id="0分-100分做法"><a href="#0分-100分做法" class="headerlink" title="0分~100分做法"></a>0分~100分做法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,rand()*rand()*rand()%<span class="number">20100403</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="10分做法-1"><a href="#10分做法-1" class="headerlink" title="10分做法-1"></a>10分做法-1</h2><p>输出样例。</p>
-<h2 id="10分做法-2"><a href="#10分做法-2" class="headerlink" title="10分做法-2"></a>10分做法-2</h2><p>因为题目要满足每一个前缀$1$的个数都不少于$0$的个数，考虑深搜。</p>
-<p>对于每种状态，只要没到界限，下一个位置可以填上的数可以是$0$或$1$。</p>
-<p>设计一个<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dfs(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span><br></pre></td></tr></table></figure></p>
-<p>$x$，$y$分别是当前$0$,$1$的个数。从$(1,0)$开始深搜即可。</p>
-<p>时间复杂度$O(2^n)$.</p>
-<p>代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">int</span> s;     <span class="comment">//全局变量统计数量 </span></span><br><span class="line"><span class="keyword">int</span> m,n; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span> <span class="comment">//a,b是当前序列中1，0个数 </span></span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">    <span class="keyword">if</span> (a==m||b==n) <span class="comment">//边界条件 </span></span><br><span class="line">    &#123;     </span><br><span class="line">        s++;</span><br><span class="line">        <span class="keyword">if</span>(s&gt;=<span class="number">20100403</span>)s%=<span class="number">20100403</span>;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (a&gt;b&amp;&amp;b!=n) dfs(a,b+<span class="number">1</span>);<span class="comment">//搜索 下一个放0 </span></span><br><span class="line">        <span class="keyword">if</span> (a!=m) dfs(a+<span class="number">1</span>,b);<span class="comment">//下一个放   1 </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;m,&amp;n);<span class="comment">//输入0 1的个数 </span></span><br><span class="line">    dfs(<span class="number">1</span>,<span class="number">0</span>);      <span class="comment">//开始深度优先搜索 </span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>,s%<span class="number">20100403</span>);  <span class="comment">//输出总个数 </span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>Q: 为什么不把这部分分写上去？<br>A：<del>有人做吗？</del></p>
-<h2 id="30分做法"><a href="#30分做法" class="headerlink" title="30分做法"></a>30分做法</h2><p>既然是在字符串上面瞎搞，求方案数的恶心题目，考虑$Dp$。</p>
-<p>用$f[i][j]$表示当前前缀有$i$个$0$，$j$个$1$的情况，瞎搞一会即可。</p>
-<p>时间复杂度$O(n^2)$，得分$30$.</p>
-<p>代码：<del>咕咕</del></p>
-<p>Q: 为什么不把这部分分写上去？<br>A：<del>有人做吗？</del></p>
-<p>前方出现正解，请坐好扶稳……</p>
-<h2 id="70分做法"><a href="#70分做法" class="headerlink" title="70分做法"></a>70分做法</h2><p>（其实lzoi上的$70pts$==原题的$100pts$，我瞎搞了几组$10^{10}$的数据。）</p>
-<p>这个题要想到正解脑洞还要大一些。</p>
-<p>考虑将原题转化为一个平面直角坐标系，如图：</p>
-<p><img src="/2019/05/31/SCOI2010-生成字符串/1.png" alt></p>
-<p>（在本题里面，设$1$的个数为$a$，$2$的个数为$b$）</p>
-<p>用$a-b$的值作纵坐标，$a+b$的值作横坐标，如图所示。向右上走一步就是表示新的一位选$1$，右下走一步表示新的一位选$0$.不能往左走，因为$x$坐标表示总数。总数肯定是随着选数的数量而递增的。</p>
-<p>有了这个平面直角坐标系，$a$和$b$的关系就很容易表现出来了，数形结合。</p>
-<p>直接统计合法数量有多少种方案数很难，正难则反，考虑用总数量减去不合法数量即为答案。</p>
-<p>先抛去条件不谈，假如就让我们用$n$个$1$和$m$个$0$组成字符串，那么有多少种方法？</p>
-<p>在上图的平面直角坐标系中，这行文字被很形象地体现出来了。其实就是让我们找用$n+m$步，从$(0,0)$走到$(n+m,n-m)$有多少种不同的走法。</p>
-<p>仔细一想，这不正是要求从$n+m$步里面，选出$m$步往右下走的方案数吗？</p>
-<p>所以答案为$C(n+m,m)$。记$C(n+m,m)=S1$.</p>
-<p>（将样例$n=2,m=2$带入则如图：（$4$种）<br><img src="/2019/05/31/SCOI2010-生成字符串/2.png" alt></p>
-<p>为什么会有$4$种情况呢？因为有两种不合法。下面考虑不合法情况。</p>
-<p>不合法情况就是要求a&lt;b的方案数；</p>
-<p>而一看图，哇，$y$坐标的定义为$n-m$呀！所以不合法情况则为到$x$轴下方，$y$轴右侧，即经过第四象限的情况数。</p>
-<p>因为$a$，$b$都是整数，所以我们也可以理解为“不合法情况就是经过直线$y=-1$的线的数量”。</p>
-<p>所以现在就是要求有多少种方案是经过直线$y=-1$的，再用$S1$减去不合法数量即可。</p>
-<p>我们要求从$(0,0)$经过直线$y=-1$的方案数，根据对称性，以$y=-1$这条直线为对称轴，实际上等同于求$(0,-2)$经过直线$y=-1$到点$(n+m,n-m)$的方案数。</p>
-<p>这不是废话吗？从$(0,-2)$到$(n+m,n-m)$必定要经过直线$y=-1$呀！</p>
-<p>所以这就很简单了：求$(0,-2)$经过$n+m$步到$(n+m,n-m)$的方案数。</p>
-<p>学习上面的分析方法，不难得知：就是要在$n+m$步里面选出$m-1$步往右下走。</p>
-<p>所以不合法的答案为$C(n+m,m-1)$。记$C(n+m,m-1)=S2$.</p>
-<p>∴答案为$(S1-S2)%20100403$.</p>
-<p>呼~终于分析完了，怎么还没满分呀……</p>
-<p>$70$分代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> p=<span class="number">20100403</span>;</span><br><span class="line"><span class="keyword">int</span> n,m;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> inv[<span class="number">2000050</span>],fac[<span class="number">2000050</span>];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">C</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> fac[x]*inv[y]%p*inv[x-y]%p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    inv[<span class="number">0</span>]=inv[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n+m;i++)</span><br><span class="line">        inv[i]=(p-p/i)*inv[p%i]%p;</span><br><span class="line">    fac[<span class="number">0</span>]=fac[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n+m;i++)</span><br><span class="line">        fac[i]=fac[i<span class="number">-1</span>]*i%p;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n+m;i++)</span><br><span class="line">        inv[i]=inv[i<span class="number">-1</span>]*inv[i]%p;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ((C(n+m,m)-C(n+m,m<span class="number">-1</span>))+p)%p &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="100分做法"><a href="#100分做法" class="headerlink" title="100分做法"></a>100分做法</h2><p>将逆元求组合数的方式改为$Lucas$求组合数即可。</p>
-<p>代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">const</span> ll maxn=<span class="number">500050</span>;</span><br><span class="line">ll inv[maxn];</span><br><span class="line"><span class="function">ll <span class="title">fastmod</span><span class="params">(ll a,ll b,ll p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll cnt=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (b)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (b&amp;<span class="number">1</span>)</span><br><span class="line">            cnt=(cnt*a)%p;</span><br><span class="line">        a=(a*a)%p;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> cnt;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">C</span><span class="params">(ll n,ll m,ll p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll ca=<span class="number">1</span>,cb=<span class="number">1</span>,tmp=<span class="number">1</span>;;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;m) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(n==m) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(m&gt;n-m) m=n-m;</span><br><span class="line">    <span class="keyword">for</span>(ll i=<span class="number">0</span>;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        ca=(ca*(n-i))%p;</span><br><span class="line">        cb=(cb*(m-i))%p;</span><br><span class="line">    &#125;</span><br><span class="line">    tmp=(ca*fastmod(cb,p<span class="number">-2</span>,p))%p;</span><br><span class="line">    <span class="keyword">return</span> tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">lucas</span><span class="params">(ll n,ll m,ll p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (m==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> ((C(n%p,m%p,p)%p)*(lucas(n/p,m/p,p)%p))%p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll n,m,p;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%lld%lld"</span>,&amp;n,&amp;m);</span><br><span class="line">    p=<span class="number">20100403</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,(lucas(n+m,m,p)-lucas(n+m,m<span class="number">-1</span>,p)+p)%p);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="下面是坑点："><a href="#下面是坑点：" class="headerlink" title="下面是坑点："></a>下面是坑点：</h1><h2 id="60分做法："><a href="#60分做法：" class="headerlink" title="60分做法："></a>60分做法：</h2><p>还是上面的$70$分做法，只不过没有$+mod$再对$mod$取模，因为$C(n+m,m)-C(n+m,m-1)$可能$&lt;0$。</p>
-<h2 id="70分做法："><a href="#70分做法：" class="headerlink" title="70分做法："></a>70分做法：</h2><p>还是上面的$100$分做法，只不过没有$+mod$再对$mod$取模，因为$C(n+m,m)-C(n+m,m-1)$可能$&lt;0$。</p>
-<p>总结：</p>
-<p>遇到恶心的数论题可以考虑数形结合，用一些图形把题目中的抽象条件变得至关一些，再逐步进行分析。</p>
-<p>完结撒花！！</p>
-
+<h3 id="二、基础数论"><a href="#二、基础数论" class="headerlink" title="二、基础数论"></a>二、基础数论</h3><ol>
+<li>扩欧</li>
+<li>中国剩余定理</li>
+<li>$BSGS$（高次同余方程）</li>
+<li>类欧<del>（真TM基础）</del></li>
+<li>欧拉定理</li>
+</ol>
+<h3 id="三、综合"><a href="#三、综合" class="headerlink" title="三、综合"></a>三、综合</h3><ol>
+<li>扩展$Lucas$</li>
+<li>xjb练习</li>
+</ol>
+<p>食用说明：</p>
+<p>本文针对0基础，0芝士的同学食用，那种省选级别及以上的大佬请绕道而行。</p>
+<p>给大佬食用的博客：<br><a href="https://lx-2003.blog.luogu.org/mobius-inversion" target="_blank" rel="noopener">莫比乌斯反演</a><br><a href="https://lx-2003.blog.luogu.org/dujiao-sieve" target="_blank" rel="noopener">杜教筛</a><br><a href="https://lx-2003.blog.luogu.org/generating-function" target="_blank" rel="noopener">生成函数初步</a><br><a href="https://lx-2003.blog.luogu.org/generating-function-advanced" target="_blank" rel="noopener">生成函数进阶</a></p>
+<h2 id="一、组合数学"><a href="#一、组合数学" class="headerlink" title="一、组合数学"></a>一、组合数学</h2><p>请各位先做几道题自测一下。分值在题目后面，答案在所有题目后面。密码：0<br>（您可以使用编程，或者系统自带的计算器来辅助您的计算）</p>
+<p>自测标准：<br>$0&lt;=x&lt;=30$：您可以充分理解这篇文章，但是不能跳步。<br>$31&lt;=x&lt;=80$：您可以充分理解这篇文章，可以跳过”加乘原理”；<br>$81&lt;=x&lt;=110$：您可以不费吹灰之力就读懂这篇文章，但是建议阅读”类欧几里得”和”扩展Lucas”；<br>$111&lt;=x&lt;=120$：移步上面那几篇博客。</p>
+<h3 id="1-1-加乘原理"><a href="#1-1-加乘原理" class="headerlink" title="1.1 加乘原理"></a>1.1 加乘原理</h3>
       
     </div>
 
@@ -640,12 +601,6 @@
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数学-组合数学-Lucas定理/" rel="tag"># 数学 组合数学 Lucas定理</a>
-          
-        </div>
       
 
       
@@ -676,8 +631,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/22/模拟题day2-Bylxy/" rel="next" title="模拟题day2-Bylxy">
-                <i class="fa fa-chevron-left"></i> 模拟题day2-Bylxy
+              <a href="/2019/06/05/songs/" rel="next" title="songs">
+                <i class="fa fa-chevron-left"></i> songs
               </a>
             
           </div>
@@ -686,8 +641,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/05/luogu/" rel="prev" title="luogu">
-                luogu <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/04/NOIP2003-传染病控制/" rel="prev" title="[NOIP2003]传染病控制">
+                [NOIP2003]传染病控制 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -891,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#考察知识点："><span class="nav-number">1.</span> <span class="nav-text">考察知识点：</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#0分-100分做法"><span class="nav-number"></span> <span class="nav-text">0分~100分做法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10分做法-1"><span class="nav-number"></span> <span class="nav-text">10分做法-1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10分做法-2"><span class="nav-number"></span> <span class="nav-text">10分做法-2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#30分做法"><span class="nav-number"></span> <span class="nav-text">30分做法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#70分做法"><span class="nav-number"></span> <span class="nav-text">70分做法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#100分做法"><span class="nav-number"></span> <span class="nav-text">100分做法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#下面是坑点："><span class="nav-number"></span> <span class="nav-text">下面是坑点：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#60分做法："><span class="nav-number"></span> <span class="nav-text">60分做法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#70分做法："><span class="nav-number"></span> <span class="nav-text">70分做法：</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录："><span class="nav-number">1.</span> <span class="nav-text">目录：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、组合数学部分"><span class="nav-number">1.1.</span> <span class="nav-text">一、组合数学部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、基础数论"><span class="nav-number">1.2.</span> <span class="nav-text">二、基础数论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、综合"><span class="nav-number">1.3.</span> <span class="nav-text">三、综合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、组合数学"><span class="nav-number">2.</span> <span class="nav-text">一、组合数学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-加乘原理"><span class="nav-number">2.1.</span> <span class="nav-text">1.1 加乘原理</span></a></li></ol></li></ol></div>
             
 
           </div>
