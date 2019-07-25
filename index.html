@@ -11,13 +11,20 @@
 
 
 
+  
 
-<html class="theme-next gemini" lang="zh-CN">
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content>
+<meta name="theme-color" content="#222">
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
 
 
@@ -43,11 +50,12 @@
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
 
-<link rel="stylesheet" href="//main.css?v=6.7.0">
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="/images/code-title.png.png?v=6.7.0">
@@ -55,6 +63,8 @@
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/code-title.png.png?v=6.7.0">
 
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
 
 
 
@@ -66,20 +76,20 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Pisces',
     version: '6.7.0',
-    sidebar: {"position":"left"},
-    fancybox: ,
-    fastclick: ,
-    lazyload: ,
-    tabs: ,
-    motion: "",
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: "",
-      labels: ""
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -105,6 +115,8 @@
 
 
 
+
+  <link rel="canonical" href="http://yoursite.com/">
 
 
 
@@ -210,10 +222,12 @@
     
     
     
+      
+    
 
     
 
-    <a href="/" rel="section">首页</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
 
   </li>
         
@@ -225,10 +239,12 @@
     
     
     
+      
+    
 
     
 
-    <a href="/about/" rel="section">关于</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -240,10 +256,29 @@
     
     
     
+      
+    
 
     
 
-    <a href="/tags/" rel="section">标签</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
 
   </li>
         
@@ -255,20 +290,119 @@
     
     
     
+      
+    
 
     
 
-    <a href="/archives/" rel="section">归档</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/404/" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益 404</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-问题">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/problem/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>问题</a>
 
   </li>
 
       
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
       
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -316,7 +450,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -345,7 +479,36 @@
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-21 19:35:21" itemprop="dateCreated datePublished" datetime="2019-07-21T19:35:21+08:00">2019-07-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-24 20:28:19" itemprop="dateModified" datetime="2019-07-24T20:28:19+08:00">2019-07-24</time>
+              
             
           </span>
 
@@ -363,13 +526,13 @@
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">1.8k</span>
               
@@ -382,6 +545,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -413,7 +578,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t5-CowDigitGame/" rel="contents">
+              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t5-CowDigitGame/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -480,7 +645,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -509,7 +674,36 @@
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-21 19:23:59" itemprop="dateCreated datePublished" datetime="2019-07-21T19:23:59+08:00">2019-07-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-24 20:28:30" itemprop="dateModified" datetime="2019-07-24T20:28:30+08:00">2019-07-24</time>
+              
             
           </span>
 
@@ -527,13 +721,13 @@
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">2.4k</span>
               
@@ -546,6 +740,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -578,7 +774,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t1-USACO09OCT-津贴Allowance/" rel="contents">
+              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t1-USACO09OCT-津贴Allowance/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -645,7 +841,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -674,7 +870,36 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-21 18:59:46" itemprop="dateCreated datePublished" datetime="2019-07-21T18:59:46+08:00">2019-07-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-24 20:28:25" itemprop="dateModified" datetime="2019-07-24T20:28:25+08:00">2019-07-24</time>
+              
             
           </span>
 
@@ -692,13 +917,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">2.4k</span>
               
@@ -711,6 +936,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -741,7 +968,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t2-CowsReorder/" rel="contents">
+              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t2-CowsReorder/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -808,7 +1035,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -837,7 +1064,36 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-21 18:40:39" itemprop="dateCreated datePublished" datetime="2019-07-21T18:40:39+08:00">2019-07-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-24 20:28:21" itemprop="dateModified" datetime="2019-07-24T20:28:21+08:00">2019-07-24</time>
+              
             
           </span>
 
@@ -855,13 +1111,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">1.9k</span>
               
@@ -874,6 +1130,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -905,7 +1163,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t4-USACO11NOV-瓦交换TileExchanging/" rel="contents">
+              <a class="btn" href="/2019/07/21/lzoi夏令营-day8t4-USACO11NOV-瓦交换TileExchanging/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -972,7 +1230,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1001,7 +1259,24 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-20 19:36:14 / 修改时间：20:40:04" itemprop="dateCreated datePublished" datetime="2019-07-20T19:36:14+08:00">2019-07-20</time>
+            
+
+            
+              
+
+              
             
           </span>
 
@@ -1019,13 +1294,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">3.4k</span>
               
@@ -1038,6 +1313,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">3 分钟</span>
               
@@ -1070,7 +1347,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/20/关于c++编译优化开关/" rel="contents">
+              <a class="btn" href="/2019/07/20/关于c++编译优化开关/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1137,7 +1414,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1166,7 +1443,24 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-17 20:21:47 / 修改时间：20:47:45" itemprop="dateCreated datePublished" datetime="2019-07-17T20:21:47+08:00">2019-07-17</time>
+            
+
+            
+              
+
+              
             
           </span>
 
@@ -1184,13 +1478,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">1.9k</span>
               
@@ -1203,6 +1497,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -1235,7 +1531,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/17/lzoi夏令营-day4t2-USACO17JAN-SecretCowCode秘密奶牛码/" rel="contents">
+              <a class="btn" href="/2019/07/17/lzoi夏令营-day4t2-USACO17JAN-SecretCowCode秘密奶牛码/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1302,7 +1598,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1331,7 +1627,24 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-17 20:03:02 / 修改时间：20:29:36" itemprop="dateCreated datePublished" datetime="2019-07-17T20:03:02+08:00">2019-07-17</time>
+            
+
+            
+              
+
+              
             
           </span>
 
@@ -1349,13 +1662,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">1.7k</span>
               
@@ -1368,6 +1681,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -1399,7 +1714,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/17/lzoi夏令营-day4t1-USACO08OPEN-牛的车CowCars/" rel="contents">
+              <a class="btn" href="/2019/07/17/lzoi夏令营-day4t1-USACO08OPEN-牛的车CowCars/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1466,7 +1781,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1495,7 +1810,36 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-07-04 13:47:27" itemprop="dateCreated datePublished" datetime="2019-07-04T13:47:27+08:00">2019-07-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-17 20:26:27" itemprop="dateModified" datetime="2019-07-17T20:26:27+08:00">2019-07-17</time>
+              
             
           </span>
 
@@ -1513,13 +1857,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">2.3k</span>
               
@@ -1532,6 +1876,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">2 分钟</span>
               
@@ -1566,7 +1912,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/04/NOIP2003-传染病控制/" rel="contents">
+              <a class="btn" href="/2019/07/04/NOIP2003-传染病控制/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1635,7 +1981,7 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LZCR">
       <meta itemprop="description" content="MyBlog">
-      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1664,7 +2010,36 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
             
 
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
+              
+                
+              
+
+              <time title="创建时间：2019-06-05 18:51:09" itemprop="dateCreated datePublished" datetime="2019-06-05T18:51:09+08:00">2019-06-05</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-17 20:27:01" itemprop="dateModified" datetime="2019-07-17T20:27:01+08:00">2019-07-17</time>
+              
             
           </span>
 
@@ -1682,13 +2057,13 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
           
             <div class="post-symbolscount">
               
-                <span class="post-meta-divider">|</span>
-              
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
                 
                 <span title="本文字数">185</span>
               
@@ -1701,6 +2076,8 @@ Farmer John有一些硬币，一共有$N$ $(1 &lt;= N &lt;= 20)$种不同的面�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">1 分钟</span>
               
@@ -1761,7 +2138,7 @@ th
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/06/05/songs/" rel="contents">
+              <a class="btn" href="/2019/06/05/songs/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1843,12 +2220,86 @@ th
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/main.png" alt="LZCR">
-            
               <p class="site-author-name" itemprop="name">LZCR</p>
               <p class="site-description motion-element" itemprop="description">MyBlog</p>
           </div>
 
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
           
 
           
@@ -1862,7 +2313,9 @@ th
                     
                   
                   
-                  <a href="https://github.com/presucc" title="GitHub &rarr; https://github.com/presucc" rel="noopener" target="_blank">GitHub</a>
+                    
+                  
+                  <a href="https://github.com/presucc" title="GitHub &rarr; https://github.com/presucc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1871,7 +2324,9 @@ th
                     
                   
                   
-                  <a href="mailto:yrcminecraft@qq.com" title="E-Mail &rarr; mailto:yrcminecraft@qq.com" rel="noopener" target="_blank">E-Mail</a>
+                    
+                  
+                  <a href="mailto:yrcminecraft@qq.com" title="E-Mail &rarr; mailto:yrcminecraft@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1880,7 +2335,9 @@ th
                     
                   
                   
-                  <a href="https://www.luogu.org/space/show?uid=114479" title="luogu &rarr; https://www.luogu.org/space/show?uid=114479" rel="noopener" target="_blank">luogu</a>
+                    
+                  
+                  <a href="https://www.luogu.org/space/show?uid=114479" title="luogu &rarr; https://www.luogu.org/space/show?uid=114479" rel="noopener" target="_blank"><i class="fa fa-fw fa-code"></i>luogu</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -1889,7 +2346,9 @@ th
                     
                   
                   
-                  <a href="https://www.bilibili.com/" title="bilibili &rarr; https://www.bilibili.com/" rel="noopener" target="_blank">bilibili</a>
+                    
+                  
+                  <a href="https://www.bilibili.com/" title="bilibili &rarr; https://www.bilibili.com/" rel="noopener" target="_blank"><i class="fa fa-fw fa-tv"></i>bilibili</a>
                 </span>
               
             </div>
@@ -1899,23 +2358,19 @@ th
 
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                友情链接(部分需翻墙)
+                Links
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://winjayran.github.io/" title="https://winjayran.github.io/" rel="noopener" target="_blank">lyj</a>
+                    <a href="https://winjayran.github.io/" title="https://winjayran.github.io/" rel="noopener" target="_blank">AK IOI的神仙lyj</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://www.luogu.org/space/show?uid=116116" title="https://www.luogu.org/space/show?uid=116116" rel="noopener" target="_blank">ldq</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://skydogmiao.github.io/" title="https://skydogmiao.github.io/" rel="noopener" target="_blank">hm</a>
+                    <a href="https://www.luogu.org/space/show?uid=116116" title="https://www.luogu.org/space/show?uid=116116" rel="noopener" target="_blank">已经超越tourist的神仙ldq</a>
                   </li>
                 
               </ul>
@@ -1946,7 +2401,7 @@ th
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">LZCR</span>
 
@@ -1970,14 +2425,38 @@ th
 </div>
 
 
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.7.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1997,6 +2476,12 @@ th
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
     
@@ -2038,56 +2523,44 @@ th
 
 
   
-  <script src="/jquery/index.js?v=2.1.3"></script>
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script src="/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script src="/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="//src/utils.js?v=6.7.0"></script>
-
-  <script src="//src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-
-  <script src="//src/affix.js?v=6.7.0"></script>
-
-  <script src="//src/schemes/pisces.js?v=6.7.0"></script>
-
-
-
-  
-
-  
-
-
-  <script src="//src/bootstrap.js?v=6.7.0"></script>
-
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+  
 
   
 
 
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
 
 
 
-
-
-
+  
 
 
 
@@ -2097,7 +2570,337 @@ th
 
 
 
+
+
+
+
+
+
   
+
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === '') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
 
   
 
@@ -2108,6 +2911,106 @@ th
   
 
   
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style>
+
+    
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+        flOptions.iconStyle = "box";
+      
+        flOptions.boxForm = "horizontal";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
 
   
 
@@ -2118,8 +3021,94 @@ th
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script>
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
   
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('复制成功');
+          else $(this).text('复制失败');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function () {
+          $b.text('复制');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
 
   
 
