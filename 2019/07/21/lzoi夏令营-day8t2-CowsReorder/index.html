@@ -100,19 +100,19 @@
 
 
 
-  <meta name="description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的：$$A=5  1  4  2  3$$ 重新调整">
+  <meta name="description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的： A=5  1  4  2  3重新调整后，奶牛">
 <meta name="keywords" content="题解,dfs,并查集,tarjan">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lzoi夏令营_day8t2_CowsReorder">
 <meta property="og:url" content="http://yoursite.com/2019/07/21/lzoi夏令营-day8t2-CowsReorder/index.html">
 <meta property="og:site_name" content="LZCR的博客">
-<meta property="og:description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的：$$A=5  1  4  2  3$$ 重新调整">
+<meta property="og:description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的： A=5  1  4  2  3重新调整后，奶牛">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/07/21/lzoi夏令营-day8t2-CowsReorder/1.png">
 <meta property="og:updated_time" content="2019-07-24T12:28:25.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lzoi夏令营_day8t2_CowsReorder">
-<meta name="twitter:description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的：$$A=5  1  4  2  3$$ 重新调整">
+<meta name="twitter:description" content="【题目描述】农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。 例如：开始的时候奶牛的顺序是这样的： A=5  1  4  2  3重新调整后，奶牛">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/21/lzoi夏令营-day8t2-CowsReorder/1.png">
 
 
@@ -541,7 +541,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.4k</span>
+                <span title="本文字数">2.3k</span>
               
 
               
@@ -576,9 +576,9 @@
 
       
         <script src="\assets\js\APlayer.min.js"> </script><h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>农夫约翰的 $N$ 头奶牛是从1到N编号的，每头奶牛的编号都是不同的，他们站在同一条直线上。他们初始的排列顺序我们用一个A数组表示，$A[i]$表示在第$i$个位置上的奶牛编号。约翰想要将这些奶牛重新排列，重新排列后的顺序我们用$B$数组来表示，$B[i]$表示重新排列后第$i$个位置上的奶牛编号。</p>
-<p>例如：开始的时候奶牛的顺序是这样的：<br>$$A=5  1  4  2  3$$</p>
-<p>重新调整后，奶牛的顺序是这样的：<br>$$B=2  5  3  1  4$$</p>
-<p>为了将奶牛的排列从$A$数组变到$B$数组，奶牛们将会进行循环的变换位置的操作。例如，在上面的例子中，我们开始将编号为$5$的奶牛从$1$的位置放到$2$的位置，然后将$2$位置上编号为$1$的奶牛放到$4$的位置上，然后将$4$的位置上编号为$2$的奶牛放到$1$的位置上，这样一个循环就结束了。然后继续对于其他没有变换好位置的奶牛进行上述相同的操作。</p>
+<p>例如：开始的时候奶牛的顺序是这样的：</p>
+<script type="math/tex; mode=display">A=5  1  4  2  3</script><p>重新调整后，奶牛的顺序是这样的：    </p>
+<script type="math/tex; mode=display">B=2  5  3  1  4</script><p>为了将奶牛的排列从$A$数组变到$B$数组，奶牛们将会进行循环的变换位置的操作。例如，在上面的例子中，我们开始将编号为$5$的奶牛从$1$的位置放到$2$的位置，然后将$2$位置上编号为$1$的奶牛放到$4$的位置上，然后将$4$的位置上编号为$2$的奶牛放到$1$的位置上，这样一个循环就结束了。然后继续对于其他没有变换好位置的奶牛进行上述相同的操作。</p>
 <p>请计算出奶牛位置变换的过程中，一共会出现几个循环，最长的循环长度是多少。</p>
 <h3 id="【输入格式】"><a href="#【输入格式】" class="headerlink" title="【输入格式】"></a>【输入格式】</h3><p>第$1$行一个正整数$N$，表示奶牛的数量。</p>
 <p>第$2$行到第$N+1$行，每行一个正整数，第$i+1$行的数表示$A[i]$。</p>
