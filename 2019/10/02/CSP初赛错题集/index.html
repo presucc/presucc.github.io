@@ -111,7 +111,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/10/02/CSP初赛错题集/noip2012pjt10_1.png">
 <meta property="og:image" content="http://yoursite.com/2019/10/02/CSP初赛错题集/noip2012pjt10_2.png">
 <meta property="og:image" content="http://yoursite.com/2019/10/02/CSP初赛错题集/noip2012pjt22.png">
-<meta property="og:updated_time" content="2019-10-06T09:45:17.793Z">
+<meta property="og:updated_time" content="2019-10-08T12:32:51.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSP初赛">
 <meta name="twitter:description" content="以下为（零散的）知识点： 1. 常见文件扩展名：文档文件：txt（所有文字处理软件或编辑器都可打开）doc（word及wps等软件可打开）hlp（adobe acrobat reader可打开）wps（wps软件可打开）rtf（word及wps等软件可打开）html（各种浏览器可打开、用写字板打开可查看其源代码）pdf（adobe acrobat reader 和各种电子阅读软件可打开） 压缩文">
@@ -514,7 +514,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-10-06 17:45:17" itemprop="dateModified" datetime="2019-10-06T17:45:17+08:00">2019-10-06</time>
+                <time title="修改时间：2019-10-08 20:32:51" itemprop="dateModified" datetime="2019-10-08T20:32:51+08:00">2019-10-08</time>
               
             
           </span>
@@ -548,7 +548,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.3k</span>
+                <span title="本文字数">3.3k</span>
               
 
               
@@ -562,7 +562,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -592,26 +592,26 @@
 <p>语言文件：<br>c、cpp、json、asm、for、lib、lst、msg、obj、pas、wki、bas</p>
 <p>视频文件：<br>avi、wmv、mpeg、3gp、rmvb</p>
 <p>以上为<del>（零散的）</del>知识点：</p>
-<hr>
+<h3 id="2-NOI系列赛事将于2022年取消Pascal；"><a href="#2-NOI系列赛事将于2022年取消Pascal；" class="headerlink" title="2. NOI系列赛事将于2022年取消Pascal；"></a>2. NOI系列赛事将于2022年取消Pascal；</h3><hr>
 <p>以下为错题：</p>
-<h3 id="1-NOIP2012-PJ-T25"><a href="#1-NOIP2012-PJ-T25" class="headerlink" title="1.  $ NOIP2012 PJ T25$"></a>1.  $ NOIP2012 PJ T25$</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,i,j,a[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> u,v;</span><br><span class="line">	<span class="keyword">if</span>(x==n) <span class="keyword">return</span> a[x][y];</span><br><span class="line">	u=solve(x+<span class="number">1</span>,y);</span><br><span class="line">	v=solve(x+<span class="number">1</span>,y+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">if</span>(u&gt;v) <span class="keyword">return</span> a[x][y]+u;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a[x][y]+v;	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=i;j++) <span class="built_in">cin</span>&gt;&gt;a[i][j];</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;solve(<span class="number">1</span>,<span class="number">1</span>)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-NOIP2012-PJ-T25"><a href="#1-NOIP2012-PJ-T25" class="headerlink" title="1.  NOIP2012 PJ T25"></a>1.  NOIP2012 PJ T25</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,i,j,a[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> u,v;</span><br><span class="line">	<span class="keyword">if</span>(x==n) <span class="keyword">return</span> a[x][y];</span><br><span class="line">	u=solve(x+<span class="number">1</span>,y);</span><br><span class="line">	v=solve(x+<span class="number">1</span>,y+<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">if</span>(u&gt;v) <span class="keyword">return</span> a[x][y]+u;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> a[x][y]+v;	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=i;j++) <span class="built_in">cin</span>&gt;&gt;a[i][j];</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;solve(<span class="number">1</span>,<span class="number">1</span>)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输入：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span>   </span><br><span class="line"><span class="number">2</span>   </span><br><span class="line"><span class="number">-1</span> <span class="number">4</span>   </span><br><span class="line"><span class="number">2</span> <span class="number">-1</span> <span class="number">-2</span>   </span><br><span class="line"><span class="number">-1</span> <span class="number">6</span> <span class="number">4</span> <span class="number">0</span>   </span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">-1</span> <span class="number">5</span> <span class="number">8</span></span><br></pre></td></tr></table></figure></p>
 <p>正确输出：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">14</span></span><br></pre></td></tr></table></figure></p>
 <p>[解析] 根据经验（滑稽）可得，本题为数字三角形问题。</p>
 <p>$2 -&gt; 4 -&gt; -1 -&gt; 4 -&gt; 5$</p>
 <p>$2 + 4 + (-1) + 4 + 5 = 14$</p>
-<h3 id="2-NOIP2012-PJ-T10"><a href="#2-NOIP2012-PJ-T10" class="headerlink" title="2. $ NOIP2012 PJ T10$"></a>2. $ NOIP2012 PJ T10$</h3><p><img src="/2019/10/02/CSP初赛错题集/noip2012pjt10_1.png" alt><br><img src="/2019/10/02/CSP初赛错题集/noip2012pjt10_2.png" alt></p>
+<h3 id="2-NOIP2012-PJ-T10"><a href="#2-NOIP2012-PJ-T10" class="headerlink" title="2. NOIP2012 PJ T10"></a>2. NOIP2012 PJ T10</h3><p><img src="/2019/10/02/CSP初赛错题集/noip2012pjt10_1.png" alt><br><img src="/2019/10/02/CSP初赛错题集/noip2012pjt10_2.png" alt></p>
 <p>[答案] A</p>
 <p>[解析]OSI模型有7层结构，每层都可以有几个子层。OSI的7层从上到下分别是<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">7.</span> 应用层</span><br><span class="line"><span class="number">6.</span> 表示层</span><br><span class="line"><span class="number">5.</span> 会话层</span><br><span class="line"><span class="number">4.</span> 传输层</span><br><span class="line"><span class="number">3.</span> 网络层</span><br><span class="line"><span class="number">2.</span> 数据链路层</span><br><span class="line"><span class="number">1.</span> 物理层</span><br></pre></td></tr></table></figure></p>
 <p>网络是由上传至下，到物理层再与其他沟通，然后传到上面，所以选A</p>
-<h3 id="3-NOIP2012-PJ-T21"><a href="#3-NOIP2012-PJ-T21" class="headerlink" title="3. $ NOIP2012 PJ T21$"></a>3. $ NOIP2012 PJ T21$</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果平面上任取n个整点（横纵坐标都是整数），其中一定存在两个点，它们连线的中点也是整点，那么n至少是__________。</span><br></pre></td></tr></table></figure>
+<h3 id="3-NOIP2012-PJ-T21"><a href="#3-NOIP2012-PJ-T21" class="headerlink" title="3. NOIP2012 PJ T21"></a>3. NOIP2012 PJ T21</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果平面上任取n个整点（横纵坐标都是整数），其中一定存在两个点，它们连线的中点也是整点，那么n至少是__________。</span><br></pre></td></tr></table></figure>
 <p>[答案] $5$</p>
 <p>[解析]<br>【引理】任意三个点如果共线,即处在水平,竖直,或者对角线上,则其中定存在两个点满足连线中点是整点.</p>
 <p>如果$n=2$,取两个连续的整点,那么连线中点不是整点.</p>
 <p>如果$n=3$,取水平两个连续的点,垂直也两个连续的点,组成三角形.那么连线中点不是整点.</p>
 <p>如果$n=4$,取四个整点组成一个正方形,则连线中点不是整点.</p>
 <p>而取$5$个点的话,必然有两个点的连线中点是整点.</p>
-<h3 id="4-NOIP2012-PJ-T22"><a href="#4-NOIP2012-PJ-T22" class="headerlink" title="4. $ NOIP2012 PJ T22$"></a>4. $ NOIP2012 PJ T22$</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在NOI期间，主办单位为了欢迎来自各国的选手，举行了盛大的晚宴。在第十八桌，有<span class="number">5</span>名大陆选手和<span class="number">5</span>名港澳选手共同进膳。为了增进交流，他们决定相隔就坐，即每个大陆选手左右旁都是港澳选手，每个港澳选手左右旁都是大陆选手。那么，这一桌一共有_______种不同的就坐方案。</span><br><span class="line"></span><br><span class="line">注：如果在两个方案中，每个选手左右相邻的选手相同，则视为同一种方案。</span><br></pre></td></tr></table></figure>
+<h3 id="4-NOIP2012-PJ-T22"><a href="#4-NOIP2012-PJ-T22" class="headerlink" title="4. NOIP2012 PJ T22"></a>4. NOIP2012 PJ T22</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在NOI期间，主办单位为了欢迎来自各国的选手，举行了盛大的晚宴。在第十八桌，有<span class="number">5</span>名大陆选手和<span class="number">5</span>名港澳选手共同进膳。为了增进交流，他们决定相隔就坐，即每个大陆选手左右旁都是港澳选手，每个港澳选手左右旁都是大陆选手。那么，这一桌一共有_______种不同的就坐方案。</span><br><span class="line"></span><br><span class="line">注：如果在两个方案中，每个选手左右相邻的选手相同，则视为同一种方案。</span><br></pre></td></tr></table></figure>
 <p>[答案] $2880$</p>
 <p>[解析]<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：https:<span class="comment">//www.nowcoder.com/questionTerminal/903cefb79dd24010b6a351858af558f3?orderByHotValue=1&amp;mutiTagIds=1255&amp;page=1&amp;onlyReference=false</span></span><br><span class="line">来源：牛客网</span><br></pre></td></tr></table></figure></p>
 <p>相当于一个圆桌，有$10$个位子，共两大类，大陆和港澳；</p>
@@ -622,6 +622,16 @@
 <p>然后选不同类有$1$种，接着另一类也是$1$种可能；<br>故共有$10 \times 5 \times 4 \times 4 \times 3 \times 3 \times 2 \times 2 \times 1 \times 1 = 28800$。</p>
 <p>这其中有重复的坐法，当每个人依次挪动到挨着的下个位子，则有$10$种重复的可能，故$28800 / 10 = 2880$.</p>
 <p>还不理解？看图：<br><img src="/2019/10/02/CSP初赛错题集/noip2012pjt22.png" alt></p>
+<h3 id="5-NOIP2014-TG-T7"><a href="#5-NOIP2014-TG-T7" class="headerlink" title="5. NOIP2014 TG T7"></a>5. NOIP2014 TG T7</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">对长度位n的有序单链表，若检索每个元素的概率相等，则顺序检索到表中任一元素的平均检索长度为( ).</span><br><span class="line">A. n/<span class="number">2</span></span><br><span class="line">B. (n+<span class="number">1</span>)/<span class="number">2</span></span><br><span class="line">C. (n<span class="number">-1</span>)/<span class="number">2</span></span><br><span class="line">D. n/<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>[答案] $B$</p>
+<p>[解析]<br>检索到$n$号元素需要$n$步, 共需$1 + 2 + … + n = n(n + 1) / 2$</p>
+<p>因为概率相等, 除以$n = (n + 1) / 2$</p>
+<h3 id="6-NOIP2014-TG-T12"><a href="#6-NOIP2014-TG-T12" class="headerlink" title="6. NOIP2014 TG T12"></a>6. NOIP2014 TG T12</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">同时查找<span class="number">2</span>n 个数中的最大值和最小值，最少比较次数为( ).</span><br><span class="line">A. <span class="number">3</span>(n<span class="number">-2</span>)/<span class="number">2</span></span><br><span class="line">B. <span class="number">4</span>n<span class="number">-2</span></span><br><span class="line">C. <span class="number">3</span>n<span class="number">-2</span></span><br><span class="line">D. <span class="number">2</span>n<span class="number">-2</span></span><br></pre></td></tr></table></figure>
+<p>[答案] $C$</p>
+<p>[解析]<br>前两个数比较,大的为最大值, 小的为最小值, 用掉一次比较<br>后面$2 \times (n - 1)$个数, 每两个比较, 大的同最大值比较, 小的同最小值比较, $3 \times (n - 1)$次比较,<br>共$3 \times (n - 1) + 1 = 3n - 2$次比较</p>
+<h3 id="7-NOIP2014-TG-T15"><a href="#7-NOIP2014-TG-T15" class="headerlink" title="7. NOIP2014 TG T15"></a>7. NOIP2014 TG T15</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">以下程序实现了找第二小元素的算法。输入时n个不等的数构成的数组S，输出S中第二小的数SecondMin。在最坏的情况下，该算法需要做( )次比较。</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> ( S[<span class="number">1</span>] &lt; S[<span class="number">2</span>] )</span><br><span class="line">&#123;</span><br><span class="line">	FirstMin = S[<span class="number">1</span>];</span><br><span class="line">	SecondMin = S[<span class="number">2</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">	FirstMin = S[<span class="number">2</span>];</span><br><span class="line">	SecondMin = S[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> ( i = <span class="number">3</span>; i &lt;= n; i++ )</span><br><span class="line">	<span class="keyword">if</span> ( S[i] &lt; SecondMin )</span><br><span class="line">		<span class="keyword">if</span> ( S[i] &lt; FirstMin )</span><br><span class="line">		&#123;</span><br><span class="line">			SecondMin = FirstMin;</span><br><span class="line">			FirstMin = S[i];</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			SecondMin = S[i];</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">A. <span class="number">2</span>n</span><br><span class="line">B. n<span class="number">-1</span></span><br><span class="line">C. <span class="number">2</span>n<span class="number">-3</span></span><br><span class="line">D. <span class="number">2</span>n<span class="number">-2</span></span><br></pre></td></tr></table></figure>
+<p>[答案] $C$</p>
+<p>[解析]<br>最坏的情况为从小到大排列前两个比较一次，后$n - 2$个每个比较两次，共$2 \times (n - 2) + 1 = 2 \times n - 3$次</p>
 <p>以上为错题；</p>
 
       
@@ -930,7 +940,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-常见文件扩展名："><span class="nav-number">1.</span> <span class="nav-text">1. 常见文件扩展名：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-NOIP2012-PJ-T25"><span class="nav-number">2.</span> <span class="nav-text">1.  $ NOIP2012 PJ T25$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-NOIP2012-PJ-T10"><span class="nav-number">3.</span> <span class="nav-text">2. $ NOIP2012 PJ T10$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-NOIP2012-PJ-T21"><span class="nav-number">4.</span> <span class="nav-text">3. $ NOIP2012 PJ T21$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-NOIP2012-PJ-T22"><span class="nav-number">5.</span> <span class="nav-text">4. $ NOIP2012 PJ T22$</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-常见文件扩展名："><span class="nav-number">1.</span> <span class="nav-text">1. 常见文件扩展名：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-NOI系列赛事将于2022年取消Pascal；"><span class="nav-number">2.</span> <span class="nav-text">2. NOI系列赛事将于2022年取消Pascal；</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-NOIP2012-PJ-T25"><span class="nav-number">3.</span> <span class="nav-text">1.  NOIP2012 PJ T25</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-NOIP2012-PJ-T10"><span class="nav-number">4.</span> <span class="nav-text">2. NOIP2012 PJ T10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-NOIP2012-PJ-T21"><span class="nav-number">5.</span> <span class="nav-text">3. NOIP2012 PJ T21</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-NOIP2012-PJ-T22"><span class="nav-number">6.</span> <span class="nav-text">4. NOIP2012 PJ T22</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-NOIP2014-TG-T7"><span class="nav-number">7.</span> <span class="nav-text">5. NOIP2014 TG T7</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-NOIP2014-TG-T12"><span class="nav-number">8.</span> <span class="nav-text">6. NOIP2014 TG T12</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-NOIP2014-TG-T15"><span class="nav-number">9.</span> <span class="nav-text">7. NOIP2014 TG T15</span></a></li></ol></div>
             
 
           </div>
@@ -962,7 +972,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">95k</span>
+    <span title="站点总字数">96k</span>
   
 
   
@@ -971,7 +981,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:26</span>
+    <span title="站点阅读时长">1:27</span>
   
 </div>
 
