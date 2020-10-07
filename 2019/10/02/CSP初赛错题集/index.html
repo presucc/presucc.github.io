@@ -605,10 +605,10 @@
 <ul>
 <li>我们目前有一个规模为$n$的问题</li>
 <li>通过分治，我们将问题分成$a$个规模为$\frac {n} {b}$，每次递归将带来$f(n)$的额外计算。</li>
-<li>于是得到关系式：<script type="math/tex; mode=display">T(n) = aT(\frac {n} {b}) + f(n)</script></li>
+<li>于是得到关系式：<br>$$T(n) = aT(\frac {n} {b}) + f(n)$$</li>
 </ul>
-<p>此外，我们还要定义一个$C_{crit}$，它是这样计算的：</p>
-<script type="math/tex; mode=display">C_{crit} = log_b(a)</script><p>那么，master定理为：</p>
+<p>此外，我们还要定义一个$C_{crit}$，它是这样计算的：<br>$$C_{crit} = log_b(a)$$</p>
+<p>那么，master定理为：</p>
 <ul>
 <li>当$f(n) = O(n ^ {c})$时，且$c &lt; c_{crit}$时有： $T(n) = O(n^{crit})$</li>
 <li>当$f(n) = O(n ^ {c})$时，且$c &gt; c_{crit}$时有： $T(n) = O(f(n))$</li>
@@ -809,7 +809,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -886,7 +886,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">31</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1024,7 +1030,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">63k</span>
+    <span title="站点总字数">66k</span>
   
 
   
@@ -1033,7 +1039,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">57 分钟</span>
+    <span title="站点阅读时长">1:01</span>
   
 </div>
 

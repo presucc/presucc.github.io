@@ -531,7 +531,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.7k</span>
+                <span title="本文字数">3.8k</span>
               
 
               
@@ -571,29 +571,33 @@
 <p>用$f[i]$表示输出到i的时候最少花费，$s[i]$表示$\sum_{p = 1}^{i - 1}$</p>
 <p>(注意这里$s[i]$表示的是$1$到$i - 1$而不是$i$，但实际上大同小异)</p>
 <p>很容易有dp式子：</p>
-<script type="math/tex; mode=display">f[i] = min (f[j] + (s[i + 1] - s[j]) ^ {2} + M) (j < i)</script><p>复杂度显然是$O(n ^ {2})$的，显然过不去。考虑使用单调队列优化。</p>
-<p>我们把转移方程中有$s[i + 1]$和$s[j]$的二次项拆开：</p>
-<script type="math/tex; mode=display">(s[i + 1] - s[j]) ^ {2} = s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j]</script><p>发现这个式子里面不但有只与$i$, $j$有关的量，还有与$i$和$j$变量的乘积有关的量。($2 \times s[i + 1] \times s[j]$)</p>
+<p>$$ f[i] = min (f[j] + (s[i + 1] - s[j]) ^ {2} + M) (j &lt; i)$$</p>
+<p>复杂度显然是$O(n ^ {2})$的，显然过不去。考虑使用单调队列优化。</p>
+<p>我们把转移方程中有$s[i + 1]$和$s[j]$的二次项拆开：<br>$$(s[i + 1] - s[j]) ^ {2} = s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j]$$</p>
+<p>发现这个式子里面不但有只与$i$, $j$有关的量，还有与$i$和$j$变量的乘积有关的量。($2 \times s[i + 1] \times s[j]$)</p>
 <p>回顾我们的单调队列适用的一般式：$f[i] = min(f[j] + a[i])(j &lt; i)$(其中$a[i]$是与$j$无关的数)，这道题的dp式子不符合这种形式，所以不能用单调队列。我们考虑另一种黑科技——斜率优化。</p>
 <h3 id="正解：斜率优化"><a href="#正解：斜率优化" class="headerlink" title="正解：斜率优化"></a>正解：斜率优化</h3><p>假设我们在转移过程中，找到两个数$j$, $k$($j$ &gt; $k$)，使得从$j$转移比从$k$转移更优，那么$j$, $k$应该满足这个不等式：</p>
-<script type="math/tex; mode=display">f[j] + (s[i + 1] - s[j]) ^ {2} + M < f[k] + (s[i + 1] - s[k]) ^ {2} + M</script><p>拆开二次项</p>
-<script type="math/tex; mode=display">f[j] + s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] + M < f[k] + s[i + 1] ^ {2} + s[k] ^ {2} + 2 \times s[i + 1] \times s[k] + M</script><p>(别慌啊这个式子虽然长但很好理解啊)</p>
-<p>把常数项$M$消掉</p>
-<script type="math/tex; mode=display">f[j] + s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] < f[k] + s[i + 1] ^ {2} + s[k] ^ {2} + 2 \times s[i + 1] \times s[k]</script><p>把两边都有的$s[i + 1] ^ {2}$消掉</p>
-<script type="math/tex; mode=display">f[j] + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] < f[k] + s[k] ^ {2} + 2 \times s[i + 1] \times s[k]</script><p>把两个 与两个变量的乘积有关的单项式 移到右边，剩下的移到左边</p>
-<script type="math/tex; mode=display">f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2} < 2 \times s[i + 1] \times s[k] - 2 \times s[i + 1] \times s[j]</script><p>合并同类项得</p>
-<script type="math/tex; mode=display">f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2} < 2 \times s[i + 1] (s[j] - s[k])</script><p>将右边的 $2 \times (s[j] - s[k])$ 移到左边</p>
-<script type="math/tex; mode=display">\frac {f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2}} {2(s[j] - s[k])} < s[i + 1]</script><p>令$g[x] = f[x] + s[x] ^ {2}$，原式变为</p>
-<script type="math/tex; mode=display">\frac {g[j] - g[k]} {2(s[j] - s[k])} < s[i + 1]</script><p>根据式子得出，如果$\frac {g[j] - g[k]} {2(s[j] - s[k])} &lt; s[i + 1]$ ，则$j$对更新$dp[i]$比$k$更新$dp[i]$优。</p>
+<p>$$f[j] + (s[i + 1] - s[j]) ^ {2} + M &lt; f[k] + (s[i + 1] - s[k]) ^ {2} + M$$</p>
+<p>拆开二次项</p>
+<p>$$f[j] + s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] + M &lt; f[k] + s[i + 1] ^ {2} + s[k] ^ {2} + 2 \times s[i + 1] \times s[k] + M$$</p>
+<p>(别慌啊这个式子虽然长但很好理解啊)</p>
+<p>把常数项$M$消掉<br>$$f[j] + s[i + 1] ^ {2} + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] &lt; f[k] + s[i + 1] ^ {2} + s[k] ^ {2} + 2 \times s[i + 1] \times s[k] $$</p>
+<p>把两边都有的$s[i + 1] ^ {2}$消掉<br>$$f[j] + s[j] ^ {2} + 2 \times s[i + 1] \times s[j] &lt; f[k] + s[k] ^ {2} + 2 \times s[i + 1] \times s[k] $$</p>
+<p>把两个 与两个变量的乘积有关的单项式 移到右边，剩下的移到左边<br>$$f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2} &lt; 2 \times s[i + 1] \times s[k] - 2 \times s[i + 1] \times s[j]$$</p>
+<p>合并同类项得<br>$$f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2} &lt; 2 \times s[i + 1] (s[j] - s[k])$$</p>
+<p>将右边的 $2 \times (s[j] - s[k])$ 移到左边</p>
+<p>$$\frac {f[j] - f[k] + s[j] ^ {2} - s[k] ^ {2}} {2(s[j] - s[k])} &lt; s[i + 1]$$</p>
+<p>令$g[x] = f[x] + s[x] ^ {2}$，原式变为</p>
+<p>$$\frac {g[j] - g[k]} {2(s[j] - s[k])} &lt; s[i + 1]$$</p>
+<p>根据式子得出，如果$\frac {g[j] - g[k]} {2(s[j] - s[k])} &lt; s[i + 1]$ ，则$j$对更新$dp[i]$比$k$更新$dp[i]$优。</p>
 <p>当我们要求解$f[t]$时，如果可用的集合里存在这样三个点，位置关系如图所示：<br><img src="/2020/01/20/hdu3507-Print-Article-斜率优化dp入门/1.png" alt></p>
-<p>那么显然</p>
-<script type="math/tex; mode=display">\frac{f[j] - f[k]}{2(s[j] - s[k])} > \frac{f[i] - f[j]}{2(s[i] - s[j])}</script><p>这时候它们和$s[t + 1]$的关系有以下三种：</p>
+<p>那么显然<br>$$\frac{f[j] - f[k]}{2(s[j] - s[k])} &gt; \frac{f[i] - f[j]}{2(s[i] - s[j])}$$<br>这时候它们和$s[t + 1]$的关系有以下三种：</p>
 <ul>
-<li><script type="math/tex; mode=display">\frac{f[j] - f[k]}{2(s[j] - s[k])} > \frac{f[i] - f[j]}{2(s[i] - s[j])} > s[t + 1]</script><p>那么$j$比$i$优，$k$比$j$优</p>
+<li><p>$$\frac{f[j] - f[k]}{2(s[j] - s[k])} &gt; \frac{f[i] - f[j]}{2(s[i] - s[j])} &gt; s[t + 1]$$<br>那么$j$比$i$优，$k$比$j$优</p>
 </li>
-<li><script type="math/tex; mode=display">\frac{f[j] - f[k]}{2(s[j] - s[k])} > s[t + 1] > \frac{f[i] - f[j]}{2(s[i] - s[j])}</script><p>那么$i$比$j$优，$k$比$j$优</p>
+<li><p>$$\frac{f[j] - f[k]}{2(s[j] - s[k])} &gt; s[t + 1] &gt; \frac{f[i] - f[j]}{2(s[i] - s[j])}$$<br>那么$i$比$j$优，$k$比$j$优</p>
 </li>
-<li><script type="math/tex; mode=display">s[t + 1] > \frac{f[j] - f[k]}{2(s[j] - s[k])} > \frac{f[i] - f[j]}{2(s[i] - s[j])}</script><p>那么$i$比$j$优，$j$比$k$优</p>
+<li><p>$$s[t + 1] &gt; \frac{f[j] - f[k]}{2(s[j] - s[k])} &gt; \frac{f[i] - f[j]}{2(s[i] - s[j])}$$<br>那么$i$比$j$优，$j$比$k$优</p>
 </li>
 </ul>
 <p>通过对上面三种情况的讨论可以得出，如果$\frac {g[j] - g[k]} {2(s[j] - s[k])} &lt; s[i + 1]$，那么j不可能成为最优决策，因为在上面三种情况中，都有其它决策比它值要小。</p>
@@ -666,6 +670,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/10/07/luogu1438-无聊的数列/" rel="prev" title="luogu1438_无聊的数列">
+                luogu1438_无聊的数列 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -740,7 +748,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -817,7 +825,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">31</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -955,7 +969,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">63k</span>
+    <span title="站点总字数">66k</span>
   
 
   
@@ -964,7 +978,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">57 分钟</span>
+    <span title="站点阅读时长">1:01</span>
   
 </div>
 
