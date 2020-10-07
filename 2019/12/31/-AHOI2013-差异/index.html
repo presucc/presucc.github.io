@@ -100,18 +100,18 @@
 
 
 
-  <meta name="description" content="$$\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)$$$$\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j$$$$=(n - 1)  n(n + 1) / 2$$ 一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我">
-<meta name="keywords" content="题解,递推,后缀数组">
+  <meta name="description" content="\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j=(n - 1) * n*(n + 1) / 2一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我们将所有高度数组排成一排,">
+<meta name="keywords" content="题解,后缀数组,递推">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[AHOI2013]差异">
 <meta property="og:url" content="http://yoursite.com/2019/12/31/-AHOI2013-差异/index.html">
 <meta property="og:site_name" content="LZCR的博客">
-<meta property="og:description" content="$$\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)$$$$\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j$$$$=(n - 1)  n(n + 1) / 2$$ 一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我">
+<meta property="og:description" content="\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j=(n - 1) * n*(n + 1) / 2一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我们将所有高度数组排成一排,">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-31T14:30:14.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[AHOI2013]差异">
-<meta name="twitter:description" content="$$\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)$$$$\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j$$$$=(n - 1)  n(n + 1) / 2$$ 一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我">
+<meta name="twitter:description" content="\sum_{1 \le i &amp;lt; j \le n} len(T_i) + len(T_j)\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j=(n - 1) * n*(n + 1) / 2一看到后缀当然是sa啦 由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$ 我们将所有高度数组排成一排,">
 
 
 
@@ -562,8 +562,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><p>$$\sum_{1 \le i &lt; j \le n} len(T_i) + len(T_j)$$<br>$$\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j$$<br>$$=(n - 1) <em> n</em>(n + 1) / 2$$</p>
-<p>一看到后缀当然是sa啦</p>
+        <script src="\assets\js\APlayer.min.js"> </script><script type="math/tex; mode=display">\sum_{1 \le i < j \le n} len(T_i) + len(T_j)</script><script type="math/tex; mode=display">\sum_{i = 1}^{n - 1} \sum_{j = i + 1} ^ {n} i + j</script><script type="math/tex; mode=display">=(n - 1) * n*(n + 1) / 2</script><p>一看到后缀当然是sa啦</p>
 <p>由后缀数组的性质，排名为分别为i,j的后缀，$lcp(i,j)=min_{k=i+1}^jheight_k$</p>
 <p>我们将所有高度数组排成一排,</p>
 <p>假设中间的第$i$个数是$l−r$中最小的</p>
@@ -595,9 +594,9 @@
           
             <a href="/tags/题解/" rel="tag"># 题解</a>
           
-            <a href="/tags/递推/" rel="tag"># 递推</a>
-          
             <a href="/tags/后缀数组/" rel="tag"># 后缀数组</a>
+          
+            <a href="/tags/递推/" rel="tag"># 递推</a>
           
         </div>
       
