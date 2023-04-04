@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="三角函数与复数。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三角函数与复数">
+<meta property="og:url" content="http://example.com/2023/04/02/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0/index.html">
+<meta property="og:site_name" content="presucc 的博客">
+<meta property="og:description" content="三角函数与复数。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/07/c2osgwdhNleUYDp.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/07/hQGObFtrkTCHp1Y.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/07/HQqlW8gtVnm29ET.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/WQKULRjrh3VpBGA.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/zS7vhlBmNLgIWfq.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/nFYbAgWXQNCKvum.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/TeinbErCVQZ72BH.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/Y8paou4n1eUrtCj.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/dYslg4pvWZe2DT3.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/15/Vcyvhk74r9MZztb.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/07/ckIUtBFZHyOCs7V.png">
+<meta property="article:published_time" content="2023-04-02T09:49:30.000Z">
+<meta property="article:modified_time" content="2023-04-04T05:12:51.132Z">
+<meta property="article:author" content="presucc">
+<meta property="article:tag" content="三角函数">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/07/c2osgwdhNleUYDp.png">
+
+<link rel="canonical" href="http://example.com/2023/04/02/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>三角函数与复数 | presucc 的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">presucc 的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">写一些与数学有关的东西</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/02/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="presucc">
+      <meta itemprop="description" content="写一些与数学有关的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="presucc 的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          三角函数与复数
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-04-02 17:49:30" itemprop="dateCreated datePublished" datetime="2023-04-02T17:49:30+08:00">2023-04-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-04-04 13:12:51" itemprop="dateModified" datetime="2023-04-04T13:12:51+08:00">2023-04-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数学</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>23k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>21 分钟</span>
+            </span>
+            <div class="post-description">三角函数与复数。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="三角函数与复数">3 三角函数与复数</h3>
+<hr />
+<h4 id="三角函数简介">3.1 三角函数简介</h4>
+<h5 id="任意角和弧度制">3.1.1 任意角和弧度制</h5>
+<hr />
+<h5 id="诱导公式">3.1.2 诱导公式</h5>
+<p>我们知道，三角函数是根据单位圆来定义的，单位圆的周长为 <span
+class="math inline">\(2\pi\)</span>。经过 <span
+class="math inline">\(2\pi\)</span> 之后，角的终边又从 <span
+class="math inline">\(0\)</span> 开始转了，所以有一件很显然的事情：
+<span class="math display">\[
+\sin (x+2\pi)=\sin x \\
+\cos (x+2\pi)=\cos x \\
+\tan (x+2\pi)=\tan x
+\]</span> 我们考虑一条终边逆时针转 <span
+class="math inline">\(\pi\)</span> 之后的情况：</p>
+<p><img src="https://s2.loli.net/2022/01/07/c2osgwdhNleUYDp.png" /></p>
+<p>如图，<span class="math inline">\(A\)</span> 是角 <span
+class="math inline">\(x\)</span> 的终边与单位圆的交点，<span
+class="math inline">\(A\)</span> 关于原点对称的点 <span
+class="math inline">\(A&#39;\)</span> （图中忘记标了）是终边逆时针旋转
+<span class="math inline">\(\pi\)</span> 之后与单位圆的交点。</p>
+<p>因为 <span class="math inline">\(A,A&#39;\)</span> 与原点对称，所以有
+<span
+class="math inline">\(X_A=-X_{A’}，Y_A=-Y_{A&#39;}\)</span>，那么根据三角函数的定义，
+<span class="math display">\[
+\sin(x+\pi)=-\sin x\\
+\cos(x+\pi)=-\cos x\\
+\tan(x+\pi)=\tan x \space (负负得正)
+\]</span> 我们考虑一条终边分别关于 <span
+class="math inline">\(x,y\)</span> 轴对称之后的图像：</p>
+<p><img src="https://s2.loli.net/2022/01/07/hQGObFtrkTCHp1Y.png" /></p>
+<p>如图，<span class="math inline">\(A\)</span> 是 <span
+class="math inline">\(x\)</span>
+对应的终边与单位圆的交点，由几何关系不难得知，<span
+class="math inline">\(C\)</span> 是 <span
+class="math inline">\((-x)\)</span> 对应的终边与单位圆的交点，<span
+class="math inline">\(D\)</span> 是 <span
+class="math inline">\((\pi-x)\)</span> 对应的终边与单位圆的交点。</p>
+<p><span class="math inline">\(C\)</span> 的横坐标与 <span
+class="math inline">\(A\)</span> 相等，纵坐标与 <span
+class="math inline">\(A\)</span> 相反；</p>
+<p><span class="math inline">\(D\)</span> 的纵坐标与 <span
+class="math inline">\(A\)</span> 相等，横坐标与 <span
+class="math inline">\(A\)</span> 相反。</p>
+<p>根据三角函数的定义，</p>
+<p><span class="math display">\[
+\sin (-x)=-\sin x\\
+\cos (-x)=\cos x\\
+\tan (-x)=-\tan x\\\\
+\sin (\pi-x)=\sin x\\
+\cos (\pi-x)=-\cos x\\
+\tan (\pi-x)=-\tan x\\\\
+\]</span></p>
+<p>同名三角函数的诱导公式就到这里。</p>
+<p><del>你会发现这都是一些很显然的东西</del></p>
+<p>接下来是会变三角函数名的诱导公式：</p>
+<p><img src="https://s2.loli.net/2022/01/07/HQqlW8gtVnm29ET.png" /></p>
+<p>我们作角 <span class="math inline">\(x\)</span> 的互余角 <span
+class="math inline">\((\frac{\pi}{2}-x)\)</span>，如图，<span
+class="math inline">\(x\)</span> 终边和单位圆交于 <span
+class="math inline">\(A\)</span>，<span
+class="math inline">\((\frac{\pi}{2}-x)\)</span> 终边和单位圆交于 <span
+class="math inline">\(C\)</span>.</p>
+<p>过 <span class="math inline">\(C\)</span> 作 <span
+class="math inline">\(y\)</span> 轴的垂线,过 <span
+class="math inline">\(A\)</span> 作 <span
+class="math inline">\(x\)</span> 轴的垂线,垂足分别为 <span
+class="math inline">\(E,D\)</span>，那么有 <span
+class="math inline">\(BC=BA,\angle EBC=\angle DBA,\angle BEC=\angle
+BDA\)</span>,所以三角形 BCE 和三角形 BAD 全等。</p>
+<p>所以 <span class="math inline">\(X_C=Y_A,X_A=Y_C\)</span></p>
+<p>根据三角函数的定义，</p>
+<p><span class="math display">\[
+\sin (\frac{\pi}{2}-x)=\cos x\\
+\cos (\frac{\pi}{2}-x)=\sin x\\
+\]</span></p>
+<p>根据上面的诱导公式，</p>
+<p><span class="math display">\[
+\sin(\frac{\pi}{2}+x)=-\sin(-\frac{\pi}{2}-x)=-(-\sin(\frac{\pi}{2}-x))=\cos
+x\\
+\cos(\frac{\pi}{2}+x)=\cos(-\frac{\pi}{2}-x)=-\cos(\frac{\pi}{2}-x)=-\sin
+x\\
+\]</span></p>
+<p>有关诱导公式的内容就介绍到这里。整理一下：</p>
+<p><span class="math display">\[
+\begin{aligned}
+\sin (x+2\pi)=\sin x \\
+\cos (x+2\pi)=\cos x \\
+\tan (x+2\pi)=\tan x \\
+\end{aligned}\\
+\]</span> <span class="math display">\[
+\begin{aligned}
+\sin(x+\pi)=-\sin x\\
+\cos(x+\pi)=-\cos x\\
+\tan(x+\pi)=\tan x\\
+\end{aligned}\\
+\]</span> <span class="math display">\[
+\begin{aligned}
+\sin (-x)=-\sin x\\
+\cos (-x)=\cos x\\
+\tan (-x)=-\tan x\\
+\end{aligned}\\
+\]</span> <span class="math display">\[
+\begin{aligned}
+\sin (\pi-x)=\sin x\\
+\cos (\pi-x)=-\cos x\\
+\tan (\pi-x)=-\tan x\\
+\end{aligned}\\
+\]</span> <span class="math display">\[
+\begin{aligned}
+\sin (\frac{\pi}{2}-x)=\cos x\\
+\cos (\frac{\pi}{2}-x)=\sin x\\
+\end{aligned}\\
+\]</span> <span class="math display">\[
+\begin{aligned}
+\sin(\frac{\pi}{2}+x)=\cos x\\
+\cos(\frac{\pi}{2}+x)=-\sin x\\
+\end{aligned}\\
+\]</span></p>
+<p>（默认是右对齐的，所以会有点丑）</p>
+<p>下面是一些基础练习题。</p>
+<hr />
+<h4 id="三角函数的图像和性质">3.2 三角函数的图像和性质</h4>
+<h5 id="三角函数的图像和性质-1">3.2.1 三角函数的图像和性质</h5>
+<p>先对函数的周期作出定义：</p>
+<blockquote>
+<p>若对于函数 <span
+class="math inline">\(f(x)\)</span>，存在一个非零常数 <span
+class="math inline">\(T\)</span>，使得对于定义域内任意的 <span
+class="math inline">\(x\)</span>，都有 <span
+class="math inline">\(f(x)=f(x+T)\)</span>，则称 <span
+class="math inline">\(T\)</span> 是 <span
+class="math inline">\(f(x)\)</span> 的一个周期。</p>
+</blockquote>
+<p>所有 <span class="math inline">\(T\)</span> 中大于 <span
+class="math inline">\(0\)</span> 且最小的那个叫做 <span
+class="math inline">\(f(x)\)</span> 的最小正周期。</p>
+<p>若无特殊说明，我们说的“周期”一般是指最小正周期。</p>
+<p>可以得到下面结论：</p>
+<ul>
+<li><p>周期函数的定义域是无界的；</p></li>
+<li><p>定义域为 <span class="math inline">\(\mathbb{R}\)</span>
+的周期函数 <span class="math inline">\(f(x)\)</span>，若 <span
+class="math inline">\(T\)</span> 是周期，则 <span
+class="math inline">\(nT\)</span> 也是周期；（<span
+class="math inline">\(n \in \mathbb{Z},n \neq 0\)</span>）</p></li>
+<li><p>若 <span class="math inline">\(f(x)\)</span>
+是非常数的周期函数，则 <span class="math inline">\(f(x)\)</span>
+有最小正周期；</p></li>
+<li><p>若 <span class="math inline">\(f(x)\)</span> 有最小正周期 <span
+class="math inline">\(T\)</span>，那么除 <span
+class="math inline">\(nT\)</span> 外，<span
+class="math inline">\(f(x)\)</span> 无其它周期；（<span
+class="math inline">\(n \in \mathbb{Z},n \neq 0\)</span>）</p></li>
+<li><p>若 <span class="math inline">\(f(x)\)</span> 是周期函数，则</p>
+<ul>
+<li><span class="math inline">\(af(x)+b\)</span> 是周期函数；</li>
+<li><span class="math inline">\(|f(x)|\)</span> 是周期函数；</li>
+<li><span class="math inline">\(\frac{1}{f(x)}\)</span>
+是周期函数；</li>
+<li><span class="math inline">\(f(ax+b)\)</span> 是周期函数。</li>
+</ul></li>
+</ul>
+<p>关于函数周期性计算的一些二级结论：</p>
+<ul>
+<li>若 <span
+class="math inline">\(f(a+x)=f(a-x),f(b+x)=f(b-x)\)</span>，则 <span
+class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
+class="math inline">\(T=2(b-a)\)</span>；</li>
+<li>若 <span class="math inline">\(f(x)\)</span> 关于两点 <span
+class="math inline">\((a_1,b),(a_2,b)\)</span> 对称，则 <span
+class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
+class="math inline">\(T=2(a_1-a_2)\)</span>；</li>
+<li>若 <span
+class="math inline">\(f(a+x)=f(a-x),f(b+x)=-f(b+x)\)</span>，则 <span
+class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
+class="math inline">\(T=4(b-a)\)</span>.</li>
+</ul>
+<p>使用几何画板不难得到六个三角函数的图像（五点画图法就不讲了）</p>
+<ul>
+<li><span class="math inline">\(y=\sin x\)</span>：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/WQKULRjrh3VpBGA.png" /></p>
+<ul>
+<li><span class="math inline">\(y=\cos x\)</span>：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/zS7vhlBmNLgIWfq.png" /></p>
+<ul>
+<li><span class="math inline">\(y=\tan x\)</span>：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/nFYbAgWXQNCKvum.png" /></p>
+<ul>
+<li><span class="math inline">\(y=\cot x\)</span>：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/TeinbErCVQZ72BH.png" /></p>
+<ul>
+<li>$ y=x$：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/Y8paou4n1eUrtCj.png" /></p>
+<ul>
+<li><span class="math inline">\(y=\csc x\)</span>：</li>
+</ul>
+<p><img src="https://s2.loli.net/2022/01/15/dYslg4pvWZe2DT3.png" /></p>
+<p>实际上，在讨论图像问题时，我们很少提及 <span
+class="math inline">\(y=\csc x\)</span> 和 <span
+class="math inline">\(y=\sec x\)</span>.</p>
+<p><strong>三角函数的奇偶性</strong></p>
+<p>直接给出结论：</p>
+<p><span class="math inline">\(y=\sin x,y=\tan x,y=\cot x\)</span>
+在其定义域上都是奇函数；</p>
+<p>而 <span class="math inline">\(y=\cos x\)</span>
+在其定义域上是偶函数。</p>
+<p>（看上面的图应该会很清楚）</p>
+<p>做一道简单的奇偶性题目：</p>
+<p><strong>(4) 1.判断函数 <span
+class="math inline">\(f(x)=\sin(\cos(x)),g(x)=\cos(\sin(x))\)</span>
+的奇偶性。</strong></p>
+<p>对于 <span
+class="math inline">\(f(x)=\sin(\cos(x))\)</span>，其定义域为 <span
+class="math inline">\(\mathbb{R}\)</span> 关于 <span
+class="math inline">\(y\)</span> 轴对称，有： <span
+class="math display">\[
+f(-x)=\sin(\cos(-x))=\sin(\cos(x))=f(x)
+\]</span> 对于 <span
+class="math inline">\(g(x)=\cos(\sin(x))\)</span>，其定义域为 <span
+class="math inline">\(\mathbb{R}\)</span> 关于 <span
+class="math inline">\(y\)</span> 轴对称，有： <span
+class="math display">\[
+g(-x)=\cos(\sin(-x))=\cos(-\sin(x))=\cos(\sin(x))=g(x)
+\]</span> 所以这两个函数都是偶函数。</p>
+<p>它们的图像长这样：</p>
+<p><img src="https://s2.loli.net/2022/01/15/Vcyvhk74r9MZztb.png" /></p>
+<p>实际上有 <span
+class="math inline">\(g(x)&gt;f(x)\)</span>，这个大家可以自己证明，并不难。</p>
+<p><strong>三角函数的单调性</strong></p>
+<p>一样是直接给出结论（<span class="math inline">\(k\in
+\mathbb{Z}\)</span>）：</p>
+<ul>
+<li><p><span class="math inline">\(y=\sin x\)</span> 在 <span
+class="math inline">\([-\frac{\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi]\)</span>
+上是增函数，在 <span
+class="math inline">\([\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi]\)</span>
+上是减函数。</p></li>
+<li><p><span class="math inline">\(y=\cos x\)</span> 在 <span
+class="math inline">\([-\pi+2k\pi,2k\pi]\)</span> 上是增函数，在 <span
+class="math inline">\([2k\pi,\pi+2k\pi]\)</span> 上是减函数。</p></li>
+<li><p><span class="math inline">\(y=\tan x\)</span> 在 <span
+class="math inline">\((-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)\)</span>
+上是增函数。</p></li>
+<li><p><span class="math inline">\(y=\cot x\)</span> 在 <span
+class="math inline">\((-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)\)</span>
+上是减函数。</p></li>
+</ul>
+<p><strong>三角函数的周期性</strong></p>
+<ul>
+<li><p><span class="math inline">\(y=A\sin(\omega
+x+\varphi),y=A\cos(\omega x+\varphi)(\omega\neq0)\)</span> 的最小正周期
+<span class="math inline">\(T=\frac{2\pi}{|\omega|}\)</span>；</p></li>
+<li><p><span class="math inline">\(y=A\tan(\omega x+\varphi),y=A\cot
+(\omega x+\varphi)(\omega\neq 0)\)</span> 的最小正周期 <span
+class="math inline">\(T=\frac{\pi}{|\omega|}\)</span>.</p></li>
+</ul>
+<hr />
+<h5 id="函数-fxa-x">3.2.2 函数 $f(x)=A (x+)) $</h5>
+<hr />
+<h4 id="三角恒等变换">3.3 三角恒等变换</h4>
+<h5 id="三角恒等变换公式推导">3.3.1 三角恒等变换公式推导</h5>
+<p>三角函数的精髓来了，同时也将是大家相当长一段时间内的噩梦。</p>
+<p>首先，我们介绍余弦的差角公式，即 <span class="math inline">\(\cos
+(x-y)\)</span>.</p>
+<p><img src="https://s2.loli.net/2022/01/07/ckIUtBFZHyOCs7V.png" /></p>
+<p>我们作出 <span class="math inline">\(x\)</span>
+的终边及其与单位圆的交点 <span class="math inline">\(A\)</span>，作出
+<span class="math inline">\(y\)</span> 的终边及其与单位圆的交点 <span
+class="math inline">\(B\)</span>，作出 <span
+class="math inline">\((x-y)\)</span> 的终边及其与单位圆的交点 <span
+class="math inline">\(C\)</span>.</p>
+<p>那么根据三角函数的定义， <span class="math display">\[
+A(\cos x,\sin x) \space B(\cos y,\sin y) \space C(\cos(x-y),\sin(x-y))
+\]</span> 我们发现，角 ADC 和角 BDE 度数一样，都是 <span
+class="math inline">\(y\)</span>.</p>
+<p>同圆圆心角相等，那么弦长相等。根据两点间距离公式， <span
+class="math display">\[
+AC=BE\\
+(\cos x-\cos(x-y))^2+(\sin x-\sin(x-y))^2=(\cos y-1)^2+\sin y^2 \\
+\cos x^2+\cos(x-y)^2-2\cos x\cos (x-y)+\sin x^2+\sin (x-y)^2-2\sin
+x\sin(x-y)=\cos y^2-2\cos y+1+\sin y^2 \\
+2-2\cos x\cos (x-y)-2\sin x\sin(x-y)=2-2\cos y \\
+\cos y=\cos x\cos(x-y)+\sin x\sin(x-y)
+\]</span> 好像出了点问题……吗？</p>
+<p>令 <span class="math inline">\(y&#39;=x-y\)</span>，则 <span
+class="math inline">\(\cos (x-y&#39;)=\cos x \cos y&#39;+\sin x \sin
+y&#39;\)</span>，这样就没问题了。</p>
+<p>实际上，从根本上解决问题应该在一开始，我们使用 <span
+class="math inline">\(AB=CE\)</span> 进行推导而非 <span
+class="math inline">\(AC=BE\)</span>.</p>
+<p>总而言之，我们成功地推出了万恶之源： <span class="math display">\[
+\cos(x-y)=\cos x\cos y+\sin x\sin y \quad(1)
+\]</span> 我们只要把 <span class="math inline">\((1)\)</span> 里面的
+<span class="math inline">\(y\)</span> 换成 <span
+class="math inline">\(-y\)</span>，就有了余弦函数的和角公式： <span
+class="math display">\[
+\cos(x-(-y))=\cos x\cos (-y)+\sin x\sin (-y) \\
+\Rightarrow \cos (x+y)=\cos x\cos y-\sin x\sin y \quad (2)
+\]</span> 回到上面的诱导公式，我们发现，<span class="math inline">\(\cos
+(\frac{\pi}{2}-x)=\sin x\)</span></p>
+<p>那么由 <span class="math inline">\((2)\)</span> 式， <span
+class="math display">\[
+\cos(\frac{\pi}{2}-x)\cos y-\sin(\frac{\pi}{2}-x) \sin
+y=\cos(\frac{\pi}{2}-x+y)\\
+\Rightarrow \sin x\cos y-\cos x\sin y=\sin(x-y)
+\]</span> 换一下顺序， <span class="math display">\[
+\sin(x-y)=\sin x\cos y-\cos x\sin y \quad(3)
+\]</span> 这就是正弦函数的差角公式。</p>
+<p>同样的，我们可以通过代换，推出正弦函数的和角公式： <span
+class="math display">\[
+\sin(x-(-y))=\sin x\cos (-y) -\cos x\sin(-y)\\
+\Rightarrow \sin(x+y)=\sin x\cos y+\cos x\sin y \quad(4)
+\]</span> 根据正切函数的定义，我们也会有正切函数的和差角公式： $$
+(x+y)===(上下同时除以 (xy)) (5)\</p>
+<p>(x-y)===(上下同时除以 (xy)) (6)\ $$
+基本的三角恒等变换就到这里了。下面的是二级结论。</p>
+<p><strong>正弦，余弦的倍角公式：</strong> <span class="math display">\[
+\sin 2x=\sin(x+x)=\sin x\cos x+\sin x\cos x=2\sin x\cos x \quad (7)\\
+\\
+\cos 2x=\cos(x+x)=\cos^2x-\sin^2x \quad(8)\\
+=(\cos x+\sin x)(\cos x-\sin x) \quad(9) \\
+=2\cos^2 x-1 \quad(10) \\
+=1-2\sin^2 x \quad(11)
+\]</span>
+需要注意的是，余弦倍角公式的四种形式都是常见的，都需要单独列出来作为二级结论。</p>
+<p><strong>正切的倍角公式：</strong> <span class="math display">\[
+\tan 2x=\tan (x+x)=\frac{2\tan x}{1-\tan^2x} \quad (12)
+\]</span> 正切的恒等变换都需要注意定义域问题。</p>
+<p><strong>正弦，余弦的半角公式：</strong> <span class="math display">\[
+1-2\sin^2 x=\cos 2x\\
+\Rightarrow \sin x=\pm\sqrt{\frac{1-\cos 2x}{2}} \\
+\Rightarrow \sin \frac{x}{2}=\pm\sqrt{\frac{1-\cos x}{2}} \quad (13)\\\\
+2\cos^2x-1=\cos 2x \\
+\Rightarrow \cos x=\pm\sqrt{\frac{1+\cos 2x}{2}} \\
+\Rightarrow \cos \frac{x}{2} =\pm\sqrt{\frac{1+\cos x}{2}} \quad (14) \\
+\]</span></p>
+<p>正负号由角所在象限决定。</p>
+<p><strong>正切的半角公式：</strong> <span class="math display">\[
+\tan \frac{x}{2}=\frac{\sin \frac{x}{2}}{\cos
+\frac{x}{2}}=\pm\sqrt{\frac{1-\cos x}{1+\cos x}} \quad (15)\\
+=\frac{\sin x}{1+\cos x} \quad(16) \\
+=\frac{1-\cos x}{\sin x} \space (注意到 \sin^2x+\cos^2x=1) \quad(17)
+\]</span>
+需要注意的是，正切半角公式的前一种形式中，正负号不定；但是在后面两种形式中，正负号是定下来的。</p>
+<p>不过第一种形式只需要 <span class="math inline">\(\cos x\)</span>
+一个三角函数名，但是后面两种需要同时知道 <span
+class="math inline">\(\cos x,\sin x\)</span>.</p>
+<p><strong>“万能公式”</strong></p>
+<p>所谓万能公式，指的是把 <span class="math inline">\(\sin x,\cos
+x\)</span> 都化成 <span class="math inline">\(\tan \frac{x}{2}\)</span>
+的形式。</p>
+<p>这样，只有一个三角函数名，会好处理很多。 <span
+class="math display">\[
+\sin x=2\sin \frac{x}{2} \cos
+\frac{x}{2}=\frac{2\sin\frac{x}{2}\cos\frac{x}{2}}{\sin^2\frac{x}{2}+\cos^2\frac{x}{2}}\\
+=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(18)\\
+\\
+\cos
+x=\cos^2\frac{x}{2}-\sin^2\frac{x}{2}=\frac{\cos^2\frac{x}{2}-\sin^2\frac{x}{2}}{\sin^2\frac{x}{2}+\cos^2\frac{x}{2}}\\
+=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(19)\\
+\]</span> <span class="math inline">\(\tan\)</span> 的“万能公式”见 <span
+class="math inline">\((12)\)</span>.</p>
+<p><strong>积化和差</strong></p>
+<p>这里详细的推导过程就不给出了。</p>
+<p>大体思路是用余弦的和差角公式去替换。 <span class="math display">\[
+\cos x\cos y=\frac{1}{2}(\cos (x+y)+\cos(x-y)) \quad(20)\\
+\sin x\sin y=\frac{1}{2}(\cos(x-y)-\cos(x+y))\quad(21)\\
+\]</span> 同理，下面两个积化和差公式是用正弦的和差角公式替换得到的。
+<span class="math display">\[
+\sin x\cos y=\frac{1}{2}(\sin(x+y)+\sin(x-y))\quad(22)\\
+\cos x\sin y=\frac{1}{2}(\sin(x+y)-\sin(x-y))\quad(23)
+\]</span> <strong>和差化积</strong></p>
+<p>由 <span class="math inline">\((20)\)</span> ，将 <span
+class="math inline">\(x\)</span> 替换为 <span
+class="math inline">\((x+y),y\)</span> 替换为 <span
+class="math inline">\((x-y)\)</span> 可以得到 <span
+class="math display">\[
+\cos x+\cos y=2\cos \frac{x+y}{2}\cos \frac{x-y}{2} \quad(24)
+\]</span> 由 <span class="math inline">\((21)\)</span> 经过类似替换可得
+<span class="math display">\[
+\cos x-\cos y=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2} \quad(25)
+\]</span> 由 <span class="math inline">\((22)\)</span> 经过类似替换可得
+<span class="math display">\[
+\sin x+\sin y=2\sin \frac{x+y}{2}\cos\frac{x-y}{2} \quad(26)
+\]</span> 由 <span class="math inline">\((23)\)</span> 经过类似替换可得
+<span class="math display">\[
+\sin x-\sin y=2\cos\frac{x+y}{2}\sin\frac{x-y}{2} \quad(27)
+\]</span> <strong>辅助角公式</strong></p>
+<p>这个简单说一下。</p>
+<p>辅助角公式指的是 <span class="math display">\[
+a\sin x+b\cos x=\sqrt{a^2+b^2}\sin (x+\varphi),其中 \space \varphi\space
+终边过\space (a,b) \quad (28)
+\]</span> 我们反着推一下，设 <span
+class="math inline">\(A\sin(x+\varphi)=a\sin x+b\cos x\)</span>，</p>
+<p>那么 <span class="math inline">\(A(\sin x\cos \varphi+\cos
+x\sin\varphi)=a\sin x+b \cos x\)</span></p>
+<p>展开并对比系数， <span class="math display">\[
+A \cos \varphi=a\\
+A \sin \varphi=b
+\]</span> 两式平方并相加；两式相处； <span class="math display">\[
+A=\sqrt{a^2+b^2},\tan \varphi=\frac{b}{a}
+\]</span> <span class="math inline">\(\varphi\)</span>
+到底是哪个象限的就要看 <span class="math inline">\(a,b\)</span>
+的符号了。所以我们直接归纳为 ”<span
+class="math inline">\(\varphi\)</span> 终边过<span
+class="math inline">\((a,b)\)</span>".</p>
+<p><strong>三倍角公式</strong></p>
+<p>这里仅推一个 <span
+class="math inline">\(\sin\)</span>，剩下两个可以用同样的方法推。</p>
+<p>首先给出公式 <span class="math display">\[
+\sin 3x=3\sin x-4\sin^3x \quad(29)\\
+=4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x) \quad(30)\\\\
+\cos 3x=4\cos^3x-3\cos x \quad(31)\\
+=4\cos(\frac{\pi}{3}-x)\cos x\cos(\frac{\pi}{3}+x) \quad(32)\\\\
+\tan 3x=\tan(\frac{\pi}{3}-x)\tan x\tan(\frac{\pi}{3}+x) \quad(33)\\
+\]</span> 对于 <span class="math inline">\((29)\)</span>, <span
+class="math display">\[
+\sin3x=\sin(2x+x)=\sin2x\cos x+\cos2x\sin x\\
+=2\sin x\cos^2x+(1-2\sin^2x)\sin x \\
+=2\sin x(1-\sin^2x)+\sin x-2\sin^3x\\
+=3\sin x-4\sin^3x \quad(29)
+\]</span> 现在推了一半，剩下一半从右往左推： <span
+class="math display">\[
+4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x)\\
+=4(\frac{\sqrt{3}}{2}\cos x-\frac{1}{2}\sin x)\sin
+x(\frac{\sqrt{3}}{2}\cos x+\frac{1}{2}\sin x) \\
+=4\sin x(\frac{3}{4}\cos^2x-\frac{1}{4}\sin^2x)\\
+=4\sin x(\frac{3}{4}(1-\sin^2x)-\frac{1}{4}\sin^2x) \\
+=4\sin x(\frac{3}{4}-\sin^2x) \\
+=3\sin x-4\sin^3x\\
+\]</span> 所以 <span class="math inline">\(\sin\)</span>
+的三倍角公式得证。</p>
+<p>最后留两个不常用但也出现过的二级结论供读者自推： <span
+class="math display">\[
+\sin^2x-\sin^2y=\sin(x+y)\sin(x-y) \quad(34)\\
+\cos^2x-\cos^2y=-\sin(x+y)\sin(x-y) \quad(35)
+\]</span> （推完一个另一个就显然了）</p>
+<hr />
+<h5 id="拆角凑角">3.3.2 拆角凑角</h5>
+<p>这种类型的题在课内和竞赛中都会出现。这类题目是给出一些已知角的正弦/余弦值，需要你求出一个新角的正弦/余弦值。</p>
+<p>并且，给出的已知角一定和要求角有关系。</p>
+<p>常见的关系有以下：</p>
+<ul>
+<li>已知 <span class="math inline">\(\alpha,\beta\)</span>，求 <span
+class="math inline">\(\alpha+\beta\)</span>.</li>
+<li>已知 <span
+class="math inline">\(\frac{\alpha}{2},\frac{\beta}{2}\)</span>，求
+<span class="math inline">\(\alpha+\beta\)</span>.</li>
+<li>已知 <span
+class="math inline">\(\alpha+\beta,\alpha-\beta\)</span>，求 <span
+class="math inline">\(\alpha,\beta\)</span></li>
+<li>......</li>
+</ul>
+<p>这种题不算很难，就是计算麻烦。</p>
+<p>在不引起误解的情况下，下面会使用 <span
+class="math inline">\(A,B\)</span>
+等大写字母表示角而非希腊字母，因为太难打了……</p>
+<p>同理，角度制单位 ° 会打成 *</p>
+<p><strong>1. (7) 设 <span
+class="math inline">\(\cos(A-\frac{B}{2})=-\frac{1}{9},\sin(\frac{A}{2}-B)=\frac{2}{3},\)</span>且
+<span
+class="math inline">\(\frac{\pi}{2}&lt;A&lt;\pi,0&lt;B&lt;\frac{\pi}{2},\)</span>
+求 <span class="math inline">\(\sin \frac{A+B}{2}\)</span> 和 <span
+class="math inline">\(\cos (A+B)\)</span> 的值.</strong></p>
+<details>
+<summary>
+提示 1
+</summary>
+<p>
+A-B/2-（A/2-B）=1/2(A+B)
+</p>
+</details>
+<details>
+<summary>
+提示 2
+</summary>
+<p>
+cos(A+B) 可以考虑二倍角公式。
+</p>
+</details>
+<p>由角 <span class="math inline">\(A,B\)</span> 的范围和 <span
+class="math inline">\(\sin,\cos\)</span> 的正负性可以得知 <span
+class="math inline">\(\frac{1}{2}\pi&lt;A-\frac{B}{2}&lt;\pi,0&lt;\frac{1}{2}A-B&lt;\frac{1}{2}\pi\)</span>.</p>
+<p>根据 <span class="math inline">\(\sin^2A+\cos^2A=1 \space(这里的
+\space A \space 指任意角)\)</span> 得 <span
+class="math inline">\(\sin(A-\frac{B}{2})=\frac{4\sqrt{5}}{9},\cos(\frac{A}{2}-B)=\frac{\sqrt{5}}{3}\)</span>.</p>
+<p>凑角：<span
+class="math inline">\(A-\frac{B}2-(\frac{A}2-B)=\frac{A+B}{2}\)</span></p>
+<p>所以 <span class="math display">\[
+\begin{aligned}
+&amp;\quad \sin(\frac{A+B}{2})\\
+&amp;=\sin(A-\frac{B}{2}-\frac{A}{2}+B)\\
+&amp;=\sin(A-\frac{B}{2})\cos(\frac{A}{2}-B)-\cos(A-\frac{B}{2})\sin(\frac{A}{2}-B)\\
+&amp;=\frac{4\sqrt{5}}{9}\cdot \frac{\sqrt{5}}{3}-(-\frac{1}{9})\cdot
+\frac{2}{3}\\
+&amp;=\frac{22}{27}
+\end{aligned}
+\]</span> 根据二倍角公式，<span
+class="math inline">\(\cos(A+B)=1-2\sin(\frac{A+B}{2})=-\frac{239}{729}\)</span>.</p>
+<p>再看看另一种形式的凑角。</p>
+<p><strong>2. (9) 求 <span class="math inline">\(\cos20\)</span>°<span
+class="math inline">\(\cos 40\)</span>°<span class="math inline">\(\cos
+80\)</span>°.</strong></p>
+<p>我们发现，<span class="math inline">\(20\)</span> 和 <span
+class="math inline">\(40\)</span> 以及 <span
+class="math inline">\(80\)</span> 都是翻倍上去的，这让我们联想到 <span
+class="math inline">\(\sin\)</span> 的二倍角公式：<span
+class="math inline">\(\sin2x=2\sin x\cos x\)</span>.</p>
+<p>题目中的 <span class="math inline">\(\cos\)</span>
+是齐全的，已经翻倍好了，所以我们考虑找出一个 <span
+class="math inline">\(\sin\)</span>.</p>
+<p>我们可以先乘上一个 <span
+class="math inline">\(\sin20\)</span>° 来作为“链式反应”的导火索，后面再除回去。</p>
+<p>所以原式 <span class="math display">\[
+\begin{aligned}
+&amp;=\frac{\sin20^*\cos20^*\cos40^*\cos80^*}{\sin20^*}\\
+&amp;=\frac{\frac{1}{2}\sin40^*\cos40^*\cos80^*}{\sin20^*}\\
+&amp;=\frac{\frac{1}{4}\sin80^*\cos80^*}{\sin20^*}\\
+&amp;=\frac{\frac{1}{8}\sin160^*}{\sin20^*}\\
+&amp;=\frac{1}{8}
+\end{aligned}
+\]</span></p>
+<h5 id="构造方程">3.3.3 构造方程</h5>
+<p>这类题目的构造方法一般会比较难想到；主要思想是把要求的三角函数式子看作一个方程的某个根；为了构造出这个方程，我们可能需要去找与这个“互补"的式子。</p>
+<p>设原式为 <span class="math inline">\(A\)</span>，“互补”的式子为 <span
+class="math inline">\(B\)</span>，那么我们可以比较方便地计算出 <span
+class="math inline">\(A+B\)</span> 和 <span
+class="math inline">\(A\times B\)</span>；再根据韦达定理，我们就能解出
+<span class="math inline">\(A\)</span> 了。</p>
+<p>这样说可能比较抽象，所以我们用一个例子来引入。</p>
+<p><strong>1. (13)求值：<span
+class="math inline">\(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}\)</span></strong>.</p>
+<details>
+<summary>
+提示 1
+</summary>
+<p>
+设 x=原式，y=++，探究 x+y，x*y 的关系
+</p>
+</details>
+<p>虽然这题只需要一个提示，但难度也比较大。</p>
+<p>主要的难点有两个，一是想到要配对，二是后续的三角恒等变换。</p>
+<p>设 <span
+class="math inline">\(x=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13},y=\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}\)</span></p>
+<p>那么 <span class="math display">\[
+\begin{aligned}
+&amp;x+y\\
+&amp;=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}\\
+&amp;=\frac{1}{2\sin\frac{\pi}{13}}(2\sin\frac{\pi}{13}(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{11\pi}{13}))\\
+&amp;=\frac{1}{2\sin\frac{\pi}{13}}(\sin\frac{2\pi}{13}+(\sin\frac{4\pi}{13}-\sin\frac{2\pi}{13})+(\sin\frac{6\pi}{13}-sin\frac{4\pi}{13})+\cdots+(\sin\frac{12\pi}{13}-\sin\frac{10\pi}{13}))\\
+&amp;=\frac{\sin\frac{12\pi}{13}}{2\sin\frac{\pi}{13}}\\
+&amp;=\frac{1}{2}
+\end{aligned}
+\]</span> ps：这里面有很妙的一步，就是乘上 <span
+class="math inline">\(\frac{1}{2\sin\frac{\pi}{13}}\)</span>，后面再除回去。这样做主要是考虑积化和差能起到类似”裂项相消“的效果。</p>
+<p>同理， <span class="math display">\[
+\begin{aligned}
+&amp;x\times y\\
+&amp;=(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13})(\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\\
+&amp;=-\frac{3}{2}(\cos\frac{\pi}{13}-\cos\frac{2\pi}{13}+\cos\frac{3\pi}{13}-\cos\frac{4\pi}{13}+\cos\frac{5\pi}{13}-\cos\frac{6\pi}{13})\\
+&amp;=-\frac{3}{2}
+(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\\
+&amp;=-\frac{3}{4}
+\end{aligned}
+\]</span> 第二步就是普通的积化和差，第三步是用诱导公式整理成 <span
+class="math inline">\(x+y\)</span> 的形式。</p>
+<p>那么，<span class="math inline">\(x,y\)</span> 分别是方程 <span
+class="math inline">\(t^2-\frac{1}{2}t-\frac{3}{4}=0\)</span> 的两根</p>
+<p>解得 <span class="math inline">\(x=\frac{1+\sqrt{13}}{4}\)</span>
+(舍去负根，显然 <span
+class="math inline">\(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}\)</span>
+是一个正值)</p>
+<p>下面来看一个更复杂的构造方程，真的非常复杂。</p>
+<p>不过这题不算是严格的构造方程，只能说是用字母表示数。</p>
+<p><strong>2. (15) 求 <span
+class="math inline">\(\cos^5\frac{\pi}{9}+\cos^5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}\)</span>
+的值.</strong></p>
+<p>不给提示了，直接开干。</p>
+<p>设 <span
+class="math inline">\(x=\cos\frac{\pi}{9},y=\cos\frac{5\pi}{9},z=\cos\frac{7\pi}{9}\)</span>，</p>
+<p>那么原式求的就是 <span
+class="math inline">\(x^5+y^5+z^5\)</span>.</p>
+<p>到这里是不是有点感觉了？我们要做的就是通过低次的轮换式，逐步推到高次。</p>
+<p>首先，最基本的 <span class="math display">\[
+\begin{aligned}
+&amp;x+y+z\\
+&amp;=\cos\frac{\pi}{9}+\cos\frac{5\pi}{9}+\cos\frac{7\pi}{9}\\
+&amp;=2\cos\frac{\pi}{3}\cos\frac{2\pi}{9}+\cos\frac{7\pi}{9}\\
+&amp;=0
+\end{aligned}
+\]</span> 竟然是 <span class="math inline">\(0\)</span>，舒服！</p>
+<p>然后有 <span class="math display">\[
+\begin{aligned}
+&amp;xyz\\
+&amp;=\cos\frac{\pi}{9}\cos\frac{5\pi}{9}\cos\frac{7\pi}{9}\\
+&amp;=\frac{1}{\sin\frac{\pi}{9}}(\sin\frac{\pi}{9}\cos\frac{\pi}{9}\cos\frac{2\pi}{9}\cos\frac{4\pi}{9})\\
+&amp;=\cdots\\
+&amp;=\frac{1}{8}
+\end{aligned}
+\]</span> 这个式子在上面的”拆角凑角“中算过。</p>
+<p>再算一个式子，我们就可以确定 <span
+class="math inline">\(x,y,z\)</span> 的值，后面进行式子的配凑了。</p>
+<p>（应该有一个基本的认识：我们有三个未知数，所以我们应当需要三个式子来进行后续配凑。）</p>
+<p>除了 <span class="math inline">\(x+y+z,xyz\)</span>
+之外，下一个比较好求的应该是 <span
+class="math inline">\(xy+yz+xz\)</span> 或 <span
+class="math inline">\(x^2+y^2+z^2\)</span> 这样的式子。</p>
+那我们就选 <span class="math inline">\(x^2+y^2+z^2\)</span> 吧。 $$
+<span class="math display">\[\begin{aligned}
+
+&amp;x^2+y^2+z^2\\
+&amp;=\cos^2\frac{\pi}{9}+\cos^2\frac{5\pi}{9}+\cos^2\frac{7\pi}{9}\\
+&amp;=\frac{1+\cos\frac{2\pi}{9}}{2}+\frac{1+\cos\frac{4\pi}{9}}{2}+\frac{1+\cos\frac{8\pi}{9}}{2}\\
+&amp;=\frac{3}{2}+\frac{1}{2}(\cos\frac{2\pi}{9}+\cos\frac{4\pi}{9}+\cos\frac{8\pi}{9})\\
+&amp;=\frac{3}{2}+\cdots\\
+&amp;=\frac{3}{2}
+\end{aligned}\]</span>
+<p>$$ 这个式子在上面也算过。</p>
+<p>整理一下，我们得到了三个基础式子： <span class="math display">\[
+x+y+z=0\\
+xyz=\frac{1}{8}\\
+x^2+y^2+z^2=\frac{3}{2}
+\]</span> 一种思路是把 <span class="math inline">\(x,y,z\)</span>
+解出来，然后直接算五次方；这样当然可行，但是带根号五次方的展开会非常丧心病狂。</p>
+<p>另一种思路就是用这三个已知式子往高次方“爬”。这里我们采取这种思路。</p>
+<p>我们可以先算上面提到的 <span class="math inline">\(xy+yz+xz\)</span>.
+<span class="math display">\[
+xy+yz+xz=(x+y+z)^2-\frac{1}{2}(x^2+y^2+z^2)=-\frac{3}{4}
+\]</span> 用 <span class="math inline">\((xy+yz+xz)\)</span> 去乘 <span
+class="math inline">\((x+y+z)\)</span>，这样可以得到含有 <span
+class="math inline">\(x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\)</span>
+的项。这可以为后面算 <span
+class="math inline">\((x+y+z)(x^2+y^2+z^2)\)</span> 得到含 <span
+class="math inline">\(x^3+y^3+z^3\)</span> 的项提供便利。 <span
+class="math display">\[
+\begin{aligned}
+&amp;(xy+yz+xz)(x+y+z)\\
+&amp;=3xyz+x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\\
+&amp;=0\\
+将\space xyz=\frac{1}{8}\space代入,&amp;\Rightarrow
+x^2y+x^2z+y^2x+y^2z+z^2x+z^2y=-\frac{3}{8}
+\end{aligned}
+\]</span> 再来算 <span class="math inline">\(x^3+y^3+z^3\)</span>, <span
+class="math display">\[
+\begin{aligned}
+&amp;(x+y+z)(x^2+y^2+z^2)\\
+&amp;=0\\
+&amp;=x^3+y^3+z^3+x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\\
+&amp;=x^3+y^3+z^3-\frac{3}{8}\\
+&amp;\Rightarrow x^3+y^3+z^3=\frac{3}{8}
+\end{aligned}
+\]</span> 下面要算 <span
+class="math inline">\(x^4+y^4+z^4\)</span>.现在有两种方法，一种是用
+<span class="math inline">\((x+y+z)(x^3+y^3+z^3)\)</span> 得到，另一种是
+<span class="math inline">\((x^2+y^2+z^2)^2\)</span>.</p>
+<p>个人认为后一种会简洁一点，所以我们选用 <span
+class="math inline">\((x^2+y^2+z^2)^2\)</span>.</p>
+<p>我们仍然要算一个前置量：<span
+class="math inline">\(2(x^2y^2+y^2z^2+z^2x^2)\)</span></p>
+这个倒不是很难算，一个比较自然的想法是用 <span
+class="math inline">\((xy+yz+xz)\)</span>
+自己平方上去。实际上这确实可行。 $$
+<span class="math display">\[\begin{aligned}
+
+&amp;(xy+yz+xz)^2\\
+&amp;=\frac{9}{16}\\
+&amp;=x^2y^2+y^2z^2+x^2z^2+2(xy^2z+x^2yz+xyz^2)\\
+&amp;=x^2y^2+y^2z^2+x^2z^2+2(x+y+z)xyz\\
+&amp;=x^2y^2+y^2z^2+z^2x^2+0\\
+&amp;\Rightarrow x^2y^2+y^2z^2+x^2z^2=\frac{9}{16}
+\end{aligned}\]</span>
+<span class="math display">\[
+所以
+\]</span>
+<span class="math display">\[\begin{aligned}
+&amp;(x^2+y^2+z^2)^2\\
+&amp;=\frac{9}{4}\\
+&amp;=x^4+y^4+z^4+2(x^2y^2+y^2z^2+x^2z^2)\\
+&amp;=x^4+y^4+z^4+\frac{9}{8}\\
+&amp;\Rightarrow x^4+y^4+z^4=\frac{9}{8}
+\end{aligned}\]</span>
+<p>$$ 为了得到 <span
+class="math inline">\(x^5+y^5+z^5\)</span>，我们可以考虑 <span
+class="math inline">\((x^2+y^2+z^2)(x^3+y^3+z^3)\)</span>.</p>
+<p>Q: 那刚才为什么要算 <span
+class="math inline">\(x^4+y^4+z^4\)</span>？</p>
+<p>A: 就当作副产品吧，毕竟 <span
+class="math inline">\(x^2y^2+y^2z^2+z^2x^2\)</span> 是有用的（</p>
+<p>在这之前，我们仍然要算一个前置量：<span
+class="math inline">\(x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)\)</span>.</p>
+这个就不容易想到怎么算了。这里直接给方法：用 <span
+class="math inline">\((x^2y^2+y^2z^2+x^2z^2)\)</span> 去乘 <span
+class="math inline">\((x+y+z)\)</span>. <span class="math display">\[
+\begin{aligned}
+&amp;(x^2y^2+y^2z^2+x^2z^2)(x+y+z)\\
+&amp;=0\\
+&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+x^2y^2z+xy^2z^2+x^2yz^2\\
+&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+xyz(xy+yz+xz)（多漂亮的式子）\\
+&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+\frac{1}{8}\cdot(-\frac{3}{4})\\
+&amp;\Rightarrow x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)=\frac{3}{32}
+\end{aligned}
+\]</span> 最后， $$
+<span class="math display">\[\begin{aligned}
+
+&amp;(x^2+y^2+z^2)(x^3+y^3+z^3)\\
+&amp;=\frac{3}{2}\cdot\frac{3}{8}\\
+&amp;=\frac{9}{16}\\
+&amp;=x^5+y^5+z^5+x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)\\
+&amp;=x^5+y^5+z^5+\frac{3}{32}\\
+&amp;\Rightarrow x^5+y^5+z^5=\frac{15}{32}
+\end{aligned}\]</span>
+<p>$$ 所以，<span
+class="math inline">\(\cos^5\frac{\pi}{9}+\cos^5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}=\frac{15}{32}\)</span>.</p>
+<h5 id="恒等式证明">3.3.4 恒等式证明</h5>
+<p>恒等式的处理方法有很多种，没有固定的方法，所以直接靠例题来讲解吧。</p>
+<p><strong>1.(10) 求证：<span
+class="math inline">\(\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}=\frac{1}{2}\)</span>，其中
+<span class="math inline">\(n\in \mathbb{N}^+\)</span></strong>.</p>
+<p>令 <span
+class="math inline">\(S=\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}\)</span>，那么
+<span class="math display">\[
+\begin{aligned}
+&amp;2\sin\frac{\pi}{2n+1}\cdot S\\
+&amp;=\sin\frac{2\pi}{2n+1}+(\sin\frac{4\pi}{2n+1}-\sin\frac{2\pi}{2n+1})+(\sin\frac{6\pi}{2n+1}-\sin\frac{4\pi}{2n+1})+\cdots+(\sin\frac{2n\pi}{2n+1}-\sin\frac{(2n-2)\pi}{2n+1})\\
+&amp;=\sin\frac{2n\pi}{2n+1}\\
+\end{aligned}
+\]</span> 也就是说 <span class="math display">\[
+2S=S\\
+\Rightarrow S=\frac{1}{2}
+\]</span> <strong>2. 证明下列恒等式：</strong></p>
+<p>​ <strong>(10) (1) <span
+class="math inline">\(\tan\frac{3x}{2}\tan\frac{x}{2}=\frac{2\sin
+x}{\cos x+\cos 2x}\)</span></strong>;</p>
+<p>​ <strong>(10) (2) <span
+class="math inline">\(\frac{\sin^2A-\sin^2B}{\sin A\cos A-\sin B\cos
+B}=\tan(A+B)\)</span> </strong>.</p>
+<ol type="1">
+<li></li>
+</ol>
+<p>回顾“万能公式”：</p>
+<p><span class="math display">\[
+\sin x
+=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}}\\
+\cos x
+=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}}\\
+\tan x=\frac{2\tan\frac{x}{2}}{1-\tan^2\frac{x}{2}}
+\]</span></p>
+<p>令 <span class="math inline">\(\tan\frac{x}{2}=t\)</span>,</p>
+<p>将 <span class="math inline">\(\tan\frac{3x}{2}\)</span> 写成 <span
+class="math inline">\(\tan(x+\frac{x}{2})\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\tan\frac{3x}{2}\\
+&amp;=\tan(x+\frac{x}{2})\\
+&amp;=\frac{\tan x+t}{1-\tan x\cdot t}\\
+&amp;=\frac{\frac{2t}{1-t^2}+t}{1-\frac{2t}{1-t^2}t}\\
+&amp;=\frac{3t-t^3}{1-3t^2}
+\end{aligned}
+\]</span> 那么，<span
+class="math inline">\(\tan\frac{3x}{2}-\tan\frac{x}{2}\)</span> <span
+class="math display">\[
+\begin{aligned}
+&amp;=\frac{3t-t^3}{1-3t^2}- t
+=\frac{2t+2t^3}{1-3t^2}
+\end{aligned}
+\]</span> 另一个比较麻烦的是 <span class="math inline">\(\cos
+2x\)</span>, <span class="math display">\[
+\begin{aligned}
+&amp;\cos 2x\\
+&amp;=2\cos^2 x-1\\
+&amp;=2(\frac{1-t^2}{1+t^2})^2-1
+\end{aligned}
+\]</span></p>
+<p>右边 <span class="math display">\[
+\begin{aligned}
+&amp;=\frac{2\frac{2t}{1+t^2}}{\frac{1-t^2}{1+t^2}+2(\frac{1-t^2}{1+t^2})^2-1}\\
+&amp;=\frac{4t(1+t^2)}{1-t^4+2(t^4-2t^2+1)-(t^4-2t^2+1)}\\
+&amp;=\frac{2t+2t^3}{1-3t^2}\\
+\end{aligned}
+\]</span> 所以左边=右边</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>回顾上面讲过的一个让自己推的东西：</p>
+<p><span
+class="math display">\[\sin^2x-\sin^2y=\sin(x+y)\sin(x-y)\]</span></p>
+<p>用这个公式这题就秒杀了。</p>
+<p>左边 <span class="math display">\[
+\begin{aligned}
+&amp;=\frac{\sin(A+B)\sin(A-B)}{\frac{1}{2}\sin2A-\frac{1}{2}\sin2B}\\
+&amp;=\frac{\sin(A+B)\sin(A-B)}{\cos(A+B)\sin(A-B)}\\
+&amp;=\tan(A+B)
+\end{aligned}
+\]</span></p>
+<p><strong>3.证明下列恒等式：</strong></p>
+<p>​ <strong>(12) (1) <span
+class="math inline">\(\frac{1}{\sin2x}+\frac{1}{\sin4x}+\frac{1}{\sin8x}+\cdots+\frac{1}{\sin2^nx}=\cot
+x-\cot2^nx\)</span></strong>;</p>
+<p>​ <strong>(12) (2) <span
+class="math inline">\(\frac{1}{2}\tan\frac{x}{2}+\frac{1}{2^2}\tan\frac{x}{2^2}+\cdots+\frac{1}{2^n}\tan\frac{x}{2^n}=\frac{1}{2^n}\cot\frac{x}{2^n}-\cot
+x\)</span></strong>;</p>
+<p>本题答案照搬小蓝书，因为我太菜了。</p>
+<ol type="1">
+<li></li>
+</ol>
+<p>记 <span class="math inline">\(a_n=\cot x-\cot 2^n x\)</span></p>
+<p>则 <span class="math display">\[
+\begin{aligned}
+&amp;a_1\\
+&amp;=\cot x-\cot 2x\\
+&amp;=\frac{\cos x}{\sin x}-\frac{\cos 2x}{\sin 2x}\\
+&amp;=\frac{2\cos^2x-\cos 2x}{2\sin x\cos x}\\
+&amp;=\frac{1}{\sin 2x}
+\end{aligned}
+\]</span> 并且 <span class="math display">\[
+\begin{aligned}
+&amp;a_{k+1}-a_{k}\\
+&amp;=(\cot x-\cot 2^{k+1}x)-(\cot x-\cot 2^k x)\\
+&amp;=\cot2^kx-\cot2^{k+1}x\\
+&amp;=\frac{\cos2^kx}{\sin2^kx}-\frac{\cos2^{k+1}x}{\sin2^{k+1}x}\\
+&amp;=\frac{2(\cos2^kx)^2-\cos 2^{k+1}x}{2\sin2^kx\cos2^kx}\\
+&amp;=\frac{1}{\sin2^{k+1}x}
+\end{aligned}
+\]</span> 所以，左边 <span class="math display">\[
+\begin{aligned}
+&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\\
+&amp;=\cot x-\cot2^nx\\
+&amp;=右边
+\end{aligned}
+\]</span> (2)</p>
+<p>记 <span
+class="math inline">\(a_n=\frac{1}{2^n}\cot\frac{x}{2^n}-\cot
+x\)</span>.</p>
+<p>则 <span class="math display">\[
+\begin{aligned}
+&amp;a_1\\
+&amp;=\frac{1}{2}\cot\frac{x}{2}-\cot x\\
+&amp;=\frac{1}{2\tan\frac{x}{2}}-\frac{1-\tan^2\frac{x}{2}}{2\tan\frac{x}{2}}=\frac{1}{2}\tan\frac{x}{2}\\
+\end{aligned}
+\]</span> 并且 <span class="math display">\[
+\begin{aligned}
+&amp;a_{k+1}-a_k\\
+&amp;=(\frac{1}{2^{k+1}}\cot\frac{x}{2^{k+1}}-\cot
+x)-(\frac{1}{2^k}\cot\frac{x}{2^k}-\cot x)\\
+&amp;=\frac{1}{2^{k+1}}(\cot\frac{x}{2^{k+1}}-2\cot\frac{x}{2^k})\\
+&amp;=\frac{1}{2^{k+1}}\cdot(\frac{1}{\tan\frac{x}{2^{k+1}}}-2\times\frac{1-\tan^2\frac{x}{2^{k+1}}}{2\cdot\tan\frac{x}{2^{k+1}}})\\
+&amp;=\frac{1}{2^{k+1}}\cdot\tan\frac{x}{2^{k+1}}
+\end{aligned}
+\]</span> 所以，左边 <span class="math display">\[
+\begin{aligned}
+&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\\
+&amp;=a_n\\
+&amp;=右边
+\end{aligned}
+\]</span></p>
+<hr />
+<h4 id="三角形中的三角函数缺">3.4 三角形中的三角函数（缺）</h4>
+<h5 id="三角形中三角函数的拓展公式及推导">3.4.1
+三角形中三角函数的拓展公式及推导</h5>
+<p>在三角形中，三个角 <span class="math inline">\(A,B,C\)</span>
+有一个很重要的限制：<span class="math inline">\(A+B+C=\pi\)</span>.</p>
+<p>这个限制带来了很多奇妙的恒等式，这里先列出来。</p>
+<p><span class="math display">\[
+\sin A+\sin B+\sin
+C=4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}\quad(1)\\
+\sin2A+\sin2B+\sin2C=4\sin A\sin B\sin C\quad(2)\\
+\cos A+\cos B+\cos
+C=1+4\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\quad(3)\\
+\cos2A+\cos2B+\cos2C=-1-4\cos A\cos B\cos C\quad(4)\\
+\sin^2A+\sin^2B+\sin^2C=2+2\cos A\cos B\cos C\quad(5)\\
+\cos^2A+\cos^2B+\cos^2C=1-2\cos A\cos B\cos C\quad(6)\\
+\tan A+\tan B+\tan C=\tan A\tan B \tan C\quad(7)\\
+\cot A\cot B+\cot B\cot C+\cot C\cot A=1\quad(8)\\
+\tan\frac{A}{2}\tan\frac{B}{2}+\tan\frac{B}{2}\tan\frac{C}{2}+\tan\frac{C}{2}\tan\frac{A}{2}=1\quad(9)
+\]</span></p>
+<p>这些恒等式的证明方法比较套路，这里选 (1) (2) (5) (9)
+这四个式子证明。</p>
+<h5 id="三角形中的三角函数">3.4.2 三角形中的三角函数</h5>
+<h5 id="三角换元">3.4.3 三角换元</h5>
+<h5 id="正弦定理与余弦定理">3.4.4 正弦定理与余弦定理</h5>
+<hr />
+<h4 id="反三角函数及三角方程缺">3.5 反三角函数及三角方程（缺）</h4>
+<h4 id="复数">3.6 复数</h4>
+<h5 id="复数的定义及四则运算">3.6.1 复数的定义及四则运算</h5>
+<p><strong>(??) 0.求方程 <span class="math inline">\(x^2+1=0\)</span>
+的根 </strong></p>
+<blockquote>
+<p>因为 <span
+class="math inline">\(\Delta=-4&lt;0\)</span>，所以这个东西无解。</p>
+</blockquote>
+<p>真的是这样吗？</p>
+<p>注意到二次方程的判别式是用来判断方程是否有实根的。</p>
+<p>为了求解根不在 <span class="math inline">\(\mathbb{R}\)</span>
+上的二次方程，我们需要对数系加以扩充。</p>
+<p>引入记号 <span class="math inline">\(i\)</span> 并称之为
+<strong>虚数单位</strong>，使它满足 <span
+class="math inline">\(i^2=-1\)</span>.</p>
+<p>如果一个量可以被写为 <span class="math display">\[
+z=a+bi,a,b\in \mathbb{R}
+\]</span> 那么 <span class="math inline">\(z\)</span>
+就被称作一个<strong>复数</strong>。称 <span
+class="math inline">\(a\)</span>
+为实数部分，简称<strong>实部</strong>，符号 <span
+class="math inline">\(Re(z)\)</span>；称 <span
+class="math inline">\(b\)</span>
+为虚数部分，简称<strong>虚部</strong>，符号 <span
+class="math inline">\(Im(z)\)</span>.</p>
+<p>部分约定：</p>
+<ul>
+<li>实数是特殊的复数；</li>
+<li>实部为 <span class="math inline">\(0\)</span>
+的复数为<strong>纯虚数</strong>；</li>
+<li>虚部不为 <span class="math inline">\(0\)</span>
+的复数为<strong>虚数</strong>；</li>
+<li>虚数与虚数，虚数与实数都不能比较大小；即：如果两个数能比较大小，那么这两个数一定是实数。</li>
+</ul>
+<p>Q：为什么虚数之间不能比较大小？</p>
+<p>A：你可以试着把 <span class="math inline">\(i\)</span> 和 <span
+class="math inline">\(0\)</span> 比较一下大小。显然 <span
+class="math inline">\(i\ne 0\)</span>；若 <span
+class="math inline">\(i&gt;0\)</span>，则两边乘上 <span
+class="math inline">\(i\)</span> 得到 <span
+class="math inline">\(-1&gt;0\)</span>，矛盾；若 <span
+class="math inline">\(i&lt;0\)</span>，则 平方得到 <span
+class="math inline">\(-1&gt;0\)</span>，依然矛盾。</p>
+<p>若有两个复数 <span
+class="math inline">\(z_1=a_1i+b_1,z_2=a_2i+b_2\)</span>，那么 “<span
+class="math inline">\(z_1=z_2\)</span>“ 的充要条件是 “<span
+class="math inline">\(a_1=a_2\)</span> 且 <span
+class="math inline">\(b_1=b_2\)</span>“.</p>
+<p>我们还可以从几何方面来认识复数。</p>
+<p>记 <span class="math inline">\(Z(a,b)\)</span> ，那么复数 <span
+class="math inline">\(z=a+bi\)</span> 可以用点 <span
+class="math inline">\(Z(a,b)\)</span>
+表示。这个建立直角坐标系来表示复数的平面叫做<strong>复平面</strong>，<span
+class="math inline">\(x\)</span> 轴和 <span
+class="math inline">\(y\)</span>
+轴分别叫做<strong>实轴</strong>和<strong>虚轴</strong>。显然，实轴上的点都表示实数。</p>
+<blockquote>
+<p>判断：虚轴上的点都表示纯虚数。（ ）</p>
+</blockquote>
+<p>这个说法是错的。应该是：除了原点外，虚轴上的点都表示纯虚数。</p>
+<p>下面介绍共轭复数。</p>
+<p>若已知复数 <span class="math inline">\(z=a+bi,a,b\in
+\mathbb{R}\)</span>，则称 <span
+class="math inline">\(\overline{z}=a+(-b)i\)</span> 是 <span
+class="math inline">\(z\)</span> 的<strong>共轭复数</strong>。</p>
+<p>显然， <span class="math inline">\(\overline{z}\)</span> 和 <span
+class="math inline">\(z\)</span> 在复平面上关于 <span
+class="math inline">\(x\)</span> 轴对称。</p>
+<p>共轭复数的运算性质列举如下：</p>
+<ul>
+<li><span class="math inline">\(\overline{z_1\pm
+z_2}=\overline{z_1}\pm\overline{z_2}\)</span>;</li>
+<li><span
+class="math inline">\(\overline{z_1z_2}=\overline{z_1}\cdot\overline{z_2}\)</span>;</li>
+<li><span
+class="math inline">\(\frac{\overline{z_1}}{\overline{z_2}}=\overline{\frac{z_1}{z_2}}\)</span>;</li>
+<li><span
+class="math inline">\(\overline{z^n}=(\overline{z})^n\)</span>;</li>
+</ul>
+<p>还有一些显然的性质，比如 <span
+class="math inline">\(\overline{\overline{z}}=z\)</span>，这里就不列出来了（实际上是我懒，毕竟打
+<code>\overline&#123;&#125;</code> 真的挺麻烦的）。</p>
+<p>定义复数 <span class="math inline">\(z=a+bi,a,b\in
+\mathbb{R}\)</span> 的<strong>模长</strong> <span
+class="math inline">\(|z|=\sqrt{a^2+b^2}\)</span> ，其几何意义为坐标上点
+<span class="math inline">\(Z(a,b)\)</span> 到原点的距离。</p>
+<p>称复平面上有向线段 <span
+class="math inline">\(\overrightarrow{Oz}\)</span> 与实轴正方向的夹角
+<span class="math inline">\(\theta\)</span> 为 <span
+class="math inline">\(z\)</span> 的<strong>幅角</strong>；所有的 <span
+class="math inline">\(\theta\)</span> 中，在 <span
+class="math inline">\([0,2\pi)\)</span> 内的角 <span
+class="math inline">\(\theta&#39;\)</span>
+叫<strong>幅角主值</strong>，记为 <span
+class="math inline">\(arg_z\)</span>；复数 <span
+class="math inline">\(z\)</span> 的幅角主值是确定的，唯一的。</p>
+<p>对于模长，有 <span class="math display">\[
+|z|^2=z\cdot \overline{z}
+\]</span> 这个公式还是比较重要的。</p>
+<p>下面介绍复数的<strong>四则运算</strong>。</p>
+<p><strong>加法</strong>：对于给定的两个复数 <span
+class="math inline">\(z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in
+\mathbb{R})\)</span>，定义 <span class="math inline">\(z_1\)</span> 与
+<span class="math inline">\(z_2\)</span> 的和是一个记为 <span
+class="math inline">\(z_1+z_2\)</span> 的新复数： <span
+class="math display">\[
+z_1+z_2=(a_1+a_2)+(b_1+b_2)i
+\]</span> 显然，复数的加法满足交换律，结合律。</p>
+<p>对于<strong>减法</strong>，类似地，定义 <span
+class="math inline">\(z_1\)</span> 与 <span
+class="math inline">\(z_2\)</span> 的差为 <span
+class="math inline">\(z_1-z_2\)</span>，满足 <span
+class="math display">\[
+z_1-z_2=(a_1-a_2)+(b_1-b_2)i
+\]</span> 关于复数与向量的关系，将在几何——向量中讲到。</p>
+<p><strong>乘法</strong>：复数 <span class="math inline">\(z_1\)</span>
+与 <span class="math inline">\(z_2\)</span> 的积是一个记为 <span
+class="math inline">\(z_1\cdot z_2\)</span> 的新复数： <span
+class="math display">\[
+z_1\cdot z_2=(a_1+b_1i)(a_2+b_2i)=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i
+\]</span> 只需把括号拆开，并运用 <span
+class="math inline">\(i^2=-1\)</span> 即可。</p>
+<p>不难得知，复数的乘法满足交换律，结合律，分配律。</p>
+<p><strong>除法：</strong>对于给定的两个复数 <span
+class="math inline">\(z_1,z_2(z_2\ne0)\)</span>，若可以找到一个复数
+<span class="math inline">\(z\)</span>，满足 <span
+class="math inline">\(z_1=z_2\cdot z\)</span>，则我们称这个复数 <span
+class="math inline">\(z\)</span> 为 <span
+class="math inline">\(z_1\)</span> 与 <span
+class="math inline">\(z_2\)</span> 的商，并记为 <span
+class="math inline">\(\frac{z_1}{z_2}\)</span>.</p>
+<p>若 <span
+class="math inline">\(z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in
+\mathbb{R}\space且\space a_2^2+b_2^2\ne0)\)</span>，则 <span
+class="math display">\[
+\frac{z_1}{z_2}=\frac{a_1a_2+b_1b_2}{a_2^2+b_2^2}+\frac{a_2b_1-a_1b_2}{a_2^2+b_2^2}i
+\]</span> <strong>复数的三角形式</strong></p>
+<p>定义复数 <span class="math inline">\(z\)</span> 的三角形式为 <span
+class="math display">\[
+z=|z|\cos \theta+|z|\sin\theta i
+\]</span> <strong>复数乘法的几何意义</strong></p>
+<p>对于任意复数 <span
+class="math inline">\(z_1,z_2\in\mathbb{C}\)</span>，不妨设： <span
+class="math display">\[
+z_1=|z_1|(\cos\theta_1+\sin\theta_1i),\quad
+z_2=|z_2|(\cos\theta_2+\sin\theta_2i)
+\]</span> 这里 <span class="math inline">\(\theta_1,\theta_2\)</span>
+分别是复数 <span class="math inline">\(z_1,z_2\)</span> 的幅角。</p>
+<p>那么 <span class="math display">\[
+\begin{aligned}
+&amp;z_1z_2\\
+&amp;=|z_1||z_2|((\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2)+(\cos\theta_1\sin\theta_2+\sin\theta_1\cos\theta_2)i)\\
+&amp;=|z_1||z_2|(\cos(\theta_1+\theta_2)+\sin(\theta_1+\theta_2)i)
+\end{aligned}
+\]</span> （最后一步是三角恒等变换。）</p>
+<p>所以，<strong>两个复数相乘：模长相乘，幅角相加。</strong></p>
+<p><strong>欧拉公式和棣莫弗公式</strong></p>
+<p>欧拉公式： <span class="math display">\[
+e^{i\theta}=\cos\theta+\sin\theta i
+\]</span> <span class="math inline">\(e^{i\pi}=-1\)</span>
+就是这个公式的特殊情况。</p>
+<p>要证明它需要用到泰勒展开，我不会。</p>
+<p>棣莫弗公式： <span class="math display">\[
+(\cos\theta+\sin\theta i)^n=\cos n\theta+\sin n\theta i
+\]</span></p>
+<p>棣莫弗公式是显然的。</p>
+<hr />
+<h5 id="复数杂题1">3.6.2 复数杂题（1）</h5>
+<h5 id="n-次单位根">3.6.3 n 次单位根</h5>
+<h5 id="复数与几何">3.6.4 复数与几何</h5>
+<h5 id="复数和三角函数">3.6.5 复数和三角函数</h5>
+<h5 id="复数杂题2">3.6.6 复数杂题（2）</h5>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/" rel="tag"># 三角函数</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/04/02/%E5%88%9D%E4%B8%89-%E9%AB%98%E4%BA%8C%E6%B8%B8%E8%AE%B0/" rel="prev" title="初三——高二游记">
+      <i class="fa fa-chevron-left"></i> 初三——高二游记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/04/04/%E6%95%B0%E5%88%97/" rel="next" title="数列">
+      数列 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0"><span class="nav-text">3 三角函数与复数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B"><span class="nav-text">3.1 三角函数简介</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%BB%E6%84%8F%E8%A7%92%E5%92%8C%E5%BC%A7%E5%BA%A6%E5%88%B6"><span class="nav-text">3.1.1 任意角和弧度制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="nav-text">3.1.2 诱导公式</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8"><span class="nav-text">3.2 三角函数的图像和性质</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8-1"><span class="nav-text">3.2.1 三角函数的图像和性质</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%BD%E6%95%B0-fxa-x"><span class="nav-text">3.2.2 函数 $f(x)&#x3D;A (x+)) $</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2"><span class="nav-text">3.3 三角恒等变换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.3.1 三角恒等变换公式推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8B%86%E8%A7%92%E5%87%91%E8%A7%92"><span class="nav-text">3.3.2 拆角凑角</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E7%A8%8B"><span class="nav-text">3.3.3 构造方程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%81%92%E7%AD%89%E5%BC%8F%E8%AF%81%E6%98%8E"><span class="nav-text">3.3.4 恒等式证明</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%BC%BA"><span class="nav-text">3.4 三角形中的三角函数（缺）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E6%8B%93%E5%B1%95%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.4.1
+三角形中三角函数的拓展公式及推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.4.2 三角形中的三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%8D%A2%E5%85%83"><span class="nav-text">3.4.3 三角换元</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AD%A3%E5%BC%A6%E5%AE%9A%E7%90%86%E4%B8%8E%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86"><span class="nav-text">3.4.4 正弦定理与余弦定理</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%8F%8A%E4%B8%89%E8%A7%92%E6%96%B9%E7%A8%8B%E7%BC%BA"><span class="nav-text">3.5 反三角函数及三角方程（缺）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0"><span class="nav-text">3.6 复数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="nav-text">3.6.1 复数的定义及四则运算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%981"><span class="nav-text">3.6.2 复数杂题（1）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#n-%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9"><span class="nav-text">3.6.3 n 次单位根</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E4%B8%8E%E5%87%A0%E4%BD%95"><span class="nav-text">3.6.4 复数与几何</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E5%92%8C%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.6.5 复数和三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%982"><span class="nav-text">3.6.6 复数杂题（2）</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        
+
+<div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">presucc</p>
+  <div class="site-description" itemprop="description">写一些与数学有关的东西</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+
+      </div>
+  
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">presucc</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">84k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:17</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
