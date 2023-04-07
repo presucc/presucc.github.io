@@ -253,14 +253,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>28k</span>
+              <span>27k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>25 分钟</span>
+              <span>24 分钟</span>
             </span>
             <div class="post-description">数列。</div>
 
@@ -273,1597 +273,1190 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="数列与数学归纳">2 数列与数学归纳</h3>
-<p><del>输入法把“数列”打成“输了”，rp--</del></p>
-<h4 id="等差数列和等比数列">2.1 等差数列和等比数列</h4>
-<h5 id="数列的基本概念等差和等比数列">2.1.1
-数列的基本概念，等差和等比数列</h5>
-<ul>
-<li><strong>数列的基本概念</strong></li>
+        <h3 id="2-数列与数学归纳">2 数列与数学归纳</h3>
+<p><s>输入法把“数列”打成“输了”，rp–</s></p>
+<h4 id="2-1-等差数列和等比数列">2.1 等差数列和等比数列</h4>
+<h5 id="2-1-1-数列的基本概念，等差和等比数列">2.1.1 数列的基本概念，等差和等比数列</h5>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>数列的基本概念</strong></p>
+</li>
 </ul>
 <p>数列，简单来说就是一列有序的数。</p>
 <p>数列中的每一个数都叫做这个数列的项。</p>
-<p>排在第一位的数称为这个数列的第 <span class="math inline">\(1\)</span>
-项（通常也叫做首项），排在第二位的数称为这个数列的第 <span
-class="math inline">\(2\)</span> 项，以此类推，排在第 <span
-class="math inline">\(n\)</span> 位的数称为这个数列的第 <span
-class="math inline">\(n\)</span> 项，通常用 <span
-class="math inline">\(a_n\)</span> 表示。</p>
-<p>可以用 <span class="math inline">\(\{a_n\}\)</span>
-来表示一个数列。前 <span class="math inline">\(n\)</span> 项和一般用
-<span class="math inline">\(S_n\)</span> 表示。</p>
+<p>排在第一位的数称为这个数列的第 $1$ 项（通常也叫做首项），排在第二位的数称为这个数列的第 $2$ 项，以此类推，排在第 $n$ 位的数称为这个数列的第 $n$ 项，通常用 $a_n$ 表示。</p>
+<p>可以用 ${a_n}$ 来表示一个数列。前 $n$ 项和一般用 $S_n$ 表示。</p>
 <p>显然，数列可以看成定义域为正整数集的函数。</p>
-<ul>
-<li><strong>等差数列</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>等差数列</strong></p>
+</li>
 </ul>
-<p>如果一个数列，从第 <span class="math inline">\(2\)</span>
-项起，每一项和前一项的差为定值 <span
-class="math inline">\(d\)</span>，那么称这个数列为等差数列，<span
-class="math inline">\(d\)</span> 称为公差。</p>
-<p><strong>等差中项</strong> 若 <span
-class="math inline">\(a,b,c\)</span> 构成等差数列，则称 <span
-class="math inline">\(b\)</span> 为 <span
-class="math inline">\(a\)</span> 和 <span
-class="math inline">\(c\)</span> 的等差中项。</p>
-<p><strong>通项公式</strong> <span
-class="math inline">\(a_n=a_1+(n-1)d\)</span>.</p>
-<p><strong>前 <span class="math inline">\(n\)</span> 项和公式</strong>
-<span class="math inline">\(S_n=\frac{n(a_1+a_n)}{2}\)</span>，或者
-<span class="math inline">\(S_n=na_1+\frac{n(n-1)}{2}d\)</span>.</p>
+<p>如果一个数列，从第 $2$ 项起，每一项和前一项的差为定值 $d$，那么称这个数列为等差数列，$d$ 称为公差。</p>
+<p><strong>等差中项</strong> 若 $a,b,c$ 构成等差数列，则称 $b$ 为 $a$ 和 $c$ 的等差中项。</p>
+<p><strong>通项公式</strong> $a_n=a_1+(n-1)d$.</p>
+<p><strong>前 $n$ 项和公式</strong> $S_n=\frac{n(a_1+a_n)}{2}$，或者 $S_n=na_1+\frac{n(n-1)}{2}d$.</p>
 <blockquote>
 <p>相传高斯10岁时算出布特纳给学生们出的将1到100的所有整数加起来的算术题，布特纳刚叙述完题目，高斯就算出了正确答案。</p>
 <p>不过，这很可能是一个不真实的传说。据对高斯素有研究的著名数学史家E•T•贝尔考证，布特纳当时给孩子们出的是一道更难的加法题：81297+81495+81693+…+100899。</p>
 </blockquote>
-<p>前 <span class="math inline">\(n\)</span>
-项和公式的证明是平凡的。可以考虑把数列倒着写一遍，相加再除以 <span
-class="math inline">\(2\)</span>.</p>
-<p>当 <span class="math inline">\(d=0\)</span>
-时，称这个数列为常数列。</p>
+<p>前 $n$ 项和公式的证明是平凡的。可以考虑把数列倒着写一遍，相加再除以 $2$.</p>
+<p>当 $d=0$ 时，称这个数列为常数列。</p>
 <p><strong>等差数列的部分推论</strong></p>
-<ul>
-<li><span class="math inline">\(a_n=a_m+(n-m)d\)</span>.</li>
-<li>若 <span class="math inline">\(p+s=q+r\)</span>，则 <span
-class="math inline">\(a_p+a_s=a_q+a_r\)</span>.</li>
-<li>若 <span class="math inline">\(\{a_n\},\{b_n\}\)</span>
-是等差数列，则 <span class="math inline">\(\{pa_n+qb_n\}\)</span>
-是等差数列.</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$a_n=a_m+(n-m)d$.</p>
+</li>
+<li class="lvl-2">
+<p>若 $p+s=q+r$，则 $a_p+a_s=a_q+a_r$.</p>
+</li>
+<li class="lvl-2">
+<p>若 ${a_n},{b_n}$ 是等差数列，则 ${pa_n+qb_n}$ 是等差数列.</p>
+</li>
 </ul>
 <p>证明都比较简单。</p>
-<ul>
-<li><strong>等比数列</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>等比数列</strong></p>
+</li>
 </ul>
-<p>如果一个数列，从第 <span class="math inline">\(2\)</span>
-项起，每一项和前一项的商为定值 <span
-class="math inline">\(q\)</span>，那么称这个数列为等差数列，<span
-class="math inline">\(q\)</span> 称为公比。</p>
-<p><strong>通项公式</strong> <span class="math inline">\(a_n=a_1\cdot
-q^{n-1}\)</span></p>
-<p><strong>前 <span class="math inline">\(n\)</span> 项和公式</strong>
-<span class="math inline">\(S_n=\frac{a_1(q^n-1)}{q-1}(q\neq
-1)\)</span></p>
+<p>如果一个数列，从第 $2$ 项起，每一项和前一项的商为定值 $q$，那么称这个数列为等差数列，$q$ 称为公比。</p>
+<p><strong>通项公式</strong> $a_n=a_1\cdot q^{n-1}$</p>
+<p><strong>前 $n$ 项和公式</strong> $S_n=\frac{a_1(q^n-1)}{q-1}(q\neq 1)$</p>
 <p>这个东西可以推一下。</p>
-<p>记 <span class="math inline">\(S_n=a_1+a_2+\cdots+a_n\)</span>,</p>
-<p>则 <span
-class="math inline">\(qS_n=qa_1+qa_2+\cdots+qa_n=a_2+a_3+\cdots+a_{n+1}\)</span></p>
-<p>两式相减，<span class="math inline">\((q-1)S_n=a_{n+1}-a_1\Rightarrow
-S_n=\frac{a_{n+1}-a_1}{q-1}=\frac{a_1(q^n-1)}{q-1}\)</span></p>
-<p>特别地，当 <span class="math inline">\(q=1\)</span> 时，<span
-class="math inline">\(S_n=na_1\)</span>.</p>
-<p><strong>等比中项</strong> 若 <span
-class="math inline">\(a_pa_q=a_r^2\)</span>，那么称 <span
-class="math inline">\(a_r\)</span> 为 <span
-class="math inline">\(a_p,a_q\)</span> 的等比中项。</p>
+<p>记 $S_n=a_1+a_2+\cdots+a_n$,</p>
+<p>则 $qS_n=qa_1+qa_2+\cdots+qa_n=a_2+a_3+\cdots+a_{n+1}$</p>
+<p>两式相减，$(q-1)S_n=a_{n+1}-a_1\Rightarrow S_n=\frac{a_{n+1}-a_1}{q-1}=\frac{a_1(q^n-1)}{q-1}$</p>
+<p>特别地，当 $q=1$ 时，$S_n=na_1$.</p>
+<p><strong>等比中项</strong> 若 $a_pa_q=a_r^2$，那么称 $a_r$ 为 $a_p,a_q$ 的等比中项。</p>
 <p><strong>等比数列的部分推论</strong></p>
-<ul>
-<li>若 <span class="math inline">\(m+n=p+q\)</span>，则 <span
-class="math inline">\(a_ma_n=a_pa_q\)</span>.</li>
-<li>若 <span class="math inline">\(\{a_n\}\)</span> 是等比数列，公比为
-<span class="math inline">\(q_1\)</span>，<span
-class="math inline">\(\{b_n\}\)</span> 是等比数列，公比为 <span
-class="math inline">\(q_2\)</span>，则 <span
-class="math inline">\(\{a_nb_n\},\{\frac{a_n}{b_n}\}\)</span>
-都是等比数列，公比分别为 <span
-class="math inline">\(q_1q_2,\frac{q_1}{q_2}\)</span>.</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>若 $m+n=p+q$，则 $a_ma_n=a_pa_q$.</p>
+</li>
+<li class="lvl-2">
+<p>若 ${a_n}$ 是等比数列，公比为 $q_1$，${b_n}$ 是等比数列，公比为 $q_2$，则 ${a_nb_n},{\frac{a_n}{b_n}}$ 都是等比数列，公比分别为 $q_1q_2,\frac{q_1}{q_2}$.</p>
+</li>
 </ul>
-<hr />
-<h5 id="例题">2.1.2 例题</h5>
+<hr>
+<h5 id="2-1-2-例题">2.1.2 例题</h5>
 <p>等差等比数列没有什么难题，算基础。</p>
-<p><strong>(3)1.已知等差数列 <span
-class="math inline">\(\{a_n\}\)</span> 的前 <span
-class="math inline">\(n\)</span> 项和为 <span
-class="math inline">\(S_n,b_n=2^{a_n}\)</span> 且 <span
-class="math inline">\(b_1+b_3=17,b_2+b_4=68\)</span>，则 <span
-class="math inline">\(S_{10}\)</span> 的值是.</strong></p>
-<p>显然 <span class="math inline">\(\{b_n\}\)</span> 是等比数列，公比为
-<span class="math inline">\(2^d\)</span>，其中 <span
-class="math inline">\(d\)</span> 为数列 <span
-class="math inline">\(\{a_n\}\)</span> 的 公差。</p>
-<p>那么 <span
-class="math inline">\(b_1+b_1q^2=17,b_1q+b_1q^3=68.\)</span></p>
-<p>不难解得 <span class="math inline">\(b_1=1,q=4\)</span></p>
-<p><span
-class="math inline">\(\{a_n\}=0,2,4,\cdots,S_{10}=90\)</span>.</p>
-<p><strong>(7)2.数列 <span class="math inline">\(\{a_n\}\)</span> 满足
-<span
-class="math inline">\((a_{n+1}-1)(a_n-1)=3(a_n-a_{n+1}),a_1=2\)</span>，求通项.</strong></p>
-<p>构造数列 <span
-class="math inline">\(b_n=\frac{1}{a_n-1}\)</span>,</p>
-<p>注意到 <span
-class="math inline">\(b_n-b_{n-1}=\frac{1}{a_{n-1}}-\frac{1}{a_{n-1}-1}=\frac{a_{n-1}-a_n}{3(a_{n-1}-a_n)}=\frac{1}{3}\)</span>.</p>
-<p>所以 <span class="math inline">\(\{b_n\}\)</span>
-为等差数列，易得其通项为 <span
-class="math inline">\(b_n=\frac{1}{3}n+\frac{2}{3}\)</span>.</p>
-<p>代入可得 <span
-class="math inline">\(a_n=\frac{n+5}{n+2}\)</span>.</p>
+<p><strong>(3)1.已知等差数列 ${a_n}$ 的前 $n$ 项和为 $S_n,b_n=2^{a_n}$ 且 $b_1+b_3=17,b_2+b_4=68$，则 $S_{10}$ 的值是.</strong></p>
+<p>显然 ${b_n}$ 是等比数列，公比为 $2^d$，其中 $d$ 为数列 ${a_n}$ 的 公差。</p>
+<p>那么 $b_1+b_1q<sup>2=17,b_1q+b_1q</sup>3=68.$</p>
+<p>不难解得 $b_1=1,q=4$</p>
+<p>${a_n}=0,2,4,\cdots,S_{10}=90$.</p>
+<p><strong>(7)2.数列 ${a_n}$ 满足 $(a_{n+1}-1)(a_n-1)=3(a_n-a_{n+1}),a_1=2$，求通项.</strong></p>
+<p>构造数列 $b_n=\frac{1}{a_n-1}$,</p>
+<p>注意到 $b_n-b_{n-1}=\frac{1}{a_{n-1}}-\frac{1}{a_{n-1}-1}=\frac{a_{n-1}-a_n}{3(a_{n-1}-a_n)}=\frac{1}{3}$.</p>
+<p>所以 ${b_n}$ 为等差数列，易得其通项为 $b_n=\frac{1}{3}n+\frac{2}{3}$.</p>
+<p>代入可得 $a_n=\frac{n+5}{n+2}$.</p>
 <p>Q：怎么想到构造这个数列的？</p>
 <p>A：这其实是裂项的一种形式。注意到把两边取倒数后，右边可以裂项，相邻两项差相等。</p>
-<p><strong>3.已知 <span
-class="math inline">\(x^2+y^2=4\)</span>，在这两个实数 <span
-class="math inline">\(x,y\)</span>
-之间插入三个实数，使这五个数构成等差数列，那么这个等差数列后三项和的最大值为.</strong></p>
-<p>这个数列实际上是 <span
-class="math inline">\(x,x+\frac{1}{4}(y-x),x+\frac{2}{4}(y-x),x+\frac{3}{4}(y-x),y\)</span></p>
-<p>所求值即 <span
-class="math inline">\(S=\frac{3}{4}x+\frac{9}{4}y\)</span>.</p>
-<p>考虑三角换元。记 <span class="math inline">\(\sin
-\alpha=\frac{x}{2},\cos \alpha=\frac{y}{2}\)</span>，</p>
-<p>则 <span
-class="math inline">\(S=\frac{3}{2}\sin\alpha+\frac{9}{2}\cos\alpha=\frac{3\sqrt{10}}{2}\sin(\alpha+\theta)\)</span>；最大值即
-<span class="math inline">\(\frac{3\sqrt{10}}{2}\)</span>.</p>
-<hr />
-<h4 id="数列的通项公式">2.2 数列的通项公式</h4>
+<p><strong>3.已知 $x<sup>2+y</sup>2=4$，在这两个实数 $x,y$ 之间插入三个实数，使这五个数构成等差数列，那么这个等差数列后三项和的最大值为.</strong></p>
+<p>这个数列实际上是 $x,x+\frac{1}{4}(y-x),x+\frac{2}{4}(y-x),x+\frac{3}{4}(y-x),y$</p>
+<p>所求值即 $S=\frac{3}{4}x+\frac{9}{4}y$.</p>
+<p>考虑三角换元。记 $\sin \alpha=\frac{x}{2},\cos \alpha=\frac{y}{2}$，</p>
+<p>则 $S=\frac{3}{2}\sin\alpha+\frac{9}{2}\cos\alpha=\frac{3\sqrt{10}}{2}\sin(\alpha+\theta)$；最大值即 $\frac{3\sqrt{10}}{2}$.</p>
+<hr>
+<h4 id="2-2-数列的通项公式">2.2 数列的通项公式</h4>
 <p>这类题目一般会给出一个递推式子，要你给出通项公式。</p>
 <p>其中这个数列的通项公式不应该包含数列的其它项，一般以变量/常数的加、减、乘、除、若干次幂、阶乘表示。</p>
-<h5 id="部分求数列通项公式的方法">2.2.1 部分求数列通项公式的方法</h5>
-<ul>
-<li><strong><span class="math inline">\(a_{n+1} = a_{n}+f(n)\)</span>
-型（<span class="math inline">\(a_1\)</span>给定，下同（两项 <span
-class="math inline">\(a_2\)</span> 也给定））</strong></li>
+<h5 id="2-2-1-部分求数列通项公式的方法">2.2.1 部分求数列通项公式的方法</h5>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>$a_{n+1} = a_{n}+f(n)$ 型（$a_1$给定，下同（两项 $a_2$ 也给定））</strong></p>
+</li>
 </ul>
-<p>直接累加即可。<span
-class="math inline">\(a_{n+1}=a_{n}+f(n)=a_{n-1}+f(n-1)+f(n)=
-\cdots=\sum_{i=1}^{n}f(i)+a_1\)</span></p>
-<ul>
-<li><strong><span class="math inline">\(a_{n+1}=f(n)a_n\)</span>
-型</strong></li>
+<p>直接累加即可。$a_{n+1}=a_{n}+f(n)=a_{n-1}+f(n-1)+f(n)= \cdots=\sum_{i=1}^{n}f(i)+a_1$</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>$a_{n+1}=f(n)a_n$ 型</strong></p>
+</li>
 </ul>
 <p>直接累乘即可。</p>
-<ul>
-<li><strong><span class="math inline">\(a_{n+1}=p \cdot a_n+q\)</span>
-型</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>$a_{n+1}=p \cdot a_n+q$ 型</strong></p>
+</li>
 </ul>
-<p>考虑把递推式变成 <span
-class="math inline">\(a_{n+1}-M=p(a_{n}-M)\)</span> 的形式，这样数列
-<span class="math inline">\(\{a_{n}-M\}\)</span> 就是公比为 <span
-class="math inline">\(p\)</span> 的等比数列了。</p>
-<p>解方程 <span class="math inline">\(x-M=p(x-M)\)</span>，可以得到
-<span class="math inline">\(x=
-\frac{q}{1-p}\)</span>；（这里使用了函数的不动点思想）</p>
-<p>所以我们需要的 <span class="math inline">\(M\)</span> 即为 <span
-class="math inline">\(\frac{q}{1-p}\)</span>.</p>
-<p>那么 <span
-class="math inline">\(a_{n+1}-\frac{q}{1-p}=p(a_{n}-\frac{q}{1-p})\)</span>.</p>
-<p>记 <span class="math inline">\(b_i=a_i-\frac{q}{1-p}\)</span>,则
-<span class="math inline">\(\{b_n\}\)</span>
-是等比数列。结合题目找一下首项即可推出 <span
-class="math inline">\(a_{i}\)</span>.</p>
-<p>Q：<span class="math inline">\(p=1\)</span> 的时候分母不是 <span
-class="math inline">\(0\)</span> 吗？</p>
+<p>考虑把递推式变成 $a_{n+1}-M=p(a_{n}-M)$ 的形式，这样数列 ${a_{n}-M}$ 就是公比为 $p$ 的等比数列了。</p>
+<p>解方程 $x-M=p(x-M)$，可以得到 $x= \frac{q}{1-p}$；（这里使用了函数的不动点思想）</p>
+<p>所以我们需要的 $M$ 即为  $\frac{q}{1-p}$.</p>
+<p>那么 $a_{n+1}-\frac{q}{1-p}=p(a_{n}-\frac{q}{1-p})$.</p>
+<p>记 $b_i=a_i-\frac{q}{1-p}$,则 ${b_n}$ 是等比数列。结合题目找一下首项即可推出 $a_{i}$.</p>
+<p>Q：$p=1$ 的时候分母不是 $0$ 吗？</p>
 <p>A：那就变回最上面的情况了。</p>
-<ul>
-<li><strong><span class="math inline">\(a_{n+1}=p \cdot
-a_n+f(n)\)</span> 型</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>$a_{n+1}=p \cdot a_n+f(n)$ 型</strong></p>
+</li>
 </ul>
 <p>仿照上面进行操作。</p>
-<p>我们需要构造一个函数<span class="math inline">\(g\)</span>，使得
-<span
-class="math inline">\(a_{n+1}+g(n+1)=p(a_n+g(n))\)</span>，这样又变成了我们熟悉的等比数列形式。</p>
-<p>把上面的式子化简，可以得到 <span class="math inline">\(p \cdot
-g(n)-g(n+1)=f(n)\)</span>.</p>
-<p>具体构造方式因题而异，不过 <span class="math inline">\(g\)</span>
-的形式可以考虑往 <span class="math inline">\(f\)</span> 上面靠。</p>
+<p>我们需要构造一个函数$g$，使得 $a_{n+1}+g(n+1)=p(a_n+g(n))$，这样又变成了我们熟悉的等比数列形式。</p>
+<p>把上面的式子化简，可以得到 $p \cdot g(n)-g(n+1)=f(n)$.</p>
+<p>具体构造方式因题而异，不过 $g$ 的形式可以考虑往 $f$ 上面靠。</p>
 <p>下面才是真正的难点。</p>
-<ul>
-<li><strong><span
-class="math inline">\(a_{n+1}=\frac{Pa_n+b}{Qa_n+c}\)</span>
-型</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>$a_{n+1}=\frac{Pa_n+b}{Qa_n+c}$ 型</strong></p>
+</li>
 </ul>
-<p>考虑方程 <span
-class="math inline">\(x(Qx+c)=Px+b\)</span>,可以解出来两个根 <span
-class="math inline">\(x_1,x_2\)</span>.</p>
+<p>考虑方程 $x(Qx+c)=Px+b$,可以解出来两个根 $x_1,x_2$.</p>
 <p>Q：为什么这里要考虑这个方程？</p>
 <p>A：可以参考函数的不动点思想。</p>
 <p>下面就要分类讨论了：</p>
-<ol type="1">
-<li><span class="math inline">\(x_1,x_2 \in \mathbb{R}\)</span> 且 $ x_1
-x_2$,</li>
+<ol>
+<li class="lvl-3">
+<p>$x_1,x_2 \in \mathbb{R}$ 且 $ x_1 \ne x_2$,</p>
+</li>
 </ol>
-<p>考虑两边同时减去 <span
-class="math inline">\(x_1\)</span>，得到一个式子；再同时减去 <span
-class="math inline">\(x_2\)</span>，得到另一个式子，把这两个式子相除：
-<span class="math display">\[
-\frac{a_{n+1}-x_1}{a_{n+1}-x_2}=\frac{Pa_n+b-
-x_1(Qx_1+c)-Qa_nx_1+Qx_1^2}{Pa_n+b- x_2(Qx_2+c)-Qa_nx_2+Qx_2^2}
-=\frac{P(a_n-x_1)-Qx_1(a_n-x_1)}{P(a_n-x_2)-Qx_1(a_n-x_2)}=\frac{a_n-x_1}{a_n-x_2}
-\cdot \frac{P-Qx_1}{P-Qx_2}
-\]</span> （主要思路就是用 <span class="math inline">\(Px+b\)</span>
-替换 $ x(Qx+c)$. ）</p>
-<p>所以，数列 <span
-class="math inline">\(\{\frac{a_n-x_1}{a_n-x_2}\}\)</span> 是一个公比为
-<span class="math inline">\(\frac{P-Qx_1}{P-Qx_2}\)</span>
-的等比数列！</p>
+<p>考虑两边同时减去 $x_1$，得到一个式子；再同时减去 $x_2$，得到另一个式子，把这两个式子相除：<br>
+$$<br>
+\frac{a_{n+1}-x_1}{a_{n+1}-x_2}=\frac{Pa_n+b- x_1(Qx_1+c)-Qa_nx_1+Qx_1^2}{Pa_n+b- x_2(Qx_2+c)-Qa_nx_2+Qx_2^2}<br>
+=\frac{P(a_n-x_1)-Qx_1(a_n-x_1)}{P(a_n-x_2)-Qx_1(a_n-x_2)}=\frac{a_n-x_1}{a_n-x_2} \cdot \frac{P-Qx_1}{P-Qx_2}<br>
+$$<br>
+（主要思路就是用 $Px+b$ 替换 $ x(Qx+c)$. ）</p>
+<p>所以，数列 ${\frac{a_n-x_1}{a_n-x_2}}$ 是一个公比为 $\frac{P-Qx_1}{P-Qx_2}$ 的等比数列！</p>
 <p>再参考上面的思路，通项公式就求出来了。</p>
-<ol start="2" type="1">
-<li><span class="math inline">\(x_1,x_2 \in \mathbb{R}\)</span> 且 <span
-class="math inline">\(x_1=x_2\)</span></li>
+<ol start="2">
+<li class="lvl-3">
+<p>$x_1,x_2 \in \mathbb{R}$ 且 $x_1=x_2$</p>
+</li>
 </ol>
 <p>留做习题，自己思考。</p>
-<ol start="3" type="1">
-<li><span class="math inline">\(x_1,x_2 \notin \mathbb{R}\)</span></li>
+<ol start="3">
+<li class="lvl-3">
+<p>$x_1,x_2 \notin \mathbb{R}$</p>
+</li>
 </ol>
 <p>这类递推式并没有较为优美的通项公式推法。但是，出题人能把这种题出出来是有道理的。</p>
 <p>一种常见的解法是找周期性。</p>
 <p>例子：</p>
-<p><span class="math inline">\(a_{n+1}=-\frac{a_n+1}{a_n-1}\)</span>
-的通项公式。</p>
+<p>$a_{n+1}=-\frac{a_n+1}{a_n-1}$ 的通项公式。</p>
 <p>如果解方程，你会发现这个方程没有实根。</p>
-<p>所以我们考虑找规律。 <span class="math display">\[
-a_{n+2}=-\frac{a_{n+1}+1}{a_{n+1}-1}=-\frac{-\frac{a_n+1}{a_n-1}+1}{-\frac{a_n+1}{a_n-1}+1}=-\frac{1}{a_n}
-\]</span> 发现这个数列的最小正周期为 <span
-class="math inline">\(4\)</span> 。</p>
-<p>实际上，对三角换元熟悉的可以一眼看出：如果把前一项看作 <span
-class="math inline">\(\tan\alpha\)</span> 的话，这个递推式很像 <span
-class="math inline">\(-\tan(\alpha+\frac\pi{4})\)</span>.</p>
+<p>所以我们考虑找规律。<br>
+$$<br>
+a_{n+2}=-\frac{a_{n+1}+1}{a_{n+1}-1}=-\frac{-\frac{a_n+1}{a_n-1}+1}{-\frac{a_n+1}{a_n-1}+1}=-\frac{1}{a_n}<br>
+$$<br>
+发现这个数列的最小正周期为 $4$ 。</p>
+<p>实际上，对三角换元熟悉的可以一眼看出：如果把前一项看作 $\tan\alpha$ 的话，这个递推式很像 $-\tan(\alpha+\frac\pi{4})$.</p>
 <p>如果这个方程周期很难找，我们还会考虑把它转变成二次递推式。这个在下面会讲。</p>
-<ul>
-<li><strong>二阶线性递推：<span
-class="math inline">\(a_{n+1}=pa_n+qa_{n-1}\)</span>.</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>二阶线性递推：$a_{n+1}=pa_n+qa_{n-1}$.</strong></p>
+</li>
 </ul>
-<p>这类问题在 OI 中的常见解法是矩阵优化 dp
-，今天我们来探究一下这种递推式的通项。</p>
-<p>考虑<code>特征方程*</code><span
-class="math inline">\(x^2=px+q\)</span>，得到两根 <span
-class="math inline">\(x_1,x_2\)</span>.</p>
-<ol type="1">
-<li><span class="math inline">\(x_1,x_2 \in \mathbb{R}\)</span> 且 $ x_1
-x_2$,</li>
+<p>这类问题在 OI 中的常见解法是矩阵优化 dp ，今天我们来探究一下这种递推式的通项。</p>
+<p>考虑<code>特征方程*</code>$x^2=px+q$，得到两根 $x_1,x_2$.</p>
+<ol>
+<li class="lvl-3">
+<p>$x_1,x_2 \in \mathbb{R}$ 且 $ x_1 \ne x_2$,</p>
+</li>
 </ol>
-<p>同上面的推导过程可得 <span
-class="math inline">\(\{a_{n+1}-x_1a_n\}\)</span> 是以 <span
-class="math inline">\(x_2\)</span> 为公比的等比数列，<span
-class="math inline">\(\{a_{n+1}-x_2a_n\}\)</span> 是以 <span
-class="math inline">\(x_1\)</span> 为公比的等比数列。</p>
-<p>最后应该可以解出 <span
-class="math inline">\(a_n=Ax_{1}^n+Bx_{2}^n\)</span>，其中 <span
-class="math inline">\(A,B\)</span> 与这个数列的开头两项有关。</p>
-<ol start="2" type="1">
-<li><span class="math inline">\(x_1,x_2 \in \mathbb{R}\)</span> 且 <span
-class="math inline">\(x_1=x_2\)</span></li>
+<p>同上面的推导过程可得 ${a_{n+1}-x_1a_n}$ 是以 $x_2$ 为公比的等比数列，${a_{n+1}-x_2a_n}$ 是以 $x_1$ 为公比的等比数列。</p>
+<p>最后应该可以解出 $a_n=Ax_{1}<sup>n+Bx_{2}</sup>n$，其中 $A,B$ 与这个数列的开头两项有关。</p>
+<ol start="2">
+<li class="lvl-3">
+<p>$x_1,x_2 \in \mathbb{R}$ 且 $x_1=x_2$</p>
+</li>
 </ol>
 <p>留做习题，自己思考。</p>
-<ol start="3" type="1">
-<li><span class="math inline">\(x_1,x_2 \notin \mathbb{R}\)</span></li>
+<ol start="3">
+<li class="lvl-3">
+<p>$x_1,x_2 \notin \mathbb{R}$</p>
+</li>
 </ol>
 <p>没有简单解，可以暂时不考虑。</p>
-<ul>
-<li><strong>二阶线性递推：<span
-class="math inline">\(a_{n+1}=pa_n+qa_{n-1}+ C\)</span>，其中 <span
-class="math inline">\(C\)</span> 为常数</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>二阶线性递推：$a_{n+1}=pa_n+qa_{n-1}+ C$，其中 $C$ 为常数</strong></p>
+</li>
 </ul>
 <p>留作习题。推导方法大体同上。压轴练习中有这类递推。</p>
 <p>可以参考函数的不动点来变形。</p>
-<ul>
-<li><strong>递推公式的变形</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>递推公式的变形</strong></p>
+</li>
 </ul>
-<p>我们可以手动凑项，并分离含 <span class="math inline">\(n+1\)</span>
-和 <span class="math inline">\(n\)</span>
-的式子，进而得到一个新的数列满足 <span
-class="math inline">\(b_n=b_{n-1}+f(n)\)</span>.</p>
+<p>我们可以手动凑项，并分离含 $n+1$ 和 $n$ 的式子，进而得到一个新的数列满足 $b_n=b_{n-1}+f(n)$.</p>
 <p>其实这种思想在上面已经有提到过。这里多介绍几类递推式的通项公式求法。</p>
-<ol type="1">
-<li><span
-class="math inline">\(a_{n+1}=\frac{n+1}{n}a_n+f(n)\)</span></li>
+<ol>
+<li class="lvl-3">
+<p>$a_{n+1}=\frac{n+1}{n}a_n+f(n)$</p>
+</li>
 </ol>
-<p>两边同时除以 <span class="math inline">\((n+1)\)</span>，就变成 <span
-class="math inline">\(\frac{a_{n+1}}{n+1}=\frac{a_n}{n}+\frac{f(n)}{n+1}\)</span>,
-这样对于数列 <span
-class="math inline">\(\{\frac{a_{n+1}}{n+1}\}\)</span>，就可以使用上面的方法了。</p>
-<ol start="2" type="1">
-<li><span class="math inline">\(a_{n+1}=(n+1)a_n+f(n)\)</span></li>
+<p>两边同时除以 $(n+1)$，就变成 $\frac{a_{n+1}}{n+1}=\frac{a_n}{n}+\frac{f(n)}{n+1}$, 这样对于数列 ${\frac{a_{n+1}}{n+1}}$，就可以使用上面的方法了。</p>
+<ol start="2">
+<li class="lvl-3">
+<p>$a_{n+1}=(n+1)a_n+f(n)$</p>
+</li>
 </ol>
-<p>两边同时除以 <span class="math inline">\((n+1)!\)</span>, 就变成
-<span
-class="math inline">\(\frac{a_{n+1}}{(n+1)!}=\frac{a_n}{n!}+\frac{f(n)}{(n+1)!}\)</span>，对于数列
-<span
-class="math inline">\(\frac{a_{n}}{n!}\)</span>，就可以使用上面的方法了。</p>
-<ol start="3" type="1">
-<li><span
-class="math inline">\(a_{n+1}=\frac{n+2}{n}a_n+f(n)\)</span></li>
+<p>两边同时除以 $(n+1)!$, 就变成 $\frac{a_{n+1}}{(n+1)!}=\frac{a_n}{n!}+\frac{f(n)}{(n+1)!}$，对于数列 $\frac{a_{n}}{n!}$，就可以使用上面的方法了。</p>
+<ol start="3">
+<li class="lvl-3">
+<p>$a_{n+1}=\frac{n+2}{n}a_n+f(n)$</p>
+</li>
 </ol>
-<p>第一个式子中的 <span class="math inline">\(n+1\)</span> 变成了 <span
-class="math inline">\(n+2\)</span>，这时候我们考虑手动凑项，凑出两个相邻的项。</p>
-<p>分式上下同时乘以 <span class="math inline">\((n+1)\)</span>,
-把原式变成</p>
-<p><span
-class="math inline">\(a_{n+1}=\frac{(n+2)(n+1)}{(n+1)(n)}a_n+f(n)\)</span></p>
-<p>这样分子分母就连续了。两边同时除以 <span
-class="math inline">\((n+2)(n+1)\)</span>，变成</p>
-<p><span
-class="math inline">\(\frac{a_{n+1}}{(n+2)(n+1)}=\frac{a_n}{(n+1)n}+\frac{f(n)}{(n+2)(n+1)}\)</span></p>
-<p>这时候对于数列 <span
-class="math inline">\(\{\frac{a_n}{(n+1)n}\}\)</span>，就可以使用上面的方法了。</p>
-<ul>
-<li><strong>齐次递推式、二次递推式与通项公式</strong></li>
+<p>第一个式子中的 $n+1$ 变成了 $n+2$，这时候我们考虑手动凑项，凑出两个相邻的项。</p>
+<p>分式上下同时乘以 $(n+1)$, 把原式变成</p>
+<p>$a_{n+1}=\frac{(n+2)(n+1)}{(n+1)(n)}a_n+f(n)$</p>
+<p>这样分子分母就连续了。两边同时除以 $(n+2)(n+1)$，变成</p>
+<p>$\frac{a_{n+1}}{(n+2)(n+1)}=\frac{a_n}{(n+1)n}+\frac{f(n)}{(n+2)(n+1)}$</p>
+<p>这时候对于数列 ${\frac{a_n}{(n+1)n}}$，就可以使用上面的方法了。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>齐次递推式、二次递推式与通项公式</strong></p>
+</li>
 </ul>
 <p>如果给一个二次递推式，怎么把它变成齐次式，进而用上面的方法求出通项公式？</p>
 <p>或者给你一个齐次式，因为某些特殊的应用场景，你需要把它变成二次递推式。这时候该如何处理？</p>
 <p>我们一般会往后推一项，然后把两式子相加或相减，这样常数项就没了。</p>
 <p>后续操作相对灵活，所以以两道小例题引入该解法。</p>
-<ol type="1">
-<li>（二次变递推并求通项） (9) <strong><span
-class="math inline">\(a_1=a_2=1,a_n \cdot a_{n-2}=a_{n-1}^2+2.\)</span>
-求 <span class="math inline">\(\{a_n \}\)</span>
-通项公式。</strong></li>
+<ol>
+<li class="lvl-3">
+<p>（二次变递推并求通项） (9) <strong>$a_1=a_2=1,a_n \cdot a_{n-2}=a_{n-1}^2+2.$ 求 ${a_n }$ 通项公式。</strong></p>
+</li>
 </ol>
 <p>这是一个二次递推式。</p>
 <p>把递推式往后写一项：</p>
-<p><span class="math display">\[
-a_{n+1} \cdot a_{n-1} = a_{n}^2+2
-\]</span></p>
+<p>$$<br>
+a_{n+1} \cdot a_{n-1} = a_{n}^2+2<br>
+$$</p>
 <p>与最开始的式子相减：</p>
-<p><span class="math display">\[
-a_{n+1} \cdot a_{n-1}-a_n \cdot a_{n-2} = a_n^2 - a_{n-1}^2
-\]</span></p>
-<p>整理得到 <span class="math display">\[
-\frac{a_n+a_{n-2}}{a_{n-1}}=\frac{a_{n-1}+a_{n+1}}{a_n}
-\]</span> 两个形式相似的式子相等！</p>
-<p>所以，对于任意的 <span class="math inline">\(n \ge
-3,\frac{a_n+a_{n-2}}{a_{n-1}}= \frac{a_{n-1}+a_{n+1}}{a_n} = \dotsc
-=\frac{a_3+a_1}{a_2}=4\)</span> (这个自己带进去算一下即可)</p>
+<p>$$<br>
+a_{n+1} \cdot a_{n-1}-a_n \cdot a_{n-2} = a_n^2 - a_{n-1}^2<br>
+$$</p>
+<p>整理得到<br>
+$$<br>
+\frac{a_n+a_{n-2}}{a_{n-1}}=\frac{a_{n-1}+a_{n+1}}{a_n}<br>
+$$<br>
+两个形式相似的式子相等！</p>
+<p>所以，对于任意的 $n \ge 3,\frac{a_n+a_{n-2}}{a_{n-1}}= \frac{a_{n-1}+a_{n+1}}{a_n} = \dotsc =\frac{a_3+a_1}{a_2}=4$ (这个自己带进去算一下即可)</p>
 <p>所以就有了齐次式：</p>
-<p><span class="math display">\[
-a_{n+1}=4a_n-a_{n-1}
-\]</span></p>
+<p>$$<br>
+a_{n+1}=4a_n-a_{n-1}<br>
+$$</p>
 <p>依然是特征方程</p>
-<p><span class="math display">\[
-x^2-4x+1=0
-\]</span> 解得 <span
-class="math inline">\(x_1=2+\sqrt{3},x_2=2-\sqrt{3}\)</span>.</p>
-<p>所以 <span
-class="math inline">\(a_n=A(2+\sqrt{3})^n+B(2-\sqrt{3})^n\)</span>.</p>
-<p>再根据 <span class="math inline">\(a_1=a_2=1\)</span>，解得 <span
-class="math inline">\(A=\frac{9-5\sqrt{3}}{6},B=\frac{9+5\sqrt{3}}{6}\)</span>,</p>
+<p>$$<br>
+x^2-4x+1=0<br>
+$$<br>
+解得 $x_1=2+\sqrt{3},x_2=2-\sqrt{3}$.</p>
+<p>所以 $a_n=A(2+\sqrt{3})<sup>n+B(2-\sqrt{3})</sup>n$.</p>
+<p>再根据 $a_1=a_2=1$，解得 $A=\frac{9-5\sqrt{3}}{6},B=\frac{9+5\sqrt{3}}{6}$,</p>
 <p>所以通项公式就是</p>
-<p><span class="math display">\[
-a_n=\frac{9-5\sqrt{3}}{6}\cdot (2+\sqrt{3})^n+\frac{9+5\sqrt{3}}{6}\cdot
-(2-\sqrt{3})^n
-\]</span></p>
-<ol start="2" type="1">
-<li>（递推变二次） (8) <strong><span
-class="math inline">\(a_{n+1}=4a_n-a_{n-1}\)</span>, 求 <span
-class="math inline">\(\{a_{n}\}\)</span> 的二次递推式。</strong></li>
+<p>$$<br>
+a_n=\frac{9-5\sqrt{3}}{6}\cdot (2+\sqrt{3})^n+\frac{9+5\sqrt{3}}{6}\cdot (2-\sqrt{3})^n<br>
+$$</p>
+<ol start="2">
+<li class="lvl-3">
+<p>（递推变二次） (8) <strong>$a_{n+1}=4a_n-a_{n-1}$, 求 ${a_{n}}$ 的二次递推式。</strong></p>
+</li>
 </ol>
 <p>实际上就是把上面的过程反过来。</p>
-<p>移项： <span class="math display">\[
-\frac{a_{n+1}+a_{n-1}}{a_n}=4
-\]</span> 往后写一项： <span class="math display">\[
-\frac{a_{n+1}+a_{n-1}}{a_n}=4=\frac{a_{n}+a_{n-2}}{a_{n-1}}
-\]</span> 首尾两项交叉相乘： <span class="math display">\[
-a_{n-1}a_{n+1}+a_{n-1}^2=a_n^2+a_na_{n-2} \\
-\Rightarrow a_n^2-a_{n-1}a_{n+1}=a_{n-1}^2-a_na_{n-2}
-\]</span> 这个式子可以一直等下去，直到 <span
-class="math inline">\(a_2^2-a_1a_3\)</span>.</p>
-<p>所以 <span class="math display">\[
-a_n^2-a_{n-1}a_{n+1}=a_{n-1}^2-a_na_{n-2}= \dots =a_2^2-a_1a_3=2
-\]</span> 所以答案就出来了：</p>
-<p><span class="math inline">\(a_{n}^2=2+a_{n-1}a_{n+1}\)</span>.</p>
+<p>移项：<br>
+$$<br>
+\frac{a_{n+1}+a_{n-1}}{a_n}=4<br>
+$$<br>
+往后写一项：<br>
+$$<br>
+\frac{a_{n+1}+a_{n-1}}{a_n}=4=\frac{a_{n}+a_{n-2}}{a_{n-1}}<br>
+$$<br>
+首尾两项交叉相乘：<br>
+$$<br>
+a_{n-1}a_{n+1}+a_{n-1}<sup>2=a_n</sup>2+a_na_{n-2} \<br>
+\Rightarrow a_n<sup>2-a_{n-1}a_{n+1}=a_{n-1}</sup>2-a_na_{n-2}<br>
+$$<br>
+这个式子可以一直等下去，直到 $a_2^2-a_1a_3$.</p>
+<p>所以<br>
+$$<br>
+a_n<sup>2-a_{n-1}a_{n+1}=a_{n-1}</sup>2-a_na_{n-2}= \dots =a_2^2-a_1a_3=2<br>
+$$<br>
+所以答案就出来了：</p>
+<p>$a_{n}^2=2+a_{n-1}a_{n+1}$.</p>
 <blockquote>
 <p>*特征方程：为研究相应的数学对象而引入的一些等式，这里是数列特征方程。关于特征方程的更多应用，请搜索“母函数”（生成函数）。</p>
 </blockquote>
-<hr />
-<h5 id="例题-1">2.2.2 例题</h5>
-<ol type="1">
-<li><ol start="8" type="1">
-<li><strong><span
-class="math inline">\(a_1=0,a_n-2a_{n-1}=n^2-3\)</span>，求通项公式。</strong></li>
-</ol></li>
+<hr>
+<h5 id="2-2-2-例题">2.2.2 例题</h5>
+<ol>
+<li class="lvl-3">
+<p>(8) <strong>$a_1=0,a_n-2a_{n-1}=n^2-3$，求通项公式。</strong></p>
+</li>
 </ol>
-<p>移项：<span class="math inline">\(a_n=2a_{n-1}+n^2-3\)</span>；</p>
-<p>考虑构造函数 <span class="math inline">\(g(x)\)</span> 满足 <span
-class="math inline">\(2g(n-1)-g(n)=n^2-3\)</span>.显然 <span
-class="math inline">\(g(x)\)</span> 是一个二次函数。</p>
-<p>设 <span class="math inline">\(g(x)=ax^2+bx+c\)</span>，则<span
-class="math inline">\(2(a(n-1)^{2}+b(n-1)+c)-an^2-bn-c=n^2-3\)</span>,</p>
-<p>化简得 <span
-class="math inline">\(an^2+(b-4a)n+2a-2b+c=n^2-3.\)</span></p>
-<p>对比系数可以解出 <span
-class="math inline">\(a=1,b=4,c=3,g(n)=n^2+4n+3\)</span>.</p>
-<p>所以有<span
-class="math inline">\(a_n+g(n)=2(a_{n-1}+g(n-1))\)</span>.</p>
-<p>令 <span class="math inline">\(b_n=a_n+g_n\)</span>,则<span
-class="math inline">\(b_n=2b_{n-1},b_1=8\)</span>.</p>
-<p>所以 <span
-class="math inline">\(a_n=b_n-g(n)=2^{n+2}-n^2-4n-3\)</span>.</p>
-<ol start="2" type="1">
-<li><ol start="11" type="1">
-<li><strong>正数数列 <span class="math inline">\(\{a_n\}\)</span> 满足
-<span class="math inline">\(a_0=1,a_n=a_{n+1}+a_{n+2}\)</span>.求 <span
-class="math inline">\(a_1\)</span>.</strong></li>
-</ol></li>
+<p>移项：$a_n=2a_{n-1}+n^2-3$；</p>
+<p>考虑构造函数 $g(x)$ 满足 $2g(n-1)-g(n)=n^2-3$.显然 $g(x)$ 是一个二次函数。</p>
+<p>设 $g(x)=ax<sup>2+bx+c$，则$2(a(n-1)</sup>{2}+b(n-1)+c)-an<sup>2-bn-c=n</sup>2-3$,</p>
+<p>化简得 $an<sup>2+(b-4a)n+2a-2b+c=n</sup>2-3.$</p>
+<p>对比系数可以解出 $a=1,b=4,c=3,g(n)=n^2+4n+3$.</p>
+<p>所以有$a_n+g(n)=2(a_{n-1}+g(n-1))$.</p>
+<p>令 $b_n=a_n+g_n$,则$b_n=2b_{n-1},b_1=8$.</p>
+<p>所以 $a_n=b_n-g(n)=2<sup>{n+2}-n</sup>2-4n-3$.</p>
+<ol start="2">
+<li class="lvl-3">
+<p>(11) <strong>正数数列 ${a_n}$ 满足 $a_0=1,a_n=a_{n+1}+a_{n+2}$.求 $a_1$.</strong></p>
+</li>
 </ol>
 <p>比较有趣的一道题。发现这个数列是斐波那契的变形。</p>
-<p>考虑特征方程 <span class="math inline">\(1=x+x^2\)</span>
-（注意顺序！），解得 <span
-class="math inline">\(x_1=\frac{-1+\sqrt{5}}{2},x_2=\frac{-1-\sqrt{5}}{2}\)</span>.</p>
-<p>所以 <span
-class="math inline">\(a_n=A(\frac{-1+\sqrt{5}}{2})^n+B(\frac{-1-\sqrt{5}}{2})^n\)</span>.</p>
-<p>问题来了，<span class="math inline">\(A,B\)</span>
-是多少呢？数列只有一个已知项！</p>
-<p>这时候就要充分发挥我们的智慧了。我们发现 <span
-class="math inline">\(a_i\)</span> 恒为正数，<span
-class="math inline">\(0&lt;\frac{-1+\sqrt{5}}{2}&lt;1,-2&lt;\frac{-1-\sqrt{5}}{2}&lt;-1\)</span>,</p>
-<p>所以，<strong>当 <span class="math inline">\(n\)</span>
-很大时，对整个数列影响最大的是后面那项，前面那项趋近于 <span
-class="math inline">\(0\)</span></strong>.</p>
-<p>进一步，我们可以认为，<strong>当<span
-class="math inline">\(n\)</span>很大时，<span
-class="math inline">\(a_i\)</span> 的正负性取决于 <span
-class="math inline">\(B\)</span> 的正负性和 <span
-class="math inline">\(n\)</span> 的奇偶性。</strong></p>
-<p>但是，<span class="math inline">\(a_i\)</span> 恒为正数，<span
-class="math inline">\(n\)</span>
-的奇偶性是在变的，那么题目要求的条件似乎不能满足？</p>
-<p>我们可以发现，当且仅当 <span class="math inline">\(B=0\)</span>
-时，我们才能把后面那一项的影响消掉，让 <span
-class="math inline">\(a_i\)</span> 恒正。</p>
-<p>那就让 <span class="math inline">\(B=0\)</span>. 这时候再把 <span
-class="math inline">\(a_0=1\)</span> 带入，解得 <span
-class="math inline">\(A=1\)</span>，</p>
-<p>所以 <span
-class="math inline">\(a_1=\frac{-1+\sqrt{5}}{2}\)</span>.</p>
+<p>考虑特征方程 $1=x+x^2$ （注意顺序！），解得 $x_1=\frac{-1+\sqrt{5}}{2},x_2=\frac{-1-\sqrt{5}}{2}$.</p>
+<p>所以 $a_n=A(\frac{-1+\sqrt{5}}{2})<sup>n+B(\frac{-1-\sqrt{5}}{2})</sup>n$.</p>
+<p>问题来了，$A,B$ 是多少呢？数列只有一个已知项！</p>
+<p>这时候就要充分发挥我们的智慧了。我们发现 $a_i$ 恒为正数，$0&lt;\frac{-1+\sqrt{5}}{2}&lt;1,-2&lt;\frac{-1-\sqrt{5}}{2}&lt;-1$,</p>
+<p>所以，<strong>当 $n$ 很大时，对整个数列影响最大的是后面那项，前面那项趋近于 $0$</strong>.</p>
+<p>进一步，我们可以认为，<strong>当$n$很大时，$a_i$ 的正负性取决于 $B$  的正负性和 $n$ 的奇偶性。</strong></p>
+<p>但是，$a_i$ 恒为正数，$n$ 的奇偶性是在变的，那么题目要求的条件似乎不能满足？</p>
+<p>我们可以发现，当且仅当 $B=0$ 时，我们才能把后面那一项的影响消掉，让 $a_i$ 恒正。</p>
+<p>那就让 $B=0$. 这时候再把 $a_0=1$ 带入，解得 $A=1$，</p>
+<p>所以 $a_1=\frac{-1+\sqrt{5}}{2}$.</p>
 <p>当然，并不是所有数列都能用上面六种方法求通项。</p>
-<ol start="3" type="1">
-<li><strong>(11) <span class="math inline">\(a_0=1,a_1=2\)</span>, <span
-class="math inline">\(n(n+1)a_{n+1}=n(n-1)a_n-(n-2)a_{n-1}\)</span>，求通项。</strong></li>
+<ol start="3">
+<li class="lvl-4">
+<p><strong>(11) $a_0=1,a_1=2$, $n(n+1)a_{n+1}=n(n-1)a_n-(n-2)a_{n-1}$，求通项。</strong></p>
+</li>
 </ol>
-<p>这个式子好丑。我们考虑手动模拟一下前几项，得到 <span
-class="math inline">\(a_2=\frac{1}{2},a_3=\frac{1}{6},a_4=\frac{1}{24}\)</span>，</p>
-<p>所以我们可以猜测答案：<span
-class="math inline">\(a_i=\frac{1}{i!}(i\ge 2)\)</span></p>
-<p>虽然这种方法不严谨，但它给我们提供了思路。为了凑出我们得到的“答案”中的阶乘，我们可以把等式两边同时乘上
-<span class="math inline">\((n-1)!\)</span>，这样就出现了 <span
-class="math inline">\(a_{n+1}(n+1)!\)</span>.</p>
-<p>那么 <span class="math display">\[
-(n+1)!a_{n+1}=(n-1)n!a_n-(n-2)(n-1)!a_{n-1}
-\]</span> 设 <span class="math inline">\(b_i=i!a_i\)</span>，则原式变为
-<span class="math display">\[
-b_{n+1}=(n-1)b_n-(n-2)b_{n-1}
-\]</span> 所以 <span class="math display">\[
-b_{n+1}-b_{n}=(n-2)(b_n-b_{n-1})
-\]</span> 阶乘的形式已经出来了，后面就是细节问题了，留给大家补全。</p>
-<hr />
-<h5 id="换元法-例题">2.2.3 换元法 &amp; 例题</h5>
+<p>这个式子好丑。我们考虑手动模拟一下前几项，得到 $a_2=\frac{1}{2},a_3=\frac{1}{6},a_4=\frac{1}{24}$，</p>
+<p>所以我们可以猜测答案：$a_i=\frac{1}{i!}(i\ge 2)$</p>
+<p>虽然这种方法不严谨，但它给我们提供了思路。为了凑出我们得到的“答案”中的阶乘，我们可以把等式两边同时乘上 $(n-1)!$，这样就出现了 $a_{n+1}(n+1)!$.</p>
+<p>那么<br>
+$$<br>
+(n+1)!a_{n+1}=(n-1)n!a_n-(n-2)(n-1)!a_{n-1}<br>
+$$<br>
+设 $b_i=i!a_i$，则原式变为<br>
+$$<br>
+b_{n+1}=(n-1)b_n-(n-2)b_{n-1}<br>
+$$<br>
+所以<br>
+$$<br>
+b_{n+1}-b_{n}=(n-2)(b_n-b_{n-1})<br>
+$$<br>
+阶乘的形式已经出来了，后面就是细节问题了，留给大家补全。</p>
+<hr>
+<h5 id="2-2-3-换元法-例题">2.2.3 换元法 &amp; 例题</h5>
 <p>有时候题目给出的递推式虽然很难转换成上面的常见形式，但和部分常见函数有相似之处。这时我们就可以用换元法。</p>
 <p>这种方法一般没有什么规律，所以直接从例题讲起。</p>
-<ol type="1">
-<li><ol start="10" type="1">
-<li><strong>a_0=,a_n=2a_{n-1}^{2}-1$，求通项。</strong></li>
-</ol></li>
+<ol>
+<li class="lvl-3">
+<p>(10) <strong>a_0=\frac{1}{3},a_n=2a_{n-1}^{2}-1$，求通项。</strong></p>
+</li>
 </ol>
 <p>这个式子虽然不丑，但是和我们常见形式无法匹配。</p>
 <p>考虑把二次变递推，发现少了一项。</p>
-<p>我们<del>很容易</del>想到一个函数：<span
-class="math inline">\(\cos(x)\)</span>，它满足 <span
-class="math inline">\(\cos (2x)=2\cos^2(x)-1\)</span>
-（二倍角公式），这和题目的递推式子完全一样！</p>
-<p>所以，令 <span
-class="math inline">\(a_0=\cos(\arccos(\frac{1}{3}))\)</span>，则 <span
-class="math inline">\(a_1=2a_{0}^2-1=\cos(2
-\arccos(\frac{1}{3})),\)</span></p>
-<p>那么就有通项公式：<span class="math inline">\(a_n=\cos(2^{n}\cdot
-\arccos(\frac{1}{3}))\)</span>.（注意是 <span
-class="math inline">\(2^n\)</span> 不是 <span
-class="math inline">\(2n\)</span>）</p>
-<ol start="2" type="1">
-<li><ol start="11" type="1">
-<li><strong><span
-class="math inline">\(a_0=3,a_n=2a_{n-1}^{2}-1\)</span>，求通项。</strong></li>
-</ol></li>
+<p>我们<s>很容易</s>想到一个函数：$\cos(x)$，它满足 $\cos (2x)=2\cos^2(x)-1$ （二倍角公式），这和题目的递推式子完全一样！</p>
+<p>所以，令 $a_0=\cos(\arccos(\frac{1}{3}))$，则 $a_1=2a_{0}^2-1=\cos(2 \arccos(\frac{1}{3})),$</p>
+<p>那么就有通项公式：$a_n=\cos(2^{n}\cdot \arccos(\frac{1}{3}))$.（注意是 $2^n$ 不是 $2n$）</p>
+<ol start="2">
+<li class="lvl-3">
+<p>(11) <strong>$a_0=3,a_n=2a_{n-1}^{2}-1$，求通项。</strong></p>
+</li>
 </ol>
 <p>Q：这和上面那题不是一样的吗？</p>
 <p>A：不是。</p>
 <p>发现首项不在余弦函数的值域内，所以上面的做法废了。</p>
-<p>我们<del>很容易</del>想到另外一个函数：<span
-class="math inline">\(f(x)=\frac{1}{2}(x+\frac{1}{x})\)</span>.</p>
-<p>这个函数满足 <span class="math inline">\(2f^2(x)-1=2\cdot
-\frac{1}{4}(x+\frac{1}{x})^2-1=\frac{1}{2}(x^2+\frac{1}{x^2})\)</span></p>
-<p>往后推一项，它只是把未知数的次数乘上了 <span
-class="math inline">\(2\)</span>.</p>
-<p>所以令 <span
-class="math inline">\(a_0=\frac{1}{2}(x+\frac{1}{x})\)</span>（其中
-<span class="math inline">\(x=3 \pm 2\sqrt{2}\)</span>），则 <span
-class="math inline">\(a_n=\frac{1}{2}(x^{2n}+x^{-2n})=\frac{1}{2}((3+2\sqrt
-2)^{2n}+(3-2 \sqrt{2})^{2n}).\)</span></p>
+<p>我们<s>很容易</s>想到另外一个函数：$f(x)=\frac{1}{2}(x+\frac{1}{x})$.</p>
+<p>这个函数满足 $2f^2(x)-1=2\cdot \frac{1}{4}(x+\frac{1}{x})<sup>2-1=\frac{1}{2}(x</sup>2+\frac{1}{x^2})$</p>
+<p>往后推一项，它只是把未知数的次数乘上了 $2$.</p>
+<p>所以令 $a_0=\frac{1}{2}(x+\frac{1}{x})$（其中 $x=3 \pm 2\sqrt{2}$），则 $a_n=\frac{1}{2}(x<sup>{2n}+x</sup>{-2n})=\frac{1}{2}((3+2\sqrt 2)^{2n}+(3-2 \sqrt{2})^{2n}).$</p>
 <p>（两个实根交换是等价的）</p>
 <p>Q：上面那题可以用这样的对勾函数换元吗？</p>
-<p>A：不能。可以用均值算出我们构造的 <span
-class="math inline">\(f(x)\)</span> 的值域不包含 <span
-class="math inline">\(\frac{1}{3}\)</span>.</p>
+<p>A：不能。可以用均值算出我们构造的 $f(x)$ 的值域不包含 $\frac{1}{3}$.</p>
 <p>Q：所以到底是怎么想出用对勾函数换元的呢？</p>
-<p>A：看递推式的形式。最基本的对勾函数 <span
-class="math inline">\(x+\frac{1}{x}\)</span> 在作平方运算时减去 <span
-class="math inline">\(2\)</span> 就能得到 <span
-class="math inline">\(x^2+\frac{1}{x^2}\)</span>，这题形式类似，所以可以构造对勾函数。前面有系数
-<span class="math inline">\(2\)</span>，所以考虑配一个系数 <span
-class="math inline">\(\frac{1}{2}\)</span>.</p>
-<ol start="3" type="1">
-<li><ol start="8" type="1">
-<li><strong><span
-class="math inline">\(a_0=3,a_n=a_{n-1}^2-2\)</span>，求通项。</strong></li>
-</ol></li>
+<p>A：看递推式的形式。最基本的对勾函数 $x+\frac{1}{x}$ 在作平方运算时减去 $2$ 就能得到 $x<sup>2+\frac{1}{x</sup>2}$，这题形式类似，所以可以构造对勾函数。前面有系数 $2$，所以考虑配一个系数 $\frac{1}{2}$.</p>
+<ol start="3">
+<li class="lvl-3">
+<p>(8) <strong>$a_0=3,a_n=a_{n-1}^2-2$，求通项。</strong></p>
+</li>
 </ol>
 <p>这题难度就降低很多了。留作习题。（对勾函数）</p>
 <p>更多三角换元的技巧会在三角函数中提到。</p>
 <p>小节压轴练习：</p>
-<ol start="4" type="1">
-<li><ol start="13" type="1">
-<li><strong><span
-class="math inline">\(a_0=1,b_0=0,a_{n+1}=7a_n+6b_n-3,b_{n+1}=8a_n+7b_n-4\)</span></strong></li>
-</ol></li>
+<ol start="4">
+<li class="lvl-3">
+<p>(13) <strong>$a_0=1,b_0=0,a_{n+1}=7a_n+6b_n-3,b_{n+1}=8a_n+7b_n-4$</strong></p>
+</li>
 </ol>
-<ol type="1">
-<li><p><strong>已知 <span
-class="math inline">\(a_{n+1}=Aa_n+Ba_{n-1}+C\)</span>, 求 <span
-class="math inline">\(A,B,C\)</span>.</strong></p></li>
-<li><p><strong>证明：<span class="math inline">\(a_n\)</span>
-是完全平方数。</strong></p></li>
-</ol>
+<p>(1) <strong>已知 $a_{n+1}=Aa_n+Ba_{n-1}+C$, 求 $A,B,C$.</strong></p>
+<p>(2) <strong>证明：$a_n$ 是完全平方数。</strong></p>
 <details>
-<summary>
-提示 1-1
-</summary>
-<p>
-把第一个式子往后推一项，就得到了第三个式子，再看第二个式子，它们之间有什么联系？
-</p>
+  <summary>提示 1-1</summary>
+  <p> 把第一个式子往后推一项，就得到了第三个式子，再看第二个式子，它们之间有什么联系？ </p>
 </details>
 <details>
-<summary>
-提示 1-2
-</summary>
-<p>
-你可以把二式中含 b 的项都消掉吗？
-</p>
+  <summary>提示 1-2</summary>
+  <p> 你可以把二式中含 b 的项都消掉吗？ </p>
 </details>
 <details>
-<summary>
-提示 2-1
-</summary>
-<p>
-得到递推式后，能否把等式两边形式弄成相同的？
-</p>
+  <summary>提示 2-1</summary>
+  <p> 得到递推式后，能否把等式两边形式弄成相同的？ </p>
 </details>
 <details>
-<summary>
-提示 2-2
-</summary>
-<p>
-要凑出形式相同的两项，我们可以借鉴函数的不动点思想。
-</p>
+  <summary>提示 2-2</summary>
+  <p> 要凑出形式相同的两项，我们可以借鉴函数的不动点思想。 </p>
 </details>
 <details>
-<summary>
-提示 2-3
-</summary>
-<p>
-得到了通项公式后，为了化成某个数的平方，你需要找一个根式，使得它的平方是你求出来的通项公式里的那个根式。（注意，这不代表你做出来了）
-</p>
+  <summary>提示 2-3</summary>
+  <p> 得到了通项公式后，为了化成某个数的平方，你需要找一个根式，使得它的平方是你求出来的通项公式里的那个根式。（注意，这不代表你做出来了） </p>
 </details>
 <details>
-<summary>
-提示 2-4
-</summary>
-<p>
-此时你应该得到了一个分母为 2
-的平方式。如果要证明分子位置是偶数，可以考虑二项式定理。
-</p>
+  <summary>提示 2-4</summary>
+  <p> 此时你应该得到了一个分母为 2 的平方式。如果要证明分子位置是偶数，可以考虑二项式定理。 </p>
 </details>
 <p>上面的提示已经把思路大致展现出来了。下面的解答会简略一点。</p>
-<ol type="1">
-<li>②式 <span class="math inline">\(\times 6\)</span> 可得 <span
-class="math inline">\(6b_{n+1}=48a_n+42b_n-24\)</span> (③).</li>
-</ol>
-<p>①式移项得 <span
-class="math inline">\(6b_n=a_{n+1}-7a_n+3\)</span>.</p>
-<p>往后写一项： <span
-class="math inline">\(6b_{n+1}=a_{n+2}-7a_{n+1}+3\)</span>.</p>
-<p>联立 ③ 式，<span
-class="math inline">\(a_{n+2}-7a_{n+1}+3=48a_n+42(a_{n+1}-7a_{n+3})-24\)</span>.</p>
+<p>(1)<br>
+②式 $\times 6$ 可得 $6b_{n+1}=48a_n+42b_n-24$ (③).</p>
+<p>①式移项得 $6b_n=a_{n+1}-7a_n+3$.</p>
+<p>往后写一项： $6b_{n+1}=a_{n+2}-7a_{n+1}+3$.</p>
+<p>联立 ③ 式，$a_{n+2}-7a_{n+1}+3=48a_n+42(a_{n+1}-7a_{n+3})-24$.</p>
 <p>化简即可得到</p>
-<p><span
-class="math inline">\(a_{n+2}=14a_{n+1}-a_n-6,A=14,B=-1,C=-6\)</span>.</p>
-<ol start="2" type="1">
-<li></li>
-</ol>
-<p>由 <span class="math inline">\(a_{n+2}=14a_{n+1}-a_n-6\)</span>
-不难得到通项公式 $a_n=(7+4)<sup>n+(7-4)</sup>n+ $</p>
-<p>发现 <span
-class="math inline">\((2+\sqrt{3})^2=7+4\sqrt{3},(2-\sqrt{3})^2=7-4\sqrt{3},\)</span></p>
+<p>$a_{n+2}=14a_{n+1}-a_n-6,A=14,B=-1,C=-6$.</p>
+<p>(2)</p>
+<p>由 $a_{n+2}=14a_{n+1}-a_n-6$ 不难得到通项公式 $a_n=\frac{1}{4}(7+4\sqrt{3})<sup>n+\frac{1}{4}(7-4\sqrt{3})</sup>n+\frac{1}{2} $</p>
+<p>发现 $(2+\sqrt{3})<sup>2=7+4\sqrt{3},(2-\sqrt{3})</sup>2=7-4\sqrt{3},$</p>
 <p>所以通项公式可以改写成</p>
-<p><span
-class="math inline">\(a_n=(\frac{(2+\sqrt{3})^n+(2-\sqrt{3})^n}{2})^2\)</span></p>
-<p>（不严谨）由二项式定理可知，两式加起来的部分的系数一定为 <span
-class="math inline">\(2\)</span> 或者 <span
-class="math inline">\(0\)</span>.另外，含有根号的部分都被抵消了。所以括号内的数是个整数。</p>
+<p>$a_n=(\frac{(2+\sqrt{3})<sup>n+(2-\sqrt{3})</sup>n}{2})^2$</p>
+<p>（不严谨）由二项式定理可知，两式加起来的部分的系数一定为 $2$ 或者 $0$.另外，含有根号的部分都被抵消了。所以括号内的数是个整数。</p>
 <p>所以原命题得证。</p>
-<hr />
-<h4 id="数列与数论结合">2.3 数列与数论结合</h4>
+<hr>
+<h4 id="2-3-数列与数论结合">2.3 数列与数论结合</h4>
 <p>题目一般会给出二次递推/通项/齐次递推，并提出一个与整除有关的问题。</p>
 <p>你需要求出另外一个（有时要求两个）的递推形式，接着从数论的角度讨论整除。</p>
 <p>直接看例题。</p>
-<hr />
-<h5 id="例题-2">2.3.1 例题</h5>
-<ol type="1">
-<li><ol start="11" type="1">
-<li><strong><span class="math inline">\(\{a_n\}\)</span> 是整数列，$a_2
-(),n(a_{n+1}-a_n+3)=a_{n+1}+a_n+3, a_{2009} () $，求最小的正整数 <span
-class="math inline">\(n\ge 2\)</span>, 使得 <span
-class="math inline">\(a_n \equiv 0 (\bmod 2010) .\)</span></strong></li>
-</ol></li>
+<hr>
+<h5 id="2-3-1-例题">2.3.1 例题</h5>
+<ol>
+<li class="lvl-3">
+<p>(11) <strong>${a_n}$ 是整数列，$a_2 \equiv 1 (\bmod 2),n(a_{n+1}-a_n+3)=a_{n+1}+a_n+3, a_{2009}\equiv 0 (\bmod 2010) $，求最小的正整数 $n\ge 2$, 使得 $a_n \equiv 0 (\bmod 2010) .$</strong></p>
+</li>
 </ol>
 <p>把题目割成两半：求通项和讨论同余。</p>
 <p>题目的递推式化简得</p>
-<p><span class="math display">\[
-a_{n+1}=\frac{n+1}{n-1}a_n-3
-\]</span></p>
-<p>用上一节中的套路： <span class="math display">\[
-a_{n+1}=\frac{(n+1)n}{n(n-1)}a_n-3
-\]</span></p>
-<p>最终得到 <span class="math display">\[
-\frac{a_{n+1}}{n(n+1)}=\frac{a_n}{n(n-1)}-\frac{3}{n(n+1)}
-\]</span> 令 <span
-class="math inline">\(b_n=\frac{a_n}{n(n-1)}\)</span>，则 <span
-class="math inline">\(b_{n+1}=b_n-\frac{3}{n(n+1)}\)</span>.</p>
-<p>由式子 <span class="math inline">\(b_n=b_2+(b_3-b_2)+(b_4-b_3)+ \dots
-+ (b_n-b_{n-1})\)</span></p>
+<p>$$<br>
+a_{n+1}=\frac{n+1}{n-1}a_n-3<br>
+$$</p>
+<p>用上一节中的套路：<br>
+$$<br>
+a_{n+1}=\frac{(n+1)n}{n(n-1)}a_n-3<br>
+$$</p>
+<p>最终得到<br>
+$$<br>
+\frac{a_{n+1}}{n(n+1)}=\frac{a_n}{n(n-1)}-\frac{3}{n(n+1)}<br>
+$$<br>
+令 $b_n=\frac{a_n}{n(n-1)}$，则 $b_{n+1}=b_n-\frac{3}{n(n+1)}$.</p>
+<p>由式子 $b_n=b_2+(b_3-b_2)+(b_4-b_3)+ \dots + (b_n-b_{n-1})$</p>
 <p>代入得到</p>
-<p><span class="math display">\[
-b_n=a_2-3(\frac{1}{2}-\frac{1}{n})
-\]</span></p>
-<p>所以 <span class="math display">\[
-a_n=n(n-1)b_n=n(n-1) \cdot \frac{a_2-3}{2}+3(n-1)
-\]</span></p>
-<p>把 <span class="math inline">\(a_{2009}\equiv 0 (\bmod 2010)\)</span>
-代入，考虑其在模 <span class="math inline">\(2010\)</span>
-意义下的式子： <span class="math display">\[
-(-1) \cdot (-2) \cdot \frac{a_2-3}{2}+3 \cdot (-2) \equiv 0 (\bmod 2010)
-\]</span> 解得 <span class="math display">\[
-a_2 \equiv 9 (\bmod 2010)
-\]</span> 目光转回 <span class="math inline">\(a_n\)</span> 模 <span
-class="math inline">\(2010\)</span> 意义下的运算：</p>
-<p><span class="math display">\[
-a_n \equiv 3n(n-1)+3(n-1) = 3(n^2-1) (\bmod 2010)
-\Rightarrow n^2 \equiv 671 (\bmod 2010)
-\]</span></p>
-<p>所以 <span class="math inline">\(67 \times 2 \times 5 |
-(n+1)(n-1)\)</span></p>
-<p>枚举可得 <span class="math inline">\(n_{\min}=269.\)</span></p>
-<ol start="2" type="1">
-<li><ol start="12" type="1">
-<li><strong><span
-class="math inline">\(a_1=1,a_2=-1,a_n=-a_{n-1}-2a_{n-2} (n \ge
-3),\)</span> 求证：<span class="math inline">\(2^{n+2}-7a_n^2\)</span>
-是完全平方数。</strong></li>
-</ol></li>
+<p>$$<br>
+b_n=a_2-3(\frac{1}{2}-\frac{1}{n})<br>
+$$</p>
+<p>所以<br>
+$$<br>
+a_n=n(n-1)b_n=n(n-1) \cdot \frac{a_2-3}{2}+3(n-1)<br>
+$$</p>
+<p>把 $a_{2009}\equiv 0 (\bmod 2010)$ 代入，考虑其在模 $2010$ 意义下的式子：<br>
+$$<br>
+(-1) \cdot (-2) \cdot \frac{a_2-3}{2}+3 \cdot (-2) \equiv 0 (\bmod 2010)<br>
+$$<br>
+解得<br>
+$$<br>
+a_2 \equiv 9 (\bmod 2010)<br>
+$$<br>
+目光转回 $a_n$ 模 $2010$ 意义下的运算：</p>
+<p>$$<br>
+a_n \equiv 3n(n-1)+3(n-1) = 3(n^2-1) (\bmod 2010)<br>
+\Rightarrow n^2 \equiv 671 (\bmod 2010)<br>
+$$</p>
+<p>所以 $67 \times 2 \times 5 | (n+1)(n-1)$</p>
+<p>枚举可得 $n_{\min}=269.$</p>
+<ol start="2">
+<li class="lvl-3">
+<p>(12) <strong>$a_1=1,a_2=-1,a_n=-a_{n-1}-2a_{n-2} (n \ge 3),$ 求证：$2<sup>{n+2}-7a_n</sup>2$ 是完全平方数。</strong></p>
+</li>
 </ol>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-这个递推式的特征方程好像没有实根……但我们可以把它换成二次递推的形式。
-</p>
+  <summary>提示 1</summary>
+  <p> 这个递推式的特征方程好像没有实根……但我们可以把它换成二次递推的形式。 </p>
 </details>
 <details>
-<summary>
-提示 2
-</summary>
-<p>
-二次递推式换出来之后，原式中哪一项应该被替换？
-</p>
+  <summary>提示 2</summary>
+  <p> 二次递推式换出来之后，原式中哪一项应该被替换？</p>
 </details>
-<p>首先考虑特征方程：<span
-class="math inline">\(x^2=-x-2\)</span>，但我们发现这个方程没有实根。</p>
+首先考虑特征方程：$x^2=-x-2$，但我们发现这个方程没有实根。
 <p>Q：在复数范围内讨论通项公式能成立吗？</p>
 <p>A：会算的很痛苦。</p>
 <p>所以，求出通项公式的方法寄了。</p>
 <p>那我们考虑二次递推式：</p>
 <p>Q：为什么会想到换成二次式？</p>
-<p>A：这个要靠自己多尝试。 <span class="math display">\[
-a_n+2a_{n-2}=-a_{n-1} \\
-\Rightarrow \frac{a_n+2a_{n-2}}{a_{n-1}}=-1
-\]</span> 把这个式子往后写一项： <span class="math display">\[
-\frac{a_{n+1}+2a_{n-1}}{a_n}=-1 \\
-\Rightarrow \frac{a_n+2a_{n-2}}{a_{n-1}}=\frac{a_{n+1}+2a_{n-1}}{a_n}
-\]</span> 交叉相乘 <span class="math display">\[
-a_n^2+2a_{n-2}a_n=2a_{n-1}^2+a_{n-1}a_{n+1} \\
-\Rightarrow 2(a_{n-1}^2-a_na_{n-2})=a_n^2-a_{n+1}a_{n-1}
-\]</span> 所以，数列 $ { a_n^2-a_{n+1}a_{n-1} } $ 是个公比为 <span
-class="math inline">\(2\)</span> 的等比数列。</p>
-<p>又 <span class="math inline">\(a_2^2-a_3a_1=2\)</span>, 所以 <span
-class="math inline">\(a_n^2-a_{n+1}a_{n-1}=2^{n-1}\)</span>.</p>
-<p>这里出现了 <span class="math inline">\(2\)</span>
-的次幂，所以我们考虑把原式的第一项换掉。</p>
-<p>这里的处理方法和之前略有不同，但想到这样换是比较自然的。因为用一个二次式去动后面那个
-<span class="math inline">\(a_n^2\)</span> 是非常困难的。</p>
-<p>所以 <span class="math display">\[
-原式=8(a_n^2-a_{n+1}a_{n-1})-7a_n^2 \space （注意这里第一项提了一个
-2^3）
-\\
-=a_n^2-8a_{n+1}a_{n-1} \\
-=a_n^2-8(-a_n-2a_{n-1}) \cdot a_{n-1} （这里往后写了一项）\\
-=a_n^2+8a_na_{n-1}+16a_{n-1}^2 \\
-=(a_n+4a_{n-1})^2 \\
-\]</span></p>
-<p>显然 <span class="math inline">\(\{a_n\}\)</span>
-是整数列。原命题得证。</p>
-<ol start="3" type="1">
-<li><ol start="13" type="1">
-<li><strong>$a_1=1,a_2=2,a_{n+1}=,n=2,3,, $
-求证：该数列任意两个相邻项的平方和仍是该数列中的一项。</strong></li>
-</ol></li>
+<p>A：这个要靠自己多尝试。<br>
+$$<br>
+a_n+2a_{n-2}=-a_{n-1} \<br>
+\Rightarrow \frac{a_n+2a_{n-2}}{a_{n-1}}=-1<br>
+$$<br>
+把这个式子往后写一项：<br>
+$$<br>
+\frac{a_{n+1}+2a_{n-1}}{a_n}=-1 \<br>
+\Rightarrow \frac{a_n+2a_{n-2}}{a_{n-1}}=\frac{a_{n+1}+2a_{n-1}}{a_n}<br>
+$$<br>
+交叉相乘<br>
+$$<br>
+a_n<sup>2+2a_{n-2}a_n=2a_{n-1}</sup>2+a_{n-1}a_{n+1} \<br>
+\Rightarrow 2(a_{n-1}<sup>2-a_na_{n-2})=a_n</sup>2-a_{n+1}a_{n-1}<br>
+$$<br>
+所以，数列 $ { a_n^2-a_{n+1}a_{n-1} } $ 是个公比为 $2$ 的等比数列。</p>
+<p>又 $a_2^2-a_3a_1=2$, 所以 $a_n<sup>2-a_{n+1}a_{n-1}=2</sup>{n-1}$.</p>
+<p>这里出现了 $2$ 的次幂，所以我们考虑把原式的第一项换掉。</p>
+<p>这里的处理方法和之前略有不同，但想到这样换是比较自然的。因为用一个二次式去动后面那个 $a_n^2$ 是非常困难的。</p>
+<p>所以<br>
+$$<br>
+原式=8(a_n<sup>2-a_{n+1}a_{n-1})-7a_n</sup>2 \space （注意这里第一项提了一个 2^3）<br>
+\<br>
+=a_n^2-8a_{n+1}a_{n-1} \<br>
+=a_n^2-8(-a_n-2a_{n-1}) \cdot a_{n-1} （这里往后写了一项）\<br>
+=a_n<sup>2+8a_na_{n-1}+16a_{n-1}</sup>2 \<br>
+=(a_n+4a_{n-1})^2 \<br>
+$$</p>
+<p>显然 ${a_n}$ 是整数列。原命题得证。</p>
+<ol start="3">
+<li class="lvl-3">
+<p>(13) <strong>$a_1=1,a_2=2,a_{n+1}=\frac{a_n<sup>2+(-1)</sup>n}{a_{n-1}},n=2,3,\dots, $ 求证：该数列任意两个相邻项的平方和仍是该数列中的一项。</strong></p>
+</li>
 </ol>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-这是一个含有常数项的二次递推式。为了求通项公式（或者看看能否求通项公式），我们可以把它换成齐次递推式。
-</p>
-</details>
+  <summary>提示 1</summary>
+  <p> 这是一个含有常数项的二次递推式。为了求通项公式（或者看看能否求通项公式），我们可以把它换成齐次递推式。 </p>
+</details> 
 <details>
-<summary>
-提示 2
-</summary>
-<p>
-怎么整理相邻两项相乘之后的式子？注意，你需要凑出完全平方。
-</p>
+  <summary>提示 2</summary>
+  <p> 怎么整理相邻两项相乘之后的式子？注意，你需要凑出完全平方。 </p>
 </details>
-<p>直接开始整理式子：</p>
-<p><span class="math display">\[
-原式 \Rightarrow a_{n+1}a_{n-1}=a_n^2+(-1)^n \\
-\]</span> 往后写一项： <span class="math display">\[
-a_{n+2}a_{n}=a_{n+1}^2+(-1)^{n+1}
-\]</span> 两式相加。</p>
+直接开始整理式子：
+<p>$$<br>
+原式 \Rightarrow a_{n+1}a_{n-1}=a_n<sup>2+(-1)</sup>n \<br>
+$$<br>
+往后写一项：<br>
+$$<br>
+a_{n+2}a_{n}=a_{n+1}<sup>2+(-1)</sup>{n+1}<br>
+$$<br>
+两式相加。</p>
 <p>Q：为什么这里要相加而不是相减？</p>
-<p>A：相加之后常数项就可以抵消掉了。 <span class="math display">\[
-a_{n+2}a_n+a_{n+1}a_{n-1}=a_n^2+a_{n+1}^2 \\
-\Rightarrow a_{n}^2-a_na_{n+2}=a_{n+1}a_{n-1}-a_{n+1}^2 \\
-\Rightarrow a_n(a_n-a_{n+2}) = a_{n+1}(a_{n-1}-a_{n+1}) \\
-\Rightarrow \frac{a_n}{a_{n-1}-a_{n+1}}=\frac{a_{n+1}}{a_{n}-a_{n+2}}
-\]</span> 这个等式可以一直等下去，直到 <span
-class="math inline">\(\frac{a_2}{a_1-a_3}\)</span> 所以 <span
-class="math inline">\(\frac{a_n}{a_{n-1}-a_{n+1}}=-\frac{1}{2}\)</span></p>
-<p>也就是 <span class="math inline">\(2a_n=a_{n+1}-a_{n-1}\)</span></p>
-<p>最后形式：<span
-class="math inline">\(a_{n+2}=2a_{n+1}+a_n\)</span>.</p>
-<p>特征方程：<span class="math inline">\(x^2=2x+1\)</span> 解得 <span
-class="math inline">\(x_1=1+\sqrt{2},x_2=1-\sqrt{2}.\)</span></p>
-<p>所以 <span
-class="math inline">\(a_n=A(1+\sqrt{2})^n+B(1+\sqrt{2})^n\)</span>.</p>
-<p>把 <span class="math inline">\(a_1=1,a_2=2\)</span> 代入即可解得
-<span class="math inline">\(A,B\)</span>. 最终会有 <span
-class="math display">\[
-a_n=\frac{\sqrt{2}}{4}(1+\sqrt{2})^n-\frac{\sqrt{2}}{4}(1-\sqrt{2})^n
-\]</span> 所以 <span class="math inline">\(a_n^2+a_{n+1}^2\)</span>
-<span class="math display">\[
-=(\frac{\sqrt{2}}{4}(1+\sqrt{2})^n-\frac{\sqrt{2}}{4}(1-\sqrt{2})^n)^2+(\frac{\sqrt{2}}{4}(1+\sqrt{2})^{n+1}-\frac{\sqrt{2}}{4}(1-\sqrt{2})^{n+1})^2
-\\
-=\frac{1}{8}((1+\sqrt{2})^{2n} \cdot
-(4+2\sqrt{2})+(1-\sqrt{2})^{2n}\cdot(4-2\sqrt{2}))
-\]</span></p>
-<p>（重要的一步）我们提出一个 <span
-class="math inline">\(2\sqrt{2}\)</span>， <span class="math display">\[
-上式=\frac{\sqrt{2}}{4}((1+\sqrt{2})^{2n+1}+(1-\sqrt{2})^{2n+1})
-（注意到 \frac{4+2\sqrt{2}}{2\sqrt{2}}=1+\sqrt{2}，可以合并）
-\]</span> 这不就是 <span class="math inline">\(a_{2n+1}\)</span>
-吗！</p>
+<p>A：相加之后常数项就可以抵消掉了。<br>
+$$<br>
+a_{n+2}a_n+a_{n+1}a_{n-1}=a_n<sup>2+a_{n+1}</sup>2 \<br>
+\Rightarrow a_{n}<sup>2-a_na_{n+2}=a_{n+1}a_{n-1}-a_{n+1}</sup>2 \<br>
+\Rightarrow a_n(a_n-a_{n+2}) = a_{n+1}(a_{n-1}-a_{n+1}) \<br>
+\Rightarrow \frac{a_n}{a_{n-1}-a_{n+1}}=\frac{a_{n+1}}{a_{n}-a_{n+2}}<br>
+$$<br>
+这个等式可以一直等下去，直到 $\frac{a_2}{a_1-a_3}$<br>
+所以 $\frac{a_n}{a_{n-1}-a_{n+1}}=-\frac{1}{2}$</p>
+<p>也就是 $2a_n=a_{n+1}-a_{n-1}$</p>
+<p>最后形式：$a_{n+2}=2a_{n+1}+a_n$.</p>
+<p>特征方程：$x^2=2x+1$ 解得 $x_1=1+\sqrt{2},x_2=1-\sqrt{2}.$</p>
+<p>所以 $a_n=A(1+\sqrt{2})<sup>n+B(1+\sqrt{2})</sup>n$.</p>
+<p>把 $a_1=1,a_2=2$ 代入即可解得 $A,B$. 最终会有<br>
+$$<br>
+a_n=\frac{\sqrt{2}}{4}(1+\sqrt{2})<sup>n-\frac{\sqrt{2}}{4}(1-\sqrt{2})</sup>n<br>
+$$<br>
+所以 $a_n<sup>2+a_{n+1}</sup>2$<br>
+$$<br>
+=(\frac{\sqrt{2}}{4}(1+\sqrt{2})<sup>n-\frac{\sqrt{2}}{4}(1-\sqrt{2})</sup>n)<sup>2+(\frac{\sqrt{2}}{4}(1+\sqrt{2})</sup>{n+1}-\frac{\sqrt{2}}{4}(1-\sqrt{2})<sup>{n+1})</sup>2<br>
+\<br>
+=\frac{1}{8}((1+\sqrt{2})^{2n} \cdot (4+2\sqrt{2})+(1-\sqrt{2})^{2n}\cdot(4-2\sqrt{2}))<br>
+$$</p>
+<p>（重要的一步）我们提出一个 $2\sqrt{2}$，<br>
+$$<br>
+上式=\frac{\sqrt{2}}{4}((1+\sqrt{2})<sup>{2n+1}+(1-\sqrt{2})</sup>{2n+1}) （注意到 \frac{4+2\sqrt{2}}{2\sqrt{2}}=1+\sqrt{2}，可以合并）<br>
+$$<br>
+这不就是 $a_{2n+1}$ 吗！</p>
 <p>所以原命题得证。</p>
-<ol start="4" type="1">
-<li><ol start="15" type="1">
-<li><strong><span
-class="math inline">\(c_0=1,c_1=0,c_2=2005,c_{n+2}=-3c_n-4c_{n-1}+2008
-(n \in \N^+)\)</span>,<span
-class="math inline">\(a_n=5(c_{n+2}-c_n)(502-c_{n-1}-c_{n-2})+4^n \times
-2004 \times 501,(n=2,3, \dots)\)</span>,则 <span
-class="math inline">\(n&gt;2\)</span> 时， <span
-class="math inline">\(a_n\)</span> 是否均为完全平方数？</strong></li>
-</ol></li>
+<ol start="4">
+<li class="lvl-3">
+<p>(15) <strong>$c_0=1,c_1=0,c_2=2005,c_{n+2}=-3c_n-4c_{n-1}+2008 (n \in \N<sup>+)$,$a_n=5(c_{n+2}-c_n)(502-c_{n-1}-c_{n-2})+4</sup>n \times 2004 \times 501,(n=2,3, \dots)$,则 $n&gt;2$ 时， $a_n$ 是否均为完全平方数？</strong></p>
+</li>
 </ol>
-<p><del>从题目就能看出来这题很难了</del></p>
+<p><s>从题目就能看出来这题很难了</s></p>
 <p>这题比较复杂，要进行多次换元和大量式子推导。</p>
-<p><del>编出合适的提示比较困难，所以这里直接给出正解</del></p>
-<p>运用不动点思想，把 <span class="math inline">\(c\)</span>
-中递推式的常数消掉：</p>
-<p><span class="math inline">\(x=-3x-4x+2008 \Rightarrow x=251\)</span>
-,</p>
-<p>所以 <span
-class="math inline">\(c_{n+2}-251=-3(c_n-251)-4(c_{n-1}-251)\)</span></p>
-<p>令 <span class="math inline">\(b_n=c_n-251,\)</span> 则 <span
-class="math inline">\(b_{n+2}=-3b_n-4b_{n-1} \Rightarrow
-b_{b+2}-b_n=-4(b_n+4_{n-1})\)</span></p>
+<p><s>编出合适的提示比较困难，所以这里直接给出正解</s></p>
+<p>运用不动点思想，把 $c$ 中递推式的常数消掉：</p>
+<p>$x=-3x-4x+2008 \Rightarrow x=251$ ,</p>
+<p>所以 $c_{n+2}-251=-3(c_n-251)-4(c_{n-1}-251)$</p>
+<p>令 $b_n=c_n-251,$ 则 $b_{n+2}=-3b_n-4b_{n-1} \Rightarrow b_{b+2}-b_n=-4(b_n+4_{n-1})$</p>
 <p>同时有</p>
-<p><span
-class="math inline">\(c_{n+2}-c_n=c_{n+2}-251-(c_n-251)=b_{n+2}-b_n,\)</span></p>
-<p><span
-class="math inline">\(502-c_{n-1}-c_{n-2}=-(c_{n-1}-251)-(c_{n-2}-251)=-b_{n-1}-b_{n-2}.\)</span></p>
-<p>所以我们成功地用 <span class="math inline">\(\{c_n\}\)</span> 表示了
-<span class="math inline">\(\{a_n\}\)</span> 的递推式中的 <span
-class="math inline">\(\{b_n\}.\)</span></p>
-<p>所以 <span class="math display">\[
-a_n=5(b_{n+2}-b_n)(-b_{n-1}-b_{n-2})+4^n \cdot 2004 \cdot 501 \\
-=20(b_n+b_{n-1})(b_{n-1}+b_{n-2})+4^n \cdot 2004 \cdot 501
-（这里是第一个难点。关于 c_{n+2}-c_n 的代换可以看上面）
-\]</span> 下面是第二个难点：想到第二步换元。</p>
-<p>我们发现 <span class="math inline">\((b_n+b_{n-1})\)</span> 和 <span
-class="math inline">\((b_{n-1}+b_{n-2})\)</span> 形式相近，所以令 <span
-class="math inline">\(d_n=b_n+b_{n+1}\)</span>,</p>
-<p>则 <span
-class="math inline">\(d_{n+1}-d_n=b_{n+2}-b_n=-4(b_n+b_{n-1})=-4d_{n-1}\)</span></p>
-<p>拎出来：<span
-class="math inline">\(d_{n+1}-d_n=-4d_{n-1}\)</span>.</p>
-<p>用上面的套路换成二次式： <span class="math display">\[
-\frac{d_{n+1}+4d_{n-1}}{d_n}=1=\frac{d_{n+2}+4d_{n}}{d_{n+1}} \\
-\Rightarrow 4d_n^2+d_nd_{n+2}=d_{n+1}^2+4d_{n-1}d_{n+1} \\
-\Rightarrow d_{n+1}^2+d_nd_{n+2}=4(d_n^2-d_{n+1}d_{n-1})
-\]</span> 为了美观，我们再令 <span
-class="math inline">\(p_n=d_n^2-d_{n+1}d_{n-1},\)</span> 则 <span
-class="math inline">\(p_n\)</span> 是公比为 <span
-class="math inline">\(4\)</span> 的等比数列。</p>
-<p>经过手动计算（……），我们“不难”得到 <span
-class="math inline">\(b_0=-250,b_1=-251,b_2=1754;d_0=-501,d_1=1503,d_2=3507\)</span>,</p>
-<p>所以 <span class="math inline">\(p_1=1503^2+501 \times 3507=501^2
-\times 16\)</span> （注意到 <span
-class="math inline">\(-501,1503,3507\)</span> 这三个数都是 <span
-class="math inline">\(501\)</span> 的整数倍，可以简化计算），</p>
-<p>所以 <span class="math inline">\(p_n=4^{n-1}\times501^2 \times
-16.\)</span></p>
-<p>这样我们就可以把 <span class="math inline">\(a_n\)</span>
-递推式的后面那个 <span class="math inline">\(4^n \times 2004 \times
-501\)</span> 替换掉了！</p>
+<p>$c_{n+2}-c_n=c_{n+2}-251-(c_n-251)=b_{n+2}-b_n,$</p>
+<p>$502-c_{n-1}-c_{n-2}=-(c_{n-1}-251)-(c_{n-2}-251)=-b_{n-1}-b_{n-2}.$</p>
+<p>所以我们成功地用 ${c_n}$ 表示了 ${a_n}$ 的递推式中的 ${b_n}.$</p>
+<p>所以<br>
+$$<br>
+a_n=5(b_{n+2}-b_n)(-b_{n-1}-b_{n-2})+4^n \cdot 2004 \cdot 501 \<br>
+=20(b_n+b_{n-1})(b_{n-1}+b_{n-2})+4^n \cdot 2004 \cdot 501 （这里是第一个难点。关于 c_{n+2}-c_n 的代换可以看上面）<br>
+$$<br>
+下面是第二个难点：想到第二步换元。</p>
+<p>我们发现 $(b_n+b_{n-1})$ 和 $(b_{n-1}+b_{n-2})$ 形式相近，所以令 $d_n=b_n+b_{n+1}$,</p>
+<p>则 $d_{n+1}-d_n=b_{n+2}-b_n=-4(b_n+b_{n-1})=-4d_{n-1}$</p>
+<p>拎出来：$d_{n+1}-d_n=-4d_{n-1}$.</p>
+<p>用上面的套路换成二次式：<br>
+$$<br>
+\frac{d_{n+1}+4d_{n-1}}{d_n}=1=\frac{d_{n+2}+4d_{n}}{d_{n+1}} \<br>
+\Rightarrow 4d_n<sup>2+d_nd_{n+2}=d_{n+1}</sup>2+4d_{n-1}d_{n+1} \<br>
+\Rightarrow d_{n+1}<sup>2+d_nd_{n+2}=4(d_n</sup>2-d_{n+1}d_{n-1})<br>
+$$<br>
+为了美观，我们再令 $p_n=d_n^2-d_{n+1}d_{n-1},$ 则 $p_n$ 是公比为 $4$ 的等比数列。</p>
+<p>经过手动计算（……），我们“不难”得到 $b_0=-250,b_1=-251,b_2=1754;d_0=-501,d_1=1503,d_2=3507$,</p>
+<p>所以 $p_1=1503^2+501 \times 3507=501^2 \times 16$ （注意到 $-501,1503,3507$ 这三个数都是 $501$ 的整数倍，可以简化计算），</p>
+<p>所以 $p_n=4<sup>{n-1}\times501</sup>2 \times 16.$</p>
+<p>这样我们就可以把 $a_n$ 递推式的后面那个 $4^n \times 2004 \times 501$ 替换掉了！</p>
 <p>具体而言，</p>
-<p><span class="math display">\[
-\begin{align*}
-a_n&amp;=20d_{n-1}d_{n-2}+4^n \cdot 2004 \cdot 501 \\
-&amp;=4(5d_{n-1}d_{n-2}+4^n \cdot 501^2) \\
-&amp;=4(5d_{n-1}d_{n-2}+d_{n-1}^2-d_nd_{n-2}) \\
-&amp;=4(5d_{n-1}d_{n-2}+d_{n-1}^2-(d_{n-1}-4d_{n-2})d_{n-2})  （这里是第三个难点，要想到把
-d_n 往前带）\\
-&amp;=4(d_{n-1}^2+4d_{n-1}d_{n-2}+4d_{n-2}^2) \\
-&amp;=4(d_{n-1}+2d_{n-2})^2 \\
-&amp;=(2d_{n-1}+4d_{n-2})^2
-\end{align*}
-\]</span></p>
-<p>显然 <span class="math inline">\(\{d_n\}\)</span>
-是整数列，所以原命题得证。</p>
+<p>$$<br>
+\begin{align*}<br>
+a_n&amp;=20d_{n-1}d_{n-2}+4^n \cdot 2004 \cdot 501 \<br>
+&amp;=4(5d_{n-1}d_{n-2}+4^n \cdot 501^2) \<br>
+&amp;=4(5d_{n-1}d_{n-2}+d_{n-1}^2-d_nd_{n-2}) \<br>
+&amp;=4(5d_{n-1}d_{n-2}+d_{n-1}^2-(d_{n-1}-4d_{n-2})d_{n-2})  （这里是第三个难点，要想到把 d_n 往前带）\<br>
+&amp;=4(d_{n-1}<sup>2+4d_{n-1}d_{n-2}+4d_{n-2}</sup>2) \<br>
+&amp;=4(d_{n-1}+2d_{n-2})^2 \<br>
+&amp;=(2d_{n-1}+4d_{n-2})^2<br>
+\end{align*}<br>
+$$</p>
+<p>显然 ${d_n}$ 是整数列，所以原命题得证。</p>
 <p>小结：这类题目通常考察我们变形式子的能力和运算能力。一般要进行齐次递推式到二次递推式子的转换。</p>
-<hr />
-<h4 id="数列不等式数学归纳法1">2.4 数列不等式，数学归纳法（1）</h4>
+<hr>
+<h4 id="2-4-数列不等式，数学归纳法（1）">2.4 数列不等式，数学归纳法（1）</h4>
 <p>这类问题和数列中的数论一样，综合性都很强。</p>
 <p>注意：例题不按照题目难度升序排序。</p>
-<hr />
-<h5 id="裂项">2.4.1 裂项</h5>
-<p>裂项，指的是把一些式子化成若干个 <span
-class="math inline">\(\frac{1}{a_i+C_1} \pm
-\frac{1}{a_{i+1}+C_2}\)</span>
-相加或者相减的形式。其中大部分项应该可以抵消。</p>
+<hr>
+<h5 id="2-4-1-裂项">2.4.1 裂项</h5>
+<p>裂项，指的是把一些式子化成若干个 $\frac{1}{a_i+C_1} \pm \frac{1}{a_{i+1}+C_2}$ 相加或者相减的形式。其中大部分项应该可以抵消。</p>
 <p>通过把原数列化成（或者放缩成）一个较为简单的形式，能够更简便地讨论与某个给定值的大小关系。</p>
 <p>当然，放缩的时候不能放过度。</p>
-<p>最常见的裂项形式应该是 <span
-class="math inline">\(\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}\)</span>
-了吧。</p>
+<p>最常见的裂项形式应该是 $\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}$ 了吧。</p>
 <p>基于这个形式，我们进行部分推广。</p>
-<ul>
-<li><strong>分母任意差形式（自己取的名字）</strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>分母任意差形式（自己取的名字）</strong></p>
+</li>
 </ul>
-<p>我们发现上面那个形式是针对 <span class="math inline">\((n+1)\)</span>
-和 <span class="math inline">\(n\)</span> 的，那如果是 <span
-class="math inline">\((n+k)\)</span> 和 <span
-class="math inline">\(n\)</span> 呢？</p>
-<p>实际上，我们有： <span class="math display">\[
-\frac{1}{k}(\frac{1}{n}-\frac{1}{n+k})=\frac{1}{n(n+k)},k \in \R,k &gt;
-0
-\]</span> 证明比较显然，这算是基础吧。</p>
-<ul>
-<li><strong>递推形式：<span
-class="math inline">\(a_{n+1}=pa_n+a_{n-1}\)</span></strong></li>
+<p>我们发现上面那个形式是针对 $(n+1)$ 和 $n$ 的，那如果是 $(n+k)$ 和 $n$ 呢？</p>
+<p>实际上，我们有：<br>
+$$<br>
+\frac{1}{k}(\frac{1}{n}-\frac{1}{n+k})=\frac{1}{n(n+k)},k \in \R,k &gt; 0<br>
+$$<br>
+证明比较显然，这算是基础吧。</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>递推形式：$a_{n+1}=pa_n+a_{n-1}$</strong></p>
+</li>
 </ul>
-<p>实际上这种形式的递推式也可以裂项。 <span class="math display">\[
-a_{n+1}=pa_n+a_{n-1} \\
-\Rightarrow a_{n}=\frac{1}{p}(a_{n+1}-a_{n-1})   \space \space \space
-(1)\\
-考虑恒等式 \frac{1}{a_{n+1}a_{n-1}}=\frac{a_n}{a_{n+1}a_{n}a_{n-1}},将
-(1) 式代入 \\
-\frac{1}{a_{n+1}a_{n-1}}=\frac{\frac{1}{p}(a_{n+1}-a_{n-1})}{a_{n+1}a_{n}a_{n-1}}
-=\frac{1}{p}(\frac{1}{a_{n-1}a_n}-\frac{1}{a_na_{n+1}})
-\]</span></p>
+<p>实际上这种形式的递推式也可以裂项。<br>
+$$<br>
+a_{n+1}=pa_n+a_{n-1} \<br>
+\Rightarrow a_{n}=\frac{1}{p}(a_{n+1}-a_{n-1})   \space \space \space (1)\<br>
+考虑恒等式 \frac{1}{a_{n+1}a_{n-1}}=\frac{a_n}{a_{n+1}a_{n}a_{n-1}},将 (1) 式代入 \<br>
+\frac{1}{a_{n+1}a_{n-1}}=\frac{\frac{1}{p}(a_{n+1}-a_{n-1})}{a_{n+1}a_{n}a_{n-1}} =\frac{1}{p}(\frac{1}{a_{n-1}a_n}-\frac{1}{a_na_{n+1}})<br>
+$$</p>
 <p>这就成功裂项了。</p>
-<ul>
-<li><strong>递推形式：<span
-class="math inline">\(a_{n+1}=a_n+\frac{a_n^2}{p}\)</span></strong></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>递推形式：$a_{n+1}=a_n+\frac{a_n^2}{p}$</strong></p>
+</li>
 </ul>
-<p>这个式子要化成裂项，难度比上面小一点。 <span class="math display">\[
-原式 \Rightarrow a_{n+1}=\frac{pa_n+a_n^2}{p} \\
-=\frac{a_n(a_n+p)}{p} \\
-\]</span> 看到分母有相乘的形式就可以考虑取倒数： <span
-class="math display">\[
-\frac{1}{a_{n+1}}=\frac{p}{a_n(a_n+p)} \\
-= \frac{1}{a_n}-\frac{1}{a_n+p}
-\]</span> 这样就化成裂项了。</p>
+<p>这个式子要化成裂项，难度比上面小一点。<br>
+$$<br>
+原式 \Rightarrow a_{n+1}=\frac{pa_n+a_n^2}{p} \<br>
+=\frac{a_n(a_n+p)}{p} \<br>
+$$<br>
+看到分母有相乘的形式就可以考虑取倒数：<br>
+$$<br>
+\frac{1}{a_{n+1}}=\frac{p}{a_n(a_n+p)} \<br>
+= \frac{1}{a_n}-\frac{1}{a_n+p}<br>
+$$<br>
+这样就化成裂项了。</p>
 <p>下面来几道例题：</p>
-<ol type="1">
-<li><ol start="7" type="1">
-<li><strong><span
-class="math inline">\(a_1=a_2=\frac{1}{2},a_{n+1}=2a_n+a_{n-1}\)</span>，证明：</strong></li>
-</ol></li>
+<ol>
+<li class="lvl-3">
+<p>(7) <strong>$a_1=a_2=\frac{1}{2},a_{n+1}=2a_n+a_{n-1}$，证明：</strong></p>
+</li>
 </ol>
-<p><span class="math display">\[
-\sum_{i=2}^{2017}\frac{1}{a_{i-1}a_{i+1}}&lt;2
-\]</span></p>
+<p>$$<br>
+\sum_{i=2}^{2017}\frac{1}{a_{i-1}a_{i+1}}&lt;2<br>
+$$</p>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-这个递推式子和上面哪个形式一样？
-</p>
+  <summary>提示 1</summary>
+  <p> 这个递推式子和上面哪个形式一样？ </p>
 </details>
-<p>直接套用上面的第二个结论： <span class="math display">\[
-a_{n+1}=2a_n+a_{n-1} \Rightarrow
-\frac{1}{a_{n+1}a_{n-1}}=\frac{1}{2}(\frac{1}{a_{n-1}a_n}-\frac{1}{a_na_{n+1}})
-\]</span></p>
-<p>然后带入原式： <span class="math display">\[
-原式=\frac{1}{2}(\frac{1}{a_1a_2}-\frac{1}{a_2a_3}+\frac{1}{a_2a_3}-\frac{1}{a_3a_4}+
-\dots +\frac{1}{a_{2016}a_{2017}}-\frac{1}{a_{2017}a_{2018}})\\
-=\frac{1}{2}(4-\frac{1}{a_{2017}a_{2018}}) \\
-&lt;2
-\]</span> 显然有 <span
-class="math inline">\(\frac{1}{a_{2017}a_{2018}}&lt;2.\)</span>
-所以原命题得证。</p>
-<ol start="2" type="1">
-<li><strong><span
-class="math inline">\(x_1=\frac{1}{2},x_{n+1}=x_n+\frac{x_n^2}{n^2}.\)</span>
-证明：</strong></li>
+直接套用上面的第二个结论：
+$$
+a_{n+1}=2a_n+a_{n-1} \Rightarrow \frac{1}{a_{n+1}a_{n-1}}=\frac{1}{2}(\frac{1}{a_{n-1}a_n}-\frac{1}{a_na_{n+1}})
+$$
+<p>然后带入原式：<br>
+$$<br>
+原式=\frac{1}{2}(\frac{1}{a_1a_2}-\frac{1}{a_2a_3}+\frac{1}{a_2a_3}-\frac{1}{a_3a_4}+ \dots +\frac{1}{a_{2016}a_{2017}}-\frac{1}{a_{2017}a_{2018}})\<br>
+=\frac{1}{2}(4-\frac{1}{a_{2017}a_{2018}}) \<br>
+&lt;2<br>
+$$<br>
+显然有 $\frac{1}{a_{2017}a_{2018}}&lt;2.$ 所以原命题得证。</p>
+<ol start="2">
+<li class="lvl-3">
+<p><strong>$x_1=\frac{1}{2},x_{n+1}=x_n+\frac{x_n<sup>2}{n</sup>2}.$ 证明：</strong></p>
+</li>
 </ol>
-<p>​ (1) (8) <span class="math inline">\(x_{2001}&lt;1001.\)</span></p>
-<p>​ (2) (9) <span class="math inline">\(x_{2001}&lt;4\)</span>.</p>
+<p>​	(1) (8) $x_{2001}&lt;1001.$</p>
+<p>​	(2) (9) $x_{2001}&lt;4$.</p>
 <details>
-<summary>
-提示 1-1
-</summary>
-<p>
-2001 和 1001 在数量上近似有什么关系？
-</p>
+  <summary>提示 1-1</summary>
+  <p> 2001 和 1001 在数量上近似有什么关系？ </p>
 </details>
 <details>
-<summary>
-提示 1-2
-</summary>
-<p>
-可以考虑数学归纳证明
-</p>
+  <summary>提示 1-2</summary>
+  <p> 可以考虑数学归纳证明 </p>
 </details>
 <details>
-<summary>
-提示 2-1
-</summary>
-<p>
-这个递推式子和上面哪个形式一样？
-</p>
+  <summary>提示 2-1</summary>
+  <p> 这个递推式子和上面哪个形式一样？ </p>
 </details>
 <details>
-<summary>
-提示 2-2
-</summary>
-<p>
-裂项完毕后怎么放缩？可以考虑保留前几项，后面的进行适当的放缩。
-</p>
+  <summary>提示 2-2</summary>
+  <p> 裂项完毕后怎么放缩？可以考虑保留前几项，后面的进行适当的放缩。</p>
 </details>
 <p>如果我们证出来第二问，第一问就显然了。但为了给出两种不同的做法，还是把这道题分成了两部分。</p>
 <p>第一问是数学归纳法在数列证明中的应用。是一个比较基础的命题加强（或者说是命题转换？）</p>
-<p>把命题转换为：对于任意的 <span class="math inline">\(i,x_i \le
-\frac{i}{2}\)</span>.</p>
-<p><span class="math inline">\(x_1=\frac{1}{2}\)</span> 成立。</p>
-<p>设 <span class="math inline">\(n=k\)</span> 时成立，即 <span
-class="math inline">\(x_k&lt;\frac{k}{2}\)</span>, 则 <span
-class="math inline">\(n=k+1\)</span> 时，</p>
-<p><span class="math display">\[
-x_{k+1}=x_k+\frac{x_k^2}{k^2}&lt;\frac{k}{2}+\frac{\frac{k^2}{4}}{k^2}=\frac{k}{2}+\frac{1}{4}&lt;\frac{1}{2}(k+1)
-\]</span></p>
+<p>把命题转换为：对于任意的 $i,x_i \le \frac{i}{2}$.</p>
+<p>$x_1=\frac{1}{2}$ 成立。</p>
+<p>设 $n=k$ 时成立，即 $x_k&lt;\frac{k}{2}$,  则 $n=k+1$ 时，</p>
+<p>$$<br>
+x_{k+1}=x_k+\frac{x_k<sup>2}{k</sup>2}&lt;\frac{k}{2}+\frac{\frac{k<sup>2}{4}}{k</sup>2}=\frac{k}{2}+\frac{1}{4}&lt;\frac{1}{2}(k+1)<br>
+$$</p>
 <p>也成立。</p>
 <p>第二问就是利用上面的裂项结论来放缩。</p>
 <p>由结论可得</p>
-<p><span class="math display">\[
-\frac{1}{x_{n+1}}=\frac{1}{x_n}-\frac{1}{x_n+n^2}
-\]</span></p>
+<p>$$<br>
+\frac{1}{x_{n+1}}=\frac{1}{x_n}-\frac{1}{x_n+n^2}<br>
+$$</p>
 <p>所以</p>
-<p><span class="math display">\[
-\begin{align*}
-&amp;\frac{1}{x_{n+1}} \\
-&amp;=(\frac{1}{x_n}-\frac{1}{x_{n-1}})+(\frac{1}{x_{n-1}}-\frac{1}{x_{n-2}})+
-\cdots +(\frac{1}{x_2}-\frac{1}{x_1})+\frac{1}{x_1} \\
-&amp;=2-(\frac{1}{x_{n-1}+(n-1)^2}+\cdots+\frac{1}{x_1+1^2}) \\
-&amp;&gt; 2-(\frac{1}{1^2}+\frac{1}{2^2}+ \cdots+\frac{1}{(n-1)^2}) \\
-&amp;&gt; 2-(1+\frac{1}{4}+\frac{1}{2 \times 3 }+\frac{1}{3 \times 4}+
-\cdots +\frac{1}{(n-2)(n-1)}) \\
-&amp;=2-1-\frac{1}{4}-\frac{1}{2}-\frac{1}{n-1} \\
-&amp;&gt; \frac{1}{4}
-\end{align*}
-\]</span></p>
-<p>所以 <span class="math inline">\(x_{n+1}&lt;4\)</span>.</p>
+<p>$$<br>
+\begin{align*}<br>
+&amp;\frac{1}{x_{n+1}} \<br>
+&amp;=(\frac{1}{x_n}-\frac{1}{x_{n-1}})+(\frac{1}{x_{n-1}}-\frac{1}{x_{n-2}})+ \cdots +(\frac{1}{x_2}-\frac{1}{x_1})+\frac{1}{x_1} \<br>
+&amp;=2-(\frac{1}{x_{n-1}+(n-1)<sup>2}+\cdots+\frac{1}{x_1+1</sup>2}) \<br>
+&amp;&gt; 2-(\frac{1}{1<sup>2}+\frac{1}{2</sup>2}+ \cdots+\frac{1}{(n-1)^2}) \<br>
+&amp;&gt; 2-(1+\frac{1}{4}+\frac{1}{2 \times 3 }+\frac{1}{3 \times 4}+ \cdots +\frac{1}{(n-2)(n-1)}) \<br>
+&amp;=2-1-\frac{1}{4}-\frac{1}{2}-\frac{1}{n-1} \<br>
+&amp;&gt; \frac{1}{4}<br>
+\end{align*}<br>
+$$</p>
+<p>所以 $x_{n+1}&lt;4$.</p>
 <p>ps: 如果你写一个程序跑一下：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> db long double</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> maxn=<span class="number">10000010</span>;</span><br><span class="line">db a[maxn];</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    a[<span class="number">1</span>]=<span class="number">0.500</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++) a[i]=a[i<span class="number">-1</span>]+a[i<span class="number">-1</span>]*a[i<span class="number">-1</span>]/(i<span class="number">-1.00</span>)/(i<span class="number">-1.00</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.10Lf\n&quot;</span>,a[n]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>你会发现 <span class="math inline">\(a_{2001}\)</span> 甚至小于 <span
-class="math inline">\(1.4\)</span>.</p>
-<ol start="3" type="1">
-<li><span
-class="math inline">\(a_1=1,a_2=\frac{1}{4},a_{n+1}=\frac{(n-1)a_n}{n-a_n}\)</span></li>
+<p>你会发现 $a_{2001}$ 甚至小于 $1.4$.</p>
+<ol start="3">
+<li class="lvl-3">
+<p>$a_1=1,a_2=\frac{1}{4},a_{n+1}=\frac{(n-1)a_n}{n-a_n}$</p>
+</li>
 </ol>
-<ol type="1">
-<li><ol start="9" type="1">
-<li><strong>求通项公式.</strong></li>
-</ol></li>
-<li><ol start="9" type="1">
-<li><strong>证明：<span
-class="math inline">\(a_1^2+a_2^2+\cdots+a_n^2&lt;\frac{7}{6}\)</span>.</strong></li>
-</ol></li>
-<li>通过枚举我们发现： <span
-class="math inline">\(a_3=\frac{1}{7},a_4=\frac{1}{10}\)</span>.</li>
-</ol>
-<p>所以我们猜测：<span
-class="math inline">\(a_n=\frac{1}{3n-2}\)</span>.</p>
+<p>(1) (9) <strong>求通项公式.</strong></p>
+<p>(2) (9) <strong>证明：$a_1<sup>2+a_2</sup>2+\cdots+a_n^2&lt;\frac{7}{6}$.</strong></p>
+<p>(1) 通过枚举我们发现： $a_3=\frac{1}{7},a_4=\frac{1}{10}$.</p>
+<p>所以我们猜测：$a_n=\frac{1}{3n-2}$.</p>
 <p>这个场景是不是有点熟悉？最开始是不是有一道与阶乘有关的题目，也是这样找到突破口的？</p>
 <p>但是，有了数学归纳法，我们猜到了结论，就可以直接归纳证明，而不用凑形式了。</p>
-<p><span class="math inline">\(a_1=1\)</span> 成立。</p>
-<p>设 <span class="math inline">\(n=k\)</span> 时成立，即 <span
-class="math inline">\(a_k=\frac{1}{3k-2}\)</span>,</p>
-<p>则 <span class="math display">\[
-a_{k+1}=\frac{(k-1)a_k}{k-a_k}\\
-=\frac{\frac{k-1}{3k-2}}{k-\frac{1}{3k-2}}\\
-=\frac{k-1}{3k^2-2k-1}\\
-=\frac{1}{3k+1}\\
-=\frac{1}{3(k+1)-2}
-\]</span> 也成立。</p>
-<ol start="2" type="1">
-<li>即证 <span class="math display">\[
-1^2+\frac{1}{4^2}+\frac{1}{7^2}+\dots+\frac{1}{(3n-2)^2}&lt;\frac{7}{6}.
-\]</span> 左边 <span class="math display">\[
-&lt;\frac{1}{(4+1.5)(4-1.5)}+\frac{1}{(7-1.5)(7+1.5)}+\dots+\frac{1}{(3n-3.5)(3n-0.5)}\\
-=\frac{1}{3}(\frac{1}{2.5}-\frac{1}{3n-0.5})\\
-&lt;\frac{1}{7.5}\\
-&lt;\frac{1}{6}
-\]</span> 得证。</li>
-</ol>
-<p>Q：这个两边往外放 <span class="math inline">\(1.5\)</span>
-的思路是怎么想到的呢？</p>
-<p>A：首先明确前一项的尾巴必须与后一项的头相接；然后，这样分配是所有差为
-<span class="math inline">\(3\)</span>
-的分配方式中与原式最接近的（可以简单拆式子证明）。</p>
-<hr />
-<h5 id="有界性和其它部分技巧">2.4.2 有界性和其它部分技巧</h5>
-<p>为了解决这类问题，我们一般会运用函数的不动点思想，找出一个 <span
-class="math inline">\(x\)</span> ，使得 <span
-class="math inline">\(a_n-x=P(a_{n-1}-x)+Q\)</span>，当两边都有 <span
-class="math inline">\(a_n-x\)</span>
-形式的式子时，就可以进行下一步运算了。</p>
+<p>$a_1=1$ 成立。</p>
+<p>设 $n=k$ 时成立，即 $a_k=\frac{1}{3k-2}$,</p>
+<p>则<br>
+$$<br>
+a_{k+1}=\frac{(k-1)a_k}{k-a_k}\<br>
+=\frac{\frac{k-1}{3k-2}}{k-\frac{1}{3k-2}}\<br>
+=\frac{k-1}{3k^2-2k-1}\<br>
+=\frac{1}{3k+1}\<br>
+=\frac{1}{3(k+1)-2}<br>
+$$<br>
+也成立。</p>
+<p>(2) 即证<br>
+$$<br>
+1<sup>2+\frac{1}{4</sup>2}+\frac{1}{7<sup>2}+\dots+\frac{1}{(3n-2)</sup>2}&lt;\frac{7}{6}.<br>
+$$<br>
+左边<br>
+$$<br>
+&lt;\frac{1}{(4+1.5)(4-1.5)}+\frac{1}{(7-1.5)(7+1.5)}+\dots+\frac{1}{(3n-3.5)(3n-0.5)}\<br>
+=\frac{1}{3}(\frac{1}{2.5}-\frac{1}{3n-0.5})\<br>
+&lt;\frac{1}{7.5}\<br>
+&lt;\frac{1}{6}<br>
+$$<br>
+得证。</p>
+<p>Q：这个两边往外放 $1.5$ 的思路是怎么想到的呢？</p>
+<p>A：首先明确前一项的尾巴必须与后一项的头相接；然后，这样分配是所有差为 $3$ 的分配方式中与原式最接近的（可以简单拆式子证明）。</p>
+<hr>
+<h5 id="2-4-2-有界性和其它部分技巧">2.4.2 有界性和其它部分技巧</h5>
+<p>为了解决这类问题，我们一般会运用函数的不动点思想，找出一个 $x$ ，使得 $a_n-x=P(a_{n-1}-x)+Q$，当两边都有 $a_n-x$ 形式的式子时，就可以进行下一步运算了。</p>
 <p>有时候还会用到裂项等方法。</p>
 <p>注意，答案长度不一定代表题目的难度。因为这些题目没有固定的处理形式，想到思路不是一件容易的事——尽管过程很简洁。</p>
 <p>这样说还是比较抽象，所以直接给例题。</p>
-<ol type="1">
-<li><ol start="10" type="1">
-<li><strong><span
-class="math inline">\(a_1=1,a_{n+1}=\frac{1+2a_n}{1+a_n}\)</span>.求证：<span
-class="math inline">\(a_n&lt;\frac{1+\sqrt{5}}{2}\)</span></strong>.</li>
-</ol></li>
+<ol>
+<li class="lvl-3">
+<p>(10) <strong>$a_1=1,a_{n+1}=\frac{1+2a_n}{1+a_n}$.求证：$a_n&lt;\frac{1+\sqrt{5}}{2}$</strong>.</p>
+</li>
 </ol>
 <p>这题就是不动点思想的具体应用了。</p>
-<p><span class="math inline">\(\frac{1+\sqrt{5}}{2}\)</span>
-是一个很特殊的数字，你可以解方程 <span
-class="math inline">\(x=\frac{1+2x}{1+x}\)</span> 找不动点，里面就有
-<span
-class="math inline">\(\frac{1+\sqrt{5}}{2}\)</span>。不过既然题目已经给出来了，我们就直接证明。</p>
-<p>我们考虑两边同时减去 <span
-class="math inline">\(\frac{1+\sqrt{5}}{2}\)</span>, <span
-class="math display">\[
-a_{n+1}-\frac{1+\sqrt{5}}{2} \\
-=\frac{1+2a_n}{1+a_n}-\frac{1+\sqrt{5}}{2} \\
-=\frac{1+2a_n-\frac{1+\sqrt{5}}{2}(a_n+1)}{1+a_n} \\
-=\frac{\frac{3-\sqrt{5}}{2}(a_n-\frac{1+\sqrt{5}}{2})}{1+a_n}\\
-\]</span> 最后一步的式子不是化简得到的，而是凑出来的。我们要往两边都有
-<span class="math inline">\(a_n-\frac{1+\sqrt{5}}{2}\)</span>
-的形式靠。</p>
-<p>我们发现， <span class="math display">\[
-\frac{\frac{3-\sqrt{5}}{2}}{1+a_n}&gt;0
-\]</span> 所以 <span
-class="math inline">\(a_{n+1}-\frac{1+\sqrt{5}}{2}\)</span> 和 <span
-class="math inline">\(a_n-\frac{1+\sqrt{5}}{2}\)</span> 同号！</p>
-<p>只需要看数列的第一项就可以了。<span
-class="math inline">\(a_1=1,1-\frac{1+\sqrt{5}}{2}&lt;0\)</span></p>
+<p>$\frac{1+\sqrt{5}}{2}$ 是一个很特殊的数字，你可以解方程 $x=\frac{1+2x}{1+x}$ 找不动点，里面就有 $\frac{1+\sqrt{5}}{2}$。不过既然题目已经给出来了，我们就直接证明。</p>
+<p>我们考虑两边同时减去 $\frac{1+\sqrt{5}}{2}$,<br>
+$$<br>
+a_{n+1}-\frac{1+\sqrt{5}}{2} \<br>
+=\frac{1+2a_n}{1+a_n}-\frac{1+\sqrt{5}}{2} \<br>
+=\frac{1+2a_n-\frac{1+\sqrt{5}}{2}(a_n+1)}{1+a_n} \<br>
+=\frac{\frac{3-\sqrt{5}}{2}(a_n-\frac{1+\sqrt{5}}{2})}{1+a_n}\<br>
+$$<br>
+最后一步的式子不是化简得到的，而是凑出来的。我们要往两边都有 $a_n-\frac{1+\sqrt{5}}{2}$ 的形式靠。</p>
+<p>我们发现，<br>
+$$<br>
+\frac{\frac{3-\sqrt{5}}{2}}{1+a_n}&gt;0<br>
+$$<br>
+所以 $a_{n+1}-\frac{1+\sqrt{5}}{2}$ 和 $a_n-\frac{1+\sqrt{5}}{2}$ 同号！</p>
+<p>只需要看数列的第一项就可以了。$a_1=1,1-\frac{1+\sqrt{5}}{2}&lt;0$</p>
 <p>所以原式得证。</p>
-<ol start="2" type="1">
-<li><ol start="12" type="1">
-<li><strong><span
-class="math inline">\(a_1=3,a_{n+1}=\frac{3a_n+2}{a_n+2}\)</span>，求证：<span
-class="math inline">\(a_1+a_2+ \dots +a_n&lt;2n+\frac{4}{3}\)</span>
-</strong></li>
-</ol></li>
+<ol start="2">
+<li class="lvl-3">
+<p>(12) **$a_1=3,a_{n+1}=\frac{3a_n+2}{a_n+2}$，求证：$a_1+a_2+ \dots +a_n&lt;2n+\frac{4}{3}$ **</p>
+</li>
 </ol>
-<p>找不动点： <span class="math inline">\(x=\frac{3x+2}{x+2}\Rightarrow
-x_1=2,x_2=-1\)</span>.</p>
-<p>按理来讲，我们应该挑一个数，并用 <span
-class="math inline">\(a_n\)</span> 减去它，</p>
+<p>找不动点： $x=\frac{3x+2}{x+2}\Rightarrow x_1=2,x_2=-1$.</p>
+<p>按理来讲，我们应该挑一个数，并用 $a_n$ 减去它，</p>
 <p>但应该选哪个数呢？</p>
-<p>看到待证式右边 <span class="math inline">\(a_n\)</span> 的系数为
-<span class="math inline">\(2\)</span>，我们考虑选 <span
-class="math inline">\(2\)</span>。 <span class="math display">\[
-a_{n+1}-2 \\
-=\frac{3a_n+2}{a_n+2}-2 \\
-=\frac{3a_n+2-2a_n-4}{a_n+2} \\
-=\frac{1}{a_n+2}(a_n-2) \\
-\]</span> <span class="math inline">\(\{a_n\}\)</span>
-是正数列是显然的，所以 <span class="math inline">\(a_{n+1}-2\)</span> 和
-<span class="math inline">\(a_n-2\)</span> 同号，这个性质可以一直推到
-<span class="math inline">\(a_1-2\)</span>。又因为 <span
-class="math inline">\(a_1=3&gt;2\)</span>,所以 <span
-class="math inline">\(a_n&gt;2\)</span>.</p>
-<p>所以 <span
-class="math inline">\(\frac{1}{a_n+2}&lt;\frac{1}{4}\)</span>.</p>
-<p>带回上面推出来的那个式子，<span
-class="math inline">\(a_{n+1}-2&lt;\frac{1}{4}(a_n-2)&lt;\frac{1}{4^2}(a_n-2)&lt;\dots&lt;\frac{1}{4^n}\)</span>.</p>
-<p>所以 <span class="math display">\[
-原式&lt;2n+\frac{1}{4^0}+\frac{1}{4^1}+\dots+\frac{1}{4^n}&lt;2n+\frac{1}{1-\frac{1}{4}}=2n+\frac{4}{3}
-\]</span></p>
+<p>看到待证式右边 $a_n$ 的系数为 $2$，我们考虑选 $2$。<br>
+$$<br>
+a_{n+1}-2 \<br>
+=\frac{3a_n+2}{a_n+2}-2 \<br>
+=\frac{3a_n+2-2a_n-4}{a_n+2} \<br>
+=\frac{1}{a_n+2}(a_n-2) \<br>
+$$<br>
+${a_n}$ 是正数列是显然的，所以 $a_{n+1}-2$ 和 $a_n-2$ 同号，这个性质可以一直推到 $a_1-2$。又因为 $a_1=3&gt;2$,所以 $a_n&gt;2$.</p>
+<p>所以 $\frac{1}{a_n+2}&lt;\frac{1}{4}$.</p>
+<p>带回上面推出来的那个式子，$a_{n+1}-2&lt;\frac{1}{4}(a_n-2)&lt;\frac{1}{4<sup>2}(a_n-2)&lt;\dots&lt;\frac{1}{4</sup>n}$.</p>
+<p>所以<br>
+$$<br>
+原式&lt;2n+\frac{1}{4<sup>0}+\frac{1}{4</sup>1}+\dots+\frac{1}{4^n}&lt;2n+\frac{1}{1-\frac{1}{4}}=2n+\frac{4}{3}<br>
+$$</p>
 <p>不动点思想就介绍到这里，下面看几道杂题。</p>
-<ol start="3" type="1">
-<li><ol start="12" type="1">
-<li><strong><span
-class="math inline">\(a_1=1,b_1=2,a_{n+1}=\frac{1+a_n+a_nb_n}{b_n},b_{n+1}=\frac{1+b_n+a_nb_n}{a_n}\)</span>，证明：<span
-class="math inline">\(a_{2015}&lt;5\)</span>.</strong></li>
-</ol></li>
+<ol start="3">
+<li class="lvl-3">
+<p>(12) <strong>$a_1=1,b_1=2,a_{n+1}=\frac{1+a_n+a_nb_n}{b_n},b_{n+1}=\frac{1+b_n+a_nb_n}{a_n}$，证明：$a_{2015}&lt;5$.</strong></p>
+</li>
 </ol>
 <p>这是一道技巧性很强的题目。</p>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-如果能把分母上的那项放到分子位置，就能因式分解了。
-</p>
+  <summary>提示 1</summary>
+  <p> 如果能把分母上的那项放到分子位置，就能因式分解了。</p>
 </details>
 <details>
-<summary>
-提示 2
-</summary>
-<p>
-分母是两个数乘一起，分子是这两个数的差，这就是裂项的形式。
-</p>
+  <summary>提示 2</summary>
+  <p> 分母是两个数乘一起，分子是这两个数的差，这就是裂项的形式。 </p>
 </details>
 <details>
-<summary>
-提示 3
-</summary>
-<p>
-你可以发现一个常数列。
-</p>
+  <summary>提示 3</summary>
+  <p> 你可以发现一个常数列。 </p>
 </details>
-<p>两个式子同时加一： <span class="math display">\[
-a_{n+1}+1=\frac{(a_n+1)(b_n+1)}{b_n} \\
-b_{n+1}+1=\frac{(a_n+1)(b_n+1)}{a_n}
-\]</span> 同时取倒数并相减： <span class="math display">\[
-\frac{1}{a_{n+1}+1}=\frac{b_n}{(a_n+1)(b_n+1)} \\
-\frac{1}{b_{n+1}+1}=\frac{a_n}{(a_n+1)(b_n+1)} \\
-\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1}=\frac{b_{n}-a_{n}}{(a_{n}+1)(b_{n}+1)}=\frac{1}{a_n+1}-\frac{1}{b_n+1}
-\]</span> 所以，<span
-class="math inline">\(\{\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1}\}\)</span>
-是常数列。</p>
-<p>所以 <span class="math display">\[
-\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1} \\
-=\frac{1}{a_1+1}-\frac{1}{b_1+1} \\
-=\frac{1}{2}-\frac{1}{3}=\frac{1}{6}
-\]</span> 所以 <span class="math display">\[
-\frac{1}{a_{2015}+1}&gt;\frac{1}{6}\\
-a_{2015}&lt;5
-\]</span></p>
-<ol start="4" type="1">
-<li><ol start="14" type="1">
-<li><strong><span class="math inline">\(\{a_n\}\)</span>
-各项均为正数，且 <span
-class="math inline">\(a_{n+1}=a_n+ca_n^2(c&gt;0)\)</span>.证明：</strong></li>
-</ol>
-<p><strong>(1) 对任意的正整数 <span
-class="math inline">\(M\)</span>,存在 <span class="math inline">\(N\in
-\Z_+\)</span>,当 <span class="math inline">\(n&gt;N\)</span> 时，有
-<span class="math inline">\(a_n&gt;M\)</span>.</strong></p>
-<p><strong>(2) 若 <span
-class="math inline">\(b_n=\frac{1}{1+ca_n},S_n\)</span> 为 <span
-class="math inline">\(\{b_n\}\)</span> 的前 <span
-class="math inline">\(n\)</span> 项和，则对任意的 <span
-class="math inline">\(d&gt;0\)</span>, 存在 <span
-class="math inline">\(N \in \Z_+\)</span>, 当 <span
-class="math inline">\(n&gt;N\)</span> 时，有 <span
-class="math inline">\(0&lt;|S_n-\frac{1}{ca_1}|&lt;d\)</span>.</strong></p></li>
+<p>两个式子同时加一：<br>
+$$<br>
+a_{n+1}+1=\frac{(a_n+1)(b_n+1)}{b_n} \<br>
+b_{n+1}+1=\frac{(a_n+1)(b_n+1)}{a_n}<br>
+$$<br>
+同时取倒数并相减：<br>
+$$<br>
+\frac{1}{a_{n+1}+1}=\frac{b_n}{(a_n+1)(b_n+1)} \<br>
+\frac{1}{b_{n+1}+1}=\frac{a_n}{(a_n+1)(b_n+1)} \<br>
+\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1}=\frac{b_{n}-a_{n}}{(a_{n}+1)(b_{n}+1)}=\frac{1}{a_n+1}-\frac{1}{b_n+1}<br>
+$$<br>
+所以，${\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1}}$ 是常数列。</p>
+<p>所以<br>
+$$<br>
+\frac{1}{a_{n+1}+1}-\frac{1}{b_{n+1}+1} \<br>
+=\frac{1}{a_1+1}-\frac{1}{b_1+1} \<br>
+=\frac{1}{2}-\frac{1}{3}=\frac{1}{6}<br>
+$$<br>
+所以<br>
+$$<br>
+\frac{1}{a_{2015}+1}&gt;\frac{1}{6}\<br>
+a_{2015}&lt;5<br>
+$$</p>
+<ol start="4">
+<li class="lvl-3">
+<p>(14) <strong>${a_n}$ 各项均为正数，且 $a_{n+1}=a_n+ca_n^2(c&gt;0)$.证明：</strong></p>
+<p><strong>(1) 对任意的正整数 $M$,存在 $N\in \Z_+$,当 $n&gt;N$ 时，有 $a_n&gt;M$.</strong></p>
+<p><strong>(2) 若 $b_n=\frac{1}{1+ca_n},S_n$ 为 ${b_n}$ 的前 $n$ 项和，则对任意的 $d&gt;0$, 存在 $N \in \Z_+$, 当 $n&gt;N$ 时，有 $0&lt;|S_n-\frac{1}{ca_1}|&lt;d$.</strong></p>
+</li>
 </ol>
 <details>
-<summary>
-提示 0
-</summary>
-<p>
-这个题目好像不说人话，考虑把题目用极限的语言再翻译一遍以便理解。
-</p>
+  <summary>提示 0</summary>
+  <p> 这个题目好像不说人话，考虑把题目用极限的语言再翻译一遍以便理解。</p>
 </details>
 <details>
-<summary>
-提示 1-1
-</summary>
-<p>
-考虑：1. 数列是否递增；2. 相邻两项的增长速度快慢如何。
-</p>
+  <summary>提示 1-1</summary>
+  <p> 考虑：1. 数列是否递增；2. 相邻两项的增长速度快慢如何。</p>
 </details>
 <details>
-<summary>
-提示 2-1
-</summary>
-<p>
-题目中的 "ca_1" 提示我们把给定的式子两边乘上c，这样就出现了与 ca_n
-有关的式子。
-</p>
+  <summary>提示 2-1</summary>
+  <p> 题目中的 "ca_1" 提示我们把给定的式子两边乘上c，这样就出现了与 ca_n 有关的式子。</p>
 </details>
 <details>
-<summary>
-提示 2-2
-</summary>
-<p>
-使用第一问的结论。
-</p>
+  <summary>提示 2-2</summary>
+  <p> 使用第一问的结论。</p>
 </details>
 <details>
-<summary>
-提示 3
-</summary>
-<p>
-你需要把你的解答再换成题目的语言表述出来。
-</p>
+  <summary>提示 3</summary>
+  <p> 你需要把你的解答再换成题目的语言表述出来。</p>
 </details>
 <p>首先，我们用一种比较通俗的表述把题面重构一下，因为满眼的“任意”“存在”“当……时”，属实难看。</p>
-<p>对于第一问，不难发现题目等价于证明 <span class="math display">\[
-\lim\limits_{n\rightarrow\infty} a_n=+\infty
-\]</span> （注意，这种表述并不规范。此处仅仅为了说明数列不收敛。）</p>
-<p>对于第二问，发现一个比较熟悉的形式（如果了解极限就会熟悉）：<span
-class="math inline">\(0&lt;|S_n-\frac{1}{ca_1}|&lt;d\)</span>.</p>
-<p>因为 <span class="math inline">\(d\)</span>
-是正数中任取的，所以第二问等价于证明 <span class="math display">\[
-\lim\limits_{n\rightarrow\infty} S_n=\frac{1}{ca_1}
-\]</span> （1）</p>
+<p>对于第一问，不难发现题目等价于证明<br>
+$$<br>
+\lim\limits_{n\rightarrow\infty} a_n=+\infty<br>
+$$<br>
+（注意，这种表述并不规范。此处仅仅为了说明数列不收敛。）</p>
+<p>对于第二问，发现一个比较熟悉的形式（如果了解极限就会熟悉）：$0&lt;|S_n-\frac{1}{ca_1}|&lt;d$.</p>
+<p>因为 $d$ 是正数中任取的，所以第二问等价于证明<br>
+$$<br>
+\lim\limits_{n\rightarrow\infty} S_n=\frac{1}{ca_1}<br>
+$$<br>
+（1）</p>
 <p>不难发现数列单调递增。</p>
-<p>一套移项+放缩： <span class="math display">\[
-原式 \Rightarrow a_{n+1}-a_n=ca_n^2&gt;ca_1^2 \\
-所以 \space a_n&gt;a_1+(n-1)ca_1^2\\
-\]</span>
+<p>一套移项+放缩：<br>
+$$<br>
+原式 \Rightarrow a_{n+1}-a_n=ca_n<sup>2&gt;ca_1</sup>2 \<br>
+所以 \space a_n&gt;a_1+(n-1)ca_1^2\<br>
+$$<br>
 到这里，因为数列增长地越来越快，我们已经可以感性理解这个数列不收敛了，</p>
-<p>但改卷老师不理解。这种方法不严谨，我们必须回归题目，找出一个确定的
-<span class="math inline">\(N\)</span>.</p>
-<p>我们考虑什么时候 <span class="math inline">\(a_n\)</span> 才会大于
-<span class="math inline">\(M\)</span>： <span class="math display">\[
-a_n&gt;M\\
-\Rightarrow a_1+(n-1)ca_1^2&gt;M\\
-\Rightarrow n&gt;\frac{M-a_1}{ca_1^2+1}+1
-\]</span> 那我们 <span class="math inline">\(N\)</span> 直接取 <span
-class="math inline">\(\frac{M-a_1}{ca_1^2+1}\)</span> 就可以了……吗？</p>
-<p>注意到 <span class="math inline">\(N\)</span>
-必须是正整数，所以我们可以取 <span
-class="math inline">\(N=[\frac{M-a_1}{ca_1^2+1}]+1\)</span>，其中 <span
-class="math inline">\([]\)</span> 是取整符号。</p>
+<p>但改卷老师不理解。这种方法不严谨，我们必须回归题目，找出一个确定的 $N$.</p>
+<p>我们考虑什么时候 $a_n$ 才会大于 $M$：<br>
+$$<br>
+a_n&gt;M\<br>
+\Rightarrow a_1+(n-1)ca_1^2&gt;M\<br>
+\Rightarrow n&gt;\frac{M-a_1}{ca_1^2+1}+1<br>
+$$<br>
+那我们 $N$ 直接取 $\frac{M-a_1}{ca_1^2+1}$ 就可以了……吗？</p>
+<p>注意到 $N$ 必须是正整数，所以我们可以取 $N=[\frac{M-a_1}{ca_1^2+1}]+1$，其中 $[]$ 是取整符号。</p>
 <p>这样就可以了……吗？</p>
-<p>注意到 <span class="math inline">\(n\)</span>
-是严格大于上面那串东西的，所以 <span class="math inline">\(N\)</span>
-要多往后取一个，即 <span
-class="math inline">\(N=[\frac{M-a_1}{ca_1^2+1}]+2\)</span>.</p>
+<p>注意到 $n$ 是严格大于上面那串东西的，所以 $N$ 要多往后取一个，即 $N=[\frac{M-a_1}{ca_1^2+1}]+2$.</p>
 <p>这样应该就没啥问题了……吧。</p>
-<p>我们怎么保证 <span
-class="math inline">\([\frac{M-a_1}{ca_1^2+1}]+2\)</span>
-这东西是正整数呢？不能保证吧。</p>
-<p>如果 <span class="math inline">\(M&lt; a_1\)</span> 就会出现 <span
-class="math inline">\(0\)</span> 或负数，谁叫 <span
-class="math inline">\(M\)</span> 和 <span
-class="math inline">\(a_1\)</span> 都是任取的呢。</p>
-<p>所以我们还要进行一些保障。最终结果是 <span
-class="math inline">\(N=\max\{[\frac{M-a_1}{ca_1^2+1}]+2,1\}\)</span>,暴力地套一个最大值即可。</p>
+<p>我们怎么保证 $[\frac{M-a_1}{ca_1^2+1}]+2$ 这东西是正整数呢？不能保证吧。</p>
+<p>如果 $M&lt; a_1$ 就会出现 $0$ 或负数，谁叫 $M$ 和 $a_1$ 都是任取的呢。</p>
+<p>所以我们还要进行一些保障。最终结果是 $N=\max{[\frac{M-a_1}{ca_1^2+1}]+2,1}$,暴力地套一个最大值即可。</p>
 <p>这样绝对没有问题了。</p>
 <p>（2）</p>
-<p>考虑两边同时乘上 <span class="math inline">\(c\)</span> <span
-class="math display">\[
-ca_{n+1}=ca_n+(ca_n)^2\\
-ca_{n+1}=ca_n(ca_n+1)
-\]</span>
-这就是上面介绍过的裂项方法了。<del>考虑到大家可能忘的差不多了</del>这里再演示一遍裂项过程。</p>
-<p>两边同时取倒数， <span class="math display">\[
-\frac{1}{ca_{n+1}}=\frac{1}{ca_n(ca_n+1)}=\frac{1}{ca_n}-\frac{1}{ca_{n}+1}
-\]</span> 这就得到 <span class="math display">\[
-b_n=\frac{1}{ca_n}-\frac{1}{ca_{n+1}}=\frac{1}{c}(\frac{1}{a_n}-\frac{1}{a_{n+1}})
-\]</span> 做累加并放缩： <span class="math display">\[
-S_n=\frac{1}{c}(\frac{1}{a_1}-\frac{1}{a_{n+1}}) \\
-\Rightarrow S_n-\frac{1}{ca_1}=-\frac{1}{ca_{n+1}} \\
-\Rightarrow |S_n-\frac{1}{ca_1}|=\frac{1}{ca_{n+1}}&lt;\frac{1}{c\cdot
-n\cdot a_1^2} (这个放缩看回第一小问) \\
-\Rightarrow \frac{1}{ca_1}\cdot\frac{1}{n}&lt;d \\
-\Rightarrow n&gt;\frac{1}{ca_1d}
-\]</span> 所以，根据第一问，直接取 <span
-class="math inline">\(n=\max\{1,[\frac{1}{ca_1d}]+1\}\)</span>
-即可。</p>
-<hr />
-<h5 id="数学归纳法在数列证明中的应用">2.4.3
-数学归纳法在数列证明中的应用</h5>
-<p>可以先看完 <code>2.5 数学归纳法（2）</code>
-中数学归纳法的概念再来看这里。</p>
+<p>考虑两边同时乘上 $c$<br>
+$$<br>
+ca_{n+1}=ca_n+(ca_n)^2\<br>
+ca_{n+1}=ca_n(ca_n+1)<br>
+$$<br>
+这就是上面介绍过的裂项方法了。<s>考虑到大家可能忘的差不多了</s>这里再演示一遍裂项过程。</p>
+<p>两边同时取倒数，<br>
+$$<br>
+\frac{1}{ca_{n+1}}=\frac{1}{ca_n(ca_n+1)}=\frac{1}{ca_n}-\frac{1}{ca_{n}+1}<br>
+$$<br>
+这就得到<br>
+$$<br>
+b_n=\frac{1}{ca_n}-\frac{1}{ca_{n+1}}=\frac{1}{c}(\frac{1}{a_n}-\frac{1}{a_{n+1}})<br>
+$$<br>
+做累加并放缩：<br>
+$$<br>
+S_n=\frac{1}{c}(\frac{1}{a_1}-\frac{1}{a_{n+1}}) \<br>
+\Rightarrow S_n-\frac{1}{ca_1}=-\frac{1}{ca_{n+1}} \<br>
+\Rightarrow |S_n-\frac{1}{ca_1}|=\frac{1}{ca_{n+1}}&lt;\frac{1}{c\cdot n\cdot a_1^2} (这个放缩看回第一小问) \<br>
+\Rightarrow \frac{1}{ca_1}\cdot\frac{1}{n}&lt;d \<br>
+\Rightarrow n&gt;\frac{1}{ca_1d}<br>
+$$<br>
+所以，根据第一问，直接取 $n=\max{1,[\frac{1}{ca_1d}]+1}$ 即可。</p>
+<hr>
+<h5 id="2-4-3-数学归纳法在数列证明中的应用">2.4.3 数学归纳法在数列证明中的应用</h5>
+<p>可以先看完  <code>2.5 数学归纳法（2）</code> 中数学归纳法的概念再来看这里。</p>
 <p>先上一道小魔王：</p>
-<ol type="1">
-<li><ol start="13" type="1">
-<li><strong><span
-class="math inline">\(a_n\in\Z,a_1=2,a_2=7,-\frac{1}{2}&lt;a_{n+1}-\frac{a_n^2}{a_{n-1}}\le\frac{1}{2}\)</span>，求
-<span class="math inline">\(\{a_n\}\)</span> 的通项公式。</strong></li>
-</ol></li>
+<ol>
+<li class="lvl-3">
+<p>(13) <strong>$a_n\in\Z,a_1=2,a_2=7,-\frac{1}{2}&lt;a_{n+1}-\frac{a_n^2}{a_{n-1}}\le\frac{1}{2}$，求 ${a_n}$ 的通项公式。</strong></p>
+</li>
 </ol>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-可以先把数列的前几项算出来，找一下规律。规律大概率是二项或三项递推的形式。
-</p>
+  <summary>提示 1</summary>
+  <p> 可以先把数列的前几项算出来，找一下规律。规律大概率是二项或三项递推的形式。</p>
 </details>
 <details>
-<summary>
-提示 2
-</summary>
-<p>
-证明可以考虑数学归纳法。此时你应该求出了
-a_n=3a_{n-1}+2a_{n-2}，为了更精准地放缩，你需要挖掘更多性质，比如相邻两项之间的倍数大小关系。
-</p>
+  <summary>提示 2</summary>
+  <p> 证明可以考虑数学归纳法。此时你应该求出了 a_n=3a_{n-1}+2a_{n-2}，为了更精准地放缩，你需要挖掘更多性质，比如相邻两项之间的倍数大小关系。</p>
 </details>
-<p>把前几项列出来：<span class="math inline">\(a_1=2,a_2=7,a_3=25,a_4=89
-\dots\)</span></p>
-<p>不难发现，<span
-class="math inline">\(a_n=3a_{n-1}+2a_{n-2}\)</span>.</p>
+把前几项列出来：$a_1=2,a_2=7,a_3=25,a_4=89 \dots$
+<p>不难发现，$a_n=3a_{n-1}+2a_{n-2}$.</p>
 <p>所以我们以这个为待证结论，去归纳证明。</p>
-<p>即，命题转化为：<strong>已知 <span
-class="math inline">\(a_n=3a_{n-1}+2a_{n-2}\)</span>，证明：<span
-class="math inline">\(-\frac{1}{2}&lt;a_{n+1}-\frac{a_n^2}{a_{n-1}}\le\frac{1}{2}.\)</span></strong></p>
-<p>当 <span class="math inline">\(n=1\)</span>
-时，这个东西是显然的；</p>
-<p>设 <span class="math inline">\(n=k\)</span> 时成立，</p>
-<p>则 <span class="math inline">\(n=k+1\)</span> 时，<span
-class="math inline">\(3a_{k+2}+2a_{k+1}-\frac{a^2_{k+2}}{a_{k+1}}=2a_{k+1}-\frac{2a_ka_{k+2}}{a_{k+1}}\)</span></p>
-<p>下面的变形就比较难想到了（实际上上面那个式子的最后一步变形也比较难想）
-<span class="math display">\[
-2a_{k+1}-\frac{2a_ka_{k+2}}{a_{k+1}}\\
-=|2\cdot\frac{a_k}{a_{k+1}}(\frac{a_{k+1}^2}{a_k}-a_{k+2})|\\
-\le2 \cdot \frac{a_k}{a_{k+1}} \cdot
-\frac{1}{2}（这里看回上面的归纳假设）\\
-=\frac{a_k}{a_{k+1}}
-\]</span> 接下来就要第二次使用我们的递推公式 <span
-class="math inline">\(a_n=3a_{n-1}+2a_{n-2}\)</span> 了。</p>
-<p>我们发现，<span class="math inline">\(a_{n-1}\)</span> 前面的系数是
-<span class="math inline">\(3\)</span>，所以 <span
-class="math inline">\(a_{k+1}\)</span> 会比 <span
-class="math inline">\(a_k\)</span> 的三倍还多（<span
-class="math inline">\(a\)</span> 肯定是正数数列）</p>
-<p>所以 <span
-class="math inline">\(\frac{a_k}{a_{k+1}}&lt;\frac{1}{3}&lt;\frac{1}{2}\)</span>，命题得证。</p>
-<ol start="2" type="1">
-<li><ol start="9" type="1">
-<li><strong>设 <span
-class="math inline">\(0&lt;a&lt;1,a_1=1+a,a_n=\frac{1}{a_{n-1}}+a(n\ge2)\)</span>，证：<span
-class="math inline">\(a_n&gt;1\)</span></strong></li>
-</ol></li>
+<p>即，命题转化为：<strong>已知 $a_n=3a_{n-1}+2a_{n-2}$，证明：$-\frac{1}{2}&lt;a_{n+1}-\frac{a_n^2}{a_{n-1}}\le\frac{1}{2}.$</strong></p>
+<p>当 $n=1$ 时，这个东西是显然的；</p>
+<p>设 $n=k$ 时成立，</p>
+<p>则 $n=k+1$ 时，$3a_{k+2}+2a_{k+1}-\frac{a^2_{k+2}}{a_{k+1}}=2a_{k+1}-\frac{2a_ka_{k+2}}{a_{k+1}}$</p>
+<p>下面的变形就比较难想到了（实际上上面那个式子的最后一步变形也比较难想）<br>
+$$<br>
+2a_{k+1}-\frac{2a_ka_{k+2}}{a_{k+1}}\<br>
+=|2\cdot\frac{a_k}{a_{k+1}}(\frac{a_{k+1}^2}{a_k}-a_{k+2})|\<br>
+\le2 \cdot \frac{a_k}{a_{k+1}} \cdot \frac{1}{2}（这里看回上面的归纳假设）\<br>
+=\frac{a_k}{a_{k+1}}<br>
+$$<br>
+接下来就要第二次使用我们的递推公式 $a_n=3a_{n-1}+2a_{n-2}$ 了。</p>
+<p>我们发现，$a_{n-1}$ 前面的系数是 $3$，所以 $a_{k+1}$ 会比 $a_k$ 的三倍还多（$a$ 肯定是正数数列）</p>
+<p>所以 $\frac{a_k}{a_{k+1}}&lt;\frac{1}{3}&lt;\frac{1}{2}$，命题得证。</p>
+<ol start="2">
+<li class="lvl-3">
+<p>(9) <strong>设 $0&lt;a&lt;1,a_1=1+a,a_n=\frac{1}{a_{n-1}}+a(n\ge2)$，证：$a_n&gt;1$</strong></p>
+</li>
 </ol>
-<p>这种题不能直接去证明，因为题目中没有与 <span
-class="math inline">\(1\)</span> 有关的东西；所以我们需要用一个大于
-<span class="math inline">\(1\)</span> 并且含有 <span
-class="math inline">\(a_n\)</span> 的式子去代替 <span
-class="math inline">\(1\)</span>；</p>
+<p>这种题不能直接去证明，因为题目中没有与 $1$ 有关的东西；所以我们需要用一个大于 $1$ 并且含有 $a_n$ 的式子去代替 $1$；</p>
 <p>或者有时候，我们为了在归纳证明的时候有更多条件可以使用，我们会给待证条件补一个上界/下界。</p>
 <p>这种技巧叫做“加强命题”。</p>
 <p>Q：命题加强了，证明不就更难了吗？</p>
 <p>A：虽然你需要证的东西缩地更紧了，但是在下一步的归纳证明里你能使用更多条件，所以有时加强命题很有用。</p>
-<p>我们把原命题加强成 <span
-class="math inline">\(1&lt;a_n&lt;\frac{1}{1-a}\)</span>.</p>
+<p>我们把原命题加强成 $1&lt;a_n&lt;\frac{1}{1-a}$.</p>
 <p>Q：加强命题的形式怎么想出来呢？</p>
-<p>A：靠自己多试吧。看到题给式子中有 <span
-class="math inline">\(\frac{1}{a_{n-1}}\)</span>
-的形式，那么我们考虑往这个上面去靠。</p>
-<p><span class="math inline">\(n=1\)</span> 时，<span
-class="math inline">\(1&lt;1+a&lt;\frac{1}{1-a}\)</span> 是显然的；</p>
-<p>设 <span class="math inline">\(n=k\)</span> 时成立，即 <span
-class="math inline">\(1&lt;a_k&lt;\frac{1}{1-a}\)</span>，</p>
-<p>我们可以推出 <span class="math inline">\(\frac{1}{a_k}&gt;1-a
-\Rightarrow \frac{1}{a_k}+a&gt;1\)</span></p>
-<p>当 <span class="math inline">\(n=k+1\)</span> 时，<span
-class="math inline">\(a_{k+1}=\frac{1}{a_k}+a&gt;1\)</span>
-，左半边得证。</p>
-<p>因为 <span class="math inline">\(a_k&gt;1\)</span>，所以 <span
-class="math inline">\(a_{k+1}&lt;1+a\)</span>；</p>
-<p>因为 <span class="math inline">\(0&lt;a&lt;1\)</span>，所以 <span
-class="math inline">\(1-a^2&gt;0\)</span>，</p>
-<p><span
-class="math inline">\(a_{k+1}&lt;1+a&lt;\frac{1}{1-a}\)</span>，所以右半边也得证。</p>
+<p>A：靠自己多试吧。看到题给式子中有 $\frac{1}{a_{n-1}}$ 的形式，那么我们考虑往这个上面去靠。</p>
+<p>$n=1$ 时，$1&lt;1+a&lt;\frac{1}{1-a}$ 是显然的；</p>
+<p>设 $n=k$ 时成立，即 $1&lt;a_k&lt;\frac{1}{1-a}$，</p>
+<p>我们可以推出 $\frac{1}{a_k}&gt;1-a \Rightarrow \frac{1}{a_k}+a&gt;1$</p>
+<p>当 $n=k+1$ 时，$a_{k+1}=\frac{1}{a_k}+a&gt;1$ ，左半边得证。</p>
+<p>因为 $a_k&gt;1$，所以 $a_{k+1}&lt;1+a$；</p>
+<p>因为 $0&lt;a&lt;1$，所以 $1-a^2&gt;0$，</p>
+<p>$a_{k+1}&lt;1+a&lt;\frac{1}{1-a}$，所以右半边也得证。</p>
 <p>所以原命题得证。</p>
-<p>ps：这里加强命题的作用就体现出来了。在这题中，我们用归纳假设的左半边去证
-<span class="math inline">\(k+1\)</span> 的右半边；用假设的右半边去证
-<span class="math inline">\(k+1\)</span> 的左半边。</p>
-<ol start="3" type="1">
-<li><ol start="14" type="1">
-<li><strong>设数列 <span class="math inline">\(\{a_n\}\)</span> 满足
-<span class="math inline">\(a_1=1,a_{n+1}=\frac{a_n}{n}+\frac{n}{a_n}
-(n\in \N^+)\)</span>，证明：</strong></li>
-</ol>
-<p><strong>(1) 当 <span class="math inline">\(n\ge4\)</span> 时，<span
-class="math inline">\(n&lt;a_n^2&lt;n+1\)</span>.</strong></p>
-<p><strong>(2) 数列 <span
-class="math inline">\(\{\frac{1}{a_{n}^2}\}\)</span> 的前 <span
-class="math inline">\(n\)</span> 项和 <span
-class="math inline">\(S_n\)</span> 满足：当 <span
-class="math inline">\(n\ge 4\)</span> 时，<span
-class="math inline">\(\frac{3}{2}+\ln(n+2)-\ln5&lt;\S_n&lt;\frac{3}{2}+\ln
-n-\ln 3\)</span>.</strong></p></li>
+<p>ps：这里加强命题的作用就体现出来了。在这题中，我们用归纳假设的左半边去证 $k+1$ 的右半边；用假设的右半边去证 $k+1$ 的左半边。</p>
+<ol start="3">
+<li class="lvl-3">
+<p>(14) <strong>设数列 ${a_n}$ 满足 $a_1=1,a_{n+1}=\frac{a_n}{n}+\frac{n}{a_n} (n\in \N^+)$，证明：</strong></p>
+<p><strong>(1) 当 $n\ge4$ 时，$n&lt;a_n^2&lt;n+1$.</strong></p>
+<p><strong>(2) 数列 ${\frac{1}{a_{n}^2}}$ 的前 $n$ 项和 $S_n$ 满足：当 $n\ge 4$ 时，$\frac{3}{2}+\ln(n+2)-\ln5&lt;\S_n&lt;\frac{3}{2}+\ln n-\ln 3$.</strong></p>
+</li>
 </ol>
 <details>
-<summary>
-提示 1-1
-</summary>
-<p>
-考虑加强命题：n+2/n小于a_n^2小于n+1
-</p>
+  <summary>提示 1-1</summary>
+  <p> 考虑加强命题：n+2/n小于a_n^2小于n+1 </p>
 </details>
 <details>
-<summary>
-提示 2-1
-</summary>
-<p>
-基本对数不等式：1/(n+1) ln(1+1/n) /n
-</p>
+  <summary>提示 2-1</summary>
+  <p> 基本对数不等式：1/(n+1) \le ln(1+1/n) \le 1/n  </p>
 </details>
-<ol type="1">
-<li></li>
-</ol>
-<p>考虑加强命题：<span
-class="math inline">\(n+\frac{2}{n}&lt;a_n^2&lt;n+1\)</span>.</p>
-<p>把前几项算一下：<span
-class="math inline">\(a_2=2,a_3=2,a_4=\frac{13}{6}\)</span>，都是符合条件的；</p>
+<p>(1)</p>
+<p>考虑加强命题：$n+\frac{2}{n}&lt;a_n^2&lt;n+1$.</p>
+<p>把前几项算一下：$a_2=2,a_3=2,a_4=\frac{13}{6}$，都是符合条件的；</p>
 <p>所以这个加强命题看上去很靠谱。</p>
-<p>对于 <span class="math inline">\(n=4\)</span>，命题成立。</p>
-<p>设命题对于 <span class="math inline">\(n=k\)</span> 成立，即
-$k+&lt;a_k^2&lt;k+1 $.</p>
-<p>稍微转变一下形式得到 <span
-class="math inline">\(\sqrt{k+\frac{2}{k}}&lt;a_k&lt;\sqrt{k+1}\)</span>.</p>
-<p>当 <span class="math inline">\(n=k+1\)</span> 时，</p>
-<p>右边即证 <span class="math display">\[
-a_{k+1}&lt;\frac{\sqrt{k+\frac{2}{k}}}{k}+\frac{k}{\sqrt{k+\frac{2}{k}}}
-\space （这里把归纳假设代入了）\\
-&lt;\sqrt{k+2}
-\]</span> 两边平方， <span class="math display">\[
-\frac{k+\frac{2}{k}}{k^2}+\frac{k^2}{k+\frac{2}{k}}&lt;k\\
-\Leftrightarrow \frac{k+\frac{2}{k}}{k^2}&lt;\frac{2}{k+\frac{2}{k}} \\
-\Leftrightarrow (k+\frac{2}{k})^2&lt;2k^2\\
-\Leftrightarrow 4+\frac{4}{k^2}&lt;k^2
-\]</span></p>
+<p>对于 $n=4$，命题成立。</p>
+<p>设命题对于 $n=k$ 成立，即 $k+\frac{2}{k}&lt;a_k^2&lt;k+1  $.</p>
+<p>稍微转变一下形式得到 $\sqrt{k+\frac{2}{k}}&lt;a_k&lt;\sqrt{k+1}$.</p>
+<p>当 $n=k+1$ 时，</p>
+<p>右边即证<br>
+$$<br>
+a_{k+1}&lt;\frac{\sqrt{k+\frac{2}{k}}}{k}+\frac{k}{\sqrt{k+\frac{2}{k}}} \space （这里把归纳假设代入了）\<br>
+&lt;\sqrt{k+2}<br>
+$$<br>
+两边平方，<br>
+$$<br>
+\frac{k+\frac{2}{k}}{k<sup>2}+\frac{k</sup>2}{k+\frac{2}{k}}&lt;k\<br>
+\Leftrightarrow \frac{k+\frac{2}{k}}{k^2}&lt;\frac{2}{k+\frac{2}{k}} \<br>
+\Leftrightarrow (k+\frac{2}{k})<sup>2&lt;2k</sup>2\<br>
+\Leftrightarrow 4+\frac{4}{k<sup>2}&lt;k</sup>2<br>
+$$</p>
 <p>上式是显然的，所以原不等式的右边得证。</p>
-<p>对于左边，我们需要一些放缩。 <span class="math display">\[
-(\frac{\sqrt{k+\frac{2}{k}}}{k}+\frac{k}{\sqrt{k+\frac{2}{k}}})^2=\frac{k+1}{k^2}+\frac{k^2}{k+1}+2\\
-&gt;\frac{k+1}{(k+1)^2}+\frac{k^2-1+1}{k+1}+2（这步放缩很妙）
-\\
-=k+1+\frac{2}{k+1}
-\]</span> (2)</p>
+<p>对于左边，我们需要一些放缩。<br>
+$$<br>
+(\frac{\sqrt{k+\frac{2}{k}}}{k}+\frac{k}{\sqrt{k+\frac{2}{k}}})<sup>2=\frac{k+1}{k</sup>2}+\frac{k^2}{k+1}+2\</p>
+<blockquote>
+<p>\frac{k+1}{(k+1)<sup>2}+\frac{k</sup>2-1+1}{k+1}+2（这步放缩很妙）<br>
+\<br>
+=k+1+\frac{2}{k+1}<br>
+$$<br>
+(2)</p>
+</blockquote>
 <p>第二问如果知道对数不等式的话，思维难度比第一问还小；</p>
-<p>对数不等式指的是 <span class="math display">\[
-\frac{x}{x+1}&lt;\ln(1+x)&lt;x,x\in(0,1)
-\]</span> 求导可证，这里<del>因为我懒所以</del>就不证了。</p>
-<p>回到原题，我们用 <span class="math inline">\(\frac{1}{n}\)</span>
-去替代上面的式子里的 <span class="math inline">\(x\)</span>， <span
-class="math display">\[
-\frac{\frac{1}{n}}{\frac{1}{n}+1}&lt;\ln(1+\frac{1}{n})&lt;\frac{1}{n}\\
-\Rightarrow \frac{1}{1+n}&lt;\ln(1+\frac{1}{n})&lt;\frac{1}{n}\\
-\]</span> 那么有 <span class="math display">\[
-S_n=\sum_{i=1}^{n}\frac{1}{a_n^2}\\
-=1+\frac{1}{4}+\frac{1}{4}+\frac{1}{a_4^2}+\frac{1}{a_5^2}+\cdots+\frac{1}{a_n^2}\\
-&lt;\frac{3}{2}+\frac{1}{4}+\frac{1}{5}+\cdots+\frac{1}{n}（这里运用了第一小问结论中的左半边不等式）\\
-&lt;\frac{3}{2}+\ln\frac{4}{3}+\ln\frac{5}{4}+\cdots+\frac{n}{n-1}（这里运用了对数不等式的左半部分）\\
-=\frac{3}{2}+\ln n-\ln3
-\]</span> 右边得证。 <span class="math display">\[
-S_n=\sum_{i=1}^{n}\frac{1}{a_n^2}\\
-=1+\frac{1}{4}+\frac{1}{4}+\frac{1}{a_4^2}+\frac{1}{a_5^2}+\cdots+\frac{1}{a_n^2}\\
-&gt;\frac{3}{2}+\frac{1}{5}+\frac{1}{6}+\cdots+\frac{1}{n+1}（这里运用了第一小问结论中的右半边不等式）\\
-&gt;\frac{3}{2}+\ln\frac{6}{5}+\ln\frac{7}{6}+\cdots+\ln\frac{n+2}{n+1}
-（这里运用了对数不等式的右半部分）\\
-=\frac{3}{2}+\ln(n+2)-\ln 5
-\]</span> 左边得证。</p>
-<ol start="4" type="1">
-<li><ol start="13" type="1">
-<li><strong><span class="math inline">\(\{a_n\}\)</span> 满足 <span
-class="math inline">\(a_1=a_2=1,a_n=7a_{n-1}-a_{n-2}(n\ge3)\)</span>，证明：<span
-class="math inline">\(a_n+a_{n+1}+2\)</span> 是完全平方数，其中 <span
-class="math inline">\(n\in \Z\)</span>.</strong></li>
-</ol></li>
+<p>对数不等式指的是<br>
+$$<br>
+\frac{x}{x+1}&lt;\ln(1+x)&lt;x,x\in(0,1)<br>
+$$<br>
+求导可证，这里<s>因为我懒所以</s>就不证了。</p>
+<p>回到原题，我们用 $\frac{1}{n}$ 去替代上面的式子里的 $x$，<br>
+$$<br>
+\frac{\frac{1}{n}}{\frac{1}{n}+1}&lt;\ln(1+\frac{1}{n})&lt;\frac{1}{n}\<br>
+\Rightarrow \frac{1}{1+n}&lt;\ln(1+\frac{1}{n})&lt;\frac{1}{n}\<br>
+$$<br>
+那么有<br>
+$$<br>
+S_n=\sum_{i=1}<sup>{n}\frac{1}{a_n</sup>2}\<br>
+=1+\frac{1}{4}+\frac{1}{4}+\frac{1}{a_4<sup>2}+\frac{1}{a_5</sup>2}+\cdots+\frac{1}{a_n^2}\<br>
+&lt;\frac{3}{2}+\frac{1}{4}+\frac{1}{5}+\cdots+\frac{1}{n}（这里运用了第一小问结论中的左半边不等式）\<br>
+&lt;\frac{3}{2}+\ln\frac{4}{3}+\ln\frac{5}{4}+\cdots+\frac{n}{n-1}（这里运用了对数不等式的左半部分）\<br>
+=\frac{3}{2}+\ln n-\ln3<br>
+$$<br>
+右边得证。<br>
+$$<br>
+S_n=\sum_{i=1}<sup>{n}\frac{1}{a_n</sup>2}\<br>
+=1+\frac{1}{4}+\frac{1}{4}+\frac{1}{a_4<sup>2}+\frac{1}{a_5</sup>2}+\cdots+\frac{1}{a_n^2}\</p>
+<blockquote>
+<p>\frac{3}{2}+\frac{1}{5}+\frac{1}{6}+\cdots+\frac{1}{n+1}（这里运用了第一小问结论中的右半边不等式）\<br>
+\frac{3}{2}+\ln\frac{6}{5}+\ln\frac{7}{6}+\cdots+\ln\frac{n+2}{n+1} （这里运用了对数不等式的右半部分）\<br>
+=\frac{3}{2}+\ln(n+2)-\ln 5<br>
+$$<br>
+左边得证。</p>
+</blockquote>
+<ol start="4">
+<li class="lvl-3">
+<p>(13) <strong>${a_n}$ 满足 $a_1=a_2=1,a_n=7a_{n-1}-a_{n-2}(n\ge3)$，证明：$a_n+a_{n+1}+2$ 是完全平方数，其中 $n\in \Z$.</strong></p>
+</li>
 </ol>
 <p>上面有一题和这题很像，主要思路都是先找规律再证明。</p>
-<p>令 <span class="math inline">\(b_n=\sqrt{a_n+a_{n+1}+2}.\)</span></p>
-<p>手算可得 <span
-class="math inline">\(a_3=6,a_4=41,a_5=281，b_1=2,b_2=3,b_3=7,b_4=18\)</span>；</p>
-<p>所以我们猜测 <span
-class="math inline">\(b_{n+1}=3b_n-b_{n-1}\)</span>.</p>
-<p>也就是说我们要证明 <span
-class="math inline">\(b_{k+2}=\sqrt{a_{k+3}+a_{k+2}+2}=3b_{k+1}-b_k\)</span>.</p>
-<p>我们先对 <span class="math inline">\(a_{k+3}+a_{k+2}+2\)</span>
-变形。 <span class="math display">\[
-a_{k+3}+a_{k+2}+2=7a_{k+2}-a_{k+1}+7a_{k+1}-a_k+2\\
-=7(a_{k+2}+a_{k+1}+2)-(a_{k+1}+a_k+2)-10\\
-=7b_{k+1}^2-b_k^2-10
-\]</span> 原命题 <span class="math display">\[
-\Leftrightarrow 7b_{k+1}^2-b_k^2-10=(3b_{k+1}-b_k)^2\\
-\Leftrightarrow b_{k+1}^2-3b_{k+1}b_k+b_k^2=-5
-\]</span> 试着往前一项展开： <span class="math display">\[
-b_{k+1}^2-3b_{k+1}b_k+b_k^2=(3b_k-b_{k-1})^2-3(3b_k-b_{k-1})b_k+b_k^2\\
-=b_k^2-3b_kb_{k-1}+b_{k-1}^2
-\]</span> 我们成功地将下标往前移了一位！</p>
-<p>所以上面那个式子可以一直推到第一项： <span class="math display">\[
-b_{k+1}^2-3b_{k+1}b_k+b_k^2=b_3^2-3b_1b_2+b_1^2=-5
-\]</span> 所以原命题得证。</p>
+<p>令 $b_n=\sqrt{a_n+a_{n+1}+2}.$</p>
+<p>手算可得 $a_3=6,a_4=41,a_5=281，b_1=2,b_2=3,b_3=7,b_4=18$；</p>
+<p>所以我们猜测 $b_{n+1}=3b_n-b_{n-1}$.</p>
+<p>也就是说我们要证明 $b_{k+2}=\sqrt{a_{k+3}+a_{k+2}+2}=3b_{k+1}-b_k$.</p>
+<p>我们先对 $a_{k+3}+a_{k+2}+2$ 变形。<br>
+$$<br>
+a_{k+3}+a_{k+2}+2=7a_{k+2}-a_{k+1}+7a_{k+1}-a_k+2\<br>
+=7(a_{k+2}+a_{k+1}+2)-(a_{k+1}+a_k+2)-10\<br>
+=7b_{k+1}<sup>2-b_k</sup>2-10<br>
+$$<br>
+原命题<br>
+$$<br>
+\Leftrightarrow 7b_{k+1}<sup>2-b_k</sup>2-10=(3b_{k+1}-b_k)^2\<br>
+\Leftrightarrow b_{k+1}<sup>2-3b_{k+1}b_k+b_k</sup>2=-5<br>
+$$<br>
+试着往前一项展开：<br>
+$$<br>
+b_{k+1}<sup>2-3b_{k+1}b_k+b_k</sup>2=(3b_k-b_{k-1})<sup>2-3(3b_k-b_{k-1})b_k+b_k</sup>2\<br>
+=b_k<sup>2-3b_kb_{k-1}+b_{k-1}</sup>2<br>
+$$<br>
+我们成功地将下标往前移了一位！</p>
+<p>所以上面那个式子可以一直推到第一项：<br>
+$$<br>
+b_{k+1}<sup>2-3b_{k+1}b_k+b_k</sup>2=b_3<sup>2-3b_1b_2+b_1</sup>2=-5<br>
+$$<br>
+所以原命题得证。</p>
 <p>数学归纳法在数列中的应用就讲到这里，最后留一道练习。</p>
-<ol start="5" type="1">
-<li><ol start="13" type="1">
-<li><p><strong>已知正实数列 <span class="math inline">\(\{a_n\}\)</span>
-满足对于每个正整数 <span class="math inline">\(k\)</span>，都有 <span
-class="math inline">\(a_{k+1}\ge
-\frac{ka_k}{a_k^2-k+1}\)</span>.证明：</strong></p></li>
-<li><ol start="4" type="1">
-<li><strong><span
-class="math inline">\(a_1+a_2\ge2\)</span>.</strong></li>
-</ol></li>
-<li><ol start="13" type="1">
-<li><strong>对于每个正整数 <span
-class="math inline">\(n\ge2\)</span>，都有 <span
-class="math inline">\(\sum_{i=1}^{n}\ge n.\)</span> </strong></li>
-</ol></li>
-</ol></li>
+<ol start="5">
+<li class="lvl-3">
+<p>(13) <strong>已知正实数列 ${a_n}$ 满足对于每个正整数 $k$，都有 $a_{k+1}\ge \frac{ka_k}{a_k^2-k+1}$.证明：</strong></p>
+<p>(1) (4) <strong>$a_1+a_2\ge2$.</strong></p>
+<p>(2) (13) **对于每个正整数 $n\ge2$，都有 $\sum_{i=1}^{n}\ge n.$ **</p>
+</li>
 </ol>
-<hr />
-<h4 id="数学归纳法2缺">2.5 数学归纳法（2）（缺）</h4>
+<hr>
+<h4 id="2-5-数学归纳法（2）（缺）">2.5 数学归纳法（2）（缺）</h4>
 <p>这里系统介绍数学归纳法的概念：</p>
 <p><strong>第一数学归纳法：</strong></p>
-<p>设 <span class="math inline">\(P(n)\)</span> 时关于正整数 <span
-class="math inline">\(n\)</span> 的一个命题（或性质）。如果</p>
-<ul>
-<li><span class="math inline">\(n=1\)</span>，<span
-class="math inline">\(P(n)\)</span> 成立</li>
-<li>由 <span class="math inline">\(P(n)\)</span> 成立能推出 <span
-class="math inline">\(P(n+1)\)</span> 成立</li>
+<p>设 $P(n)$ 时关于正整数 $n$ 的一个命题（或性质）。如果</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$n=1$，$P(n)$ 成立</p>
+</li>
+<li class="lvl-2">
+<p>由 $P(n)$ 成立能推出 $P(n+1)$ 成立</p>
+</li>
 </ul>
-<p>那么，对于任意 <span class="math inline">\(n\in\N^+\)</span>，<span
-class="math inline">\(P(n)\)</span> 都成立。</p>
+<p>那么，对于任意 $n\in\N^+$，$P(n)$ 都成立。</p>
 <p><strong>第二数学归纳法：</strong></p>
-<p>设 <span class="math inline">\(P(n)\)</span> 时关于正整数 <span
-class="math inline">\(n\)</span> 的一个命题（或性质）。如果</p>
-<ul>
-<li><span class="math inline">\(n=1\)</span>，<span
-class="math inline">\(P(n)\)</span> 成立</li>
-<li>由 "对一切小于 <span class="math inline">\(n\)</span> 的正整数 <span
-class="math inline">\(k\)</span>，<span
-class="math inline">\(P(k)\)</span> 都成立"可以推出 <span
-class="math inline">\(P(n)\)</span> 成立</li>
+<p>设 $P(n)$ 时关于正整数 $n$ 的一个命题（或性质）。如果</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$n=1$，$P(n)$ 成立</p>
+</li>
+<li class="lvl-2">
+<p>由 &quot;对一切小于 $n$ 的正整数 $k$，$P(k)$ 都成立&quot;可以推出 $P(n)$ 成立</p>
+</li>
 </ul>
-<p>那么，对于任意 <span class="math inline">\(n\in\N^+\)</span>，<span
-class="math inline">\(P(n)\)</span> 都成立。</p>
-<h5 id="数学归纳法的应用缺">2.5.1 数学归纳法的应用（缺）</h5>
-<h5 id="最小数原理和无穷递降法缺">2.5.2
-最小数原理和无穷递降法（缺）</h5>
+<p>那么，对于任意 $n\in\N^+$，$P(n)$ 都成立。</p>
+<h5 id="2-5-1-数学归纳法的应用（缺）">2.5.1 数学归纳法的应用（缺）</h5>
+<h5 id="2-5-2-最小数原理和无穷递降法（缺）">2.5.2 最小数原理和无穷递降法（缺）</h5>
 
     </div>
 
@@ -1948,10 +1541,7 @@ class="math inline">\(P(n)\)</span> 都成立。</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%88%97%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3"><span class="nav-text">2 数列与数学归纳</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%E5%92%8C%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97"><span class="nav-text">2.1 等差数列和等比数列</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%95%B0%E5%88%97%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E7%AD%89%E5%B7%AE%E5%92%8C%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97"><span class="nav-text">2.1.1
-数列的基本概念，等差和等比数列</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-text">2.1.2 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%88%97%E7%9A%84%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F"><span class="nav-text">2.2 数列的通项公式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%83%A8%E5%88%86%E6%B1%82%E6%95%B0%E5%88%97%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-text">2.2.1 部分求数列通项公式的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="nav-text">2.2.2 例题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8D%A2%E5%85%83%E6%B3%95-%E4%BE%8B%E9%A2%98"><span class="nav-text">2.2.3 换元法 &amp; 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%88%97%E4%B8%8E%E6%95%B0%E8%AE%BA%E7%BB%93%E5%90%88"><span class="nav-text">2.3 数列与数论结合</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-2"><span class="nav-text">2.3.1 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%88%97%E4%B8%8D%E7%AD%89%E5%BC%8F%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%951"><span class="nav-text">2.4 数列不等式，数学归纳法（1）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A3%82%E9%A1%B9"><span class="nav-text">2.4.1 裂项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%89%E7%95%8C%E6%80%A7%E5%92%8C%E5%85%B6%E5%AE%83%E9%83%A8%E5%88%86%E6%8A%80%E5%B7%A7"><span class="nav-text">2.4.2 有界性和其它部分技巧</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%E5%9C%A8%E6%95%B0%E5%88%97%E8%AF%81%E6%98%8E%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-text">2.4.3
-数学归纳法在数列证明中的应用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%952%E7%BC%BA"><span class="nav-text">2.5 数学归纳法（2）（缺）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8%E7%BC%BA"><span class="nav-text">2.5.1 数学归纳法的应用（缺）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E6%95%B0%E5%8E%9F%E7%90%86%E5%92%8C%E6%97%A0%E7%A9%B7%E9%80%92%E9%99%8D%E6%B3%95%E7%BC%BA"><span class="nav-text">2.5.2
-最小数原理和无穷递降法（缺）</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%95%B0%E5%88%97%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3"><span class="nav-text">2 数列与数学归纳</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%E5%92%8C%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97"><span class="nav-text">2.1 等差数列和等比数列</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-1-%E6%95%B0%E5%88%97%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%8C%E7%AD%89%E5%B7%AE%E5%92%8C%E7%AD%89%E6%AF%94%E6%95%B0%E5%88%97"><span class="nav-text">2.1.1 数列的基本概念，等差和等比数列</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-2-%E4%BE%8B%E9%A2%98"><span class="nav-text">2.1.2 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-%E6%95%B0%E5%88%97%E7%9A%84%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F"><span class="nav-text">2.2 数列的通项公式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-1-%E9%83%A8%E5%88%86%E6%B1%82%E6%95%B0%E5%88%97%E9%80%9A%E9%A1%B9%E5%85%AC%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-text">2.2.1 部分求数列通项公式的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-2-%E4%BE%8B%E9%A2%98"><span class="nav-text">2.2.2 例题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-3-%E6%8D%A2%E5%85%83%E6%B3%95-%E4%BE%8B%E9%A2%98"><span class="nav-text">2.2.3 换元法 &amp; 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-%E6%95%B0%E5%88%97%E4%B8%8E%E6%95%B0%E8%AE%BA%E7%BB%93%E5%90%88"><span class="nav-text">2.3 数列与数论结合</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-1-%E4%BE%8B%E9%A2%98"><span class="nav-text">2.3.1 例题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-%E6%95%B0%E5%88%97%E4%B8%8D%E7%AD%89%E5%BC%8F%EF%BC%8C%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%EF%BC%881%EF%BC%89"><span class="nav-text">2.4 数列不等式，数学归纳法（1）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-1-%E8%A3%82%E9%A1%B9"><span class="nav-text">2.4.1 裂项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-2-%E6%9C%89%E7%95%8C%E6%80%A7%E5%92%8C%E5%85%B6%E5%AE%83%E9%83%A8%E5%88%86%E6%8A%80%E5%B7%A7"><span class="nav-text">2.4.2 有界性和其它部分技巧</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-3-%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%E5%9C%A8%E6%95%B0%E5%88%97%E8%AF%81%E6%98%8E%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-text">2.4.3 数学归纳法在数列证明中的应用</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%EF%BC%882%EF%BC%89%EF%BC%88%E7%BC%BA%EF%BC%89"><span class="nav-text">2.5 数学归纳法（2）（缺）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-5-1-%E6%95%B0%E5%AD%A6%E5%BD%92%E7%BA%B3%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E7%BC%BA%EF%BC%89"><span class="nav-text">2.5.1 数学归纳法的应用（缺）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-5-2-%E6%9C%80%E5%B0%8F%E6%95%B0%E5%8E%9F%E7%90%86%E5%92%8C%E6%97%A0%E7%A9%B7%E9%80%92%E9%99%8D%E6%B3%95%EF%BC%88%E7%BC%BA%EF%BC%89"><span class="nav-text">2.5.2 最小数原理和无穷递降法（缺）</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -2017,12 +1607,12 @@ class="math inline">\(P(n)\)</span> 都成立。</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">87k</span>
+    <span title="站点总字数">85k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:19</span>
+    <span title="站点阅读时长">1:17</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
@@ -2041,7 +1631,7 @@ class="math inline">\(P(n)\)</span> 都成立。</p>
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>

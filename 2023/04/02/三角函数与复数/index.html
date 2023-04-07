@@ -271,14 +271,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>23k</span>
+              <span>22k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>21 分钟</span>
+              <span>20 分钟</span>
             </span>
             <div class="post-description">三角函数与复数。</div>
 
@@ -291,1067 +291,916 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="三角函数与复数">3 三角函数与复数</h3>
-<hr />
-<h4 id="三角函数简介">3.1 三角函数简介</h4>
-<h5 id="任意角和弧度制">3.1.1 任意角和弧度制</h5>
-<hr />
-<h5 id="诱导公式">3.1.2 诱导公式</h5>
-<p>我们知道，三角函数是根据单位圆来定义的，单位圆的周长为 <span
-class="math inline">\(2\pi\)</span>。经过 <span
-class="math inline">\(2\pi\)</span> 之后，角的终边又从 <span
-class="math inline">\(0\)</span> 开始转了，所以有一件很显然的事情：
-<span class="math display">\[
-\sin (x+2\pi)=\sin x \\
-\cos (x+2\pi)=\cos x \\
-\tan (x+2\pi)=\tan x
-\]</span> 我们考虑一条终边逆时针转 <span
-class="math inline">\(\pi\)</span> 之后的情况：</p>
-<p><img src="https://s2.loli.net/2022/01/07/c2osgwdhNleUYDp.png" /></p>
-<p>如图，<span class="math inline">\(A\)</span> 是角 <span
-class="math inline">\(x\)</span> 的终边与单位圆的交点，<span
-class="math inline">\(A\)</span> 关于原点对称的点 <span
-class="math inline">\(A&#39;\)</span> （图中忘记标了）是终边逆时针旋转
-<span class="math inline">\(\pi\)</span> 之后与单位圆的交点。</p>
-<p>因为 <span class="math inline">\(A,A&#39;\)</span> 与原点对称，所以有
-<span
-class="math inline">\(X_A=-X_{A’}，Y_A=-Y_{A&#39;}\)</span>，那么根据三角函数的定义，
-<span class="math display">\[
-\sin(x+\pi)=-\sin x\\
-\cos(x+\pi)=-\cos x\\
-\tan(x+\pi)=\tan x \space (负负得正)
-\]</span> 我们考虑一条终边分别关于 <span
-class="math inline">\(x,y\)</span> 轴对称之后的图像：</p>
-<p><img src="https://s2.loli.net/2022/01/07/hQGObFtrkTCHp1Y.png" /></p>
-<p>如图，<span class="math inline">\(A\)</span> 是 <span
-class="math inline">\(x\)</span>
-对应的终边与单位圆的交点，由几何关系不难得知，<span
-class="math inline">\(C\)</span> 是 <span
-class="math inline">\((-x)\)</span> 对应的终边与单位圆的交点，<span
-class="math inline">\(D\)</span> 是 <span
-class="math inline">\((\pi-x)\)</span> 对应的终边与单位圆的交点。</p>
-<p><span class="math inline">\(C\)</span> 的横坐标与 <span
-class="math inline">\(A\)</span> 相等，纵坐标与 <span
-class="math inline">\(A\)</span> 相反；</p>
-<p><span class="math inline">\(D\)</span> 的纵坐标与 <span
-class="math inline">\(A\)</span> 相等，横坐标与 <span
-class="math inline">\(A\)</span> 相反。</p>
+        <h3 id="3-三角函数与复数">3 三角函数与复数</h3>
+<hr>
+<h4 id="3-1-三角函数简介">3.1 三角函数简介</h4>
+<h5 id="3-1-1-任意角和弧度制">3.1.1 任意角和弧度制</h5>
+<hr>
+<h5 id="3-1-2-诱导公式">3.1.2 诱导公式</h5>
+<p>我们知道，三角函数是根据单位圆来定义的，单位圆的周长为 $2\pi$。经过 $2\pi$ 之后，角的终边又从 $0$ 开始转了，所以有一件很显然的事情：<br>
+$$<br>
+\sin (x+2\pi)=\sin x \<br>
+\cos (x+2\pi)=\cos x \<br>
+\tan (x+2\pi)=\tan x<br>
+$$<br>
+我们考虑一条终边逆时针转 $\pi$ 之后的情况：</p>
+<p><img src="https://s2.loli.net/2022/01/07/c2osgwdhNleUYDp.png" alt=""></p>
+<p>如图，$A$ 是角 $x$ 的终边与单位圆的交点，$A$ 关于原点对称的点 $A’$ （图中忘记标了）是终边逆时针旋转 $\pi$ 之后与单位圆的交点。</p>
+<p>因为 $A,A’$ 与原点对称，所以有 $X_A=-X_{A’}，Y_A=-Y_{A’}$，那么根据三角函数的定义，<br>
+$$<br>
+\sin(x+\pi)=-\sin x\<br>
+\cos(x+\pi)=-\cos x\<br>
+\tan(x+\pi)=\tan x \space (负负得正)<br>
+$$<br>
+我们考虑一条终边分别关于 $x,y$ 轴对称之后的图像：</p>
+<p><img src="https://s2.loli.net/2022/01/07/hQGObFtrkTCHp1Y.png" alt=""></p>
+<p>如图，$A$ 是 $x$ 对应的终边与单位圆的交点，由几何关系不难得知，$C$ 是 $(-x)$ 对应的终边与单位圆的交点，$D$ 是 $(\pi-x)$ 对应的终边与单位圆的交点。</p>
+<p>$C$ 的横坐标与 $A$ 相等，纵坐标与 $A$ 相反；</p>
+<p>$D$ 的纵坐标与 $A$ 相等，横坐标与 $A$ 相反。</p>
 <p>根据三角函数的定义，</p>
-<p><span class="math display">\[
-\sin (-x)=-\sin x\\
-\cos (-x)=\cos x\\
-\tan (-x)=-\tan x\\\\
-\sin (\pi-x)=\sin x\\
-\cos (\pi-x)=-\cos x\\
-\tan (\pi-x)=-\tan x\\\\
-\]</span></p>
+<p>$$<br>
+\sin (-x)=-\sin x\<br>
+\cos (-x)=\cos x\<br>
+\tan (-x)=-\tan x\\<br>
+\sin (\pi-x)=\sin x\<br>
+\cos (\pi-x)=-\cos x\<br>
+\tan (\pi-x)=-\tan x\\<br>
+$$</p>
 <p>同名三角函数的诱导公式就到这里。</p>
-<p><del>你会发现这都是一些很显然的东西</del></p>
+<p><s>你会发现这都是一些很显然的东西</s></p>
 <p>接下来是会变三角函数名的诱导公式：</p>
-<p><img src="https://s2.loli.net/2022/01/07/HQqlW8gtVnm29ET.png" /></p>
-<p>我们作角 <span class="math inline">\(x\)</span> 的互余角 <span
-class="math inline">\((\frac{\pi}{2}-x)\)</span>，如图，<span
-class="math inline">\(x\)</span> 终边和单位圆交于 <span
-class="math inline">\(A\)</span>，<span
-class="math inline">\((\frac{\pi}{2}-x)\)</span> 终边和单位圆交于 <span
-class="math inline">\(C\)</span>.</p>
-<p>过 <span class="math inline">\(C\)</span> 作 <span
-class="math inline">\(y\)</span> 轴的垂线,过 <span
-class="math inline">\(A\)</span> 作 <span
-class="math inline">\(x\)</span> 轴的垂线,垂足分别为 <span
-class="math inline">\(E,D\)</span>，那么有 <span
-class="math inline">\(BC=BA,\angle EBC=\angle DBA,\angle BEC=\angle
-BDA\)</span>,所以三角形 BCE 和三角形 BAD 全等。</p>
-<p>所以 <span class="math inline">\(X_C=Y_A,X_A=Y_C\)</span></p>
+<p><img src="https://s2.loli.net/2022/01/07/HQqlW8gtVnm29ET.png" alt=""></p>
+<p>我们作角 $x$ 的互余角 $(\frac{\pi}{2}-x)$，如图，$x$ 终边和单位圆交于 $A$，$(\frac{\pi}{2}-x)$ 终边和单位圆交于 $C$.</p>
+<p>过 $C$ 作 $y$ 轴的垂线,过 $A$ 作 $x$ 轴的垂线,垂足分别为 $E,D$，那么有 $BC=BA,\angle EBC=\angle DBA,\angle BEC=\angle BDA$,所以三角形 BCE 和三角形 BAD 全等。</p>
+<p>所以 $X_C=Y_A,X_A=Y_C$</p>
 <p>根据三角函数的定义，</p>
-<p><span class="math display">\[
-\sin (\frac{\pi}{2}-x)=\cos x\\
-\cos (\frac{\pi}{2}-x)=\sin x\\
-\]</span></p>
+<p>$$<br>
+\sin (\frac{\pi}{2}-x)=\cos x\<br>
+\cos (\frac{\pi}{2}-x)=\sin x\<br>
+$$</p>
 <p>根据上面的诱导公式，</p>
-<p><span class="math display">\[
-\sin(\frac{\pi}{2}+x)=-\sin(-\frac{\pi}{2}-x)=-(-\sin(\frac{\pi}{2}-x))=\cos
-x\\
-\cos(\frac{\pi}{2}+x)=\cos(-\frac{\pi}{2}-x)=-\cos(\frac{\pi}{2}-x)=-\sin
-x\\
-\]</span></p>
+<p>$$<br>
+\sin(\frac{\pi}{2}+x)=-\sin(-\frac{\pi}{2}-x)=-(-\sin(\frac{\pi}{2}-x))=\cos x\<br>
+\cos(\frac{\pi}{2}+x)=\cos(-\frac{\pi}{2}-x)=-\cos(\frac{\pi}{2}-x)=-\sin x\<br>
+$$</p>
 <p>有关诱导公式的内容就介绍到这里。整理一下：</p>
-<p><span class="math display">\[
-\begin{aligned}
-\sin (x+2\pi)=\sin x \\
-\cos (x+2\pi)=\cos x \\
-\tan (x+2\pi)=\tan x \\
-\end{aligned}\\
-\]</span> <span class="math display">\[
-\begin{aligned}
-\sin(x+\pi)=-\sin x\\
-\cos(x+\pi)=-\cos x\\
-\tan(x+\pi)=\tan x\\
-\end{aligned}\\
-\]</span> <span class="math display">\[
-\begin{aligned}
-\sin (-x)=-\sin x\\
-\cos (-x)=\cos x\\
-\tan (-x)=-\tan x\\
-\end{aligned}\\
-\]</span> <span class="math display">\[
-\begin{aligned}
-\sin (\pi-x)=\sin x\\
-\cos (\pi-x)=-\cos x\\
-\tan (\pi-x)=-\tan x\\
-\end{aligned}\\
-\]</span> <span class="math display">\[
-\begin{aligned}
-\sin (\frac{\pi}{2}-x)=\cos x\\
-\cos (\frac{\pi}{2}-x)=\sin x\\
-\end{aligned}\\
-\]</span> <span class="math display">\[
-\begin{aligned}
-\sin(\frac{\pi}{2}+x)=\cos x\\
-\cos(\frac{\pi}{2}+x)=-\sin x\\
-\end{aligned}\\
-\]</span></p>
+<p>$$<br>
+\begin{aligned}<br>
+\sin (x+2\pi)=\sin x \<br>
+\cos (x+2\pi)=\cos x \<br>
+\tan (x+2\pi)=\tan x \<br>
+\end{aligned}\<br>
+$$<br>
+$$<br>
+\begin{aligned}<br>
+\sin(x+\pi)=-\sin x\<br>
+\cos(x+\pi)=-\cos x\<br>
+\tan(x+\pi)=\tan x\<br>
+\end{aligned}\<br>
+$$<br>
+$$<br>
+\begin{aligned}<br>
+\sin (-x)=-\sin x\<br>
+\cos (-x)=\cos x\<br>
+\tan (-x)=-\tan x\<br>
+\end{aligned}\<br>
+$$<br>
+$$<br>
+\begin{aligned}<br>
+\sin (\pi-x)=\sin x\<br>
+\cos (\pi-x)=-\cos x\<br>
+\tan (\pi-x)=-\tan x\<br>
+\end{aligned}\<br>
+$$<br>
+$$<br>
+\begin{aligned}<br>
+\sin (\frac{\pi}{2}-x)=\cos x\<br>
+\cos (\frac{\pi}{2}-x)=\sin x\<br>
+\end{aligned}\<br>
+$$<br>
+$$<br>
+\begin{aligned}<br>
+\sin(\frac{\pi}{2}+x)=\cos x\<br>
+\cos(\frac{\pi}{2}+x)=-\sin x\<br>
+\end{aligned}\<br>
+$$</p>
 <p>（默认是右对齐的，所以会有点丑）</p>
 <p>下面是一些基础练习题。</p>
-<hr />
-<h4 id="三角函数的图像和性质">3.2 三角函数的图像和性质</h4>
-<h5 id="三角函数的图像和性质-1">3.2.1 三角函数的图像和性质</h5>
+<hr>
+<h4 id="3-2-三角函数的图像和性质">3.2 三角函数的图像和性质</h4>
+<h5 id="3-2-1-三角函数的图像和性质">3.2.1 三角函数的图像和性质</h5>
 <p>先对函数的周期作出定义：</p>
 <blockquote>
-<p>若对于函数 <span
-class="math inline">\(f(x)\)</span>，存在一个非零常数 <span
-class="math inline">\(T\)</span>，使得对于定义域内任意的 <span
-class="math inline">\(x\)</span>，都有 <span
-class="math inline">\(f(x)=f(x+T)\)</span>，则称 <span
-class="math inline">\(T\)</span> 是 <span
-class="math inline">\(f(x)\)</span> 的一个周期。</p>
+<p>若对于函数 $f(x)$，存在一个非零常数 $T$，使得对于定义域内任意的 $x$，都有 $f(x)=f(x+T)$，则称 $T$ 是 $f(x)$ 的一个周期。</p>
 </blockquote>
-<p>所有 <span class="math inline">\(T\)</span> 中大于 <span
-class="math inline">\(0\)</span> 且最小的那个叫做 <span
-class="math inline">\(f(x)\)</span> 的最小正周期。</p>
+<p>所有 $T$ 中大于 $0$ 且最小的那个叫做 $f(x)$ 的最小正周期。</p>
 <p>若无特殊说明，我们说的“周期”一般是指最小正周期。</p>
 <p>可以得到下面结论：</p>
-<ul>
-<li><p>周期函数的定义域是无界的；</p></li>
-<li><p>定义域为 <span class="math inline">\(\mathbb{R}\)</span>
-的周期函数 <span class="math inline">\(f(x)\)</span>，若 <span
-class="math inline">\(T\)</span> 是周期，则 <span
-class="math inline">\(nT\)</span> 也是周期；（<span
-class="math inline">\(n \in \mathbb{Z},n \neq 0\)</span>）</p></li>
-<li><p>若 <span class="math inline">\(f(x)\)</span>
-是非常数的周期函数，则 <span class="math inline">\(f(x)\)</span>
-有最小正周期；</p></li>
-<li><p>若 <span class="math inline">\(f(x)\)</span> 有最小正周期 <span
-class="math inline">\(T\)</span>，那么除 <span
-class="math inline">\(nT\)</span> 外，<span
-class="math inline">\(f(x)\)</span> 无其它周期；（<span
-class="math inline">\(n \in \mathbb{Z},n \neq 0\)</span>）</p></li>
-<li><p>若 <span class="math inline">\(f(x)\)</span> 是周期函数，则</p>
-<ul>
-<li><span class="math inline">\(af(x)+b\)</span> 是周期函数；</li>
-<li><span class="math inline">\(|f(x)|\)</span> 是周期函数；</li>
-<li><span class="math inline">\(\frac{1}{f(x)}\)</span>
-是周期函数；</li>
-<li><span class="math inline">\(f(ax+b)\)</span> 是周期函数。</li>
-</ul></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>周期函数的定义域是无界的；</p>
+</li>
+<li class="lvl-2">
+<p>定义域为 $\mathbb{R}$ 的周期函数 $f(x)$，若 $T$ 是周期，则 $nT$ 也是周期；（$n \in \mathbb{Z},n \neq 0$）</p>
+</li>
+<li class="lvl-2">
+<p>若 $f(x)$ 是非常数的周期函数，则 $f(x)$ 有最小正周期；</p>
+</li>
+<li class="lvl-2">
+<p>若 $f(x)$ 有最小正周期 $T$，那么除 $nT$ 外，$f(x)$ 无其它周期；（$n \in \mathbb{Z},n \neq 0$）</p>
+</li>
+<li class="lvl-2">
+<p>若 $f(x)$ 是周期函数，则</p>
+<ul class="lvl-2">
+<li class="lvl-6">$af(x)+b$ 是周期函数；</li>
+<li class="lvl-6">$|f(x)|$ 是周期函数；</li>
+<li class="lvl-6">$\frac{1}{f(x)}$ 是周期函数；</li>
+<li class="lvl-6">$f(ax+b)$ 是周期函数。</li>
+</ul>
+</li>
 </ul>
 <p>关于函数周期性计算的一些二级结论：</p>
-<ul>
-<li>若 <span
-class="math inline">\(f(a+x)=f(a-x),f(b+x)=f(b-x)\)</span>，则 <span
-class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
-class="math inline">\(T=2(b-a)\)</span>；</li>
-<li>若 <span class="math inline">\(f(x)\)</span> 关于两点 <span
-class="math inline">\((a_1,b),(a_2,b)\)</span> 对称，则 <span
-class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
-class="math inline">\(T=2(a_1-a_2)\)</span>；</li>
-<li>若 <span
-class="math inline">\(f(a+x)=f(a-x),f(b+x)=-f(b+x)\)</span>，则 <span
-class="math inline">\(f(x)\)</span> 是周期函数，周期 <span
-class="math inline">\(T=4(b-a)\)</span>.</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>若 $f(a+x)=f(a-x),f(b+x)=f(b-x)$，则 $f(x)$ 是周期函数，周期 $T=2(b-a)$；</p>
+</li>
+<li class="lvl-2">
+<p>若 $f(x)$ 关于两点 $(a_1,b),(a_2,b)$ 对称，则 $f(x)$ 是周期函数，周期 $T=2(a_1-a_2)$；</p>
+</li>
+<li class="lvl-2">
+<p>若 $f(a+x)=f(a-x),f(b+x)=-f(b+x)$，则 $f(x)$ 是周期函数，周期 $T=4(b-a)$.</p>
+</li>
 </ul>
 <p>使用几何画板不难得到六个三角函数的图像（五点画图法就不讲了）</p>
-<ul>
-<li><span class="math inline">\(y=\sin x\)</span>：</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\sin x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/WQKULRjrh3VpBGA.png" /></p>
-<ul>
-<li><span class="math inline">\(y=\cos x\)</span>：</li>
+<p><img src="https://s2.loli.net/2022/01/15/WQKULRjrh3VpBGA.png" alt=""></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\cos x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/zS7vhlBmNLgIWfq.png" /></p>
-<ul>
-<li><span class="math inline">\(y=\tan x\)</span>：</li>
+<p><img src="https://s2.loli.net/2022/01/15/zS7vhlBmNLgIWfq.png" alt=""></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\tan x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/nFYbAgWXQNCKvum.png" /></p>
-<ul>
-<li><span class="math inline">\(y=\cot x\)</span>：</li>
+<p><img src="https://s2.loli.net/2022/01/15/nFYbAgWXQNCKvum.png" alt=""></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\cot x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/TeinbErCVQZ72BH.png" /></p>
-<ul>
-<li>$ y=x$：</li>
+<p><img src="https://s2.loli.net/2022/01/15/TeinbErCVQZ72BH.png" alt=""></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$ y=\sec x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/Y8paou4n1eUrtCj.png" /></p>
-<ul>
-<li><span class="math inline">\(y=\csc x\)</span>：</li>
+<p><img src="https://s2.loli.net/2022/01/15/Y8paou4n1eUrtCj.png" alt=""></p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\csc x$：</p>
+</li>
 </ul>
-<p><img src="https://s2.loli.net/2022/01/15/dYslg4pvWZe2DT3.png" /></p>
-<p>实际上，在讨论图像问题时，我们很少提及 <span
-class="math inline">\(y=\csc x\)</span> 和 <span
-class="math inline">\(y=\sec x\)</span>.</p>
+<p><img src="https://s2.loli.net/2022/01/15/dYslg4pvWZe2DT3.png" alt=""></p>
+<p>实际上，在讨论图像问题时，我们很少提及 $y=\csc x$ 和 $y=\sec x$.</p>
 <p><strong>三角函数的奇偶性</strong></p>
 <p>直接给出结论：</p>
-<p><span class="math inline">\(y=\sin x,y=\tan x,y=\cot x\)</span>
-在其定义域上都是奇函数；</p>
-<p>而 <span class="math inline">\(y=\cos x\)</span>
-在其定义域上是偶函数。</p>
+<p>$y=\sin x,y=\tan x,y=\cot x$ 在其定义域上都是奇函数；</p>
+<p>而 $y=\cos x$ 在其定义域上是偶函数。</p>
 <p>（看上面的图应该会很清楚）</p>
 <p>做一道简单的奇偶性题目：</p>
-<p><strong>(4) 1.判断函数 <span
-class="math inline">\(f(x)=\sin(\cos(x)),g(x)=\cos(\sin(x))\)</span>
-的奇偶性。</strong></p>
-<p>对于 <span
-class="math inline">\(f(x)=\sin(\cos(x))\)</span>，其定义域为 <span
-class="math inline">\(\mathbb{R}\)</span> 关于 <span
-class="math inline">\(y\)</span> 轴对称，有： <span
-class="math display">\[
-f(-x)=\sin(\cos(-x))=\sin(\cos(x))=f(x)
-\]</span> 对于 <span
-class="math inline">\(g(x)=\cos(\sin(x))\)</span>，其定义域为 <span
-class="math inline">\(\mathbb{R}\)</span> 关于 <span
-class="math inline">\(y\)</span> 轴对称，有： <span
-class="math display">\[
-g(-x)=\cos(\sin(-x))=\cos(-\sin(x))=\cos(\sin(x))=g(x)
-\]</span> 所以这两个函数都是偶函数。</p>
+<p><strong>(4) 1.判断函数 $f(x)=\sin(\cos(x)),g(x)=\cos(\sin(x))$ 的奇偶性。</strong></p>
+<p>对于 $f(x)=\sin(\cos(x))$，其定义域为 $\mathbb{R}$ 关于 $y$ 轴对称，有：<br>
+$$<br>
+f(-x)=\sin(\cos(-x))=\sin(\cos(x))=f(x)<br>
+$$<br>
+对于 $g(x)=\cos(\sin(x))$，其定义域为 $\mathbb{R}$ 关于 $y$ 轴对称，有：<br>
+$$<br>
+g(-x)=\cos(\sin(-x))=\cos(-\sin(x))=\cos(\sin(x))=g(x)<br>
+$$<br>
+所以这两个函数都是偶函数。</p>
 <p>它们的图像长这样：</p>
-<p><img src="https://s2.loli.net/2022/01/15/Vcyvhk74r9MZztb.png" /></p>
-<p>实际上有 <span
-class="math inline">\(g(x)&gt;f(x)\)</span>，这个大家可以自己证明，并不难。</p>
+<p><img src="https://s2.loli.net/2022/01/15/Vcyvhk74r9MZztb.png" alt=""></p>
+<p>实际上有 $g(x)&gt;f(x)$，这个大家可以自己证明，并不难。</p>
 <p><strong>三角函数的单调性</strong></p>
-<p>一样是直接给出结论（<span class="math inline">\(k\in
-\mathbb{Z}\)</span>）：</p>
-<ul>
-<li><p><span class="math inline">\(y=\sin x\)</span> 在 <span
-class="math inline">\([-\frac{\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi]\)</span>
-上是增函数，在 <span
-class="math inline">\([\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi]\)</span>
-上是减函数。</p></li>
-<li><p><span class="math inline">\(y=\cos x\)</span> 在 <span
-class="math inline">\([-\pi+2k\pi,2k\pi]\)</span> 上是增函数，在 <span
-class="math inline">\([2k\pi,\pi+2k\pi]\)</span> 上是减函数。</p></li>
-<li><p><span class="math inline">\(y=\tan x\)</span> 在 <span
-class="math inline">\((-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)\)</span>
-上是增函数。</p></li>
-<li><p><span class="math inline">\(y=\cot x\)</span> 在 <span
-class="math inline">\((-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)\)</span>
-上是减函数。</p></li>
+<p>一样是直接给出结论（$k\in \mathbb{Z}$）：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=\sin x$ 在 $[-\frac{\pi}{2}+2k\pi,\frac{\pi}{2}+2k\pi]$ 上是增函数，在 $[\frac{\pi}{2}+2k\pi,\frac{3\pi}{2}+2k\pi]$ 上是减函数。</p>
+</li>
+<li class="lvl-2">
+<p>$y=\cos x$ 在 $[-\pi+2k\pi,2k\pi]$ 上是增函数，在 $[2k\pi,\pi+2k\pi]$ 上是减函数。</p>
+</li>
+<li class="lvl-2">
+<p>$y=\tan x$ 在 $(-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)$ 上是增函数。</p>
+</li>
+<li class="lvl-2">
+<p>$y=\cot x$ 在 $(-\frac{\pi}{2}+k\pi,\frac{\pi}{2}+k\pi)$ 上是减函数。</p>
+</li>
 </ul>
 <p><strong>三角函数的周期性</strong></p>
-<ul>
-<li><p><span class="math inline">\(y=A\sin(\omega
-x+\varphi),y=A\cos(\omega x+\varphi)(\omega\neq0)\)</span> 的最小正周期
-<span class="math inline">\(T=\frac{2\pi}{|\omega|}\)</span>；</p></li>
-<li><p><span class="math inline">\(y=A\tan(\omega x+\varphi),y=A\cot
-(\omega x+\varphi)(\omega\neq 0)\)</span> 的最小正周期 <span
-class="math inline">\(T=\frac{\pi}{|\omega|}\)</span>.</p></li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$y=A\sin(\omega x+\varphi),y=A\cos(\omega x+\varphi)(\omega\neq0)$ 的最小正周期 $T=\frac{2\pi}{|\omega|}$；</p>
+</li>
+<li class="lvl-2">
+<p>$y=A\tan(\omega x+\varphi),y=A\cot (\omega x+\varphi)(\omega\neq 0)$ 的最小正周期 $T=\frac{\pi}{|\omega|}$.</p>
+</li>
 </ul>
-<hr />
-<h5 id="函数-fxa-x">3.2.2 函数 $f(x)=A (x+)) $</h5>
-<hr />
-<h4 id="三角恒等变换">3.3 三角恒等变换</h4>
-<h5 id="三角恒等变换公式推导">3.3.1 三角恒等变换公式推导</h5>
+<hr>
+<h5 id="3-2-2-函数-f-x-A-sin-omega-x-varphi">3.2.2 函数 $f(x)=A \sin(\omega x+\varphi)) $</h5>
+<hr>
+<h4 id="3-3-三角恒等变换">3.3 三角恒等变换</h4>
+<h5 id="3-3-1-三角恒等变换公式推导">3.3.1 三角恒等变换公式推导</h5>
 <p>三角函数的精髓来了，同时也将是大家相当长一段时间内的噩梦。</p>
-<p>首先，我们介绍余弦的差角公式，即 <span class="math inline">\(\cos
-(x-y)\)</span>.</p>
-<p><img src="https://s2.loli.net/2022/01/07/ckIUtBFZHyOCs7V.png" /></p>
-<p>我们作出 <span class="math inline">\(x\)</span>
-的终边及其与单位圆的交点 <span class="math inline">\(A\)</span>，作出
-<span class="math inline">\(y\)</span> 的终边及其与单位圆的交点 <span
-class="math inline">\(B\)</span>，作出 <span
-class="math inline">\((x-y)\)</span> 的终边及其与单位圆的交点 <span
-class="math inline">\(C\)</span>.</p>
-<p>那么根据三角函数的定义， <span class="math display">\[
-A(\cos x,\sin x) \space B(\cos y,\sin y) \space C(\cos(x-y),\sin(x-y))
-\]</span> 我们发现，角 ADC 和角 BDE 度数一样，都是 <span
-class="math inline">\(y\)</span>.</p>
-<p>同圆圆心角相等，那么弦长相等。根据两点间距离公式， <span
-class="math display">\[
-AC=BE\\
-(\cos x-\cos(x-y))^2+(\sin x-\sin(x-y))^2=(\cos y-1)^2+\sin y^2 \\
-\cos x^2+\cos(x-y)^2-2\cos x\cos (x-y)+\sin x^2+\sin (x-y)^2-2\sin
-x\sin(x-y)=\cos y^2-2\cos y+1+\sin y^2 \\
-2-2\cos x\cos (x-y)-2\sin x\sin(x-y)=2-2\cos y \\
-\cos y=\cos x\cos(x-y)+\sin x\sin(x-y)
-\]</span> 好像出了点问题……吗？</p>
-<p>令 <span class="math inline">\(y&#39;=x-y\)</span>，则 <span
-class="math inline">\(\cos (x-y&#39;)=\cos x \cos y&#39;+\sin x \sin
-y&#39;\)</span>，这样就没问题了。</p>
-<p>实际上，从根本上解决问题应该在一开始，我们使用 <span
-class="math inline">\(AB=CE\)</span> 进行推导而非 <span
-class="math inline">\(AC=BE\)</span>.</p>
-<p>总而言之，我们成功地推出了万恶之源： <span class="math display">\[
-\cos(x-y)=\cos x\cos y+\sin x\sin y \quad(1)
-\]</span> 我们只要把 <span class="math inline">\((1)\)</span> 里面的
-<span class="math inline">\(y\)</span> 换成 <span
-class="math inline">\(-y\)</span>，就有了余弦函数的和角公式： <span
-class="math display">\[
-\cos(x-(-y))=\cos x\cos (-y)+\sin x\sin (-y) \\
-\Rightarrow \cos (x+y)=\cos x\cos y-\sin x\sin y \quad (2)
-\]</span> 回到上面的诱导公式，我们发现，<span class="math inline">\(\cos
-(\frac{\pi}{2}-x)=\sin x\)</span></p>
-<p>那么由 <span class="math inline">\((2)\)</span> 式， <span
-class="math display">\[
-\cos(\frac{\pi}{2}-x)\cos y-\sin(\frac{\pi}{2}-x) \sin
-y=\cos(\frac{\pi}{2}-x+y)\\
-\Rightarrow \sin x\cos y-\cos x\sin y=\sin(x-y)
-\]</span> 换一下顺序， <span class="math display">\[
-\sin(x-y)=\sin x\cos y-\cos x\sin y \quad(3)
-\]</span> 这就是正弦函数的差角公式。</p>
-<p>同样的，我们可以通过代换，推出正弦函数的和角公式： <span
-class="math display">\[
-\sin(x-(-y))=\sin x\cos (-y) -\cos x\sin(-y)\\
-\Rightarrow \sin(x+y)=\sin x\cos y+\cos x\sin y \quad(4)
-\]</span> 根据正切函数的定义，我们也会有正切函数的和差角公式： $$
-(x+y)===(上下同时除以 (xy)) (5)\</p>
-<p>(x-y)===(上下同时除以 (xy)) (6)\ $$
+<p>首先，我们介绍余弦的差角公式，即 $\cos (x-y)$.</p>
+<p><img src="https://s2.loli.net/2022/01/07/ckIUtBFZHyOCs7V.png" alt=""></p>
+<p>我们作出 $x$ 的终边及其与单位圆的交点 $A$，作出 $y$ 的终边及其与单位圆的交点 $B$，作出 $(x-y)$ 的终边及其与单位圆的交点 $C$.</p>
+<p>那么根据三角函数的定义，<br>
+$$<br>
+A(\cos x,\sin x) \space B(\cos y,\sin y) \space C(\cos(x-y),\sin(x-y))<br>
+$$<br>
+我们发现，角 ADC 和角 BDE 度数一样，都是 $y$.</p>
+<p>同圆圆心角相等，那么弦长相等。根据两点间距离公式，<br>
+$$<br>
+AC=BE\<br>
+(\cos x-\cos(x-y))^2+(\sin x-\sin(x-y))^2=(\cos y-1)^2+\sin y^2 \<br>
+\cos x<sup>2+\cos(x-y)</sup>2-2\cos x\cos (x-y)+\sin x^2+\sin (x-y)^2-2\sin x\sin(x-y)=\cos y^2-2\cos y+1+\sin y^2 \<br>
+2-2\cos x\cos (x-y)-2\sin x\sin(x-y)=2-2\cos y \<br>
+\cos y=\cos x\cos(x-y)+\sin x\sin(x-y)<br>
+$$<br>
+好像出了点问题……吗？</p>
+<p>令 $y’=x-y$，则 $\cos (x-y’)=\cos x \cos y’+\sin x \sin y’$，这样就没问题了。</p>
+<p>实际上，从根本上解决问题应该在一开始，我们使用 $AB=CE$ 进行推导而非 $AC=BE$.</p>
+<p>总而言之，我们成功地推出了万恶之源：<br>
+$$<br>
+\cos(x-y)=\cos x\cos y+\sin x\sin y \quad(1)<br>
+$$<br>
+我们只要把 $(1)$ 里面的 $y$ 换成 $-y$，就有了余弦函数的和角公式：<br>
+$$<br>
+\cos(x-(-y))=\cos x\cos (-y)+\sin x\sin (-y) \<br>
+\Rightarrow \cos (x+y)=\cos x\cos y-\sin x\sin y \quad (2)<br>
+$$<br>
+回到上面的诱导公式，我们发现，$\cos (\frac{\pi}{2}-x)=\sin x$</p>
+<p>那么由 $(2)$ 式，<br>
+$$<br>
+\cos(\frac{\pi}{2}-x)\cos y-\sin(\frac{\pi}{2}-x) \sin y=\cos(\frac{\pi}{2}-x+y)\<br>
+\Rightarrow \sin x\cos y-\cos x\sin y=\sin(x-y)<br>
+$$<br>
+换一下顺序，<br>
+$$<br>
+\sin(x-y)=\sin x\cos y-\cos x\sin y \quad(3)<br>
+$$<br>
+这就是正弦函数的差角公式。</p>
+<p>同样的，我们可以通过代换，推出正弦函数的和角公式：<br>
+$$<br>
+\sin(x-(-y))=\sin x\cos (-y) -\cos x\sin(-y)\<br>
+\Rightarrow \sin(x+y)=\sin x\cos y+\cos x\sin y \quad(4)<br>
+$$<br>
+根据正切函数的定义，我们也会有正切函数的和差角公式：<br>
+$$<br>
+\tan (x+y)=\frac{\sin(x+y)}{\cos(x+y)}=\frac{\sin x\cos y+\cos x\sin y}{\cos x\cos y-\sin x\sin y}=\frac{\tan x+\tan y}{1-\tan x\tan y}\space (上下同时除以 (\cos x\cos y)) \quad (5)\</p>
+<p>\tan (x-y)=\frac{\sin(x-y)}{\cos(x-y)}=\frac{\sin x\cos y-\cos x\sin y}{\cos x\cos y+\sin x\sin y}=\frac{\tan x-\tan y}{1+\tan x\tan y}\space (上下同时除以 (\cos x\cos y)) \quad (6)\<br>
+$$<br>
 基本的三角恒等变换就到这里了。下面的是二级结论。</p>
-<p><strong>正弦，余弦的倍角公式：</strong> <span class="math display">\[
-\sin 2x=\sin(x+x)=\sin x\cos x+\sin x\cos x=2\sin x\cos x \quad (7)\\
-\\
-\cos 2x=\cos(x+x)=\cos^2x-\sin^2x \quad(8)\\
-=(\cos x+\sin x)(\cos x-\sin x) \quad(9) \\
-=2\cos^2 x-1 \quad(10) \\
-=1-2\sin^2 x \quad(11)
-\]</span>
+<p><strong>正弦，余弦的倍角公式：</strong><br>
+$$<br>
+\sin 2x=\sin(x+x)=\sin x\cos x+\sin x\cos x=2\sin x\cos x \quad (7)\<br>
+\<br>
+\cos 2x=\cos(x+x)=\cos<sup>2x-\sin</sup>2x \quad(8)\<br>
+=(\cos x+\sin x)(\cos x-\sin x) \quad(9) \<br>
+=2\cos^2 x-1 \quad(10) \<br>
+=1-2\sin^2 x \quad(11)<br>
+$$<br>
 需要注意的是，余弦倍角公式的四种形式都是常见的，都需要单独列出来作为二级结论。</p>
-<p><strong>正切的倍角公式：</strong> <span class="math display">\[
-\tan 2x=\tan (x+x)=\frac{2\tan x}{1-\tan^2x} \quad (12)
-\]</span> 正切的恒等变换都需要注意定义域问题。</p>
-<p><strong>正弦，余弦的半角公式：</strong> <span class="math display">\[
-1-2\sin^2 x=\cos 2x\\
-\Rightarrow \sin x=\pm\sqrt{\frac{1-\cos 2x}{2}} \\
-\Rightarrow \sin \frac{x}{2}=\pm\sqrt{\frac{1-\cos x}{2}} \quad (13)\\\\
-2\cos^2x-1=\cos 2x \\
-\Rightarrow \cos x=\pm\sqrt{\frac{1+\cos 2x}{2}} \\
-\Rightarrow \cos \frac{x}{2} =\pm\sqrt{\frac{1+\cos x}{2}} \quad (14) \\
-\]</span></p>
+<p><strong>正切的倍角公式：</strong><br>
+$$<br>
+\tan 2x=\tan (x+x)=\frac{2\tan x}{1-\tan^2x} \quad (12)<br>
+$$<br>
+正切的恒等变换都需要注意定义域问题。</p>
+<p><strong>正弦，余弦的半角公式：</strong><br>
+$$<br>
+1-2\sin^2 x=\cos 2x\<br>
+\Rightarrow \sin x=\pm\sqrt{\frac{1-\cos 2x}{2}} \<br>
+\Rightarrow \sin \frac{x}{2}=\pm\sqrt{\frac{1-\cos x}{2}} \quad (13)\\<br>
+2\cos^2x-1=\cos 2x \<br>
+\Rightarrow \cos x=\pm\sqrt{\frac{1+\cos 2x}{2}} \<br>
+\Rightarrow \cos \frac{x}{2} =\pm\sqrt{\frac{1+\cos x}{2}} \quad (14) \<br>
+$$</p>
 <p>正负号由角所在象限决定。</p>
-<p><strong>正切的半角公式：</strong> <span class="math display">\[
-\tan \frac{x}{2}=\frac{\sin \frac{x}{2}}{\cos
-\frac{x}{2}}=\pm\sqrt{\frac{1-\cos x}{1+\cos x}} \quad (15)\\
-=\frac{\sin x}{1+\cos x} \quad(16) \\
-=\frac{1-\cos x}{\sin x} \space (注意到 \sin^2x+\cos^2x=1) \quad(17)
-\]</span>
+<p><strong>正切的半角公式：</strong><br>
+$$<br>
+\tan \frac{x}{2}=\frac{\sin \frac{x}{2}}{\cos \frac{x}{2}}=\pm\sqrt{\frac{1-\cos x}{1+\cos x}} \quad (15)\<br>
+=\frac{\sin x}{1+\cos x} \quad(16) \<br>
+=\frac{1-\cos x}{\sin x} \space (注意到 \sin<sup>2x+\cos</sup>2x=1) \quad(17)<br>
+$$<br>
 需要注意的是，正切半角公式的前一种形式中，正负号不定；但是在后面两种形式中，正负号是定下来的。</p>
-<p>不过第一种形式只需要 <span class="math inline">\(\cos x\)</span>
-一个三角函数名，但是后面两种需要同时知道 <span
-class="math inline">\(\cos x,\sin x\)</span>.</p>
+<p>不过第一种形式只需要 $\cos x$ 一个三角函数名，但是后面两种需要同时知道 $\cos x,\sin x$.</p>
 <p><strong>“万能公式”</strong></p>
-<p>所谓万能公式，指的是把 <span class="math inline">\(\sin x,\cos
-x\)</span> 都化成 <span class="math inline">\(\tan \frac{x}{2}\)</span>
-的形式。</p>
-<p>这样，只有一个三角函数名，会好处理很多。 <span
-class="math display">\[
-\sin x=2\sin \frac{x}{2} \cos
-\frac{x}{2}=\frac{2\sin\frac{x}{2}\cos\frac{x}{2}}{\sin^2\frac{x}{2}+\cos^2\frac{x}{2}}\\
-=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(18)\\
-\\
-\cos
-x=\cos^2\frac{x}{2}-\sin^2\frac{x}{2}=\frac{\cos^2\frac{x}{2}-\sin^2\frac{x}{2}}{\sin^2\frac{x}{2}+\cos^2\frac{x}{2}}\\
-=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(19)\\
-\]</span> <span class="math inline">\(\tan\)</span> 的“万能公式”见 <span
-class="math inline">\((12)\)</span>.</p>
+<p>所谓万能公式，指的是把 $\sin x,\cos x$ 都化成 $\tan \frac{x}{2}$ 的形式。</p>
+<p>这样，只有一个三角函数名，会好处理很多。<br>
+$$<br>
+\sin x=2\sin \frac{x}{2} \cos \frac{x}{2}=\frac{2\sin\frac{x}{2}\cos\frac{x}{2}}{\sin<sup>2\frac{x}{2}+\cos</sup>2\frac{x}{2}}\<br>
+=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(18)\<br>
+\<br>
+\cos x=\cos<sup>2\frac{x}{2}-\sin</sup>2\frac{x}{2}=\frac{\cos<sup>2\frac{x}{2}-\sin</sup>2\frac{x}{2}}{\sin<sup>2\frac{x}{2}+\cos</sup>2\frac{x}{2}}\<br>
+=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}} \quad(19)\<br>
+$$<br>
+$\tan$ 的“万能公式”见 $(12)$.</p>
 <p><strong>积化和差</strong></p>
 <p>这里详细的推导过程就不给出了。</p>
-<p>大体思路是用余弦的和差角公式去替换。 <span class="math display">\[
-\cos x\cos y=\frac{1}{2}(\cos (x+y)+\cos(x-y)) \quad(20)\\
-\sin x\sin y=\frac{1}{2}(\cos(x-y)-\cos(x+y))\quad(21)\\
-\]</span> 同理，下面两个积化和差公式是用正弦的和差角公式替换得到的。
-<span class="math display">\[
-\sin x\cos y=\frac{1}{2}(\sin(x+y)+\sin(x-y))\quad(22)\\
-\cos x\sin y=\frac{1}{2}(\sin(x+y)-\sin(x-y))\quad(23)
-\]</span> <strong>和差化积</strong></p>
-<p>由 <span class="math inline">\((20)\)</span> ，将 <span
-class="math inline">\(x\)</span> 替换为 <span
-class="math inline">\((x+y),y\)</span> 替换为 <span
-class="math inline">\((x-y)\)</span> 可以得到 <span
-class="math display">\[
-\cos x+\cos y=2\cos \frac{x+y}{2}\cos \frac{x-y}{2} \quad(24)
-\]</span> 由 <span class="math inline">\((21)\)</span> 经过类似替换可得
-<span class="math display">\[
-\cos x-\cos y=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2} \quad(25)
-\]</span> 由 <span class="math inline">\((22)\)</span> 经过类似替换可得
-<span class="math display">\[
-\sin x+\sin y=2\sin \frac{x+y}{2}\cos\frac{x-y}{2} \quad(26)
-\]</span> 由 <span class="math inline">\((23)\)</span> 经过类似替换可得
-<span class="math display">\[
-\sin x-\sin y=2\cos\frac{x+y}{2}\sin\frac{x-y}{2} \quad(27)
-\]</span> <strong>辅助角公式</strong></p>
+<p>大体思路是用余弦的和差角公式去替换。<br>
+$$<br>
+\cos x\cos y=\frac{1}{2}(\cos (x+y)+\cos(x-y)) \quad(20)\<br>
+\sin x\sin y=\frac{1}{2}(\cos(x-y)-\cos(x+y))\quad(21)\<br>
+$$<br>
+同理，下面两个积化和差公式是用正弦的和差角公式替换得到的。<br>
+$$<br>
+\sin x\cos y=\frac{1}{2}(\sin(x+y)+\sin(x-y))\quad(22)\<br>
+\cos x\sin y=\frac{1}{2}(\sin(x+y)-\sin(x-y))\quad(23)<br>
+$$<br>
+<strong>和差化积</strong></p>
+<p>由 $(20)$ ，将 $x$ 替换为 $(x+y),y$ 替换为 $(x-y)$ 可以得到<br>
+$$<br>
+\cos x+\cos y=2\cos \frac{x+y}{2}\cos \frac{x-y}{2} \quad(24)<br>
+$$<br>
+由 $(21)$ 经过类似替换可得<br>
+$$<br>
+\cos x-\cos y=-2\sin\frac{x+y}{2}\sin\frac{x-y}{2} \quad(25)<br>
+$$<br>
+由 $(22)$ 经过类似替换可得<br>
+$$<br>
+\sin x+\sin y=2\sin \frac{x+y}{2}\cos\frac{x-y}{2} \quad(26)<br>
+$$<br>
+由 $(23)$ 经过类似替换可得<br>
+$$<br>
+\sin x-\sin y=2\cos\frac{x+y}{2}\sin\frac{x-y}{2} \quad(27)<br>
+$$<br>
+<strong>辅助角公式</strong></p>
 <p>这个简单说一下。</p>
-<p>辅助角公式指的是 <span class="math display">\[
-a\sin x+b\cos x=\sqrt{a^2+b^2}\sin (x+\varphi),其中 \space \varphi\space
-终边过\space (a,b) \quad (28)
-\]</span> 我们反着推一下，设 <span
-class="math inline">\(A\sin(x+\varphi)=a\sin x+b\cos x\)</span>，</p>
-<p>那么 <span class="math inline">\(A(\sin x\cos \varphi+\cos
-x\sin\varphi)=a\sin x+b \cos x\)</span></p>
-<p>展开并对比系数， <span class="math display">\[
-A \cos \varphi=a\\
-A \sin \varphi=b
-\]</span> 两式平方并相加；两式相处； <span class="math display">\[
-A=\sqrt{a^2+b^2},\tan \varphi=\frac{b}{a}
-\]</span> <span class="math inline">\(\varphi\)</span>
-到底是哪个象限的就要看 <span class="math inline">\(a,b\)</span>
-的符号了。所以我们直接归纳为 ”<span
-class="math inline">\(\varphi\)</span> 终边过<span
-class="math inline">\((a,b)\)</span>".</p>
+<p>辅助角公式指的是<br>
+$$<br>
+a\sin x+b\cos x=\sqrt{a<sup>2+b</sup>2}\sin (x+\varphi),其中 \space \varphi\space 终边过\space (a,b) \quad (28)<br>
+$$<br>
+我们反着推一下，设 $A\sin(x+\varphi)=a\sin x+b\cos x$，</p>
+<p>那么 $A(\sin x\cos \varphi+\cos x\sin\varphi)=a\sin x+b \cos x$</p>
+<p>展开并对比系数，<br>
+$$<br>
+A \cos \varphi=a\<br>
+A \sin \varphi=b<br>
+$$<br>
+两式平方并相加；两式相处；<br>
+$$<br>
+A=\sqrt{a<sup>2+b</sup>2},\tan \varphi=\frac{b}{a}<br>
+$$<br>
+$\varphi$ 到底是哪个象限的就要看 $a,b$ 的符号了。所以我们直接归纳为 ”$\varphi$ 终边过$(a,b)$&quot;.</p>
 <p><strong>三倍角公式</strong></p>
-<p>这里仅推一个 <span
-class="math inline">\(\sin\)</span>，剩下两个可以用同样的方法推。</p>
-<p>首先给出公式 <span class="math display">\[
-\sin 3x=3\sin x-4\sin^3x \quad(29)\\
-=4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x) \quad(30)\\\\
-\cos 3x=4\cos^3x-3\cos x \quad(31)\\
-=4\cos(\frac{\pi}{3}-x)\cos x\cos(\frac{\pi}{3}+x) \quad(32)\\\\
-\tan 3x=\tan(\frac{\pi}{3}-x)\tan x\tan(\frac{\pi}{3}+x) \quad(33)\\
-\]</span> 对于 <span class="math inline">\((29)\)</span>, <span
-class="math display">\[
-\sin3x=\sin(2x+x)=\sin2x\cos x+\cos2x\sin x\\
-=2\sin x\cos^2x+(1-2\sin^2x)\sin x \\
-=2\sin x(1-\sin^2x)+\sin x-2\sin^3x\\
-=3\sin x-4\sin^3x \quad(29)
-\]</span> 现在推了一半，剩下一半从右往左推： <span
-class="math display">\[
-4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x)\\
-=4(\frac{\sqrt{3}}{2}\cos x-\frac{1}{2}\sin x)\sin
-x(\frac{\sqrt{3}}{2}\cos x+\frac{1}{2}\sin x) \\
-=4\sin x(\frac{3}{4}\cos^2x-\frac{1}{4}\sin^2x)\\
-=4\sin x(\frac{3}{4}(1-\sin^2x)-\frac{1}{4}\sin^2x) \\
-=4\sin x(\frac{3}{4}-\sin^2x) \\
-=3\sin x-4\sin^3x\\
-\]</span> 所以 <span class="math inline">\(\sin\)</span>
-的三倍角公式得证。</p>
-<p>最后留两个不常用但也出现过的二级结论供读者自推： <span
-class="math display">\[
-\sin^2x-\sin^2y=\sin(x+y)\sin(x-y) \quad(34)\\
-\cos^2x-\cos^2y=-\sin(x+y)\sin(x-y) \quad(35)
-\]</span> （推完一个另一个就显然了）</p>
-<hr />
-<h5 id="拆角凑角">3.3.2 拆角凑角</h5>
+<p>这里仅推一个 $\sin$，剩下两个可以用同样的方法推。</p>
+<p>首先给出公式<br>
+$$<br>
+\sin 3x=3\sin x-4\sin^3x \quad(29)\<br>
+=4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x) \quad(30)\\<br>
+\cos 3x=4\cos^3x-3\cos x \quad(31)\<br>
+=4\cos(\frac{\pi}{3}-x)\cos x\cos(\frac{\pi}{3}+x) \quad(32)\\<br>
+\tan 3x=\tan(\frac{\pi}{3}-x)\tan x\tan(\frac{\pi}{3}+x) \quad(33)\<br>
+$$<br>
+对于 $(29)$,<br>
+$$<br>
+\sin3x=\sin(2x+x)=\sin2x\cos x+\cos2x\sin x\<br>
+=2\sin x\cos<sup>2x+(1-2\sin</sup>2x)\sin x \<br>
+=2\sin x(1-\sin^2x)+\sin x-2\sin^3x\<br>
+=3\sin x-4\sin^3x \quad(29)<br>
+$$<br>
+现在推了一半，剩下一半从右往左推：<br>
+$$<br>
+4\sin(\frac{\pi}{3}-x)\sin x\sin(\frac{\pi}{3}+x)\<br>
+=4(\frac{\sqrt{3}}{2}\cos x-\frac{1}{2}\sin x)\sin x(\frac{\sqrt{3}}{2}\cos x+\frac{1}{2}\sin x) \<br>
+=4\sin x(\frac{3}{4}\cos<sup>2x-\frac{1}{4}\sin</sup>2x)\<br>
+=4\sin x(\frac{3}{4}(1-\sin<sup>2x)-\frac{1}{4}\sin</sup>2x) \<br>
+=4\sin x(\frac{3}{4}-\sin^2x) \<br>
+=3\sin x-4\sin^3x\<br>
+$$<br>
+所以 $\sin$ 的三倍角公式得证。</p>
+<p>最后留两个不常用但也出现过的二级结论供读者自推：<br>
+$$<br>
+\sin<sup>2x-\sin</sup>2y=\sin(x+y)\sin(x-y) \quad(34)\<br>
+\cos<sup>2x-\cos</sup>2y=-\sin(x+y)\sin(x-y) \quad(35)<br>
+$$<br>
+（推完一个另一个就显然了）</p>
+<hr>
+<h5 id="3-3-2-拆角凑角">3.3.2 拆角凑角</h5>
 <p>这种类型的题在课内和竞赛中都会出现。这类题目是给出一些已知角的正弦/余弦值，需要你求出一个新角的正弦/余弦值。</p>
 <p>并且，给出的已知角一定和要求角有关系。</p>
 <p>常见的关系有以下：</p>
-<ul>
-<li>已知 <span class="math inline">\(\alpha,\beta\)</span>，求 <span
-class="math inline">\(\alpha+\beta\)</span>.</li>
-<li>已知 <span
-class="math inline">\(\frac{\alpha}{2},\frac{\beta}{2}\)</span>，求
-<span class="math inline">\(\alpha+\beta\)</span>.</li>
-<li>已知 <span
-class="math inline">\(\alpha+\beta,\alpha-\beta\)</span>，求 <span
-class="math inline">\(\alpha,\beta\)</span></li>
-<li>......</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>已知 $\alpha,\beta$，求 $\alpha+\beta$.</p>
+</li>
+<li class="lvl-2">
+<p>已知 $\frac{\alpha}{2},\frac{\beta}{2}$，求 $\alpha+\beta$.</p>
+</li>
+<li class="lvl-2">
+<p>已知 $\alpha+\beta,\alpha-\beta$，求 $\alpha,\beta$</p>
+</li>
+<li class="lvl-2">
+<p>…</p>
+</li>
 </ul>
 <p>这种题不算很难，就是计算麻烦。</p>
-<p>在不引起误解的情况下，下面会使用 <span
-class="math inline">\(A,B\)</span>
-等大写字母表示角而非希腊字母，因为太难打了……</p>
+<p>在不引起误解的情况下，下面会使用 $A,B$ 等大写字母表示角而非希腊字母，因为太难打了……</p>
 <p>同理，角度制单位 ° 会打成 *</p>
-<p><strong>1. (7) 设 <span
-class="math inline">\(\cos(A-\frac{B}{2})=-\frac{1}{9},\sin(\frac{A}{2}-B)=\frac{2}{3},\)</span>且
-<span
-class="math inline">\(\frac{\pi}{2}&lt;A&lt;\pi,0&lt;B&lt;\frac{\pi}{2},\)</span>
-求 <span class="math inline">\(\sin \frac{A+B}{2}\)</span> 和 <span
-class="math inline">\(\cos (A+B)\)</span> 的值.</strong></p>
+<p><strong>1. (7) 设 $\cos(A-\frac{B}{2})=-\frac{1}{9},\sin(\frac{A}{2}-B)=\frac{2}{3},$且 $\frac{\pi}{2}&lt;A&lt;\pi,0&lt;B&lt;\frac{\pi}{2},$ 求 $\sin \frac{A+B}{2}$ 和 $\cos (A+B)$ 的值.</strong></p>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-A-B/2-（A/2-B）=1/2(A+B)
-</p>
+  <summary>提示 1</summary>
+  <p> A-B/2-（A/2-B）=1/2(A+B) </p>
 </details>
 <details>
-<summary>
-提示 2
-</summary>
-<p>
-cos(A+B) 可以考虑二倍角公式。
-</p>
+  <summary>提示 2</summary>
+  <p> cos(A+B) 可以考虑二倍角公式。 </p>
 </details>
-<p>由角 <span class="math inline">\(A,B\)</span> 的范围和 <span
-class="math inline">\(\sin,\cos\)</span> 的正负性可以得知 <span
-class="math inline">\(\frac{1}{2}\pi&lt;A-\frac{B}{2}&lt;\pi,0&lt;\frac{1}{2}A-B&lt;\frac{1}{2}\pi\)</span>.</p>
-<p>根据 <span class="math inline">\(\sin^2A+\cos^2A=1 \space(这里的
-\space A \space 指任意角)\)</span> 得 <span
-class="math inline">\(\sin(A-\frac{B}{2})=\frac{4\sqrt{5}}{9},\cos(\frac{A}{2}-B)=\frac{\sqrt{5}}{3}\)</span>.</p>
-<p>凑角：<span
-class="math inline">\(A-\frac{B}2-(\frac{A}2-B)=\frac{A+B}{2}\)</span></p>
-<p>所以 <span class="math display">\[
-\begin{aligned}
-&amp;\quad \sin(\frac{A+B}{2})\\
-&amp;=\sin(A-\frac{B}{2}-\frac{A}{2}+B)\\
-&amp;=\sin(A-\frac{B}{2})\cos(\frac{A}{2}-B)-\cos(A-\frac{B}{2})\sin(\frac{A}{2}-B)\\
-&amp;=\frac{4\sqrt{5}}{9}\cdot \frac{\sqrt{5}}{3}-(-\frac{1}{9})\cdot
-\frac{2}{3}\\
-&amp;=\frac{22}{27}
-\end{aligned}
-\]</span> 根据二倍角公式，<span
-class="math inline">\(\cos(A+B)=1-2\sin(\frac{A+B}{2})=-\frac{239}{729}\)</span>.</p>
+<p>由角 $A,B$ 的范围和 $\sin,\cos$ 的正负性可以得知 $\frac{1}{2}\pi&lt;A-\frac{B}{2}&lt;\pi,0&lt;\frac{1}{2}A-B&lt;\frac{1}{2}\pi$.</p>
+<p>根据 $\sin<sup>2A+\cos</sup>2A=1 \space(这里的 \space A \space 指任意角)$ 得 $\sin(A-\frac{B}{2})=\frac{4\sqrt{5}}{9},\cos(\frac{A}{2}-B)=\frac{\sqrt{5}}{3}$.</p>
+<p>凑角：$A-\frac{B}2-(\frac{A}2-B)=\frac{A+B}{2}$</p>
+<p>所以<br>
+$$<br>
+\begin{aligned}<br>
+&amp;\quad \sin(\frac{A+B}{2})\<br>
+&amp;=\sin(A-\frac{B}{2}-\frac{A}{2}+B)\<br>
+&amp;=\sin(A-\frac{B}{2})\cos(\frac{A}{2}-B)-\cos(A-\frac{B}{2})\sin(\frac{A}{2}-B)\<br>
+&amp;=\frac{4\sqrt{5}}{9}\cdot \frac{\sqrt{5}}{3}-(-\frac{1}{9})\cdot \frac{2}{3}\<br>
+&amp;=\frac{22}{27}<br>
+\end{aligned}<br>
+$$<br>
+根据二倍角公式，$\cos(A+B)=1-2\sin(\frac{A+B}{2})=-\frac{239}{729}$.</p>
 <p>再看看另一种形式的凑角。</p>
-<p><strong>2. (9) 求 <span class="math inline">\(\cos20\)</span>°<span
-class="math inline">\(\cos 40\)</span>°<span class="math inline">\(\cos
-80\)</span>°.</strong></p>
-<p>我们发现，<span class="math inline">\(20\)</span> 和 <span
-class="math inline">\(40\)</span> 以及 <span
-class="math inline">\(80\)</span> 都是翻倍上去的，这让我们联想到 <span
-class="math inline">\(\sin\)</span> 的二倍角公式：<span
-class="math inline">\(\sin2x=2\sin x\cos x\)</span>.</p>
-<p>题目中的 <span class="math inline">\(\cos\)</span>
-是齐全的，已经翻倍好了，所以我们考虑找出一个 <span
-class="math inline">\(\sin\)</span>.</p>
-<p>我们可以先乘上一个 <span
-class="math inline">\(\sin20\)</span>° 来作为“链式反应”的导火索，后面再除回去。</p>
-<p>所以原式 <span class="math display">\[
-\begin{aligned}
-&amp;=\frac{\sin20^*\cos20^*\cos40^*\cos80^*}{\sin20^*}\\
-&amp;=\frac{\frac{1}{2}\sin40^*\cos40^*\cos80^*}{\sin20^*}\\
-&amp;=\frac{\frac{1}{4}\sin80^*\cos80^*}{\sin20^*}\\
-&amp;=\frac{\frac{1}{8}\sin160^*}{\sin20^*}\\
-&amp;=\frac{1}{8}
-\end{aligned}
-\]</span></p>
-<h5 id="构造方程">3.3.3 构造方程</h5>
-<p>这类题目的构造方法一般会比较难想到；主要思想是把要求的三角函数式子看作一个方程的某个根；为了构造出这个方程，我们可能需要去找与这个“互补"的式子。</p>
-<p>设原式为 <span class="math inline">\(A\)</span>，“互补”的式子为 <span
-class="math inline">\(B\)</span>，那么我们可以比较方便地计算出 <span
-class="math inline">\(A+B\)</span> 和 <span
-class="math inline">\(A\times B\)</span>；再根据韦达定理，我们就能解出
-<span class="math inline">\(A\)</span> 了。</p>
+<p><strong>2. (9) 求 $\cos20$°$\cos 40$°$\cos 80$°.</strong></p>
+<p>我们发现，$20$ 和 $40$ 以及 $80$ 都是翻倍上去的，这让我们联想到 $\sin$ 的二倍角公式：$\sin2x=2\sin x\cos x$.</p>
+<p>题目中的 $\cos$ 是齐全的，已经翻倍好了，所以我们考虑找出一个 $\sin$.</p>
+<p>我们可以先乘上一个 $\sin20$° 来作为“链式反应”的导火索，后面再除回去。</p>
+<p>所以原式<br>
+$$<br>
+\begin{aligned}<br>
+&amp;=\frac{\sin20<sup>*\cos20</sup><em>\cos40<sup>*\cos80</sup></em>}{\sin20^<em>}\<br>
+&amp;=\frac{\frac{1}{2}\sin40<sup>*\cos40</sup></em>\cos80<sup>*}{\sin20</sup><em>}\<br>
+&amp;=\frac{\frac{1}{4}\sin80<sup>*\cos80</sup></em>}{\sin20^<em>}\<br>
+&amp;=\frac{\frac{1}{8}\sin160<sup>*}{\sin20</sup></em>}\<br>
+&amp;=\frac{1}{8}<br>
+\end{aligned}<br>
+$$</p>
+<h5 id="3-3-3-构造方程">3.3.3 构造方程</h5>
+<p>这类题目的构造方法一般会比较难想到；主要思想是把要求的三角函数式子看作一个方程的某个根；为了构造出这个方程，我们可能需要去找与这个“互补&quot;的式子。</p>
+<p>设原式为 $A$，“互补”的式子为 $B$，那么我们可以比较方便地计算出 $A+B$ 和 $A\times B$；再根据韦达定理，我们就能解出 $A$ 了。</p>
 <p>这样说可能比较抽象，所以我们用一个例子来引入。</p>
-<p><strong>1. (13)求值：<span
-class="math inline">\(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}\)</span></strong>.</p>
+<p><strong>1. (13)求值：$\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}$</strong>.</p>
 <details>
-<summary>
-提示 1
-</summary>
-<p>
-设 x=原式，y=++，探究 x+y，x*y 的关系
-</p>
+  <summary>提示 1</summary>
+  <p> 设 x=原式，y=\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}，探究 x+y，x*y 的关系</p>
 </details>
 <p>虽然这题只需要一个提示，但难度也比较大。</p>
 <p>主要的难点有两个，一是想到要配对，二是后续的三角恒等变换。</p>
-<p>设 <span
-class="math inline">\(x=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13},y=\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}\)</span></p>
-<p>那么 <span class="math display">\[
-\begin{aligned}
-&amp;x+y\\
-&amp;=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}\\
-&amp;=\frac{1}{2\sin\frac{\pi}{13}}(2\sin\frac{\pi}{13}(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{11\pi}{13}))\\
-&amp;=\frac{1}{2\sin\frac{\pi}{13}}(\sin\frac{2\pi}{13}+(\sin\frac{4\pi}{13}-\sin\frac{2\pi}{13})+(\sin\frac{6\pi}{13}-sin\frac{4\pi}{13})+\cdots+(\sin\frac{12\pi}{13}-\sin\frac{10\pi}{13}))\\
-&amp;=\frac{\sin\frac{12\pi}{13}}{2\sin\frac{\pi}{13}}\\
-&amp;=\frac{1}{2}
-\end{aligned}
-\]</span> ps：这里面有很妙的一步，就是乘上 <span
-class="math inline">\(\frac{1}{2\sin\frac{\pi}{13}}\)</span>，后面再除回去。这样做主要是考虑积化和差能起到类似”裂项相消“的效果。</p>
-<p>同理， <span class="math display">\[
-\begin{aligned}
-&amp;x\times y\\
-&amp;=(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13})(\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\\
-&amp;=-\frac{3}{2}(\cos\frac{\pi}{13}-\cos\frac{2\pi}{13}+\cos\frac{3\pi}{13}-\cos\frac{4\pi}{13}+\cos\frac{5\pi}{13}-\cos\frac{6\pi}{13})\\
-&amp;=-\frac{3}{2}
-(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\\
-&amp;=-\frac{3}{4}
-\end{aligned}
-\]</span> 第二步就是普通的积化和差，第三步是用诱导公式整理成 <span
-class="math inline">\(x+y\)</span> 的形式。</p>
-<p>那么，<span class="math inline">\(x,y\)</span> 分别是方程 <span
-class="math inline">\(t^2-\frac{1}{2}t-\frac{3}{4}=0\)</span> 的两根</p>
-<p>解得 <span class="math inline">\(x=\frac{1+\sqrt{13}}{4}\)</span>
-(舍去负根，显然 <span
-class="math inline">\(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}\)</span>
-是一个正值)</p>
+<p>设 $x=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13},y=\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}$</p>
+<p>那么<br>
+$$<br>
+\begin{aligned}<br>
+&amp;x+y\<br>
+&amp;=\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13}\<br>
+&amp;=\frac{1}{2\sin\frac{\pi}{13}}(2\sin\frac{\pi}{13}(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{11\pi}{13}))\<br>
+&amp;=\frac{1}{2\sin\frac{\pi}{13}}(\sin\frac{2\pi}{13}+(\sin\frac{4\pi}{13}-\sin\frac{2\pi}{13})+(\sin\frac{6\pi}{13}-sin\frac{4\pi}{13})+\cdots+(\sin\frac{12\pi}{13}-\sin\frac{10\pi}{13}))\<br>
+&amp;=\frac{\sin\frac{12\pi}{13}}{2\sin\frac{\pi}{13}}\<br>
+&amp;=\frac{1}{2}<br>
+\end{aligned}<br>
+$$<br>
+ps：这里面有很妙的一步，就是乘上 $\frac{1}{2\sin\frac{\pi}{13}}$，后面再除回去。这样做主要是考虑积化和差能起到类似”裂项相消“的效果。</p>
+<p>同理，<br>
+$$<br>
+\begin{aligned}<br>
+&amp;x\times y\<br>
+&amp;=(\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13})(\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\<br>
+&amp;=-\frac{3}{2}(\cos\frac{\pi}{13}-\cos\frac{2\pi}{13}+\cos\frac{3\pi}{13}-\cos\frac{4\pi}{13}+\cos\frac{5\pi}{13}-\cos\frac{6\pi}{13})\<br>
+&amp;=-\frac{3}{2} (\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}+\cos\frac{5\pi}{13}+\cos\frac{7\pi}{13}+\cos\frac{11\pi}{13})\<br>
+&amp;=-\frac{3}{4}<br>
+\end{aligned}<br>
+$$<br>
+第二步就是普通的积化和差，第三步是用诱导公式整理成 $x+y$ 的形式。</p>
+<p>那么，$x,y$ 分别是方程 $t^2-\frac{1}{2}t-\frac{3}{4}=0$ 的两根</p>
+<p>解得 $x=\frac{1+\sqrt{13}}{4}$ (舍去负根，显然 $\cos\frac{\pi}{13}+\cos\frac{3\pi}{13}+\cos\frac{9\pi}{13}$ 是一个正值)</p>
 <p>下面来看一个更复杂的构造方程，真的非常复杂。</p>
 <p>不过这题不算是严格的构造方程，只能说是用字母表示数。</p>
-<p><strong>2. (15) 求 <span
-class="math inline">\(\cos^5\frac{\pi}{9}+\cos^5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}\)</span>
-的值.</strong></p>
+<p><strong>2. (15) 求 $\cos<sup>5\frac{\pi}{9}+\cos</sup>5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}$ 的值.</strong></p>
 <p>不给提示了，直接开干。</p>
-<p>设 <span
-class="math inline">\(x=\cos\frac{\pi}{9},y=\cos\frac{5\pi}{9},z=\cos\frac{7\pi}{9}\)</span>，</p>
-<p>那么原式求的就是 <span
-class="math inline">\(x^5+y^5+z^5\)</span>.</p>
+<p>设 $x=\cos\frac{\pi}{9},y=\cos\frac{5\pi}{9},z=\cos\frac{7\pi}{9}$，</p>
+<p>那么原式求的就是 $x<sup>5+y</sup>5+z^5$.</p>
 <p>到这里是不是有点感觉了？我们要做的就是通过低次的轮换式，逐步推到高次。</p>
-<p>首先，最基本的 <span class="math display">\[
-\begin{aligned}
-&amp;x+y+z\\
-&amp;=\cos\frac{\pi}{9}+\cos\frac{5\pi}{9}+\cos\frac{7\pi}{9}\\
-&amp;=2\cos\frac{\pi}{3}\cos\frac{2\pi}{9}+\cos\frac{7\pi}{9}\\
-&amp;=0
-\end{aligned}
-\]</span> 竟然是 <span class="math inline">\(0\)</span>，舒服！</p>
-<p>然后有 <span class="math display">\[
-\begin{aligned}
-&amp;xyz\\
-&amp;=\cos\frac{\pi}{9}\cos\frac{5\pi}{9}\cos\frac{7\pi}{9}\\
-&amp;=\frac{1}{\sin\frac{\pi}{9}}(\sin\frac{\pi}{9}\cos\frac{\pi}{9}\cos\frac{2\pi}{9}\cos\frac{4\pi}{9})\\
-&amp;=\cdots\\
-&amp;=\frac{1}{8}
-\end{aligned}
-\]</span> 这个式子在上面的”拆角凑角“中算过。</p>
-<p>再算一个式子，我们就可以确定 <span
-class="math inline">\(x,y,z\)</span> 的值，后面进行式子的配凑了。</p>
+<p>首先，最基本的<br>
+$$<br>
+\begin{aligned}<br>
+&amp;x+y+z\<br>
+&amp;=\cos\frac{\pi}{9}+\cos\frac{5\pi}{9}+\cos\frac{7\pi}{9}\<br>
+&amp;=2\cos\frac{\pi}{3}\cos\frac{2\pi}{9}+\cos\frac{7\pi}{9}\<br>
+&amp;=0<br>
+\end{aligned}<br>
+$$<br>
+竟然是 $0$，舒服！</p>
+<p>然后有<br>
+$$<br>
+\begin{aligned}<br>
+&amp;xyz\<br>
+&amp;=\cos\frac{\pi}{9}\cos\frac{5\pi}{9}\cos\frac{7\pi}{9}\<br>
+&amp;=\frac{1}{\sin\frac{\pi}{9}}(\sin\frac{\pi}{9}\cos\frac{\pi}{9}\cos\frac{2\pi}{9}\cos\frac{4\pi}{9})\<br>
+&amp;=\cdots\<br>
+&amp;=\frac{1}{8}<br>
+\end{aligned}<br>
+$$<br>
+这个式子在上面的”拆角凑角“中算过。</p>
+<p>再算一个式子，我们就可以确定 $x,y,z$ 的值，后面进行式子的配凑了。</p>
 <p>（应该有一个基本的认识：我们有三个未知数，所以我们应当需要三个式子来进行后续配凑。）</p>
-<p>除了 <span class="math inline">\(x+y+z,xyz\)</span>
-之外，下一个比较好求的应该是 <span
-class="math inline">\(xy+yz+xz\)</span> 或 <span
-class="math inline">\(x^2+y^2+z^2\)</span> 这样的式子。</p>
-那我们就选 <span class="math inline">\(x^2+y^2+z^2\)</span> 吧。 $$
-<span class="math display">\[\begin{aligned}
-
-&amp;x^2+y^2+z^2\\
-&amp;=\cos^2\frac{\pi}{9}+\cos^2\frac{5\pi}{9}+\cos^2\frac{7\pi}{9}\\
-&amp;=\frac{1+\cos\frac{2\pi}{9}}{2}+\frac{1+\cos\frac{4\pi}{9}}{2}+\frac{1+\cos\frac{8\pi}{9}}{2}\\
-&amp;=\frac{3}{2}+\frac{1}{2}(\cos\frac{2\pi}{9}+\cos\frac{4\pi}{9}+\cos\frac{8\pi}{9})\\
-&amp;=\frac{3}{2}+\cdots\\
-&amp;=\frac{3}{2}
-\end{aligned}\]</span>
-<p>$$ 这个式子在上面也算过。</p>
-<p>整理一下，我们得到了三个基础式子： <span class="math display">\[
-x+y+z=0\\
-xyz=\frac{1}{8}\\
-x^2+y^2+z^2=\frac{3}{2}
-\]</span> 一种思路是把 <span class="math inline">\(x,y,z\)</span>
-解出来，然后直接算五次方；这样当然可行，但是带根号五次方的展开会非常丧心病狂。</p>
+<p>除了 $x+y+z,xyz$ 之外，下一个比较好求的应该是 $xy+yz+xz$ 或 $x<sup>2+y</sup>2+z^2$ 这样的式子。</p>
+<p>那我们就选 $x<sup>2+y</sup>2+z^2$ 吧。<br>
+$$<br>
+\begin{aligned}</p>
+<p>&amp;x<sup>2+y</sup>2+z^2\<br>
+&amp;=\cos<sup>2\frac{\pi}{9}+\cos</sup>2\frac{5\pi}{9}+\cos^2\frac{7\pi}{9}\<br>
+&amp;=\frac{1+\cos\frac{2\pi}{9}}{2}+\frac{1+\cos\frac{4\pi}{9}}{2}+\frac{1+\cos\frac{8\pi}{9}}{2}\<br>
+&amp;=\frac{3}{2}+\frac{1}{2}(\cos\frac{2\pi}{9}+\cos\frac{4\pi}{9}+\cos\frac{8\pi}{9})\<br>
+&amp;=\frac{3}{2}+\cdots\<br>
+&amp;=\frac{3}{2}<br>
+\end{aligned}<br>
+$$<br>
+这个式子在上面也算过。</p>
+<p>整理一下，我们得到了三个基础式子：<br>
+$$<br>
+x+y+z=0\<br>
+xyz=\frac{1}{8}\<br>
+x<sup>2+y</sup>2+z^2=\frac{3}{2}<br>
+$$<br>
+一种思路是把 $x,y,z$ 解出来，然后直接算五次方；这样当然可行，但是带根号五次方的展开会非常丧心病狂。</p>
 <p>另一种思路就是用这三个已知式子往高次方“爬”。这里我们采取这种思路。</p>
-<p>我们可以先算上面提到的 <span class="math inline">\(xy+yz+xz\)</span>.
-<span class="math display">\[
-xy+yz+xz=(x+y+z)^2-\frac{1}{2}(x^2+y^2+z^2)=-\frac{3}{4}
-\]</span> 用 <span class="math inline">\((xy+yz+xz)\)</span> 去乘 <span
-class="math inline">\((x+y+z)\)</span>，这样可以得到含有 <span
-class="math inline">\(x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\)</span>
-的项。这可以为后面算 <span
-class="math inline">\((x+y+z)(x^2+y^2+z^2)\)</span> 得到含 <span
-class="math inline">\(x^3+y^3+z^3\)</span> 的项提供便利。 <span
-class="math display">\[
-\begin{aligned}
-&amp;(xy+yz+xz)(x+y+z)\\
-&amp;=3xyz+x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\\
-&amp;=0\\
-将\space xyz=\frac{1}{8}\space代入,&amp;\Rightarrow
-x^2y+x^2z+y^2x+y^2z+z^2x+z^2y=-\frac{3}{8}
-\end{aligned}
-\]</span> 再来算 <span class="math inline">\(x^3+y^3+z^3\)</span>, <span
-class="math display">\[
-\begin{aligned}
-&amp;(x+y+z)(x^2+y^2+z^2)\\
-&amp;=0\\
-&amp;=x^3+y^3+z^3+x^2y+x^2z+y^2x+y^2z+z^2x+z^2y\\
-&amp;=x^3+y^3+z^3-\frac{3}{8}\\
-&amp;\Rightarrow x^3+y^3+z^3=\frac{3}{8}
-\end{aligned}
-\]</span> 下面要算 <span
-class="math inline">\(x^4+y^4+z^4\)</span>.现在有两种方法，一种是用
-<span class="math inline">\((x+y+z)(x^3+y^3+z^3)\)</span> 得到，另一种是
-<span class="math inline">\((x^2+y^2+z^2)^2\)</span>.</p>
-<p>个人认为后一种会简洁一点，所以我们选用 <span
-class="math inline">\((x^2+y^2+z^2)^2\)</span>.</p>
-<p>我们仍然要算一个前置量：<span
-class="math inline">\(2(x^2y^2+y^2z^2+z^2x^2)\)</span></p>
-这个倒不是很难算，一个比较自然的想法是用 <span
-class="math inline">\((xy+yz+xz)\)</span>
-自己平方上去。实际上这确实可行。 $$
-<span class="math display">\[\begin{aligned}
-
-&amp;(xy+yz+xz)^2\\
-&amp;=\frac{9}{16}\\
-&amp;=x^2y^2+y^2z^2+x^2z^2+2(xy^2z+x^2yz+xyz^2)\\
-&amp;=x^2y^2+y^2z^2+x^2z^2+2(x+y+z)xyz\\
-&amp;=x^2y^2+y^2z^2+z^2x^2+0\\
-&amp;\Rightarrow x^2y^2+y^2z^2+x^2z^2=\frac{9}{16}
-\end{aligned}\]</span>
-<span class="math display">\[
-所以
-\]</span>
-<span class="math display">\[\begin{aligned}
-&amp;(x^2+y^2+z^2)^2\\
-&amp;=\frac{9}{4}\\
-&amp;=x^4+y^4+z^4+2(x^2y^2+y^2z^2+x^2z^2)\\
-&amp;=x^4+y^4+z^4+\frac{9}{8}\\
-&amp;\Rightarrow x^4+y^4+z^4=\frac{9}{8}
-\end{aligned}\]</span>
-<p>$$ 为了得到 <span
-class="math inline">\(x^5+y^5+z^5\)</span>，我们可以考虑 <span
-class="math inline">\((x^2+y^2+z^2)(x^3+y^3+z^3)\)</span>.</p>
-<p>Q: 那刚才为什么要算 <span
-class="math inline">\(x^4+y^4+z^4\)</span>？</p>
-<p>A: 就当作副产品吧，毕竟 <span
-class="math inline">\(x^2y^2+y^2z^2+z^2x^2\)</span> 是有用的（</p>
-<p>在这之前，我们仍然要算一个前置量：<span
-class="math inline">\(x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)\)</span>.</p>
-这个就不容易想到怎么算了。这里直接给方法：用 <span
-class="math inline">\((x^2y^2+y^2z^2+x^2z^2)\)</span> 去乘 <span
-class="math inline">\((x+y+z)\)</span>. <span class="math display">\[
-\begin{aligned}
-&amp;(x^2y^2+y^2z^2+x^2z^2)(x+y+z)\\
-&amp;=0\\
-&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+x^2y^2z+xy^2z^2+x^2yz^2\\
-&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+xyz(xy+yz+xz)（多漂亮的式子）\\
-&amp;=x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)+\frac{1}{8}\cdot(-\frac{3}{4})\\
-&amp;\Rightarrow x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)=\frac{3}{32}
-\end{aligned}
-\]</span> 最后， $$
-<span class="math display">\[\begin{aligned}
-
-&amp;(x^2+y^2+z^2)(x^3+y^3+z^3)\\
-&amp;=\frac{3}{2}\cdot\frac{3}{8}\\
-&amp;=\frac{9}{16}\\
-&amp;=x^5+y^5+z^5+x^2(y^3+z^3)+y^2(x^3+y^3)+z^2(x^3+y^3)\\
-&amp;=x^5+y^5+z^5+\frac{3}{32}\\
-&amp;\Rightarrow x^5+y^5+z^5=\frac{15}{32}
-\end{aligned}\]</span>
-<p>$$ 所以，<span
-class="math inline">\(\cos^5\frac{\pi}{9}+\cos^5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}=\frac{15}{32}\)</span>.</p>
-<h5 id="恒等式证明">3.3.4 恒等式证明</h5>
+<p>我们可以先算上面提到的 $xy+yz+xz$.<br>
+$$<br>
+xy+yz+xz=(x+y+z)<sup>2-\frac{1}{2}(x</sup>2+y<sup>2+z</sup>2)=-\frac{3}{4}<br>
+$$<br>
+用 $(xy+yz+xz)$ 去乘 $(x+y+z)$，这样可以得到含有 $x<sup>2y+x</sup>2z+y<sup>2x+y</sup>2z+z<sup>2x+z</sup>2y$ 的项。这可以为后面算 $(x+y+z)(x<sup>2+y</sup>2+z^2)$ 得到含 $x<sup>3+y</sup>3+z^3$ 的项提供便利。<br>
+$$<br>
+\begin{aligned}<br>
+&amp;(xy+yz+xz)(x+y+z)\<br>
+&amp;=3xyz+x<sup>2y+x</sup>2z+y<sup>2x+y</sup>2z+z<sup>2x+z</sup>2y\<br>
+&amp;=0\<br>
+将\space xyz=\frac{1}{8}\space代入,&amp;\Rightarrow x<sup>2y+x</sup>2z+y<sup>2x+y</sup>2z+z<sup>2x+z</sup>2y=-\frac{3}{8}<br>
+\end{aligned}<br>
+$$<br>
+再来算 $x<sup>3+y</sup>3+z^3$,<br>
+$$<br>
+\begin{aligned}<br>
+&amp;(x+y+z)(x<sup>2+y</sup>2+z^2)\<br>
+&amp;=0\<br>
+&amp;=x<sup>3+y</sup>3+z<sup>3+x</sup>2y+x<sup>2z+y</sup>2x+y<sup>2z+z</sup>2x+z^2y\<br>
+&amp;=x<sup>3+y</sup>3+z^3-\frac{3}{8}\<br>
+&amp;\Rightarrow x<sup>3+y</sup>3+z^3=\frac{3}{8}<br>
+\end{aligned}<br>
+$$<br>
+下面要算 $x<sup>4+y</sup>4+z^4$.现在有两种方法，一种是用 $(x+y+z)(x<sup>3+y</sup>3+z^3)$ 得到，另一种是 $(x<sup>2+y</sup>2+z<sup>2)</sup>2$.</p>
+<p>个人认为后一种会简洁一点，所以我们选用 $(x<sup>2+y</sup>2+z<sup>2)</sup>2$.</p>
+<p>我们仍然要算一个前置量：$2(x<sup>2y</sup>2+y<sup>2z</sup>2+z<sup>2x</sup>2)$</p>
+<p>这个倒不是很难算，一个比较自然的想法是用 $(xy+yz+xz)$ 自己平方上去。实际上这确实可行。<br>
+$$<br>
+\begin{aligned}</p>
+<p>&amp;(xy+yz+xz)^2\<br>
+&amp;=\frac{9}{16}\<br>
+&amp;=x<sup>2y</sup>2+y<sup>2z</sup>2+x<sup>2z</sup>2+2(xy<sup>2z+x</sup>2yz+xyz^2)\<br>
+&amp;=x<sup>2y</sup>2+y<sup>2z</sup>2+x<sup>2z</sup>2+2(x+y+z)xyz\<br>
+&amp;=x<sup>2y</sup>2+y<sup>2z</sup>2+z<sup>2x</sup>2+0\<br>
+&amp;\Rightarrow x<sup>2y</sup>2+y<sup>2z</sup>2+x<sup>2z</sup>2=\frac{9}{16}<br>
+\end{aligned}<br>
+$$<br>
+所以<br>
+$$<br>
+\begin{aligned}<br>
+&amp;(x<sup>2+y</sup>2+z<sup>2)</sup>2\<br>
+&amp;=\frac{9}{4}\<br>
+&amp;=x<sup>4+y</sup>4+z<sup>4+2(x</sup>2y<sup>2+y</sup>2z<sup>2+x</sup>2z^2)\<br>
+&amp;=x<sup>4+y</sup>4+z^4+\frac{9}{8}\<br>
+&amp;\Rightarrow x<sup>4+y</sup>4+z^4=\frac{9}{8}<br>
+\end{aligned}<br>
+$$<br>
+为了得到 $x<sup>5+y</sup>5+z^5$，我们可以考虑 $(x<sup>2+y</sup>2+z<sup>2)(x</sup>3+y<sup>3+z</sup>3)$.</p>
+<p>Q: 那刚才为什么要算 $x<sup>4+y</sup>4+z^4$？</p>
+<p>A: 就当作副产品吧，毕竟 $x<sup>2y</sup>2+y<sup>2z</sup>2+z<sup>2x</sup>2$ 是有用的（</p>
+<p>在这之前，我们仍然要算一个前置量：$x<sup>2(y</sup>3+z<sup>3)+y</sup>2(x<sup>3+y</sup>3)+z<sup>2(x</sup>3+y^3)$.</p>
+<p>这个就不容易想到怎么算了。这里直接给方法：用 $(x<sup>2y</sup>2+y<sup>2z</sup>2+x<sup>2z</sup>2)$ 去乘 $(x+y+z)$.<br>
+$$<br>
+\begin{aligned}<br>
+&amp;(x<sup>2y</sup>2+y<sup>2z</sup>2+x<sup>2z</sup>2)(x+y+z)\<br>
+&amp;=0\<br>
+&amp;=x<sup>2(y</sup>3+z<sup>3)+y</sup>2(x<sup>3+y</sup>3)+z<sup>2(x</sup>3+y<sup>3)+x</sup>2y<sup>2z+xy</sup>2z<sup>2+x</sup>2yz^2\<br>
+&amp;=x<sup>2(y</sup>3+z<sup>3)+y</sup>2(x<sup>3+y</sup>3)+z<sup>2(x</sup>3+y^3)+xyz(xy+yz+xz)（多漂亮的式子）\<br>
+&amp;=x<sup>2(y</sup>3+z<sup>3)+y</sup>2(x<sup>3+y</sup>3)+z<sup>2(x</sup>3+y^3)+\frac{1}{8}\cdot(-\frac{3}{4})\<br>
+&amp;\Rightarrow x<sup>2(y</sup>3+z<sup>3)+y</sup>2(x<sup>3+y</sup>3)+z<sup>2(x</sup>3+y^3)=\frac{3}{32}<br>
+\end{aligned}<br>
+$$<br>
+最后，<br>
+$$<br>
+\begin{aligned}</p>
+<p>&amp;(x<sup>2+y</sup>2+z<sup>2)(x</sup>3+y<sup>3+z</sup>3)\<br>
+&amp;=\frac{3}{2}\cdot\frac{3}{8}\<br>
+&amp;=\frac{9}{16}\<br>
+&amp;=x<sup>5+y</sup>5+z<sup>5+x</sup>2(y<sup>3+z</sup>3)+y<sup>2(x</sup>3+y<sup>3)+z</sup>2(x<sup>3+y</sup>3)\<br>
+&amp;=x<sup>5+y</sup>5+z^5+\frac{3}{32}\<br>
+&amp;\Rightarrow x<sup>5+y</sup>5+z^5=\frac{15}{32}<br>
+\end{aligned}<br>
+$$<br>
+所以，$\cos<sup>5\frac{\pi}{9}+\cos</sup>5\frac{5\pi}{9}+\cos^5\frac{7\pi}{9}=\frac{15}{32}$.</p>
+<h5 id="3-3-4-恒等式证明">3.3.4 恒等式证明</h5>
 <p>恒等式的处理方法有很多种，没有固定的方法，所以直接靠例题来讲解吧。</p>
-<p><strong>1.(10) 求证：<span
-class="math inline">\(\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}=\frac{1}{2}\)</span>，其中
-<span class="math inline">\(n\in \mathbb{N}^+\)</span></strong>.</p>
-<p>令 <span
-class="math inline">\(S=\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}\)</span>，那么
-<span class="math display">\[
-\begin{aligned}
-&amp;2\sin\frac{\pi}{2n+1}\cdot S\\
-&amp;=\sin\frac{2\pi}{2n+1}+(\sin\frac{4\pi}{2n+1}-\sin\frac{2\pi}{2n+1})+(\sin\frac{6\pi}{2n+1}-\sin\frac{4\pi}{2n+1})+\cdots+(\sin\frac{2n\pi}{2n+1}-\sin\frac{(2n-2)\pi}{2n+1})\\
-&amp;=\sin\frac{2n\pi}{2n+1}\\
-\end{aligned}
-\]</span> 也就是说 <span class="math display">\[
-2S=S\\
-\Rightarrow S=\frac{1}{2}
-\]</span> <strong>2. 证明下列恒等式：</strong></p>
-<p>​ <strong>(10) (1) <span
-class="math inline">\(\tan\frac{3x}{2}\tan\frac{x}{2}=\frac{2\sin
-x}{\cos x+\cos 2x}\)</span></strong>;</p>
-<p>​ <strong>(10) (2) <span
-class="math inline">\(\frac{\sin^2A-\sin^2B}{\sin A\cos A-\sin B\cos
-B}=\tan(A+B)\)</span> </strong>.</p>
-<ol type="1">
-<li></li>
-</ol>
+<p><strong>1.(10) 求证：$\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}=\frac{1}{2}$，其中 $n\in \mathbb{N}^+$</strong>.</p>
+<p>令 $S=\cos\frac{\pi}{2n+1}+\cos\frac{3\pi}{2n+1}+\cdots+\frac{(2n-1)\pi}{2n+1}$，那么<br>
+$$<br>
+\begin{aligned}<br>
+&amp;2\sin\frac{\pi}{2n+1}\cdot S\<br>
+&amp;=\sin\frac{2\pi}{2n+1}+(\sin\frac{4\pi}{2n+1}-\sin\frac{2\pi}{2n+1})+(\sin\frac{6\pi}{2n+1}-\sin\frac{4\pi}{2n+1})+\cdots+(\sin\frac{2n\pi}{2n+1}-\sin\frac{(2n-2)\pi}{2n+1})\<br>
+&amp;=\sin\frac{2n\pi}{2n+1}\<br>
+\end{aligned}<br>
+$$<br>
+也就是说<br>
+$$<br>
+2S=S\<br>
+\Rightarrow S=\frac{1}{2}<br>
+$$<br>
+<strong>2. 证明下列恒等式：</strong></p>
+<p>​	<strong>(10) (1) $\tan\frac{3x}{2}\tan\frac{x}{2}=\frac{2\sin x}{\cos x+\cos 2x}$</strong>;</p>
+<p>​	**(10) (2) $\frac{\sin<sup>2A-\sin</sup>2B}{\sin A\cos A-\sin B\cos B}=\tan(A+B)$ **.</p>
+<p>(1)</p>
 <p>回顾“万能公式”：</p>
-<p><span class="math display">\[
-\sin x
-=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}}\\
-\cos x
-=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}}\\
-\tan x=\frac{2\tan\frac{x}{2}}{1-\tan^2\frac{x}{2}}
-\]</span></p>
-<p>令 <span class="math inline">\(\tan\frac{x}{2}=t\)</span>,</p>
-<p>将 <span class="math inline">\(\tan\frac{3x}{2}\)</span> 写成 <span
-class="math inline">\(\tan(x+\frac{x}{2})\)</span>:</p>
-<p><span class="math display">\[
-\begin{aligned}
-&amp;\tan\frac{3x}{2}\\
-&amp;=\tan(x+\frac{x}{2})\\
-&amp;=\frac{\tan x+t}{1-\tan x\cdot t}\\
-&amp;=\frac{\frac{2t}{1-t^2}+t}{1-\frac{2t}{1-t^2}t}\\
-&amp;=\frac{3t-t^3}{1-3t^2}
-\end{aligned}
-\]</span> 那么，<span
-class="math inline">\(\tan\frac{3x}{2}-\tan\frac{x}{2}\)</span> <span
-class="math display">\[
-\begin{aligned}
-&amp;=\frac{3t-t^3}{1-3t^2}- t
-=\frac{2t+2t^3}{1-3t^2}
-\end{aligned}
-\]</span> 另一个比较麻烦的是 <span class="math inline">\(\cos
-2x\)</span>, <span class="math display">\[
-\begin{aligned}
-&amp;\cos 2x\\
-&amp;=2\cos^2 x-1\\
-&amp;=2(\frac{1-t^2}{1+t^2})^2-1
-\end{aligned}
-\]</span></p>
-<p>右边 <span class="math display">\[
-\begin{aligned}
-&amp;=\frac{2\frac{2t}{1+t^2}}{\frac{1-t^2}{1+t^2}+2(\frac{1-t^2}{1+t^2})^2-1}\\
-&amp;=\frac{4t(1+t^2)}{1-t^4+2(t^4-2t^2+1)-(t^4-2t^2+1)}\\
-&amp;=\frac{2t+2t^3}{1-3t^2}\\
-\end{aligned}
-\]</span> 所以左边=右边</p>
-<ol start="2" type="1">
-<li></li>
-</ol>
+<p>$$<br>
+\sin x<br>
+=\frac{2\tan \frac{x}{2}}{1+\tan^2\frac{x}{2}}\<br>
+\cos x<br>
+=\frac{1-\tan^2 \frac{x}{2}}{1+\tan^2\frac{x}{2}}\<br>
+\tan x=\frac{2\tan\frac{x}{2}}{1-\tan^2\frac{x}{2}}<br>
+$$</p>
+<p>令 $\tan\frac{x}{2}=t$,</p>
+<p>将 $\tan\frac{3x}{2}$ 写成 $\tan(x+\frac{x}{2})$:</p>
+<p>$$<br>
+\begin{aligned}<br>
+&amp;\tan\frac{3x}{2}\<br>
+&amp;=\tan(x+\frac{x}{2})\<br>
+&amp;=\frac{\tan x+t}{1-\tan x\cdot t}\<br>
+&amp;=\frac{\frac{2t}{1-t<sup>2}+t}{1-\frac{2t}{1-t</sup>2}t}\<br>
+&amp;=\frac{3t-t<sup>3}{1-3t</sup>2}<br>
+\end{aligned}<br>
+$$<br>
+那么，$\tan\frac{3x}{2}-\tan\frac{x}{2}$<br>
+$$<br>
+\begin{aligned}<br>
+&amp;=\frac{3t-t<sup>3}{1-3t</sup>2}- t<br>
+=\frac{2t+2t<sup>3}{1-3t</sup>2}<br>
+\end{aligned}<br>
+$$<br>
+另一个比较麻烦的是 $\cos 2x$,<br>
+$$<br>
+\begin{aligned}<br>
+&amp;\cos 2x\<br>
+&amp;=2\cos^2 x-1\<br>
+&amp;=2(\frac{1-t<sup>2}{1+t</sup>2})^2-1<br>
+\end{aligned}<br>
+$$</p>
+<p>右边<br>
+$$<br>
+\begin{aligned}<br>
+&amp;=\frac{2\frac{2t}{1+t<sup>2}}{\frac{1-t</sup>2}{1+t<sup>2}+2(\frac{1-t</sup>2}{1+t<sup>2})</sup>2-1}\<br>
+&amp;=\frac{4t(1+t<sup>2)}{1-t</sup>4+2(t<sup>4-2t</sup>2+1)-(t<sup>4-2t</sup>2+1)}\<br>
+&amp;=\frac{2t+2t<sup>3}{1-3t</sup>2}\<br>
+\end{aligned}<br>
+$$<br>
+所以左边=右边</p>
+<p>(2)</p>
 <p>回顾上面讲过的一个让自己推的东西：</p>
-<p><span
-class="math display">\[\sin^2x-\sin^2y=\sin(x+y)\sin(x-y)\]</span></p>
+<p>$$\sin<sup>2x-\sin</sup>2y=\sin(x+y)\sin(x-y)$$</p>
 <p>用这个公式这题就秒杀了。</p>
-<p>左边 <span class="math display">\[
-\begin{aligned}
-&amp;=\frac{\sin(A+B)\sin(A-B)}{\frac{1}{2}\sin2A-\frac{1}{2}\sin2B}\\
-&amp;=\frac{\sin(A+B)\sin(A-B)}{\cos(A+B)\sin(A-B)}\\
-&amp;=\tan(A+B)
-\end{aligned}
-\]</span></p>
+<p>左边<br>
+$$<br>
+\begin{aligned}<br>
+&amp;=\frac{\sin(A+B)\sin(A-B)}{\frac{1}{2}\sin2A-\frac{1}{2}\sin2B}\<br>
+&amp;=\frac{\sin(A+B)\sin(A-B)}{\cos(A+B)\sin(A-B)}\<br>
+&amp;=\tan(A+B)<br>
+\end{aligned}<br>
+$$</p>
 <p><strong>3.证明下列恒等式：</strong></p>
-<p>​ <strong>(12) (1) <span
-class="math inline">\(\frac{1}{\sin2x}+\frac{1}{\sin4x}+\frac{1}{\sin8x}+\cdots+\frac{1}{\sin2^nx}=\cot
-x-\cot2^nx\)</span></strong>;</p>
-<p>​ <strong>(12) (2) <span
-class="math inline">\(\frac{1}{2}\tan\frac{x}{2}+\frac{1}{2^2}\tan\frac{x}{2^2}+\cdots+\frac{1}{2^n}\tan\frac{x}{2^n}=\frac{1}{2^n}\cot\frac{x}{2^n}-\cot
-x\)</span></strong>;</p>
+<p>​	<strong>(12) (1) $\frac{1}{\sin2x}+\frac{1}{\sin4x}+\frac{1}{\sin8x}+\cdots+\frac{1}{\sin2^nx}=\cot x-\cot2^nx$</strong>;</p>
+<p>​	<strong>(12) (2) $\frac{1}{2}\tan\frac{x}{2}+\frac{1}{2<sup>2}\tan\frac{x}{2</sup>2}+\cdots+\frac{1}{2<sup>n}\tan\frac{x}{2</sup>n}=\frac{1}{2<sup>n}\cot\frac{x}{2</sup>n}-\cot x$</strong>;</p>
 <p>本题答案照搬小蓝书，因为我太菜了。</p>
-<ol type="1">
-<li></li>
-</ol>
-<p>记 <span class="math inline">\(a_n=\cot x-\cot 2^n x\)</span></p>
-<p>则 <span class="math display">\[
-\begin{aligned}
-&amp;a_1\\
-&amp;=\cot x-\cot 2x\\
-&amp;=\frac{\cos x}{\sin x}-\frac{\cos 2x}{\sin 2x}\\
-&amp;=\frac{2\cos^2x-\cos 2x}{2\sin x\cos x}\\
-&amp;=\frac{1}{\sin 2x}
-\end{aligned}
-\]</span> 并且 <span class="math display">\[
-\begin{aligned}
-&amp;a_{k+1}-a_{k}\\
-&amp;=(\cot x-\cot 2^{k+1}x)-(\cot x-\cot 2^k x)\\
-&amp;=\cot2^kx-\cot2^{k+1}x\\
-&amp;=\frac{\cos2^kx}{\sin2^kx}-\frac{\cos2^{k+1}x}{\sin2^{k+1}x}\\
-&amp;=\frac{2(\cos2^kx)^2-\cos 2^{k+1}x}{2\sin2^kx\cos2^kx}\\
-&amp;=\frac{1}{\sin2^{k+1}x}
-\end{aligned}
-\]</span> 所以，左边 <span class="math display">\[
-\begin{aligned}
-&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\\
-&amp;=\cot x-\cot2^nx\\
-&amp;=右边
-\end{aligned}
-\]</span> (2)</p>
-<p>记 <span
-class="math inline">\(a_n=\frac{1}{2^n}\cot\frac{x}{2^n}-\cot
-x\)</span>.</p>
-<p>则 <span class="math display">\[
-\begin{aligned}
-&amp;a_1\\
-&amp;=\frac{1}{2}\cot\frac{x}{2}-\cot x\\
-&amp;=\frac{1}{2\tan\frac{x}{2}}-\frac{1-\tan^2\frac{x}{2}}{2\tan\frac{x}{2}}=\frac{1}{2}\tan\frac{x}{2}\\
-\end{aligned}
-\]</span> 并且 <span class="math display">\[
-\begin{aligned}
-&amp;a_{k+1}-a_k\\
-&amp;=(\frac{1}{2^{k+1}}\cot\frac{x}{2^{k+1}}-\cot
-x)-(\frac{1}{2^k}\cot\frac{x}{2^k}-\cot x)\\
-&amp;=\frac{1}{2^{k+1}}(\cot\frac{x}{2^{k+1}}-2\cot\frac{x}{2^k})\\
-&amp;=\frac{1}{2^{k+1}}\cdot(\frac{1}{\tan\frac{x}{2^{k+1}}}-2\times\frac{1-\tan^2\frac{x}{2^{k+1}}}{2\cdot\tan\frac{x}{2^{k+1}}})\\
-&amp;=\frac{1}{2^{k+1}}\cdot\tan\frac{x}{2^{k+1}}
-\end{aligned}
-\]</span> 所以，左边 <span class="math display">\[
-\begin{aligned}
-&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\\
-&amp;=a_n\\
-&amp;=右边
-\end{aligned}
-\]</span></p>
-<hr />
-<h4 id="三角形中的三角函数缺">3.4 三角形中的三角函数（缺）</h4>
-<h5 id="三角形中三角函数的拓展公式及推导">3.4.1
-三角形中三角函数的拓展公式及推导</h5>
-<p>在三角形中，三个角 <span class="math inline">\(A,B,C\)</span>
-有一个很重要的限制：<span class="math inline">\(A+B+C=\pi\)</span>.</p>
+<p>(1)</p>
+<p>记 $a_n=\cot x-\cot 2^n x$</p>
+<p>则<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_1\<br>
+&amp;=\cot x-\cot 2x\<br>
+&amp;=\frac{\cos x}{\sin x}-\frac{\cos 2x}{\sin 2x}\<br>
+&amp;=\frac{2\cos^2x-\cos 2x}{2\sin x\cos x}\<br>
+&amp;=\frac{1}{\sin 2x}<br>
+\end{aligned}<br>
+$$<br>
+并且<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_{k+1}-a_{k}\<br>
+&amp;=(\cot x-\cot 2^{k+1}x)-(\cot x-\cot 2^k x)\<br>
+&amp;=\cot2<sup>kx-\cot2</sup>{k+1}x\<br>
+&amp;=\frac{\cos2<sup>kx}{\sin2</sup>kx}-\frac{\cos2<sup>{k+1}x}{\sin2</sup>{k+1}x}\<br>
+&amp;=\frac{2(\cos2<sup>kx)</sup>2-\cos 2<sup>{k+1}x}{2\sin2</sup>kx\cos2^kx}\<br>
+&amp;=\frac{1}{\sin2^{k+1}x}<br>
+\end{aligned}<br>
+$$<br>
+所以，左边<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\<br>
+&amp;=\cot x-\cot2^nx\<br>
+&amp;=右边<br>
+\end{aligned}<br>
+$$<br>
+(2)</p>
+<p>记 $a_n=\frac{1}{2<sup>n}\cot\frac{x}{2</sup>n}-\cot x$.</p>
+<p>则<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_1\<br>
+&amp;=\frac{1}{2}\cot\frac{x}{2}-\cot x\<br>
+&amp;=\frac{1}{2\tan\frac{x}{2}}-\frac{1-\tan^2\frac{x}{2}}{2\tan\frac{x}{2}}=\frac{1}{2}\tan\frac{x}{2}\<br>
+\end{aligned}<br>
+$$<br>
+并且<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_{k+1}-a_k\<br>
+&amp;=(\frac{1}{2<sup>{k+1}}\cot\frac{x}{2</sup>{k+1}}-\cot x)-(\frac{1}{2<sup>k}\cot\frac{x}{2</sup>k}-\cot x)\<br>
+&amp;=\frac{1}{2<sup>{k+1}}(\cot\frac{x}{2</sup>{k+1}}-2\cot\frac{x}{2^k})\<br>
+&amp;=\frac{1}{2<sup>{k+1}}\cdot(\frac{1}{\tan\frac{x}{2</sup>{k+1}}}-2\times\frac{1-\tan<sup>2\frac{x}{2</sup>{k+1}}}{2\cdot\tan\frac{x}{2^{k+1}}})\<br>
+&amp;=\frac{1}{2<sup>{k+1}}\cdot\tan\frac{x}{2</sup>{k+1}}<br>
+\end{aligned}<br>
+$$<br>
+所以，左边<br>
+$$<br>
+\begin{aligned}<br>
+&amp;a_1+(a_2-a_1)+(a_3-a_2)+\cdots+(a_n-a_{n-1})\<br>
+&amp;=a_n\<br>
+&amp;=右边<br>
+\end{aligned}<br>
+$$</p>
+<hr>
+<h4 id="3-4-三角形中的三角函数（缺）">3.4 三角形中的三角函数（缺）</h4>
+<h5 id="3-4-1-三角形中三角函数的拓展公式及推导">3.4.1 三角形中三角函数的拓展公式及推导</h5>
+<p>在三角形中，三个角 $A,B,C$ 有一个很重要的限制：$A+B+C=\pi$.</p>
 <p>这个限制带来了很多奇妙的恒等式，这里先列出来。</p>
-<p><span class="math display">\[
-\sin A+\sin B+\sin
-C=4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}\quad(1)\\
-\sin2A+\sin2B+\sin2C=4\sin A\sin B\sin C\quad(2)\\
-\cos A+\cos B+\cos
-C=1+4\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\quad(3)\\
-\cos2A+\cos2B+\cos2C=-1-4\cos A\cos B\cos C\quad(4)\\
-\sin^2A+\sin^2B+\sin^2C=2+2\cos A\cos B\cos C\quad(5)\\
-\cos^2A+\cos^2B+\cos^2C=1-2\cos A\cos B\cos C\quad(6)\\
-\tan A+\tan B+\tan C=\tan A\tan B \tan C\quad(7)\\
-\cot A\cot B+\cot B\cot C+\cot C\cot A=1\quad(8)\\
-\tan\frac{A}{2}\tan\frac{B}{2}+\tan\frac{B}{2}\tan\frac{C}{2}+\tan\frac{C}{2}\tan\frac{A}{2}=1\quad(9)
-\]</span></p>
-<p>这些恒等式的证明方法比较套路，这里选 (1) (2) (5) (9)
-这四个式子证明。</p>
-<h5 id="三角形中的三角函数">3.4.2 三角形中的三角函数</h5>
-<h5 id="三角换元">3.4.3 三角换元</h5>
-<h5 id="正弦定理与余弦定理">3.4.4 正弦定理与余弦定理</h5>
-<hr />
-<h4 id="反三角函数及三角方程缺">3.5 反三角函数及三角方程（缺）</h4>
-<h4 id="复数">3.6 复数</h4>
-<h5 id="复数的定义及四则运算">3.6.1 复数的定义及四则运算</h5>
-<p><strong>(??) 0.求方程 <span class="math inline">\(x^2+1=0\)</span>
-的根 </strong></p>
+<p>$$<br>
+\sin A+\sin B+\sin C=4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}\quad(1)\<br>
+\sin2A+\sin2B+\sin2C=4\sin A\sin B\sin C\quad(2)\<br>
+\cos A+\cos B+\cos C=1+4\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\quad(3)\<br>
+\cos2A+\cos2B+\cos2C=-1-4\cos A\cos B\cos C\quad(4)\<br>
+\sin<sup>2A+\sin</sup>2B+\sin^2C=2+2\cos A\cos B\cos C\quad(5)\<br>
+\cos<sup>2A+\cos</sup>2B+\cos^2C=1-2\cos A\cos B\cos C\quad(6)\<br>
+\tan A+\tan B+\tan C=\tan A\tan B \tan C\quad(7)\<br>
+\cot A\cot B+\cot B\cot C+\cot C\cot A=1\quad(8)\<br>
+\tan\frac{A}{2}\tan\frac{B}{2}+\tan\frac{B}{2}\tan\frac{C}{2}+\tan\frac{C}{2}\tan\frac{A}{2}=1\quad(9)<br>
+$$</p>
+<p>这些恒等式的证明方法比较套路，这里选 (1) (2) (5) (9) 这四个式子证明。</p>
+<h5 id="3-4-2-三角形中的三角函数">3.4.2 三角形中的三角函数</h5>
+<h5 id="3-4-3-三角换元">3.4.3 三角换元</h5>
+<h5 id="3-4-4-正弦定理与余弦定理">3.4.4 正弦定理与余弦定理</h5>
+<hr>
+<h4 id="3-5-反三角函数及三角方程（缺）">3.5 反三角函数及三角方程（缺）</h4>
+<h4 id="3-6-复数">3.6 复数</h4>
+<h5 id="3-6-1-复数的定义及四则运算">3.6.1 复数的定义及四则运算</h5>
+<p>**(??) 0.求方程 $x^2+1=0$ 的根 **</p>
 <blockquote>
-<p>因为 <span
-class="math inline">\(\Delta=-4&lt;0\)</span>，所以这个东西无解。</p>
+<p>因为 $\Delta=-4&lt;0$，所以这个东西无解。</p>
 </blockquote>
 <p>真的是这样吗？</p>
 <p>注意到二次方程的判别式是用来判断方程是否有实根的。</p>
-<p>为了求解根不在 <span class="math inline">\(\mathbb{R}\)</span>
-上的二次方程，我们需要对数系加以扩充。</p>
-<p>引入记号 <span class="math inline">\(i\)</span> 并称之为
-<strong>虚数单位</strong>，使它满足 <span
-class="math inline">\(i^2=-1\)</span>.</p>
-<p>如果一个量可以被写为 <span class="math display">\[
-z=a+bi,a,b\in \mathbb{R}
-\]</span> 那么 <span class="math inline">\(z\)</span>
-就被称作一个<strong>复数</strong>。称 <span
-class="math inline">\(a\)</span>
-为实数部分，简称<strong>实部</strong>，符号 <span
-class="math inline">\(Re(z)\)</span>；称 <span
-class="math inline">\(b\)</span>
-为虚数部分，简称<strong>虚部</strong>，符号 <span
-class="math inline">\(Im(z)\)</span>.</p>
+<p>为了求解根不在 $\mathbb{R}$ 上的二次方程，我们需要对数系加以扩充。</p>
+<p>引入记号 $i$ 并称之为 <strong>虚数单位</strong>，使它满足 $i^2=-1$.</p>
+<p>如果一个量可以被写为<br>
+$$<br>
+z=a+bi,a,b\in \mathbb{R}<br>
+$$<br>
+那么 $z$ 就被称作一个<strong>复数</strong>。称 $a$ 为实数部分，简称<strong>实部</strong>，符号 $Re(z)$；称 $b$ 为虚数部分，简称<strong>虚部</strong>，符号 $Im(z)$.</p>
 <p>部分约定：</p>
-<ul>
-<li>实数是特殊的复数；</li>
-<li>实部为 <span class="math inline">\(0\)</span>
-的复数为<strong>纯虚数</strong>；</li>
-<li>虚部不为 <span class="math inline">\(0\)</span>
-的复数为<strong>虚数</strong>；</li>
-<li>虚数与虚数，虚数与实数都不能比较大小；即：如果两个数能比较大小，那么这两个数一定是实数。</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>实数是特殊的复数；</p>
+</li>
+<li class="lvl-2">
+<p>实部为 $0$ 的复数为<strong>纯虚数</strong>；</p>
+</li>
+<li class="lvl-2">
+<p>虚部不为 $0$ 的复数为<strong>虚数</strong>；</p>
+</li>
+<li class="lvl-2">
+<p>虚数与虚数，虚数与实数都不能比较大小；即：如果两个数能比较大小，那么这两个数一定是实数。</p>
+</li>
 </ul>
 <p>Q：为什么虚数之间不能比较大小？</p>
-<p>A：你可以试着把 <span class="math inline">\(i\)</span> 和 <span
-class="math inline">\(0\)</span> 比较一下大小。显然 <span
-class="math inline">\(i\ne 0\)</span>；若 <span
-class="math inline">\(i&gt;0\)</span>，则两边乘上 <span
-class="math inline">\(i\)</span> 得到 <span
-class="math inline">\(-1&gt;0\)</span>，矛盾；若 <span
-class="math inline">\(i&lt;0\)</span>，则 平方得到 <span
-class="math inline">\(-1&gt;0\)</span>，依然矛盾。</p>
-<p>若有两个复数 <span
-class="math inline">\(z_1=a_1i+b_1,z_2=a_2i+b_2\)</span>，那么 “<span
-class="math inline">\(z_1=z_2\)</span>“ 的充要条件是 “<span
-class="math inline">\(a_1=a_2\)</span> 且 <span
-class="math inline">\(b_1=b_2\)</span>“.</p>
+<p>A：你可以试着把 $i$ 和 $0$ 比较一下大小。显然 $i\ne 0$；若 $i&gt;0$，则两边乘上 $i$ 得到 $-1&gt;0$，矛盾；若 $i&lt;0$，则 平方得到 $-1&gt;0$，依然矛盾。</p>
+<p>若有两个复数 $z_1=a_1i+b_1,z_2=a_2i+b_2$，那么 “$z_1=z_2$“ 的充要条件是 “$a_1=a_2$ 且 $b_1=b_2$“.</p>
 <p>我们还可以从几何方面来认识复数。</p>
-<p>记 <span class="math inline">\(Z(a,b)\)</span> ，那么复数 <span
-class="math inline">\(z=a+bi\)</span> 可以用点 <span
-class="math inline">\(Z(a,b)\)</span>
-表示。这个建立直角坐标系来表示复数的平面叫做<strong>复平面</strong>，<span
-class="math inline">\(x\)</span> 轴和 <span
-class="math inline">\(y\)</span>
-轴分别叫做<strong>实轴</strong>和<strong>虚轴</strong>。显然，实轴上的点都表示实数。</p>
+<p>记 $Z(a,b)$ ，那么复数 $z=a+bi$ 可以用点 $Z(a,b)$ 表示。这个建立直角坐标系来表示复数的平面叫做<strong>复平面</strong>，$x$ 轴和 $y$ 轴分别叫做<strong>实轴</strong>和<strong>虚轴</strong>。显然，实轴上的点都表示实数。</p>
 <blockquote>
-<p>判断：虚轴上的点都表示纯虚数。（ ）</p>
+<p>判断：虚轴上的点都表示纯虚数。（  ）</p>
 </blockquote>
 <p>这个说法是错的。应该是：除了原点外，虚轴上的点都表示纯虚数。</p>
 <p>下面介绍共轭复数。</p>
-<p>若已知复数 <span class="math inline">\(z=a+bi,a,b\in
-\mathbb{R}\)</span>，则称 <span
-class="math inline">\(\overline{z}=a+(-b)i\)</span> 是 <span
-class="math inline">\(z\)</span> 的<strong>共轭复数</strong>。</p>
-<p>显然， <span class="math inline">\(\overline{z}\)</span> 和 <span
-class="math inline">\(z\)</span> 在复平面上关于 <span
-class="math inline">\(x\)</span> 轴对称。</p>
+<p>若已知复数 $z=a+bi,a,b\in \mathbb{R}$，则称 $\overline{z}=a+(-b)i$ 是 $z$ 的<strong>共轭复数</strong>。</p>
+<p>显然， $\overline{z}$ 和 $z$ 在复平面上关于 $x$ 轴对称。</p>
 <p>共轭复数的运算性质列举如下：</p>
-<ul>
-<li><span class="math inline">\(\overline{z_1\pm
-z_2}=\overline{z_1}\pm\overline{z_2}\)</span>;</li>
-<li><span
-class="math inline">\(\overline{z_1z_2}=\overline{z_1}\cdot\overline{z_2}\)</span>;</li>
-<li><span
-class="math inline">\(\frac{\overline{z_1}}{\overline{z_2}}=\overline{\frac{z_1}{z_2}}\)</span>;</li>
-<li><span
-class="math inline">\(\overline{z^n}=(\overline{z})^n\)</span>;</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>$\overline{z_1\pm z_2}=\overline{z_1}\pm\overline{z_2}$;</p>
+</li>
+<li class="lvl-2">
+<p>$\overline{z_1z_2}=\overline{z_1}\cdot\overline{z_2}$;</p>
+</li>
+<li class="lvl-2">
+<p>$\frac{\overline{z_1}}{\overline{z_2}}=\overline{\frac{z_1}{z_2}}$;</p>
+</li>
+<li class="lvl-2">
+<p>$\overline{z<sup>n}=(\overline{z})</sup>n$;</p>
+</li>
 </ul>
-<p>还有一些显然的性质，比如 <span
-class="math inline">\(\overline{\overline{z}}=z\)</span>，这里就不列出来了（实际上是我懒，毕竟打
-<code>\overline&#123;&#125;</code> 真的挺麻烦的）。</p>
-<p>定义复数 <span class="math inline">\(z=a+bi,a,b\in
-\mathbb{R}\)</span> 的<strong>模长</strong> <span
-class="math inline">\(|z|=\sqrt{a^2+b^2}\)</span> ，其几何意义为坐标上点
-<span class="math inline">\(Z(a,b)\)</span> 到原点的距离。</p>
-<p>称复平面上有向线段 <span
-class="math inline">\(\overrightarrow{Oz}\)</span> 与实轴正方向的夹角
-<span class="math inline">\(\theta\)</span> 为 <span
-class="math inline">\(z\)</span> 的<strong>幅角</strong>；所有的 <span
-class="math inline">\(\theta\)</span> 中，在 <span
-class="math inline">\([0,2\pi)\)</span> 内的角 <span
-class="math inline">\(\theta&#39;\)</span>
-叫<strong>幅角主值</strong>，记为 <span
-class="math inline">\(arg_z\)</span>；复数 <span
-class="math inline">\(z\)</span> 的幅角主值是确定的，唯一的。</p>
-<p>对于模长，有 <span class="math display">\[
-|z|^2=z\cdot \overline{z}
-\]</span> 这个公式还是比较重要的。</p>
+<p>还有一些显然的性质，比如 $\overline{\overline{z}}=z$，这里就不列出来了（实际上是我懒，毕竟打 <code>\overline&#123;&#125;</code> 真的挺麻烦的）。</p>
+<p>定义复数 $z=a+bi,a,b\in \mathbb{R}$ 的<strong>模长</strong> $|z|=\sqrt{a<sup>2+b</sup>2}$ ，其几何意义为坐标上点 $Z(a,b)$ 到原点的距离。</p>
+<p>称复平面上有向线段 $\overrightarrow{Oz}$ 与实轴正方向的夹角 $\theta$ 为 $z$ 的<strong>幅角</strong>；所有的 $\theta$ 中，在 $[0,2\pi)$ 内的角 $\theta’$ 叫<strong>幅角主值</strong>，记为 $arg_z$；复数 $z$ 的幅角主值是确定的，唯一的。</p>
+<p>对于模长，有<br>
+$$<br>
+|z|^2=z\cdot \overline{z}<br>
+$$<br>
+这个公式还是比较重要的。</p>
 <p>下面介绍复数的<strong>四则运算</strong>。</p>
-<p><strong>加法</strong>：对于给定的两个复数 <span
-class="math inline">\(z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in
-\mathbb{R})\)</span>，定义 <span class="math inline">\(z_1\)</span> 与
-<span class="math inline">\(z_2\)</span> 的和是一个记为 <span
-class="math inline">\(z_1+z_2\)</span> 的新复数： <span
-class="math display">\[
-z_1+z_2=(a_1+a_2)+(b_1+b_2)i
-\]</span> 显然，复数的加法满足交换律，结合律。</p>
-<p>对于<strong>减法</strong>，类似地，定义 <span
-class="math inline">\(z_1\)</span> 与 <span
-class="math inline">\(z_2\)</span> 的差为 <span
-class="math inline">\(z_1-z_2\)</span>，满足 <span
-class="math display">\[
-z_1-z_2=(a_1-a_2)+(b_1-b_2)i
-\]</span> 关于复数与向量的关系，将在几何——向量中讲到。</p>
-<p><strong>乘法</strong>：复数 <span class="math inline">\(z_1\)</span>
-与 <span class="math inline">\(z_2\)</span> 的积是一个记为 <span
-class="math inline">\(z_1\cdot z_2\)</span> 的新复数： <span
-class="math display">\[
-z_1\cdot z_2=(a_1+b_1i)(a_2+b_2i)=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i
-\]</span> 只需把括号拆开，并运用 <span
-class="math inline">\(i^2=-1\)</span> 即可。</p>
+<p><strong>加法</strong>：对于给定的两个复数 $z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in \mathbb{R})$，定义 $z_1$ 与 $z_2$ 的和是一个记为 $z_1+z_2$ 的新复数：<br>
+$$<br>
+z_1+z_2=(a_1+a_2)+(b_1+b_2)i<br>
+$$<br>
+显然，复数的加法满足交换律，结合律。</p>
+<p>对于<strong>减法</strong>，类似地，定义 $z_1$ 与 $z_2$ 的差为 $z_1-z_2$，满足<br>
+$$<br>
+z_1-z_2=(a_1-a_2)+(b_1-b_2)i<br>
+$$<br>
+关于复数与向量的关系，将在几何——向量中讲到。</p>
+<p><strong>乘法</strong>：复数 $z_1$ 与 $z_2$ 的积是一个记为 $z_1\cdot z_2$ 的新复数：<br>
+$$<br>
+z_1\cdot z_2=(a_1+b_1i)(a_2+b_2i)=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i<br>
+$$<br>
+只需把括号拆开，并运用 $i^2=-1$ 即可。</p>
 <p>不难得知，复数的乘法满足交换律，结合律，分配律。</p>
-<p><strong>除法：</strong>对于给定的两个复数 <span
-class="math inline">\(z_1,z_2(z_2\ne0)\)</span>，若可以找到一个复数
-<span class="math inline">\(z\)</span>，满足 <span
-class="math inline">\(z_1=z_2\cdot z\)</span>，则我们称这个复数 <span
-class="math inline">\(z\)</span> 为 <span
-class="math inline">\(z_1\)</span> 与 <span
-class="math inline">\(z_2\)</span> 的商，并记为 <span
-class="math inline">\(\frac{z_1}{z_2}\)</span>.</p>
-<p>若 <span
-class="math inline">\(z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in
-\mathbb{R}\space且\space a_2^2+b_2^2\ne0)\)</span>，则 <span
-class="math display">\[
-\frac{z_1}{z_2}=\frac{a_1a_2+b_1b_2}{a_2^2+b_2^2}+\frac{a_2b_1-a_1b_2}{a_2^2+b_2^2}i
-\]</span> <strong>复数的三角形式</strong></p>
-<p>定义复数 <span class="math inline">\(z\)</span> 的三角形式为 <span
-class="math display">\[
-z=|z|\cos \theta+|z|\sin\theta i
-\]</span> <strong>复数乘法的几何意义</strong></p>
-<p>对于任意复数 <span
-class="math inline">\(z_1,z_2\in\mathbb{C}\)</span>，不妨设： <span
-class="math display">\[
-z_1=|z_1|(\cos\theta_1+\sin\theta_1i),\quad
-z_2=|z_2|(\cos\theta_2+\sin\theta_2i)
-\]</span> 这里 <span class="math inline">\(\theta_1,\theta_2\)</span>
-分别是复数 <span class="math inline">\(z_1,z_2\)</span> 的幅角。</p>
-<p>那么 <span class="math display">\[
-\begin{aligned}
-&amp;z_1z_2\\
-&amp;=|z_1||z_2|((\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2)+(\cos\theta_1\sin\theta_2+\sin\theta_1\cos\theta_2)i)\\
-&amp;=|z_1||z_2|(\cos(\theta_1+\theta_2)+\sin(\theta_1+\theta_2)i)
-\end{aligned}
-\]</span> （最后一步是三角恒等变换。）</p>
+<p>**除法：**对于给定的两个复数 $z_1,z_2(z_2\ne0)$，若可以找到一个复数 $z$，满足 $z_1=z_2\cdot z$，则我们称这个复数 $z$ 为 $z_1$ 与 $z_2$ 的商，并记为 $\frac{z_1}{z_2}$.</p>
+<p>若 $z_1=a_1+b_1i,z_2=a_2+b_2i\space(a_1,b_1,a_2,b_2\in \mathbb{R}\space且\space a_2<sup>2+b_2</sup>2\ne0)$，则<br>
+$$<br>
+\frac{z_1}{z_2}=\frac{a_1a_2+b_1b_2}{a_2<sup>2+b_2</sup>2}+\frac{a_2b_1-a_1b_2}{a_2<sup>2+b_2</sup>2}i<br>
+$$<br>
+<strong>复数的三角形式</strong></p>
+<p>定义复数 $z$ 的三角形式为<br>
+$$<br>
+z=|z|\cos \theta+|z|\sin\theta i<br>
+$$<br>
+<strong>复数乘法的几何意义</strong></p>
+<p>对于任意复数 $z_1,z_2\in\mathbb{C}$，不妨设：<br>
+$$<br>
+z_1=|z_1|(\cos\theta_1+\sin\theta_1i),\quad z_2=|z_2|(\cos\theta_2+\sin\theta_2i)<br>
+$$<br>
+这里 $\theta_1,\theta_2$ 分别是复数 $z_1,z_2$ 的幅角。</p>
+<p>那么<br>
+$$<br>
+\begin{aligned}<br>
+&amp;z_1z_2\<br>
+&amp;=|z_1||z_2|((\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2)+(\cos\theta_1\sin\theta_2+\sin\theta_1\cos\theta_2)i)\<br>
+&amp;=|z_1||z_2|(\cos(\theta_1+\theta_2)+\sin(\theta_1+\theta_2)i)<br>
+\end{aligned}<br>
+$$<br>
+（最后一步是三角恒等变换。）</p>
 <p>所以，<strong>两个复数相乘：模长相乘，幅角相加。</strong></p>
 <p><strong>欧拉公式和棣莫弗公式</strong></p>
-<p>欧拉公式： <span class="math display">\[
-e^{i\theta}=\cos\theta+\sin\theta i
-\]</span> <span class="math inline">\(e^{i\pi}=-1\)</span>
-就是这个公式的特殊情况。</p>
+<p>欧拉公式：<br>
+$$<br>
+e^{i\theta}=\cos\theta+\sin\theta i<br>
+$$<br>
+$e^{i\pi}=-1$ 就是这个公式的特殊情况。</p>
 <p>要证明它需要用到泰勒展开，我不会。</p>
-<p>棣莫弗公式： <span class="math display">\[
-(\cos\theta+\sin\theta i)^n=\cos n\theta+\sin n\theta i
-\]</span></p>
+<p>棣莫弗公式：<br>
+$$<br>
+(\cos\theta+\sin\theta i)^n=\cos n\theta+\sin n\theta i<br>
+$$</p>
 <p>棣莫弗公式是显然的。</p>
-<hr />
-<h5 id="复数杂题1">3.6.2 复数杂题（1）</h5>
-<h5 id="n-次单位根">3.6.3 n 次单位根</h5>
-<h5 id="复数与几何">3.6.4 复数与几何</h5>
-<h5 id="复数和三角函数">3.6.5 复数和三角函数</h5>
-<h5 id="复数杂题2">3.6.6 复数杂题（2）</h5>
+<hr>
+<h5 id="3-6-2-复数杂题（1）">3.6.2 复数杂题（1）</h5>
+<h5 id="3-6-3-n-次单位根">3.6.3 n 次单位根</h5>
+<h5 id="3-6-4-复数与几何">3.6.4 复数与几何</h5>
+<h5 id="3-6-5-复数和三角函数">3.6.5 复数和三角函数</h5>
+<h5 id="3-6-6-复数杂题（2）">3.6.6 复数杂题（2）</h5>
 
     </div>
 
@@ -1436,8 +1285,7 @@ e^{i\theta}=\cos\theta+\sin\theta i
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0"><span class="nav-text">3 三角函数与复数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B"><span class="nav-text">3.1 三角函数简介</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%BB%E6%84%8F%E8%A7%92%E5%92%8C%E5%BC%A7%E5%BA%A6%E5%88%B6"><span class="nav-text">3.1.1 任意角和弧度制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="nav-text">3.1.2 诱导公式</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8"><span class="nav-text">3.2 三角函数的图像和性质</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8-1"><span class="nav-text">3.2.1 三角函数的图像和性质</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%87%BD%E6%95%B0-fxa-x"><span class="nav-text">3.2.2 函数 $f(x)&#x3D;A (x+)) $</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2"><span class="nav-text">3.3 三角恒等变换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.3.1 三角恒等变换公式推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8B%86%E8%A7%92%E5%87%91%E8%A7%92"><span class="nav-text">3.3.2 拆角凑角</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E6%96%B9%E7%A8%8B"><span class="nav-text">3.3.3 构造方程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%81%92%E7%AD%89%E5%BC%8F%E8%AF%81%E6%98%8E"><span class="nav-text">3.3.4 恒等式证明</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%BC%BA"><span class="nav-text">3.4 三角形中的三角函数（缺）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E6%8B%93%E5%B1%95%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.4.1
-三角形中三角函数的拓展公式及推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.4.2 三角形中的三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%89%E8%A7%92%E6%8D%A2%E5%85%83"><span class="nav-text">3.4.3 三角换元</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%AD%A3%E5%BC%A6%E5%AE%9A%E7%90%86%E4%B8%8E%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86"><span class="nav-text">3.4.4 正弦定理与余弦定理</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%8F%8A%E4%B8%89%E8%A7%92%E6%96%B9%E7%A8%8B%E7%BC%BA"><span class="nav-text">3.5 反三角函数及三角方程（缺）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0"><span class="nav-text">3.6 复数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="nav-text">3.6.1 复数的定义及四则运算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%981"><span class="nav-text">3.6.2 复数杂题（1）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#n-%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9"><span class="nav-text">3.6.3 n 次单位根</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E4%B8%8E%E5%87%A0%E4%BD%95"><span class="nav-text">3.6.4 复数与几何</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E5%92%8C%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.6.5 复数和三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%982"><span class="nav-text">3.6.6 复数杂题（2）</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0"><span class="nav-text">3 三角函数与复数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%AE%80%E4%BB%8B"><span class="nav-text">3.1 三角函数简介</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-1-%E4%BB%BB%E6%84%8F%E8%A7%92%E5%92%8C%E5%BC%A7%E5%BA%A6%E5%88%B6"><span class="nav-text">3.1.1 任意角和弧度制</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1-2-%E8%AF%B1%E5%AF%BC%E5%85%AC%E5%BC%8F"><span class="nav-text">3.1.2 诱导公式</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8"><span class="nav-text">3.2 三角函数的图像和性质</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E5%9B%BE%E5%83%8F%E5%92%8C%E6%80%A7%E8%B4%A8"><span class="nav-text">3.2.1 三角函数的图像和性质</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-2-%E5%87%BD%E6%95%B0-f-x-A-sin-omega-x-varphi"><span class="nav-text">3.2.2 函数 $f(x)&#x3D;A \sin(\omega x+\varphi)) $</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2"><span class="nav-text">3.3 三角恒等变换</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-1-%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.3.1 三角恒等变换公式推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-2-%E6%8B%86%E8%A7%92%E5%87%91%E8%A7%92"><span class="nav-text">3.3.2 拆角凑角</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-3-%E6%9E%84%E9%80%A0%E6%96%B9%E7%A8%8B"><span class="nav-text">3.3.3 构造方程</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3-4-%E6%81%92%E7%AD%89%E5%BC%8F%E8%AF%81%E6%98%8E"><span class="nav-text">3.3.4 恒等式证明</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%EF%BC%88%E7%BC%BA%EF%BC%89"><span class="nav-text">3.4 三角形中的三角函数（缺）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-1-%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E7%9A%84%E6%8B%93%E5%B1%95%E5%85%AC%E5%BC%8F%E5%8F%8A%E6%8E%A8%E5%AF%BC"><span class="nav-text">3.4.1 三角形中三角函数的拓展公式及推导</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-2-%E4%B8%89%E8%A7%92%E5%BD%A2%E4%B8%AD%E7%9A%84%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.4.2 三角形中的三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-3-%E4%B8%89%E8%A7%92%E6%8D%A2%E5%85%83"><span class="nav-text">3.4.3 三角换元</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-4-4-%E6%AD%A3%E5%BC%A6%E5%AE%9A%E7%90%86%E4%B8%8E%E4%BD%99%E5%BC%A6%E5%AE%9A%E7%90%86"><span class="nav-text">3.4.4 正弦定理与余弦定理</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-5-%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E5%8F%8A%E4%B8%89%E8%A7%92%E6%96%B9%E7%A8%8B%EF%BC%88%E7%BC%BA%EF%BC%89"><span class="nav-text">3.5 反三角函数及三角方程（缺）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-6-%E5%A4%8D%E6%95%B0"><span class="nav-text">3.6 复数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-1-%E5%A4%8D%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="nav-text">3.6.1 复数的定义及四则运算</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-2-%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%98%EF%BC%881%EF%BC%89"><span class="nav-text">3.6.2 复数杂题（1）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-3-n-%E6%AC%A1%E5%8D%95%E4%BD%8D%E6%A0%B9"><span class="nav-text">3.6.3 n 次单位根</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-4-%E5%A4%8D%E6%95%B0%E4%B8%8E%E5%87%A0%E4%BD%95"><span class="nav-text">3.6.4 复数与几何</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-5-%E5%A4%8D%E6%95%B0%E5%92%8C%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0"><span class="nav-text">3.6.5 复数和三角函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-6-6-%E5%A4%8D%E6%95%B0%E6%9D%82%E9%A2%98%EF%BC%882%EF%BC%89"><span class="nav-text">3.6.6 复数杂题（2）</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1503,12 +1351,12 @@ e^{i\theta}=\cos\theta+\sin\theta i
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">87k</span>
+    <span title="站点总字数">85k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:19</span>
+    <span title="站点阅读时长">1:17</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
@@ -1527,7 +1375,7 @@ e^{i\theta}=\cos\theta+\sin\theta i
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
