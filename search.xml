@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo博客修复合辑</title>
-    <url>/2023/07/07/hexo%E5%8D%9A%E5%AE%A2%E4%BF%AE%E5%A4%8D%E5%90%88%E8%BE%91/</url>
-    <content><![CDATA[<p><strong>疑难杂症</strong></p>
+    <title>一些修复方法</title>
+    <url>/2023/07/07/%E4%B8%80%E4%BA%9B%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="博客搭建疑难杂症">博客搭建疑难杂症</h3>
 <span id="more"></span>
-<ul>
-<li>hexo clean 后博客首次加载加载不出东西/空白</li>
-</ul>
+<h4 id="hexo-clean-后博客首次加载加载不出东西空白">hexo clean
+后博客首次加载加载不出东西/空白</h4>
 <p>github 的问题，开梯子加载即可。</p>
-<ul>
-<li><code>pandoc exited with code null</code></li>
-</ul>
+<h4
+id="pandoc-exited-with-code-null"><code>pandoc exited with code null</code></h4>
 <p>新电脑没装 <code>pandoc</code>.</p>
-<ul>
-<li>npm 安装时卡在 <code>sill idealTree buildDeps</code></li>
-</ul>
+<h4 id="npm-安装时卡在-sill-idealtree-builddeps">npm 安装时卡在
+<code>sill idealTree buildDeps</code></h4>
 <p>（转载自
 https://blog.csdn.net/weixin_60414376/article/details/124186484）</p>
 <p>造成上述问题的原因是 node
 的默认安装环境在国外，因此我们只需要修改下镜像的地址即可.</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org </span><br><span class="line">(淘宝源)</span><br><span class="line">npm config get registry </span><br><span class="line">(检验是否更换成功)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>detected dubious ownership in repository at...</code></li>
-</ul>
+<h4
+id="detected-dubious-ownership-in-repository-at..."><code>detected dubious ownership in repository at...</code></h4>
 <p>新电脑用户名和旧电脑不一样，git
 不信任.准确来说是仓库的文件夹所有者的名字，和现在的电脑用户名匹配不上了.</p>
 <p>解决方法：</p>
@@ -31,6 +27,19 @@ https://blog.csdn.net/weixin_60414376/article/details/124186484）</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --add safe.directory /...</span><br></pre></td></tr></table></figure>
 <p>在确保安全的情况下，可以把整个目录加进去：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --add safe.directory &quot;*&quot;</span><br></pre></td></tr></table></figure>
+<h4
+id="hexo-相关命令时显示-throw-new-typeerrorconsole-expects-a-writable-stream-instance">hexo
+相关命令时显示
+<code>throw new TypeError('Console expects a writable stream instance');</code></h4>
+<p>进 su.</p>
+<h3 id="ubuntu-相关">ubuntu 相关</h3>
+<h4 id="功耗温度监测">功耗&amp;温度监测</h4>
+<p>使用 <code>s-tui</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install python-pip stress</span><br><span class="line">sudo pip install s-tui（ 如果是 Python 3.x，替换“pip”为“pip3” ）</span><br><span class="line">sudo s-tui</span><br></pre></td></tr></table></figure>
+<p>左下角的 package-0,0 就是功耗了.</p>
+<h4 id="cpu-使用率限定">cpu 使用率限定</h4>
+<p><code>echo "100" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_pct</code></p>
+<p>"100" 是你限制的使用率.</p>
 ]]></content>
       <categories>
         <category>博客搭建</category>
@@ -231,6 +240,16 @@ C_{2024}^{2}-C_{2024}^{4}+C_{2026}^{6}-\cdots+C_{2024}^{2022}.
 <li><p>已知实数 <span class="math inline">\(a,b\)</span> 满足 <span
 class="math inline">\((\sqrt{a^2-2a+2}+a-1)(\sqrt{b^2-4b+8}+b-2)=2\)</span>，则
 <span class="math inline">\(a^2+b^2\)</span> 的最小值为.</p></li>
+<li><p>已知函数 <span class="math inline">\(f(x)\)</span> 的定义域为
+<span class="math inline">\(\mathbb{R}\)</span>.</p>
+<ul>
+<li>若 <span
+class="math inline">\(f(x)=(x-x_1)(x-x_2)\cdots(x-x_n)\)</span>，求
+<span class="math inline">\(f&#39;(x)\)</span>.</li>
+<li>*若 <span
+class="math inline">\(f(x)=(x-a)(x-b)(x-c)\cdots(x-z)\)</span>，求 <span
+class="math inline">\(f&#39;(x)\)</span>.</li>
+</ul></li>
 </ul>
 <h3 id="平面射影几何方法">平面（射影）几何方法</h3>
 <ul>
@@ -346,9 +365,10 @@ class="math inline">\(0=x_0&lt;x_1&lt;x_2&lt;\cdots&lt;x_n=1\)</span>
 class="math display">\[
 \sum_{k=1}^{n}x_k^2(x_k-x_{k-1})&gt;C.
 \]</span></p></li>
-<li><p>设 <span class="math inline">\(n \in \N^*\)</span>，复多项式
-<span class="math inline">\(f(z)=(z-z_1)(z-z_2)\cdots
-(z-z_n)\)</span>，记 <span
+<li><p>设 <span class="math inline">\(n \in
+\mathbb{N}^*\)</span>，复多项式 <span
+class="math inline">\(f(z)=(z-z_1)(z-z_2)\cdots (z-z_n)\)</span>，记
+<span
 class="math inline">\(x=\frac{1}{n}z_j,y=\sqrt{\frac{1}{n}|z_j|^2}\)</span>，其中
 <span class="math inline">\(x,y\)</span> 满足 <span
 class="math inline">\(y^2-|x|^2&lt;1\)</span>，复数 <span
@@ -552,7 +572,7 @@ class="math inline">\(q\)</span> 项和为正数，则项数的最大值为.</p>
 <li><p>已知 <span class="math inline">\(A,B,C\)</span> 是 <span
 class="math inline">\(\{1,2,3,4,5,6,7\}\)</span> 的子集，且满足 <span
 class="math inline">\(|A\cap B|=|B \cap C| = |C \cap A| = 1\)</span>，
-<span class="math inline">\(A\cap B\cap C \neq \empty.\)</span>
+<span class="math inline">\(A\cap B\cap C \neq \emptyset.\)</span>
 则这样的三元组 <span class="math inline">\((A,B,C)\)</span>
 的个数为.</p></li>
 </ul>
@@ -573,6 +593,17 @@ class="math inline">\(a+b=667\)</span>，且他们的最小公倍数是最大公
 <span class="math inline">\((a,b)\)</span>.</li>
 </ul>
 <h2 id="物理部分">物理部分</h2>
+<h3 id="电磁场">电/磁场</h3>
+<ul>
+<li>闭合线圈在均匀变化的磁场中会产生感应电流和感生电动势.说明：
+<ul>
+<li>为何环上处处等势.</li>
+<li>为何环上处处等势却有电流.</li>
+</ul></li>
+</ul>
+<h3 id="静力学">静力学</h3>
+<h3 id="动力学">动力学</h3>
+<h3 id="角动量与万有引力">角动量与万有引力</h3>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -586,6 +617,7 @@ class="math inline">\(a+b=667\)</span>，且他们的最小公倍数是最大公
     <title>试卷合集</title>
     <url>/2024/01/12/%E8%AF%95%E5%8D%B7%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<p>在线评测： <a href="https://85555l283h.vicp.fun">点我</a></p>
+<p>右键另存为即可下载。</p>
 <h4 id="届-t8-联考">2024届 T8 联考</h4>
 <p><strong>语文（含答案）</strong> <div class="pdfobject-container" data-target="1.2024届T8语文试卷（含解析）.pdf" data-height="500px"></div></p>
 <p><strong>数学（含答案）</strong> <div class="pdfobject-container" data-target="3.2024届（T8联考）数学试卷+答案.pdf" data-height="500px"></div></p>
@@ -598,6 +630,161 @@ class="math inline">\(a+b=667\)</span>，且他们的最小公倍数是最大公
         <category>数学</category>
         <category>套卷</category>
         <category>物理</category>
+      </categories>
+      <tags>
+        <tag>刷题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>题目合集（二）</title>
+    <url>/2024/01/18/%E9%A2%98%E7%9B%AE%E5%90%88%E9%9B%86%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="生物部分">生物部分</h2>
+<h3 id="稳态调节">稳态调节</h3>
+<p><strong>内环境，神经调节</strong></p>
+<ul>
+<li>食物中的淀粉被消化成葡萄糖发生在（）.</li>
+<li>内环境的定义（）.</li>
+<li>从维持人体内环境稳态的角度，同一器官同时接受交感神经和副交感神经的共同控制，意义在于（）.</li>
+<li>组织液，淋巴液和血浆最主要的差别在于血浆中含有较多的（），而另外两者这一含量较少.血浆渗透压的大小与（）有关，细胞外液大部分渗透压来源于（）；正常人的血浆
+pH 为（）.</li>
+<li>为什么兴奋单向传递.</li>
+<li>抑制型神经递质通常引起突触后膜（）内流.</li>
+<li>躯体运动中枢位于（），又叫（）；头面部代表区的位置与头面部的关系是（）的，皮层代表区的位置与躯体各部分是（）的.</li>
+<li>短时记忆与（）有关，长时记忆与（）有关.</li>
+<li>中枢神经系统由（），（），（），（），（）组成，功能分别为（）.</li>
+<li>外周神经系统由（）组成，均含有（），（）；其中（）由（）运动神经和（）运动神经组成，后者分为（）；（）又叫感觉神经.</li>
+<li>自主神经系统的定义是（）</li>
+<li>神经组织的结构和功能单位是（），反射的结构基础是（）.</li>
+</ul>
+<p><strong>体液调节，免疫调节</strong></p>
+<ul>
+<li>抗利尿激素的靶器官是（），醛固酮的靶器官是（）.</li>
+<li>剧烈运动后不能立即冲冷水澡，原因是（）.</li>
+<li>属于蛋白质的激素有（），属于氨基酸衍生物的激素有（），属于类固醇的激素有（），后者的特别之处在于（）.</li>
+<li>性激素的作用是.</li>
+<li>在渔业生产中，通常给雌雄亲鱼注射（）药物，有利于进行人工授精和育苗.</li>
+<li>血糖的三个来源是（），三个去向是（），一般稳定在（）mmol/L.</li>
+<li>神经调节和体液调节的联系是.</li>
+<li>过敏反应产生时，抗体吸附在（）表面，促使细胞释放（），引起（）（四个变化）.</li>
+<li>科学家研究通过用 CD4 抗体修饰红细胞的细胞膜，将 HIV
+引诱到导致其死亡的陷阱“红细胞”中。说明原理.</li>
+<li>B 细胞活化的条件.</li>
+<li>体液免疫过程中，抗体和病毒结合后病毒最终被清除的方式是.</li>
+</ul>
+<p><strong>植物生命调节</strong> - 某植物实验总共取样 <span
+class="math inline">\(6\)</span>
+次，间隔两天取样一次，则第六次取样在第（）天. -
+光敏色素的本质是（），主要吸收（）光，分布于（），调控机制是（）. -
+处理插条浸泡法：把插条的（）浸泡在配置好的溶液中，深约（），处理（）时间（适用于（））；沾蘸法：把插条的（）在浓度较（）的溶液中蘸一下（约（）s），深约（）.
+- 下列事实是否和植物激素有关： - 棉花栽培过程中，适时摘心有利于提高产量.
+- 给三倍体无子西瓜授以二倍体西瓜花粉，有利于提高产量. -
+植物移栽时，去除部分枝叶有利于移栽植物的存活. -
+赤霉素，细胞分裂素，脱落酸和乙烯的合成部位分别是（），分布于（），作用是（）.
+- 生长素的生理作用是（）水平上的（）和（）水平上的（）.</p>
+<h3 id="生物与环境">生物与环境</h3>
+<p><strong>种群群落</strong></p>
+<ul>
+<li>判断说法是否正确：
+<ul>
+<li>林窗下和林下 <span class="math inline">\(0-5\space cm\)</span>
+土层中小动物的丰富度通常最高.</li>
+</ul></li>
+<li>血细胞计数板中，每个大方格的面积为（），加盖玻片后的深度为（），故体积为（）.中央大方格（计数室底部）以双线等分为（）个中方格，每个中方格等分为（）个小方格.计数时，先统计
+<span class="math inline">\(5\)</span>
+个中方格中的总菌数，将平均值乘以（），得到大方格中的总菌数.</li>
+<li>样方法一般选择（）而不选择（）植物，原因是.</li>
+</ul>
+<p><strong>生态系统，人与环境</strong></p>
+<ul>
+<li>生态交错区（两个或多个生态地带之间的过渡区域）物种的数目及一些物种的密度增大的原因是（）.</li>
+<li>生态系统中各组分的作用是（）.</li>
+<li>食物链：荔枝树 <span class="math inline">\(\to\)</span> 鸡 <span
+class="math inline">\(\to\)</span> 动物 A.解释为什么鸡的同化量不能 <span
+class="math inline">\(100\%\)</span> 流入动物 A.</li>
+<li>阐述“收割理论”.</li>
+<li>养鱼塘中流经生态系统的总能量是（）.</li>
+<li>一个完整生态系统的结构包括（）.</li>
+<li>生物多样性形成是（），（）协同进化的结果.</li>
+<li>辨析自生，循环，协调和整体.</li>
+<li>生态足迹的概念是（），碳足迹的概念（）.</li>
+<li>信息传递在生态系统中的作用是（）.</li>
+<li>夏季稻田中分布着杂草和二化螟，青蛙等。稻田养鸭可以提高水稻的产量和质量，分别从种间关系和物质循环的角度分析原因（）.</li>
+<li>判断说法是否正确：
+<ul>
+<li>归类各食物链中处于相同环节的所有物种，可构建相应的营养级.</li>
+<li>测算主要食物链各环节的能量值，可构建生态系统的能量金字塔.</li>
+<li>湿地生态系统稳定性是其自我调节能力的基础.</li>
+<li>林，藤，草和真菌等固定的太阳能是流入生态系统的总能量.</li>
+</ul></li>
+<li>天然池塘改造人工池塘后抵抗力稳定性降低，原因是（）；若生产者固定的能量不变，但与天然池塘相比，人工池塘的鱼产量高，从能量流动的角度分析原因（）.</li>
+<li>下列说法都是正确的。对于每个说法举出例子或说明理由.
+<ul>
+<li>生产者和消费者不一定是动物.</li>
+<li>分解者不一定是微生物.</li>
+<li>生产者等价于自养型生物，营腐生生物等价于分解者.</li>
+</ul></li>
+<li>食物链和食物网的作用.</li>
+</ul>
+<h3 id="生物工程">生物工程</h3>
+<p><strong>发酵技术，微生物培养</strong></p>
+<ul>
+<li>腐乳的制作中起主要作用的是（），参与了发酵的是（），蛋白质被分解为（）.</li>
+<li>乳酸发酵使用（）菌，属于（）菌，适宜温度是（）；（酒精发酵/醋酸发酵）.</li>
+<li>描述并解释发酵过程中亚硝酸盐含量的变化趋势.</li>
+<li>乳酸发酵时的白膜是（）.</li>
+<li>生产啤酒时，需要进行后发酵的原因是.</li>
+<li>啤酒发酵工程中，糖浆加入啤酒花后蒸煮的目的是（），本步骤后加入酵母菌前要进行的操作是（），目的是（）.</li>
+<li>从发芽大麦种子中提取和分离淀粉酶，步骤是：原料处理 <span
+class="math inline">\(\to\)</span> （）<span
+class="math inline">\(\to\)</span> 纯化.</li>
+<li>无菌技术的目的是，选择培养基和鉴别培养基的区别是.</li>
+<li>蛋白胨可以为微生物的生长提供（），牛肉膏可以提供（）.</li>
+<li>利用显微镜直接计数的统计结果会偏（），原因是.；利用稀释涂布平板法计数的统计结果会偏（），原因是（）.</li>
+<li>每隔（）小时统计一次菌落数目.</li>
+</ul>
+<p><strong>植物细胞工程</strong></p>
+<ul>
+<li>全能性的概念是.</li>
+<li>诱导愈伤组织时需要避光的原因是（），诱导生芽时需要光的原因是（），上述步骤需要更换培养基的原因是（）.</li>
+<li>说出几种无性生殖方式.</li>
+<li>利用植物细胞工程进行植物繁殖的优点是1.（）2.（）.</li>
+<li>植物细胞融合的方法是（）.</li>
+<li>作物脱毒材料选取部位是.</li>
+<li>结合诱变育种，简述培育抗寒香蕉品种的方法和步骤.</li>
+</ul>
+<p><strong>动物细胞工程</strong></p>
+<ul>
+<li>用（）将组织分散为单个细胞.</li>
+<li>哺乳动物细胞培养的温度多以（）为宜，多数动物细胞生存的适宜 pH
+为.</li>
+<li>动物细胞融合的方法是（）.</li>
+<li>两次使用胰蛋白酶的目的分别是.</li>
+<li>干细胞的来源是.</li>
+<li>将病人的皮肤成纤维细胞诱导成 iPS
+细胞，再使它转化为需要的细胞，用这些细胞给病人治病不会产生免疫排斥，原因是.</li>
+<li>动物细胞核移植技术采用的受体是（），原因是（）.</li>
+<li>供体核进入卵母细胞后形成（）.</li>
+<li>描述受精和早期胚胎发育的过程.</li>
+<li>如果诱导 iPS
+细胞定向分化为原始生殖细胞，可能的作用为（）（3点）.</li>
+<li>制备的单克隆抗体在临床上不能直接用于人体，要需要对抗体进行人源化，该过程的意义是.</li>
+<li>激活重构胚的方法是.</li>
+<li>胚胎移植的生理学基础是.（4点）.</li>
+<li>受精的标志是（），受精完成的标志是（）.</li>
+<li>说出几种有性生殖的应用.</li>
+<li>写出用小鼠甲的脾脏为材料制备单细胞悬液的步骤.</li>
+<li>动物细胞培养液的成分为.（6点）</li>
+<li>对精子进行获能处理的原因是（），药物是（）.</li>
+<li>胚胎分割的意义是（）.</li>
+</ul>
+<h3 id="生物学史">生物学史</h3>
+<ul>
+<li>达尔文，鲍森詹森，拜尔和温特分别做了什么实验，得出了什么结论.</li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>生物</category>
       </categories>
       <tags>
         <tag>刷题</tag>
